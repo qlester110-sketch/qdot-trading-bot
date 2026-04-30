@@ -1,0 +1,13 @@
+.env
+.env.*
+!env.template
+
+# Local fallback when Slack credentials are missing
+DAILY-SUMMARY.md
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
+*.swp
+__pycache__/
