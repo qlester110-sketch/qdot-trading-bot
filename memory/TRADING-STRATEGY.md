@@ -1,5 +1,17 @@
 # Trading Strategy
 
+## Frame: Satellite Sleeve
+
+This bot is the **satellite** sleeve per
+[INVESTING-FOUNDATION.md](INVESTING-FOUNDATION.md) Section 3 — not a
+whole-portfolio plan. The sizing rules below (20% per position, 75–85%
+deployed) are *internal* to this paper account. Whole-portfolio rules
+from the foundation doc still apply: total active satellite ≤ 20% of
+total investable assets; no single name > 5% of total investable assets.
+Bot is also bound by the foundation doc's 24-month underperformance
+kill rule (satellite must beat its benchmark over 24 months or be shut
+down) — restated here for the 90-day paper window in PROJECT-CONTEXT.md.
+
 ## Mission
 
 Beat the S&P 500 over the 90-day paper-trading window. Stocks only — no
@@ -57,7 +69,15 @@ Evaluated at the midday scan and opportunistically:
 
 Before any buy, document all of these in TRADE-LOG:
 
-- Specific catalyst?
+- Specific catalyst (fundamental, citable)?
+- Source classification: must be a **fundamental** catalyst (earnings,
+  guidance, contract win, regulatory event, sector rotation with
+  macroeconomic cause). Technical signals (chart patterns, RSI, MA
+  crosses) may corroborate but never lead. Per
+  INVESTING-FOUNDATION.md §7, weak-form efficiency means TA-only setups
+  have no academic edge.
+- Falsification: what specific, observable event would prove the thesis
+  wrong and trigger an exit before the stop is hit?
 - Sector in momentum?
 - Stop level (7–10% below entry)?
 - Target (minimum 2:1 R:R)?

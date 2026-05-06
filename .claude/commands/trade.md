@@ -17,8 +17,13 @@ Args: SYMBOL SHARES SIDE (buy or sell). If missing, ask.
    - SHARES * P ≤ 20% of equity
    - SHARES * P ≤ available cash
    - daytrade_count < 3
-   - Catalyst documented in today's RESEARCH-LOG (if not, ask the user
-     for the thesis and add it before continuing)
+   - **Fundamental catalyst** documented in today's RESEARCH-LOG
+     (earnings, guidance, contract, regulatory event, macro/sector
+     rotation). TA-only setups are rejected per TRADING-STRATEGY.md
+     entry checklist. If no catalyst is logged, ask the user for the
+     thesis and write it to RESEARCH-LOG before continuing.
+   - **Falsification** documented: a specific observable event that
+     would prove the thesis wrong (forces exit before stop).
    - Endpoint is paper (`ALPACA_ENDPOINT` contains "paper-api")
 
 3. For SELL, confirm position exists with right qty. No other checks.
@@ -35,7 +40,8 @@ Args: SYMBOL SHARES SIDE (buy or sell). If missing, ask.
 6. For BUYs, immediately place a 10% trailing stop GTC (same flow as
    market-open STEP 5).
 
-7. Log to memory/TRADE-LOG.md with full thesis, entry, stop, target,
-   R:R, and order IDs.
+7. Log to memory/TRADE-LOG.md with full thesis (incl. fundamental
+   catalyst + source citation), falsification criteria, entry, stop,
+   target, R:R, and order IDs.
 
 8. `bash scripts/slack.sh "<trade summary>"` (optional in local mode).

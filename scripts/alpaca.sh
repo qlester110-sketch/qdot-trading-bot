@@ -22,6 +22,7 @@ fi
 
 API="${ALPACA_ENDPOINT:-https://paper-api.alpaca.markets/v2}"
 DATA="${ALPACA_DATA_ENDPOINT:-https://data.alpaca.markets/v2}"
+DATA_BASE="${DATA%/v2}"
 
 H_KEY="APCA-API-KEY-ID: $ALPACA_API_KEY"
 H_SEC="APCA-API-SECRET-KEY: $ALPACA_SECRET_KEY"
@@ -67,8 +68,24 @@ case "$cmd" in
   close-all)
     curl -fsS -H "$H_KEY" -H "$H_SEC" -X DELETE "$API/positions"
     ;;
+  news)
+    syms="${1:-}"
+    limit="${2:-20}"
+    if [[ -n "$syms" ]]; then
+      curl -fsS -H "$H_KEY" -H "$H_SEC" \
+        "$DATA_BASE/v1beta1/news?symbols=$syms&limit=$limit&sort=desc"
+    else
+      curl -fsS -H "$H_KEY" -H "$H_SEC" \
+        "$DATA_BASE/v1beta1/news?limit=$limit&sort=desc"
+    fi
+    ;;
+  movers)
+    top="${1:-10}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" \
+      "$DATA_BASE/v1beta1/screener/stocks/movers?top=$top"
+    ;;
   *)
-    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all> [args]" >&2
+    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all|news|movers> [args]" >&2
     exit 1
     ;;
 esac

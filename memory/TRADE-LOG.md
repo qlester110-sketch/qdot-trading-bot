@@ -14,6 +14,48 @@ No positions yet. Bot launches on the next trading day.
 
 ---
 
+### 2026-05-05 21:44 ET — BUY QLYS (queued for 2026-05-06 open)
+- Side: buy
+- Shares: 19
+- Entry price: pending (market open 2026-05-06)
+- Stop level: 10% trailing GTC (placed after fill at /market-open)
+- Position size: ~$2,000 (20% of $10k notional baseline)
+- Catalyst: Qualys raised FY26 GAAP EPS, Adj EPS, sales guides; Q2 sales beat. Source: Benzinga earnings wire 2026-05-05 22:20–22:24 UTC (RESEARCH-LOG 2026-05-05).
+- Falsification: by Fri close gives back >50% of post-earnings gap; or peer (CRWD/S/OKTA) sells off >5% on negative read-through; or any sector peer guides down within 2 weeks.
+- Sector: Cybersecurity SaaS
+- Target: +20% (R:R 2:1)
+- Order ID: 3e7922f6-0299-4d6a-b90f-38cbd2e7f124
+- Stop order ID: pending (post-fill)
+
+### 2026-05-05 21:44 ET — BUY QRVO (queued for 2026-05-06 open)
+- Side: buy
+- Shares: 19
+- Entry price: pending (market open 2026-05-06)
+- Stop level: 10% trailing GTC (placed after fill at /market-open)
+- Position size: ~$2,000 (20% of $10k notional baseline)
+- Catalyst: Qorvo FY27 Adj EPS guide $7.00 vs $6.60 est (~6% above forward-year). Source: Benzinga 2026-05-05 22:32 UTC (RESEARCH-LOG 2026-05-05).
+- Falsification: stock fades back below pre-earnings close within 5 trading days; or peer (SWKS, AVGO, QCOM) negative read-through within 2 weeks.
+- Sector: Semiconductors (RF chips)
+- Target: +20% (R:R 2:1)
+- Order ID: 549b9138-fa08-4b5a-ad81-d1d50da87bd1
+- Stop order ID: pending (post-fill)
+
+### 2026-05-05 21:44 ET — BUY COTY (queued for 2026-05-06 open)
+- Side: buy
+- Shares: 784
+- Entry price: pending (market open 2026-05-06)
+- Stop level: 10% trailing GTC (placed after fill at /market-open)
+- Position size: ~$2,000 (20% of $10k notional baseline)
+- Catalyst: Coty FY26 Adj EPS guide $0.33–0.35 vs $0.27 est (22–30% above). Source: Benzinga 2026-05-05 22:50 UTC (RESEARCH-LOG 2026-05-05).
+- Falsification: tomorrow's call commentary shows soft margins or FX-driven raise (not organic); or stock fails to sustain post-earnings move past day-2 close.
+- Sector: Consumer beauty/personal care
+- Target: +20% (R:R 2:1)
+- Order ID: eeea0b61-cab4-4365-8d84-bf521dfce747
+- Stop order ID: pending (post-fill)
+- Note: ~$2.55 stock, microcap-adjacent. Liquidity risk flagged.
+
+---
+
 ## Format reference (do not delete)
 
 ### Trade entry format

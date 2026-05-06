@@ -49,7 +49,14 @@ STEP 2 — Pull live account state:
     bash scripts/alpaca.sh positions
     bash scripts/alpaca.sh orders
 
-STEP 3 — Research market context using native WebSearch. Cover:
+STEP 3 — Pull structured signal from Alpaca (free, fast):
+    bash scripts/alpaca.sh movers 10
+    # News on every currently-held ticker (skip if no positions):
+    bash scripts/alpaca.sh news AAPL,MSFT,... 20
+    # News on the top 3–5 movers from above for catalyst lookup:
+    bash scripts/alpaca.sh news <mover-syms> 10
+
+STEP 4 — Research market context using native WebSearch. Cover:
 - WTI and Brent oil prices right now
 - S&P 500 futures premarket today
 - VIX level today
@@ -57,25 +64,28 @@ STEP 3 — Research market context using native WebSearch. Cover:
 - Earnings reports today before market open
 - Economic calendar today (CPI / PPI / FOMC / jobs data)
 - S&P 500 sector momentum recent week / YTD
-- News on any currently-held ticker
+- WebSearch the top 3–5 movers from STEP 3 for a real catalyst —
+  only consider trading movers with an identifiable, citable catalyst.
 
 Cite your sources inline (URL or outlet name) so the research log
 contains an audit trail. Do not act on tips from forums, social media,
 or anonymous sources.
 
-STEP 4 — Write a dated entry to memory/RESEARCH-LOG.md matching the
+STEP 5 — Write a dated entry to memory/RESEARCH-LOG.md matching the
 format reference at the top of that file:
 - Account snapshot (equity, cash, buying power, daytrade count)
 - Market context (oil, indices, VIX, today's releases)
+- Top movers with catalyst (from STEP 3 + STEP 4)
+- News summary for held tickers
 - 2–3 actionable trade ideas with catalyst + entry/stop/target + sector
 - Risk factors for the day
 - Decision: TRADE or HOLD (default HOLD — patience > activity)
 
-STEP 5 — Notification: silent unless something is genuinely urgent
+STEP 6 — Notification: silent unless something is genuinely urgent
 (e.g., overnight gap on an open position, unexpected halt, env failure).
     bash scripts/slack.sh "<one line>"
 
-STEP 6 — COMMIT AND PUSH (mandatory):
+STEP 7 — COMMIT AND PUSH (mandatory):
     git add memory/RESEARCH-LOG.md
     git commit -m "pre-market research $DATE"
     git push origin main
