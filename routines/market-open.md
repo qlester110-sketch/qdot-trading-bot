@@ -50,7 +50,8 @@ STEP 3 — Hard-check rules BEFORE every order. Skip any trade that
 fails and log the reason to TRADE-LOG:
 - Total positions after trade ≤ 6
 - Trades this week ≤ 3 (count entries dated Mon–today in TRADE-LOG)
-- Position cost ≤ 20% of equity
+- Position cost ≤ 10% of equity (owner cap, 2026-05-05)
+- (Existing positions market value + position cost) ≤ 30% of equity
 - Position cost ≤ available cash
 - Catalyst documented in today's RESEARCH-LOG entry
 - daytrade_count leaves room (PDT: 3/5 rolling business days)
