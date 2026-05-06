@@ -28,8 +28,8 @@ though the money is paper.
 ## Core Rules (non-negotiable)
 
 1. NO OPTIONS — ever
-2. 75–85% of capital deployed when fully invested
-3. 5–6 positions at a time, max 20% per position
+2. **Max 30% of equity deployed at any time** (owner-set ceiling, 2026-05-05). Cash + unused buying power = 70% minimum. Replaces the prior "75–85% deployed" target.
+3. 5–6 positions at a time, **max 10% per position** (revised down from 20% to align with rule #2).
 4. 10% trailing stop on every position as a real GTC order
 5. Cut losers at -7% manually
 6. Tighten trail: 7% at +15%, 5% at +20%
@@ -39,6 +39,10 @@ though the money is paper.
 10. Exit a sector after 2 consecutive failed trades in that sector
 11. Patience > activity. A week with zero trades can be the right answer.
 
+### Grandfathered exception (one-time)
+
+The 3 BUY orders queued 2026-05-05 (QLYS, QRVO, COTY at ~$2k each = ~60% deployed) were placed under the prior 20%/position rule. Owner elected to keep them in flight as calibration trades. All trades placed AFTER 2026-05-05 follow rules #2 and #3 above.
+
 ## Buy-side Gate
 
 Before placing any buy order, every check must pass. If any fail, skip
@@ -46,7 +50,8 @@ the trade and log the reason.
 
 - Total positions after this fill ≤ 6
 - Total trades placed this week (including this one) ≤ 3
-- Position cost ≤ 20% of account equity
+- Position cost ≤ 10% of account equity
+- Total deployed (existing positions market value + this fill) ≤ 30% of equity
 - Position cost ≤ available cash
 - Pattern day trader day-trade count leaves room (under 3 on a sub-$25k
   account)

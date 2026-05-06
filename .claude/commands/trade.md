@@ -14,7 +14,8 @@ Args: SYMBOL SHARES SIDE (buy or sell). If missing, ask.
    - Total positions after fill ≤ 6
    - Trades this week + 1 ≤ 3 (count entries dated Mon–today in
      memory/TRADE-LOG.md)
-   - SHARES * P ≤ 20% of equity
+   - SHARES * P ≤ 10% of equity (owner cap, 2026-05-05)
+   - (Existing positions market value + SHARES * P) ≤ 30% of equity
    - SHARES * P ≤ available cash
    - daytrade_count < 3
    - **Fundamental catalyst** documented in today's RESEARCH-LOG
