@@ -85,3 +85,12 @@ No positions yet. Bot launches on the next trading day.
 
 **Notes:** one-paragraph plain-english summary.
 ```
+
+### 2026-05-06 10:36 -03 — STOPS PLACED (background script)
+
+10% trailing-stop GTC sell orders submitted for QLYS, QRVO, COTY.
+Full broker responses: /tmp/stops-results-20260506-103616.json
+Script log: /tmp/place-stops-20260506-081911.log
+
+Stop order IDs and confirmation must be reconciled into per-trade entries
+above on next session (review /tmp/stops-results-20260506-103616.json for order IDs).
