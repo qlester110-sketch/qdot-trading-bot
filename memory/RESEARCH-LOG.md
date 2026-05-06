@@ -79,3 +79,54 @@ TRADE or HOLD (default HOLD if no clear edge)
 
 ### Decision
 TRADE — 3 market buys queued for 2026-05-06 open. Trailing stops to be placed once fills come back at /market-open tomorrow.
+
+---
+
+## 2026-05-06 — Pre-market Research (local, ~7:50 AM Bahia / 6:50 AM ET)
+
+### Account
+- Equity: $100,000 (sized as $10k notional per CLAUDE.md baseline)
+- Cash: $100,000
+- Buying power: $194,480 ($5,520 reserved for queued QLYS/QRVO/COTY orders)
+- Daytrade count: 0
+- Open orders: 3 (QLYS 19sh, QRVO 19sh, COTY 784sh — all status `new`, awaiting open)
+
+### Market Context
+- **S&P 500 futures:** 7,305.25, +0.25% premarket. Risk-on driven by Iran deal hopes. Source: investing.com / Yahoo Finance
+- **VIX:** 16.73, -3.74% — fear gauge declining, supportive backdrop
+- **WTI crude:** $100.60, down ~5% from mid-week highs >$106 on Strait of Hormuz unblocking
+- **Brent crude:** $116.55, still elevated on Middle East geopolitical premium
+- **Today's catalysts:**
+  - JOLTS (Job Openings) at 10:00 AM ET — consensus ~6.8M openings (slightly down from prior). Labor-market read.
+  - AMD earnings after close — semi sector driver, read-through risk for QRVO
+  - Iran ceasefire holding; Hormuz status pending agreement finalization (Trump Truth Social posts)
+- **Earnings before open today:** ELAN (raised FY26 guide, Q1 beat — clean), FRPT (raised FY26 sales guide), PRGO (mixed: EPS beat, sales miss). Source: Benzinga earnings wire 2026-05-06 06:35–06:41 ET
+- **Sector momentum context:** Magnificent Seven megacaps still driving ~55% of Q-over-Q S&P 500 earnings growth. Cybersecurity SaaS (QLYS sector) showed strength on yesterday's prints; semis (QRVO sector) face read-through from AMD tonight.
+
+### Top Movers (Alpaca screener)
+Skipping — entire gainer/loser list is microcap junk (PHOE +168% at $46, SDOT +91% at $0.49, TALKW +70% at $0.0029). None pass liquidity / market-cap filter for our strategy.
+
+### News Summary — Held / Queued Tickers
+No new news on QLYS, QRVO, or COTY since yesterday's after-hours earnings prints. Theses unchanged from yesterday's RESEARCH-LOG entry. Will revisit if AMD print tonight produces semi-sector read-through affecting QRVO.
+
+### Trade Ideas
+**None today.** Reason: 3 of 3 weekly trade slots already used by yesterday's QLYS/QRVO/COTY queue. Strategy rule #8 (max 3 new trades/week) is binding.
+
+If room existed, candidates from today's pre-market earnings flow worth watching for next week:
+- ELAN — clean post-earnings raise, animal health sector (defensive growth)
+- FRPT — pet food, raised FY guide, niche consumer
+
+### Risk Factors
+- **AMD earnings tonight** is the day's biggest single-name risk to our book — QRVO (semis) will read-through whichever direction AMD goes.
+- **JOLTS at 10:00 AM ET** — labor surprise (hot or cold) could rip the broad market and gap our positions before stops are set at 9:35 ET. There's a 5-minute window between market open (9:30) and /market-open routine (9:35) where positions are unhedged.
+- **Iran ceasefire fragility** — any breakdown news during the day = oil spike + risk-off.
+- **COTY thesis nuance** still flagged: Q3 EPS missed (-$0.03 vs $0.00 est) even though FY guide was raised. Stock could gap down at open despite the bullish guide.
+- **Microcap mover noise** in the screener output is a reminder to never chase moves without a documented fundamental catalyst.
+
+### Decision
+**HOLD.** No new trades today. Today's job is execution discipline:
+1. Let queued orders fill at 9:30 ET open (10:30 Bahia)
+2. Place 10% trailing stops via /market-open at 9:35 ET (10:35 Bahia)
+3. Watch for AMD print tonight — may need to re-evaluate QRVO thesis tomorrow morning
+4. /midday at 12:00 ET (1:00 Bahia) — thesis check on all 3 positions, cut at -7% if any
+
