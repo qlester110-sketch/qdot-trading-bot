@@ -66,13 +66,42 @@ No positions yet. Bot launches on the next trading day.
 - Shares: N
 - Entry price: $X.XX  (or Exit price: $X.XX for sells)
 - Stop level: $X.XX (10% trailing GTC)
-- Position size: $X (X% of equity)
+- Position size: $X (X% of $10k working cap)
 - Catalyst: [one-line; cite source from today's RESEARCH-LOG]
+- Catalyst type: earnings | guidance | contract | regulatory | macro | sector_rotation
 - Sector: [sector]
 - Target: $X.XX  (R:R X:1)
+- Falsification: [specific observable event that invalidates thesis]
+- Direction: bullish | bearish
+- Materiality: 0.X — [one-line justification]
+- Horizon: N trading days
 - Order ID: <alpaca-order-id>
 - Stop order ID: <alpaca-stop-order-id>
 ```
+
+### Trade close + calibration format
+
+Append this block whenever a position closes (stop hit, manual cut,
+thesis break, target hit, or end-of-horizon close). Reference the
+original entry by date.
+
+```
+### YYYY-MM-DD HH:MM — CLOSE SYMBOL (entry: YYYY-MM-DD)
+- Exit reason: stop_hit | seven_pct_cut | thesis_break | target | horizon_end
+- Exit price: $X.XX
+- Realized P&L: $X (X%)
+- Days held: N
+- Calibration:
+  - Predicted direction: bullish | bearish
+  - Predicted materiality: 0.X
+  - Move from entry to exit: +/-X% (close-to-close)
+  - Hit: yes | no
+  - Notes: [one line on why the call was right/wrong]
+```
+
+For options, add to the close block:
+- DTE at exit
+- IV at exit (vs IV at entry)
 
 ### EOD snapshot format
 

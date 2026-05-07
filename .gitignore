@@ -2,8 +2,9 @@
 .env.*
 !env.template
 
-# Local fallback when Slack credentials are missing
-DAILY-SUMMARY.md
+# Local fallback when Slack credentials are missing (top-level only —
+# anchor with leading slash so routines/daily-summary.md isn't matched)
+/DAILY-SUMMARY.md
 
 # OS / editor
 .DS_Store

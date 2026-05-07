@@ -27,6 +27,10 @@ order. New entries go at the bottom.
 
 ### Trade Ideas
 1. TICKER — catalyst (source), entry $X, stop $X, target $X, R:R X:1, sector
+   - Direction: bullish | bearish
+   - Materiality: 0.X (must be ≥ 0.6 to enter)
+   - Horizon: N trading days (default 10)
+   - Catalyst type: earnings | guidance | contract | regulatory | macro | sector_rotation
 2. ...
 
 ### Risk Factors
@@ -132,7 +136,7 @@ If room existed, candidates from today's pre-market earnings flow worth watching
 
 ---
 
-## 2026-05-07 — Pre-market Research
+## 2026-05-07 — Pre-market Research (cloud routine, ~6:12 AM CT — old prompt)
 
 ### Account
 - **NOTE: Alpaca API unavailable this session (ALPACA_API_KEY / ALPACA_SECRET_KEY not set in environment). Live fills, exact equity, and stop order IDs cannot be confirmed. Estimates derived from trade log + web data.**
@@ -212,3 +216,100 @@ Priority actions at market open (9:30 ET / 10:30 Bahia):
 4. Verify stop order placements for all positions when Alpaca API is restored.
 5. No new buys this week (3/3 slots used). Begin watchlist research for HWM and VST for potential entries week of May 11.
 
+---
+
+## 2026-05-07 — Pre-market Research (manual run, ~10:30 AM CT — new framework)
+
+**Reconciliation note:** The cloud routine fired at 6:12 AM CT under the
+OLD prompt (before this session's framework updates landed). It ran with
+Alpaca env vars unset, so it used estimated prices and flagged COTY as
+thesis-broken based on Q1 actuals (organic revenue -7%, op margin -29%,
+EPS miss). My manual entry below is from live Alpaca data and shows COTY
++6.04%. The two entries don't disagree on facts — they disagree on
+interpretation: was the "raised guide" organic or FX-driven? The cloud
+routine concluded the falsification fired; my entry held the position.
+The /midday workflow is the right place to resolve this — re-check COTY
+thesis there. Both entries are kept for traceability and post-hoc review.
+
+### Account
+- Equity: $100,126.76 (Alpaca paper) | working cap $10k
+- Cash: $94,610.22
+- Buying power: $194,736.98
+- Daytrade count: 0
+- Open orders: 3 trailing stops (QLYS, QRVO, COTY) — all GTC, working
+
+### Positions (refreshed 2026-05-07 pre-open)
+| Sym  | Sh  | Avg    | Now    | Mkt Val | P&L    | %      | Stop   | HWM    |
+|------|-----|--------|--------|---------|--------|--------|--------|--------|
+| COTY | 784 | $2.50  | $2.6475| $2,076  | +$118  | +6.04% | $2.41  | $2.675 |
+| QLYS | 19  | $90.99 | $92.91 | $1,765  | +$36   | +2.11% | $81.99 | $91.105|
+| QRVO | 19  | $89.66 | $89.92 | $1,708  | +$5    | +0.29% | $80.56 | $89.515|
+| Total|     |        |        | $5,549  | +$159  |        |        |        |
+
+Stock book deployed: $5,549 / $10k working cap = 55% (grandfathered; new cap is 30%).
+
+### Market Context (WebSearch)
+- S&P 500 futures: rising premarket on Iran peace progress (TheStreet 2026-05-07)
+- VIX: not retrievable from search — assume continued low-ish given risk-on tone
+- WTI crude: ~$95, recovering from -13% session prior; Strait of Hormuz negotiations active (US-Pakistan-Iran intermediary track)
+- Brent crude: $102, +0.7% d/d
+- Today's catalysts: 579 companies reporting; busiest earnings day of week
+  - Pre-open: MCD, U, DDOG, VST, CELH, PTON, SHEL
+  - Initial Jobless Claims released today (prior 189k)
+- AMD beat (5/5 AMC): revenue $10.25B (+38% YoY), data center +57%, Q2 guide $11.2B above consensus. Stock +15% on 5/6 → semi sector momentum positive. **Read-through to QRVO: bullish.**
+
+### Held-ticker News Summary (last 24h)
+- **QLYS**: 6 analyst PT updates today. Mix is **PT cuts dominant** despite raised guidance —
+  JPM Underweight $87 (below current $92.91), Piper Neutral $100, Scotia SP $100,
+  Canaccord Buy lowered to $125. RBC SP raised to $90. Net read: Street is less
+  excited than the initial print suggested. Materiality of original catalyst stands,
+  but the day-2 fade-watch from the original falsification statement is now the
+  active risk to monitor. **Falsification trigger:** "by Fri close gives back >50%
+  of post-earnings gap" — current price $92.91 vs entry $90.99 vs pre-print close
+  ~$80, so post-earnings gap is ~$11. >50% retrace would put us at ~$85.50. Stop
+  is at $81.99. Watch this in midday.
+- **QRVO**: 2 PT updates — UBS Neutral $100, JPM Neutral $100 (both raised). Modestly
+  positive. AMD halo effect supports QRVO sector tape today.
+- **COTY**: no new news. Position behaving in-line.
+
+### Top Movers (Alpaca screener)
+Skipped — top 10 gainers (EYES +509%, STFS +96%, PMAX +95%, JOBY.WS warrants etc.)
+and losers are all microcap junk + warrants. None pass liquidity gate.
+
+### Options Sleeve Health Check
+No open option positions. Sleeve cap $500 / per-trade $250 unused. Skipped.
+
+### Trade Ideas
+**None today.** Reason: 3/3 weekly trade slots already consumed by Mon's QLYS/QRVO/COTY queue.
+Strategy rule (max 3 new trades/week, Mon-Sun) is binding through Sunday 2026-05-10.
+Next available slot: Monday 2026-05-11.
+
+If slots were available, today's earnings flow that *would* have been considered
+under the new framework — none of these meet a 0.6 materiality bar without further
+research, listed for thinking-out-loud only:
+- MCD before open — defensive consumer, likely modest move, materiality ~0.4
+- DDOG before open — observability, AI tailwind, IF a clean beat+raise → materiality ~0.7
+- VST before open — power/AI infra play, sector momentum → materiality depends on beat magnitude
+
+### Risk Factors
+- **QLYS day-2 fade risk** is the live concern. Sell-side PT cuts > raises means the
+  initial print enthusiasm is muting. The original falsification statement explicitly
+  flagged Friday close as the test. Today is Thu. Tomorrow's close matters.
+- **Initial Jobless Claims today** could rip the broad tape on a hot/cold print.
+- **Iran/Hormuz development** remains binary — any breakdown news = oil spike + risk-off.
+- **AMD halo decay** — if today's tape gives back yesterday's AMD-driven semi rally,
+  QRVO has no catalyst of its own (just the +6% guide raise) and could lose support.
+
+### Decision
+**HOLD.** No new entries possible (slot-locked). Today's job:
+1. Watch QLYS for day-2 fade signal vs falsification trigger ($85.50 ~50% retrace; stop at $81.99)
+2. Watch QRVO tape vs semi-sector signal post-AMD
+3. /midday at noon ET — thesis check; cut anything at -7% or thesis-broken
+4. /daily-summary EOD
+
+### Calibration framework note (first run)
+- Today is HOLD so no new entries to score with direction/materiality/horizon.
+- The 3 open positions (QLYS/QRVO/COTY) are pre-calibration entries — they will close
+  with `Calibration: N/A (pre-calibration entry)` per TRADING-STRATEGY.md §Pre-calibration
+  trades, and are EXCLUDED from any future hit-rate metrics.
+- First eligible calibrated trade will be the next entry on or after 2026-05-11.

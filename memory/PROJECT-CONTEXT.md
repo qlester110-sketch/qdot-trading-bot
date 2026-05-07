@@ -8,11 +8,11 @@ minimal bullets, no excessive preamble.
 ## Overview
 
 - What: Autonomous paper-trading bot, learning experiment
-- Starting capital: $10,000 (paper)
-- Platform: Alpaca paper trading
+- **Working capital: $10,000** (owner-set). Alpaca paper accounts default-fund at $100k; that's the platform default, not our budget. All sizing rules are anchored to the $10k working cap.
+- Platform: Alpaca paper trading (options approval level 3, restricted by strategy doc to long premium only)
 - Launch date: 2026-04-30
 - Kill / review date: 2026-07-29 (90 days)
-- Strategy: Swing trading stocks, no options
+- Strategy: Swing trading stocks (core book, $3k max deployed) + small long-premium options sleeve ($500 cap) under TRADING-STRATEGY.md §Options Sleeve
 - Notification channel: Slack
 - Research source: native WebSearch (no Perplexity in this setup)
 

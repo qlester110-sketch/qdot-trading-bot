@@ -84,8 +84,33 @@ case "$cmd" in
     curl -fsS -H "$H_KEY" -H "$H_SEC" \
       "$DATA_BASE/v1beta1/screener/stocks/movers?top=$top"
     ;;
+  option-chain)
+    # Lists active option contracts for an underlying. Optional flags:
+    #   $2 expiration_date_gte (YYYY-MM-DD), $3 expiration_date_lte,
+    #   $4 type (call|put), $5 strike_price_gte, $6 strike_price_lte
+    sym="${1:?usage: option-chain UNDERLYING [exp_gte] [exp_lte] [type] [strike_gte] [strike_lte]}"
+    qs="underlying_symbols=$sym&status=active&limit=1000"
+    [[ -n "${2:-}" ]] && qs+="&expiration_date_gte=$2"
+    [[ -n "${3:-}" ]] && qs+="&expiration_date_lte=$3"
+    [[ -n "${4:-}" ]] && qs+="&type=$4"
+    [[ -n "${5:-}" ]] && qs+="&strike_price_gte=$5"
+    [[ -n "${6:-}" ]] && qs+="&strike_price_lte=$6"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" "$API/options/contracts?$qs"
+    ;;
+  option-snapshot)
+    # Latest snapshot (quote, greeks, IV) for one OCC option symbol.
+    occ="${1:?usage: option-snapshot OCC_SYMBOL  e.g. AAPL250620C00100000}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" \
+      "$DATA_BASE/v1beta1/options/snapshots?symbols=$occ&feed=indicative"
+    ;;
+  option-chain-snapshot)
+    # Snapshots for a whole chain (greeks/IV across strikes/expirations).
+    sym="${1:?usage: option-chain-snapshot UNDERLYING}"
+    curl -fsS -H "$H_KEY" -H "$H_SEC" \
+      "$DATA_BASE/v1beta1/options/snapshots/$sym?feed=indicative&limit=1000"
+    ;;
   *)
-    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all|news|movers> [args]" >&2
+    echo "Usage: bash scripts/alpaca.sh <account|positions|position|quote|orders|order|cancel|cancel-all|close|close-all|news|movers|option-chain|option-snapshot|option-chain-snapshot> [args]" >&2
     exit 1
     ;;
 esac
