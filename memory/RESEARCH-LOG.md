@@ -565,3 +565,178 @@ Priority actions:
    Confirm prices and buy-side gate at Monday's /market-open before entering.
 5. **Restore Alpaca API** — configure env vars / .env to verify actual fills, stop order IDs,
    and true equity for the session.
+
+---
+
+## 2026-05-08 — Pre-market Research (updated run, local ~morning ET)
+
+**API note:** Alpaca env vars still unset. Live account data unavailable. Estimates from
+prior session. WebSearch confirms Iran/Hormuz escalation; updated stock prices and macro
+data below. This entry supplements the pre-open entry above — do not treat as duplicate.
+
+### Account (estimated — Alpaca offline)
+- Equity: ~$100,127 | Working cap $10k frame
+- Cash: ~$94,610
+- Buying power: ~$194,737
+- Daytrade count: unknown
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (last confirmed 2026-05-07)
+- Weekly slots: 0/3 remaining (week of 2026-05-04); fresh 3 slots open Monday 2026-05-11
+
+### Market Context
+- **WTI crude:** ~$96/bbl (May 7 last known). Brent $101.65, +1.59% today.
+  Source: TradingEconomics (2026-05-08)
+- **S&P 500 futures:** 7,364.61, +0.37% premarket. Source: Investing.com (2026-05-08)
+- **VIX:** 17.08–17.32, -0.40% — benign, flat vs yesterday. Source: Yahoo Finance (2026-05-08)
+- **NFP (7:30 AM ET / 8:30 ET per BLS):** Forecast 55–65K. ADP private payrolls May 6
+  came in at 109K (above ~70K consensus) — positive precursor. Actual BLS number
+  not yet returned in search. Watch for miss (< 40K) = VIX spike; beat (> 100K) = rate-fear risk.
+  Source: CNBC/ADP (2026-05-06), BLS schedule
+- **Iran / Hormuz — ESCALATION ⚠:** Day 70 of conflict. US CENTCOM conducted
+  "defensive strikes" after intercepting "unprovoked Iranian attacks" near Hormuz. Iran
+  accuses US of violating ceasefire, reports explosions on Qeshm Island. Trump says
+  ceasefire "still in effect" and warns Iran to sign deal "fast." Both sides accusing
+  each other; diplomatic talks continue despite the military exchange.
+  Source: Al Jazeera live blog, CNN live updates (2026-05-08)
+  **Market read:** Ceasefire fragility = elevated binary oil risk today. Brent +1.59%
+  reflects this. Any full ceasefire breakdown = oil spike + hard risk-off.
+- **US-UK trade deal:** Framework announced May 2025, implementing now. Reduces tariffs
+  on UK autos (100K/yr at 10% vs 27.5%), steel, aluminium. Modest market positive;
+  already priced. Source: USTR / White House (2025-05-08 original announcement)
+- **Earnings today:** No universe names. BRK.B (est. EPS $4.82), TSN, NCLH before open.
+- **FOMC:** No meeting. Next CPI mid-May; next FOMC June.
+- **Sector momentum:**
+  - Leading: Energy (oil premium from Hormuz), Materials, Industrials, Consumer Staples
+  - Lagging: Technology (XLK), Consumer Discretionary
+  - Cybersecurity: breakout within XLK; CRWD +7% May 7, PANW +5.4%
+  - AI/Semis: DDOG +31% premarket (blowout earnings); NVDA stable pre-May 20 print
+
+### Held-Ticker Update
+
+**QLYS:** $88.49 last known (May 7). **Falsification test fires TODAY at close.**
+- Threshold: close ≤ $85.50 (>50% retrace of ~$11 post-earnings gap from ~$80 pre-print)
+- Analyst PT consensus: Truist $85, Piper $100, Canaccord $125, RBC $90 — skewed bearish
+- If closes ≤ $85.50 today → queue SELL for Monday open per strategy rules
+- Hard stop at $81.99 (10% trail from $91.10 HWM) remains active
+- Source: Stock Observer / Investing.com (2026-05-07)
+
+**QRVO:** $88.60 last known (May 7). Stop $80.56. Merger arb thesis; SAMR Phase II extends timeline.
+- Hold above stop. No new developments today.
+
+**COTY:** ~$2.49–2.50 (May 7). Stop $2.41. ⚠ **SELL — thesis broken (falsification fired).**
+- Q3 call confirmed LFL revenue -7%, op margin -250bps, EPS miss. Guide raise not organic.
+- Citigroup raised PT $2.50 → $2.80 (May 7) — modest, still near current price.
+- Source: DailyPolitical (2026-05-07)
+- Execute `/trade COTY 784 sell` at open. Do not wait for -7% hard stop.
+
+### Options Sleeve Health Check
+No open option positions. Sleeve $500 cap / $250 per-trade — unused. Skip.
+
+### UNIVERSE Movers (from WebSearch; Alpaca movers unavailable)
+| Ticker | Est Price    | Move         | In Universe | Catalyst                                        |
+|--------|-------------|--------------|-------------|------------------------------------------------|
+| DDOG   | $188.73 pm  | +31% (May 7) | ✓           | Q1 beat: rev $1.006B +32%, EPS +18% vs est    |
+| CRWD   | $505.74     | +7.93% (May 7)| ✓          | Day Zero Summit; Fortinet sector tailwind      |
+| VRT    | $339.38     | -5.44% today | ✓           | Pulled back from $358.92 ATH; no new news      |
+| NVDA   | n/a         | stable       | ✓           | Corning deal (May 6); earnings May 20          |
+
+### Trade Ideas
+
+**No new entries today** — 0/3 weekly slots remaining (week of 2026-05-04).
+Fresh 3 slots open Monday 2026-05-11.
+
+**Candidates for Monday — UPDATED after today's price data:**
+
+1. **DDOG** — Q1 blowout confirmed. Rev $1.006B (+32% YoY), EPS $0.60 vs $0.51 est.
+   FY2026 guide raised: adj EPS $2.36–2.44 (was $2.08–2.16, +14%+). AI observability thesis
+   confirmed; FedRAMP High cert expanding federal TAM. Source: Datadog IR / Benzinga (2026-05-07)
+   - **PRICE CORRECTION vs prior entry:** Prior entry listed $215–225 entry range (incorrect —
+     assumed ~$165 pre-earnings close). Actual pre-earnings close ~$144; stock gapped to ~$189
+     premarket May 8. Correct entry zone: consolidation around $183–195. Wait for 3–5% pullback
+     from premarket high on Monday. Do NOT chase the open gap.
+   - Direction: bullish
+   - Catalyst type: earnings
+   - Materiality: 0.85 — definitive beat + major guide raise + AI demand confirmed
+   - Horizon: 10 trading days
+   - Entry: $183–195 (pullback from Friday premarket $188.73 gap)
+   - Stop: 10% trailing GTC post-fill (~$165–176)
+   - Target: +20% from entry ($220–234), R:R 2:1
+   - Position size: $1,000 max = ~5 shares at $190
+   - Sector: Data / observability
+   - Falsification: stock closes back below pre-earnings close (~$144); AI cloud spend narrative
+     reverses; SNOW or MDB reports weak numbers at late-May prints
+
+2. **CRWD** — Cybersec sector breakout: broke $500 on Jet partner app + Fortinet tailwind.
+   Day Zero Threat Research Summit (new catalyst). Next earnings ~June 3 (>20 days from May 11
+   = safe entry window). Source: TradingKey / Benzinga (2026-05-07)
+   - Direction: bullish
+   - Catalyst type: sector_rotation + product (Jet app, Day Zero Summit)
+   - Materiality: 0.65 — sector momentum primary; product catalyst supports but not revenue-yet
+   - Horizon: 10 trading days
+   - Entry: ~$500–510 (in range at $505.74 close May 7)
+   - Stop: 10% trailing GTC (~$454 area)
+   - Target: +20% (~$606+), R:R 2:1
+   - Position size: $1,000 max = ~2 shares at $505
+   - Sector: Cybersecurity
+   - Falsification: broad XLK selloff accelerates; PANW/ZS guide down at late-May prints;
+     Jet app fails to show partner pipeline traction in first 30 days
+
+3. **VRT** — Down 5.44% today to $339.38 (from $358.92 ATH May 7). Guidance raise (FY2026
+   adj EPS +51% YoY, rev +34% YoY) still intact. AI power/cooling thesis unchanged.
+   The pullback is a potential entry opportunity — not a thesis break.
+   Source: Watcher.guru / Motley Fool (2026-05-07)
+   - Direction: bullish
+   - Catalyst type: guidance
+   - Materiality: 0.75 — +51% EPS guide raise, +34% rev guide raise; AI infra power demand is
+     the central capex theme of 2026
+   - Horizon: 10 trading days
+   - Entry: Monday open ~$335–345 (confirm actual open price)
+   - Stop: 10% trailing GTC (~$302–311)
+   - Target: +20% from entry (~$402–414), R:R 2:1
+   - Position size: $1,000 max = ~3 shares at $340
+   - Sector: Datacenter physical
+   - Falsification: hyperscaler capex cuts announced; power grid constraints disclosed as
+     limiting near-term AI build-out; today's NFP miss triggers macro risk-off follow-through
+
+**Buy-side gate check for Monday (conditional on API restored):**
+- Total stock positions after fills: 2 (QLYS + QRVO, assuming COTY sold today)
+  → adding 1–2 of the above stays ≤ 4–5 positions (within 5–6 limit)
+- Deployment after COTY sale: ~$3,512 (QLYS ~$1,765 + QRVO ~$1,708 + any new)
+  → at 30% cap = $3,000 max. QLYS + QRVO already at $3,473 estimated → over cap.
+  → **Must close QRVO or QLYS (if falsification fires) before adding any new position.**
+  → If QLYS falsification fires today: sell QLYS Monday → frees ~$1,765 → can add 1–2 names
+  → If both remain: book full ($3,473 > $3,000 limit). No new entries until one closes.
+
+### Risk Factors
+- **Iran/Hormuz escalation** — ceasefire in name only (Day 70 military exchange). Full
+  breakdown = oil spike + risk-off across the tape. Brent already +1.59% today.
+- **NFP at 7:30–8:30 AM ET** — 55–65K forecast. ADP 109K suggests potential beat, but
+  model confidence low. A surprise in either direction moves the market hard.
+- **QLYS falsification test** — today's close is the binary verdict. Multiple analyst PT
+  cuts at/below current price ($85 Truist) create selling pressure into close.
+- **COTY thesis broken** — open sell order must execute. Every hour of delay is unnecessary
+  exposure in a broken thesis.
+- **QRVO** — SAMR Phase II drag; no standalone catalyst without Skyworks clarity.
+  Stop at $80.56; thesis weakening.
+- **Deployment over cap** — grandfathered 55% deployment means no new positions until
+  at least one existing one closes. Sequencing matters for Monday.
+- **DDOG gap chase risk** — stock up 31% premarket. Chasing the open is exactly the wrong
+  move. Wait for consolidation signal Monday before entering.
+- **VRT today's dip** — 5.44% pullback from ATH. Watch Monday: if decline continues below
+  $320, re-evaluate thesis (potential distribution signal at ATH).
+- **NVDA option entry window** — May 20 earnings is 12 days out. Stock entries OK; option
+  entries must close before 7 days out (May 13). No option entries on NVDA this week.
+
+### Decision
+**HOLD (no new entries today — slots exhausted + macro risk day).**
+
+Priority actions today (Friday):
+1. **SELL COTY 784sh** — execute `/trade COTY 784 sell` at 9:30 AM ET open
+2. **Watch QLYS close** — if ≤ $85.50 → falsification fired → queue sell for Monday open
+3. **Monitor QRVO** — hold above $80.56 stop; no action unless stop approaches
+4. **No new buys today** (0 weekly slots remaining; Iran binary; NFP print risk)
+5. **Monday plan** (conditional):
+   - If QLYS falsification fired → sell QLYS at open, freeing room for 1 new position
+   - If QRVO approaches $80.56 → cut it, freeing room for another
+   - Best entries: DDOG on consolidation pullback, CRWD at current levels, VRT on stability
+   - Must stay ≤ $3,000 total stock book deployment after any new adds
+6. **Restore Alpaca API** — env vars must be set for Monday's /market-open to execute orders
