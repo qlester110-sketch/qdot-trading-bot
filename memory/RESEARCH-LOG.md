@@ -910,3 +910,23 @@ Priority actions:
 4. **Restore Alpaca API** — without env vars, stops/fills cannot be confirmed or adjusted
 5. **Watch VRT this week** — best risk/reward if deployment room opens (QRVO exits)
 6. **Patience on DDOG/CRWD** — both above entry zones; wait for pullback before entering
+
+---
+
+## 2026-05-11 — Midday Scan Abort
+
+**Time:** ~midday ET
+**Reason:** `ALPACA_ENDPOINT` not set in environment. Paper-API guardrail triggered — cannot
+confirm broker endpoint is paper-api.alpaca.markets before executing any reads or orders.
+Slack webhook also unset; alert routed to local DAILY-SUMMARY.md fallback.
+
+**No positions were read, modified, or closed.** All pending actions from pre-market carry
+forward unchanged:
+- COTY sell (thesis broken) — still pending execution
+- QLYS hold — thesis intact, falsification passed
+- QRVO hold — above stop, thesis drifting
+- No new entries (deployment over $3k cap even after COTY sale)
+
+**Required fix before next scan:** Export `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`,
+`ALPACA_ENDPOINT` (must contain "paper-api"), `ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`
+as process-level env vars in the shell that runs the bot. No .env file — env vars only.
