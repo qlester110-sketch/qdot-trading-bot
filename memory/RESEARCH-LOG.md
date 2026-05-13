@@ -1115,3 +1115,66 @@ Priority action stack:
    If QRVO sells: deployed drops to ~$1,804 (QLYS only) → room for VRT + one other.
 4. **VRT entry (conditional)** — best risk/reward in universe. Wait for deployment room.
 5. **Patience on DDOG/CRWD** — both above entry zones; no chasing.
+
+---
+
+## 2026-05-13 — Midday Scan Abort (Day 5 of API outage)
+
+**Time:** midday ET
+**Reason:** `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`, `ALPACA_DATA_ENDPOINT`
+all unset. `ALPACA_ENDPOINT` is empty (does not contain "paper-api"). Paper-API guardrail
+triggered — hard STOP per workflow rules. No broker calls made. Slack webhook also unset;
+alert routed to local DAILY-SUMMARY.md fallback.
+
+**No positions were read, modified, or closed.** This is the 5th consecutive session
+without API access. COTY sell has been pending since May 8 (thesis broken). Unacceptable.
+
+### Market Context (WebSearch — 2026-05-13 intraday)
+- **S&P 500:** -0.15% | **Nasdaq:** +0.12% — mixed; April PPI +1.4% (biggest monthly
+  jump since Mar 2022 vs +0.5% expected) is weighing but indices not selling hard.
+- **WTI:** ~$101/bbl | **Brent:** ~$107 — Iran/Hormuz ceasefire "on life support"; elevated
+  energy inflation feeding PPI/CPI overhang.
+- **BABA (earnings before open today):** MISS — EPS and revenue below estimates; China
+  e-commerce EBITA plunged; stock -9% on the day. Not in portfolio; no action needed.
+
+### Held-Ticker Intraday Status (WebSearch estimates)
+| Sym  | Sh  | Entry  | Est Now | Est P&L | Stop   | Status                      |
+|------|-----|--------|---------|---------|--------|--------------------------|
+| QLYS | 19  | $90.99 | ~$90    | ~-1.1%  | ~$81.99| Thesis intact; well above -7% cut and falsification threshold $85.50 |
+| QRVO | 19  | $89.66 | ~$90    | ~+0.4%  | $80.56 | Merger arb drift; FTC Second Request; thesis broken |
+| COTY | 784 | $2.50  | ~$2.50  | ~0%     | ~$2.41 | **SELL PENDING DAY 5** — thesis broken; class action deadline May 22 |
+
+### Thesis Check
+- **QLYS:** ~$90 intraday — P&L ~-1.1%, well above -7% hard cut ($84.62) and above
+  trailing stop ~$81.99. Falsification threshold $85.50 not breached. **Thesis INTACT. HOLD.**
+- **QRVO:** ~$90, near flat from entry. FTC Second Request + China SAMR Phase II = merger
+  arb only. Original EPS-beat thesis abandoned. Strategy rule: "If thesis has broken, close."
+  Exit case strong but requires API to execute. **HOLD above stop pending API restore.**
+- **COTY:** ~$2.50. Thesis broke May 7 (LFL -7%, op margin -250bps, EPS miss). Class action
+  deadline May 22. Every day of delay adds unnecessary exposure. **SELL IMMEDIATELY on API
+  restore.** 5 days past thesis break is unacceptable; this is the top operational priority.
+
+### Options Sleeve
+No open positions. Sleeve cap $500 unused.
+- NVDA earnings May 20 (7 calendar days today) — **option entry window closes today per
+  strategy rule (no entry within 7 calendar days of earnings)**. No qualifying thesis anyway.
+- BABA earnings occurred today (miss -9%). Do not enter.
+
+### Decision
+**HOLD (forced — no API). No new entries.**
+
+**Required fix before next scan (CRITICAL — Day 5 of outage):**
+Export ALL five vars as process-level env vars in the shell running the bot:
+```
+export ALPACA_API_KEY=...
+export ALPACA_SECRET_KEY=...
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=...
+```
+No `.env` file — env vars only. Once restored:
+1. **SELL COTY 784sh immediately** — `/trade COTY 784 sell` — Day 5 of broken thesis
+2. **SELL QRVO 19sh** — voluntary exit; thesis character changed to merger arb
+3. **Hold QLYS** — thesis intact, stop active
+4. **VRT entry** — once QRVO closes, deployed drops to ~$1.8k → room to add VRT (~$380–395)
+5. **DDOG/CRWD** — still above entry zones ($200 vs $183–195 / $527 vs $495–510); wait
