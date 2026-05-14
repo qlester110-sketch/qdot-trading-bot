@@ -1139,7 +1139,7 @@ without API access. COTY sell has been pending since May 8 (thesis broken). Unac
 
 ### Held-Ticker Intraday Status (WebSearch estimates)
 | Sym  | Sh  | Entry  | Est Now | Est P&L | Stop   | Status                      |
-|------|-----|--------|---------|---------|--------|--------------------------|
+|------|-----|--------|---------|---------|--------|---------------------------|
 | QLYS | 19  | $90.99 | ~$90    | ~-1.1%  | ~$81.99| Thesis intact; well above -7% cut and falsification threshold $85.50 |
 | QRVO | 19  | $89.66 | ~$90    | ~+0.4%  | $80.56 | Merger arb drift; FTC Second Request; thesis broken |
 | COTY | 784 | $2.50  | ~$2.50  | ~0%     | ~$2.41 | **SELL PENDING DAY 5** — thesis broken; class action deadline May 22 |
@@ -1178,3 +1178,149 @@ No `.env` file — env vars only. Once restored:
 3. **Hold QLYS** — thesis intact, stop active
 4. **VRT entry** — once QRVO closes, deployed drops to ~$1.8k → room to add VRT (~$380–395)
 5. **DDOG/CRWD** — still above entry zones ($200 vs $183–195 / $527 vs $495–510); wait
+
+---
+
+## 2026-05-14 — Pre-market Research (Day 15 — API outage day 6)
+
+### Account
+- **API unavailable** — all 5 env vars unset (ALPACA_API_KEY, ALPACA_SECRET_KEY,
+  ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL). No live data pulled.
+- Estimated from last known state (May 12): Equity ~$105k+, deployed ~$5,309 in 3
+  grandfathered positions (QLYS 19sh, QRVO 19sh, COTY 784sh).
+- Daytrade count: unknown.
+
+### Market Context
+- **WTI / Brent oil:** ~$101.54 / ~$105.87 — elevated; Hormuz disruption concerns +7.5%
+  rally over prior 3 sessions. Energy inflation feeds CPI/PPI overhang.
+  Source: oilpriceapi.com, Fortune 2026-05-13.
+- **S&P 500 futures:** ES +0.12% premarket; Nasdaq 100 +0.2%. Prior session: S&P +0.59%,
+  Nasdaq +1.2%. Third consecutive record-high week in sight. Source: CNBC premarkets 2026-05-14.
+- **VIX:** ~17.98 (prior close); intraday range May 13 was 17.82–18.14. Elevated vs
+  year-end but well off March peak (35.30). Not fearful — premium not extreme.
+  Source: CNBC, TradingEconomics.
+- **Today's catalysts:** (1) Trump-Xi Beijing summit (May 13–14) — possible limited trade
+  deal announcement (~$30B tariff cuts on non-strategic goods each side); risk-on if deal
+  confirmed. Musk, Cook, Fink, Boeing CEO in delegation. Source: CNBC 2026-05-14.
+  (2) April PPI +1.4% (released May 13) — biggest monthly jump since Mar 2022 vs +0.5%
+  est. Hot print reinforces inflation-persistence narrative. Source: BLS.
+  (3) NVDA premarket +1.9% — 6th straight gain day, earnings May 20.
+- **Earnings before open:** Klarna Q1 2026 (not in universe). No portfolio names report today.
+  Source: EarningsWhispers.
+- **Economic calendar:** April Retail Sales (advance) at 8:30 a.m. ET — marquee release
+  today. Hot PPI yesterday raises risk that retail also surprises up → rate-cut expectations
+  compress → growth multiple pressure. No FOMC, no jobs data today.
+  Source: Census.gov, BLS schedule.
+- **Sector momentum:** AI silicon + energy + defense leading YTD; consumer discretionary
+  and real estate lagging. S&P 500 QTD +10.8%, YTD +6.0%. Wide sector dispersion — AI
+  infra and cybersecurity clusters performing best within our universe. Source: Wespath
+  Weekly 2026-05-08, heygotrade sector outlook.
+
+### UNIVERSE News Summary
+- **NVDA:** ~$227.80, +1.9% premarket. 6th consecutive gain day. Earnings May 20 (6 calendar
+  days). Strong AI demand intact. **Option entry window now closed** (< 7-day rule; stock
+  thesis would need to clear buy-side gate separately). Source: Yahoo Finance.
+- **CRWD:** ~$544, near recent high. Named Frost & Sullivan 2026 Company of Year (Identity
+  Threat Detection). RSI >74 — extended. Above prior entry zone ($495–$510). No fundamental
+  catalyst today. Source: Benzinga / Frost & Sullivan 2026-05-14.
+- **DDOG:** FY2026 revenue guidance raised to $4.30–$4.34B (from $4.06–$4.10B). Strong
+  institutional momentum; top technical score in cybersecurity/observability. Price ~$200+,
+  above entry zone ($183–$195). Source: parameter.io 2026-05-14.
+- **VRT:** ~$365 area, near ATH ($359 high May 6). Q1 rev +30% YoY to $2.65B, EPS +83%
+  to $1.17. YTD +108%. Analyst targets: Citi $414, Evercore $425. Valuation note: ~42%
+  above Morningstar fair value estimate. Source: StockStory 2026-05-14.
+- **BABA:** Earnings May 13 — EPS and revenue miss, China e-com EBITA plunged, -9% on day.
+  Not in portfolio; thesis broadly negative for China e-com (PDD caution by extension).
+- Remaining 30 universe names: no significant standalone catalysts found in premarket scan.
+
+### Movers (universe filter applied)
+- No movers screener pull available (API down). Estimated from WebSearch: NVDA, CRWD, VRT
+  are the strongest momentum names in the universe premarket. All above prior entry zones.
+
+### Held-Ticker Status (WebSearch estimates)
+| Sym  | Sh  | Entry  | Est Now | Est P&L | Stop    | Status |
+|------|-----|--------|---------|---------|---------|--------|
+| QLYS | 19  | $90.99 | ~$86.50 | ~-4.9%  | ~$81.89 | **YELLOW FLAG** — see thesis check below |
+| QRVO | 19  | $89.66 | ~$89.73 | ~+0.1%  | ~$80.56 | Thesis broken (merger arb); SELL PENDING DAY 6 |
+| COTY | 784 | $2.50  | ~$2.50  | ~0%     | ~$2.41  | Thesis broken May 7; class action May 22; SELL PENDING DAY 6 |
+
+### Thesis Check
+- **QLYS:** At ~$86.50, down -4.9% from entry $90.99. Now BELOW the lowest analyst target
+  (RBC $90 floor). Stock has surrendered almost the entire post-earnings gap. Falsification
+  threshold from prior entries was ~$85.50 (approx. pre-earnings close). Only $1 of cushion
+  remains. Hard -7% cut at $84.62. Trailing stop at ~$81.89. Cybersecurity sector peers
+  (CRWD, PANW) are rallying — QLYS is the sector laggard. **Thesis softening: the earnings
+  beat thesis has not played out; analyst downgrades post-beat are a yellow flag. Recommend
+  evaluating voluntary exit at midday scan if stock can't reclaim $88. Hold above stop for now.**
+- **QRVO:** ~$89.73, near flat. Q4 beat confirmed (EPS $1.69 vs $1.23 est) but Skyworks
+  acquisition means no forward guidance. Character of position = merger arb. Original
+  EPS-beat thesis abandoned. **SELL at market on API restore — Day 6 of thesis break.**
+- **COTY:** ~$2.50. Thesis broke May 7 (LFL -7%, EPS miss, op margin collapse). Class action
+  deadline May 22. **SELL at market on API restore — Day 6 of broken thesis. Top priority.**
+
+### Options Sleeve
+- No open positions. Sleeve cap $500 fully unused.
+- NVDA: 6 calendar days to earnings (May 20) — **option entry blocked** per strategy rule
+  (no entry within 7 calendar days). Rule enforced.
+- No other universe names have earnings within 14 days today that would block an option entry.
+
+### Trade Ideas
+
+**Prerequisite:** These are planning-only. API must be restored and COTY + QRVO exits must
+clear before any new entry. Post-exit deployed drops to ~$1,644 (QLYS only), creating room
+for 1–2 positions under the $3k stock-book cap.
+
+1. **VRT — Vertiv Holdings**
+   - Catalyst: Q1 2026 earnings beat — revenue $2.65B (+30% YoY), EPS $1.17 (+83% YoY).
+     AI datacenter power/cooling demand surge. Analyst price targets $414–$425 (Citi, Evercore).
+     Source: StockStory 2026-05-14.
+   - Catalyst type: earnings
+   - Direction: bullish
+   - Materiality: 0.75 — strong multi-metric beat + sector tailwind confirmed; slight haircut
+     for ATH execution risk and valuation premium (~42% above Morningstar FVE).
+   - Horizon: 10 trading days
+   - Entry: $355–$365 (current range; prefer pullback toward $355 — do not chase ATH)
+   - Stop: 10% trailing GTC (~$320–$329 at entry)
+   - Target: $414 (Citi PT); R:R ~2.2:1 at $360 entry
+   - Sector: Datacenter physical (ANET, VRT)
+   - Falsification: closes below $350 within 3 trading days of entry; or hyperscaler
+     (MSFT, AMZN, GOOGL) announces AI capex reduction; or Q2 guidance cut at next print.
+   - Note: do not enter until QRVO and COTY are closed and deployment room confirmed.
+
+### Risk Factors
+- **API outage Day 6:** COTY thesis broke May 7; QRVO thesis broke shortly after. Both
+  positions are exposed to a tail risk (COTY class action, QRVO deal collapse) with no
+  ability to exit on a fast move. This is the dominant operational risk.
+- **Retail Sales 8:30 ET:** Hot print (following hot PPI) could compress rate-cut expectations,
+  pressuring growth multiples across the entire universe. Particularly damaging for QLYS
+  which is already under pressure.
+- **QLYS thesis softening:** At $86.50, only $1 above estimated falsification threshold. If
+  Retail Sales print is hot and tech sells off, QLYS could breach $85.50 intraday.
+- **Oil elevation:** WTI ~$101 / Brent ~$106 feeds persistent inflation and reduces Fed
+  flexibility. Growth stock headwind, particularly for names without AI momentum tailwind.
+- **Trump-Xi summit tail risk:** A failed summit or acrimonious breakdown would be
+  risk-off across the board, hitting BABA/PDD hardest but also broad tech.
+
+### Decision
+**HOLD (forced — no API). Day 6 of API outage. Zero broker calls executed.**
+
+**Escalated operational alert — Day 6:**
+COTY has been in broken-thesis state for 8 calendar days. QRVO for 6+ days. Both are
+exposed to headline risk with no active exit mechanism. This is a material strategy
+violation under the sell-side rules ("If thesis has broken, close even if not yet at -7%").
+Every additional day of delay compounds this violation. The Retail Sales print at 8:30 ET
+introduces additional downside risk on QLYS today.
+
+**Required action stack on API restore (ordered by priority):**
+```
+export ALPACA_API_KEY=...
+export ALPACA_SECRET_KEY=...
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=...
+```
+1. **SELL COTY 784sh at market** — `/trade COTY 784 sell` — Day 8 of broken thesis
+2. **SELL QRVO 19sh at market** — `/trade QRVO 19 sell` — thesis character = merger arb
+3. **Evaluate QLYS** — at midday, if stock below $88 after Retail Sales print, consider
+   voluntary exit; thesis has softened materially (below all analyst floor targets)
+4. **VRT entry** — after QRVO + COTY clear, enter $355–$365 with 10% trailing stop
