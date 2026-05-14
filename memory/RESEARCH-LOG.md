@@ -1324,3 +1324,33 @@ export SLACK_WEBHOOK_URL=...
 3. **Evaluate QLYS** — at midday, if stock below $88 after Retail Sales print, consider
    voluntary exit; thesis has softened materially (below all analyst floor targets)
 4. **VRT entry** — after QRVO + COTY clear, enter $355–$365 with 10% trailing stop
+
+---
+
+## 2026-05-14 — Midday Scan Abort (Day 7 of API outage)
+
+**Time:** midday ET
+**Reason:** `ALPACA_ENDPOINT` empty (does not contain "paper-api"). `ALPACA_API_KEY` and
+`ALPACA_SECRET_KEY` also unset. Paper-API guardrail triggered — hard STOP per workflow rules.
+`SLACK_WEBHOOK_URL` also unset; alert routed to DAILY-SUMMARY.md fallback.
+
+**No positions were read, modified, or closed.**
+
+**Running tally of pending actions (all blocked by API outage):**
+- COTY sell — thesis broke 2026-05-07 (Day 8 of broken thesis as of today). Class action deadline May 22.
+- QRVO sell — thesis character changed to merger arb (FTC Second Request). Day 7 of voluntary exit pending.
+- QLYS eval — at ~$86.50 pre-market, now only ~$1 above falsification threshold $85.50; cybersecurity peers rallying without it.
+- VRT entry — eligible only after COTY + QRVO clear.
+
+**Escalated severity:** 7 consecutive sessions without broker access. Every day of delay on
+COTY + QRVO exits compounds the strategy violation under the sell-side rules. COTY class
+action deadline is now 8 calendar days away.
+
+**Required fix — export these exact vars before next session:**
+```
+export ALPACA_API_KEY=<your-key>
+export ALPACA_SECRET_KEY=<your-secret>
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=<your-webhook>
+```
