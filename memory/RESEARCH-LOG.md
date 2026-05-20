@@ -2079,3 +2079,37 @@ export SLACK_WEBHOOK_URL=<your-webhook>
    restored + deployment room confirmed: evaluate entry at $100–$112; materiality 0.65.
 7. **Weekly review May 22** — framework freeze ends; evaluate NOW, CRWD/DDOG zone updates,
    and any universe changes per TRADING-STRATEGY.md §Framework Freeze.
+
+---
+
+### 2026-05-20 Midday Addendum (~midday ET)
+
+**⛔ API OFFLINE — Day 14. STOP per guardrail. Zero broker calls possible.**
+
+Midday scan attempted. `bash scripts/alpaca.sh positions` returned:
+`ALPACA_API_KEY: ALPACA_API_KEY not set in environment`. All 5 env vars still
+absent. No orders placed, no stops modified, no positions confirmed.
+
+**Thesis checks (estimated — no live data):**
+
+- **QLYS:** Thesis intact per pre-market research. FedRAMP High catalyst confirmed.
+  Est ~$97.98 (+7.7%). No exit signal. Stop tracking ~$88.18. HOLD.
+- **QRVO:** Thesis still broken (merger arb / FTC + SAMR Phase II). Est ~$92.25 (+2.9%).
+  Day 14 of pending voluntary exit. No deterioration found. Exit remains priority #2
+  once API restored.
+- **COTY:** Est ~$2.06 (-17.6%). Below trailing stop (~$2.42) and below hard -7% cut.
+  Class action lead-plaintiff deadline **May 22 — 2 calendar days**. Exit is
+  mandatory and increasingly urgent. Priority #1 once API restored.
+
+**Market midday context:**
+- FOMC minutes release at 2pm ET today. Markets pricing 20% rate hike probability
+  for October. Watch for hawkish dissent map — would compress growth multiples.
+- NVDA earnings AMC tonight. Options imply ±12.9% move. Key read-through for
+  VRT, CRWD, DDOG in our universe. No new entries before print.
+- No universe-name broker actions possible without API. No options sleeve positions
+  to monitor.
+
+**Operational note:** This is the 14th consecutive calendar day without working
+broker credentials. COTY class action deadline is May 22. If API is not restored
+before Thursday's weekly review, the COTY position's outcome will be fully
+unverifiable. Owner must restore env vars **today or tomorrow** as highest priority.
