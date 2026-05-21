@@ -2394,3 +2394,29 @@ export SLACK_WEBHOOK_URL=<your-webhook>
    - Evaluate DDOG (still above $183–195 zone)
    - Confirm universe: additions/drops after 2-week freeze?
    - Review calibration: still 0 new calibrated trades (pre-calibration positions ongoing)
+
+### Midday Addendum — 2026-05-21
+
+**Scan status: BLOCKED — Day 16 of API outage (all 5 env vars missing)**
+
+Broker calls attempted and failed at wrapper level:
+- `bash scripts/alpaca.sh positions` → `ALPACA_API_KEY: ALPACA_API_KEY not set in environment`
+- Slack alert fallback → appended to DAILY-SUMMARY.md (SLACK_WEBHOOK_URL also unset)
+
+**Actions that WOULD have been taken if API was live:**
+
+| Position | Status | Trigger | Action |
+|----------|--------|---------|--------|
+| COTY 784sh | Est -17.6% (entry $2.50, est $2.06) | -7% cut + thesis broken Day 1 | CLOSE — stop (~$2.42) likely auto-executed; verify and log; **class action deadline TOMORROW May 22** |
+| QRVO 19sh | Est +5.9% (entry $89.66, est $95.00) | Thesis broken (merger arb) | CLOSE voluntarily — no exit rule fired but catalyst is wrong instrument type |
+| QLYS 19sh | Est +10.0% (entry $90.99, est $100.12) | Below +15% threshold | HOLD — no stop tighten; thesis intact |
+
+**Options sleeve:** No open positions. No exit checks needed.
+
+**Thesis check (all positions — estimated):**
+- QLYS: FedRAMP High TotalCloud catalyst intact, NVDA $91B guide confirms AI/cloud secular demand. HOLD.
+- QRVO: Merger arb thesis was never valid for this strategy. Exit urgency at Day 16.
+- COTY: Class action + fundamental thesis broken since Day 1 (margin/FX-driven raise, not organic). Stop should have auto-fired.
+
+**Unresolved risk (CRITICAL):**
+COTY class action lead-plaintiff deadline is **TOMORROW May 22**. If trailing stop did NOT auto-execute, the position must be closed at open tomorrow. This is the single most urgent action in the bot's history. Manual verification of env vars and API connection required before market open May 22.
