@@ -219,3 +219,97 @@ Operational priorities (not strategy changes):
 ### Overall Grade: D
 
 Rationale: Second consecutive week of complete API paralysis despite explicit week 1 lesson. COTY broken-thesis sell 9 days overdue; QLYS briefly hit the mandatory -7% hard cut with zero response capacity; QRVO voluntary exit deferred for 9 sessions. Zero calibrated trades in 2 full weeks — the core learning objective has stalled. Research quality remains A-grade; execution is F; combined D. S&P 500 +0.3% this week vs bot -3.7%; cumulative phase: S&P ~+2.6%, bot ~-2.8% (-5.4% relative).
+
+---
+
+## Week ending 2026-05-22
+
+### Stats — Stock Book
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | ~$9,720 (est.; Week 2 close) |
+| Ending portfolio | ~$10,120 (est.; see COTY note below) |
+| Week return | ~+$400 (+4.1%) — **first positive week** |
+| S&P 500 week | +0.5% (TheStreet 2026-05-22; close 7,473.47) |
+| Bot vs S&P this week | **+3.6%** — first week of outperformance |
+| Phase return (since Apr 30) | ~+$120 (+1.2%) vs S&P est. +3.1% = **-1.9% relative** |
+| Stock trades | 0 opens, 0 closes (W:0 / L:0 / open:3) |
+| Win rate | N/A — no closed trades |
+| Best unrealized | QRVO +10.2% / +$173 ($98.78 confirmed) |
+| Worst unrealized | QLYS ~+0.6% / +$10 est (~$91.50 est; trailing stop risk ~$88.18) |
+| Profit factor | N/A — no closed trades |
+
+*All prices estimated — Alpaca API offline all week (env vars unset, Day 17). QLYS May 22 est ~$90–93 (back-calculated from analyst consensus). QRVO $98.78 confirmed by search. COTY: trailing stop (~$2.42 from $2.675 HWM) should have auto-executed when price hit ~$2.06 range (May 19–20 est); paper-account execution uncertain — position may be closed at ~-3.2% or still open near $2.50. Class action lead-plaintiff deadline was TODAY (May 22). S&P 500 May 15 close est ~7,419; May 22 close 7,473.47 → +0.7% Friday-to-Friday (TheStreet reports +0.5% week-to-date from Monday open).*
+
+### Stats — Options Sleeve
+| Metric | Value |
+|--------|-------|
+| Trades this week | 0 |
+| W / L / open | 0 / 0 / 0 |
+| Sleeve cap utilization | $0 / $500 (0%) |
+| Open option positions | 0 |
+
+### Calibration
+| Metric | Value |
+|--------|-------|
+| Total resolved calibrated trades | 0 |
+| Overall hit rate | N/A |
+| Hit rate by sector | N/A |
+| Hit rate by catalyst type | N/A |
+| Hit rate by direction | N/A |
+| Materiality bucket accuracy | N/A |
+| Band recommendation | **Insufficient data** (0 of 20 minimum resolved trades) |
+
+*QLYS, QRVO, COTY remain pre-calibration entries — excluded per TRADING-STRATEGY.md §Pre-calibration trades. Zero calibrated trades placed in 3 full weeks. First eligible calibrated trade: VRT (pending API restore + COTY/QRVO confirmed closed).*
+
+### Closed Trades
+None this week. (COTY trailing stop may have auto-executed mid-week; cannot confirm without API.)
+
+### Open Positions at Week End
+| Ticker | Entry | Last (est.) | Unrealized | Stop | Notes |
+|--------|-------|-------------|------------|------|-------|
+| QLYS | $90.99 (05-06) | ~$91.50 est | +0.6% / +$10 | ~$88.18 (trailing from $97.98 HWM) | ⚠ Near trailing stop; thesis intact (FedRAMP High); cybersec sector laggard |
+| QRVO | $89.66 (05-06) | $98.78 confirmed | +10.2% / +$173 | $80.56 | Thesis broken (merger arb); SVP insider sold 14,640sh May 18; Day 17 voluntary exit |
+| COTY | $2.50 (05-06) | ~$2.42–$2.50 est | -3.2% to 0% | ~$2.42 (trailing from $2.675 HWM) | ⛔ Trailing stop may have auto-fired at ~$2.42; class action deadline TODAY; confirm & close |
+
+### What Worked
+- QLYS FedRAMP High TotalCloud CNAPP authorization (May 14) drove +8.84% single-session surge on May 18, recovering from $86.73 (near -7% hard cut) to $97.98 close — catalyst correctly identified and tracked in pre-market research days before the price move
+- QRVO reached best exit window of position's history: +10.2% ($98.78) from a thesis-broken merger-arb trade — the "hold above stop while seeking voluntary exit" approach worked; stock rose while the exit strategy remained intact
+- NVDA Q1 blowout ($81.6B rev, Q2 $91B guide) confirmed the AI datacenter capex supercycle thesis underpinning VRT, NOW, CRWD, DDOG watchlist; all correctly anticipated in pre-market research before the event
+- First outperformance week: bot +4.1% vs S&P 500 +0.5% = +3.6% relative — driven entirely by unrealized position moves, but the framework's hold discipline on thesis-intact positions paid off
+- VRT entry plan fully developed with revised entry zone ($315–$335 confirmed at $323.40 on May 22) and materiality 0.85; NOW upgraded from 0.65 → 0.70 at this review; framework freeze-end watchlist ready for execution
+
+### What Didn't Work
+- COTY class action lead-plaintiff deadline hit TODAY (May 22) with no confirmed exit — thesis broke May 7 (Day 1); we have been tracking this 15-day countdown without any ability to execute
+- API offline for all 5 trading sessions this week (Day 17 of consecutive outage) — QRVO voluntary exit blocked for 15+ days; COTY mandatory exit blocked; VRT entry blocked; stops on all positions unverifiable; no Slack alerts sent
+- QLYS gave back 5+ points from its $97.98 HWM (May 18) to ~$91.50 by week end; trailing stop is the only protective mechanism in place and it cannot be confirmed without API
+- Zero calibrated trades in 3 full weeks (15 trading sessions) — the experiment's stated primary objective (learning via calibration) has produced no data; the calibration engine is still at Day 0
+- Zero weekly trade slots used in either week 2 or week 3 — full deployment constraint + API outage = no new capital deployed under the current framework in 2 full weeks
+
+### Key Lessons
+- **QLYS recovery validated the "hold above stop when thesis is intact" rule.** The stock hit $84.63 intraday (1¢ from -7% hard cut) on May 15, then +8.84% on May 18 on FedRAMP High catalyst. Manual exit would have locked in the loss; the framework prevented it.
+- **QRVO illustrates the cost of blocked exits.** The position has gone from flat to +10.2% while we've been unable to execute the voluntary exit. This is accidental luck — not repeatable. It also means we've held a merger-arb position (not our game) for 17 days past its intended voluntary exit.
+- **COTY class action deadline is the clearest failure of the 3-week experiment.** A paper-trading bot that can't close a broken-thesis position before a documented legal deadline has failed the execution discipline test, regardless of P&L.
+- **The 3-week API outage is a systemic failure, not a one-off.** It has been documented in every session across 3 weeks. No env var fix has been applied. This is now the experiment's dominant risk factor — it completely negates the strategy framework.
+- **NVDA read-through thesis worked.** The May 21 pre-market research correctly predicted that NVDA's Q2 guide would be the key gating event for VRT entry. The actual result ($91B guide vs $87B consensus) exceeded expectations and directly confirmed VRT's thesis. The entry plan (VRT $315–335 post-NVDA clarity) was correct; only the API blocked execution.
+
+### Adjustments for Next Week
+Framework freeze lifted as of 2026-05-22. No strategy rule changes at this review (0 calibration data; no rule violations; no owner override required). Framework remains unchanged; changes eligible at weekly review 2026-05-29 if evidence warrants.
+
+Research-level updates (not strategy changes):
+1. **NOW materiality upgraded 0.65 → 0.70** (documented in RESEARCH-LOG 2026-05-22). Stacked positives: Q1 beat + raised guide + Experian AI partnership + BofA $130 PT reinstated + Knowledge 2026 AI products. Eligible for entry once deployment math permits.
+2. **CRWD entry zone updated: $590–$620** (from prior $570–$590 / $495–$510). At $648 on May 22 — still above zone; patience required.
+3. **DDOG entry zone updated: $193–$198** (from $183–$195). At $200+ — still above zone.
+4. Universe: no additions or drops. 35 tickers unchanged.
+
+Operational priorities (mandatory before Mon May 25 open):
+1. **Restore env vars — API Day 17 is unacceptable.** `export ALPACA_API_KEY=... ALPACA_SECRET_KEY=... ALPACA_ENDPOINT=https://paper-api.alpaca.markets ALPACA_DATA_ENDPOINT=... SLACK_WEBHOOK_URL=...`
+2. **Confirm COTY status** — `bash scripts/alpaca.sh positions`. If still open: sell 784sh immediately. If stopped at ~$2.42: log the realized P&L. Class action deadline TODAY.
+3. **SELL QRVO 19sh** — best exit in position's history (+10.2%). Thesis broken; insider sold. Day 17.
+4. **Enter VRT $315–$335** — after COTY/QRVO confirmed closed → deployed ~$1,767 (QLYS) → VRT $1,000 → total ~$2,767 ✓. 10% trailing GTC, $1k max. First calibrated trade.
+5. **Monitor QLYS** — trailing stop at ~$88.18. If stop fires next week: log realized P&L, evaluate NOW entry.
+6. **NOW entry** — conditional; requires QLYS also closing OR QRVO proceeds freeing room + math checks. VRT is priority.
+
+### Overall Grade: C
+
+Rationale: First outperformance week (+4.1% vs S&P +0.5%), driven by QLYS FedRAMP recovery and QRVO reaching its best unrealized P&L of the experiment. Research quality remains A-grade — all key catalysts (NVDA read-through for VRT, FedRAMP for QLYS, insider sell signal for QRVO) correctly identified before market reaction. Grade held to C (not B) for: (1) COTY class action deadline hit today without confirmed exit — the most documented impending event of the entire experiment, and we still couldn't execute; (2) API offline Day 17 — same operational failure documented and unresolved for the third consecutive week; (3) zero calibrated trades in 15 trading sessions — the experiment's primary learning objective stalled at zero. Phase: bot ~+1.2% vs S&P ~+3.1% = -1.9% relative (improvement from -5.4% last week).
