@@ -2716,3 +2716,53 @@ export SLACK_WEBHOOK_URL=<your-webhook>
    Thesis intact (FedRAMP High + Q1 beat). If stop fires, move to cash + re-evaluate.
 6. **CRWD + DDOG** — no entry until pullback to revised entry zones ($590–$620 and $193–$198).
    Patience enforced.
+
+---
+
+## 2026-05-22 — Midday Scan Abort (Day 17 of API outage)
+
+**Time:** midday ET
+**Reason:** `ALPACA_ENDPOINT` not set in environment (empty string — does not contain
+"paper-api"). `ALPACA_API_KEY` and `ALPACA_SECRET_KEY` also unset. `SLACK_WEBHOOK_URL`
+unset. Paper-API guardrail triggered — hard STOP per workflow rules.
+Slack alert attempted; routed to DAILY-SUMMARY.md fallback.
+
+**No positions were read, modified, or closed.**
+
+### Actions that WOULD have been taken if API was live:
+
+| Position | Status | Trigger | Action |
+|----------|--------|---------|--------|
+| COTY 784sh | Est ~$2.50 (−17.6% if stop never fired; ~−3.2% if stop fired at ~$2.42) | Class action deadline TODAY + thesis broken Day 17 + -7% hard cut | CLOSE immediately — `bash scripts/alpaca.sh close COTY` + cancel trailing stop |
+| QRVO 19sh | Est ~$98.78 (+10.2%) | Thesis broken (merger arb); insider sell May 18; Day 17 | CLOSE voluntarily — `/trade QRVO 19 sell` + cancel trailing stop |
+| QLYS 19sh | Est ~$90–93 (+0% to +2.2%); trailing stop ~$88.18 | Below +15% threshold | HOLD — no stop tighten; thesis intact |
+
+**Options sleeve:** No open positions. No exit checks needed.
+
+**Stock tighten-winners check:**
+- QLYS at ~$90–93: +0% to +2.2% — below +15% threshold. No tighten needed.
+- QRVO at ~$98.78: +10.2% — below +15% threshold. No tighten needed.
+- COTY: below threshold and pending close.
+
+**Thesis check (all positions):**
+- QLYS: FedRAMP High TotalCloud + Q1 beat. Thesis intact. Near trailing stop (~$88.18).
+  If stop fires today, auto-sale handles it. Monitor.
+- QRVO: Merger arb only (FTC Second Request + China SAMR Phase II). Original EPS-beat
+  thesis abandoned. Insider sold May 18. EXIT urgency = maximum.
+- COTY: Fundamental thesis broken May 7 (LFL −7%, EPS miss, op margin −250bps, CEO exit).
+  Class action lead-plaintiff deadline **TODAY May 22**. Stop at ~$2.42 may have
+  auto-executed. Confirm and log; if still open = FORCED EXIT at any price.
+
+**Unresolved critical risk:**
+COTY class action deadline is **TODAY**. If position is still open, today is the last
+viable trading day for a clean exit. API access is operationally mandatory **NOW**.
+
+**Required fix — export before next session (or immediately via terminal):**
+```bash
+export ALPACA_API_KEY=<your-key>
+export ALPACA_SECRET_KEY=<your-secret>
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=<your-webhook>
+```
+Then run `/trade COTY 784 sell` and `/trade QRVO 19 sell` immediately.
