@@ -3492,3 +3492,75 @@ Source: [Kraken/stockanalysis COTY](https://stockanalysis.com/stocks/coty/) (202
 5. **Enter NOW Thursday if:** QLYS stop fired today (deployment room freed) AND VRT
    entered AND total deployed ≤ $3k.
 6. **CRWD/DDOG/ZS** — no entry. Patience enforced.
+
+---
+
+### Midday Addendum — 2026-05-27 (~12:30 ET)
+
+**GUARDRAIL: API offline Day 20. ALPACA_ENDPOINT not set → no broker calls executed. STOP per CLAUDE.md protocol. Slack alert not sent (webhook also unset).**
+
+#### Position status (web data, estimated)
+
+| Sym  | Sh  | Entry  | Est Midday    | vs Entry | Stop (est)     | Stop status | Action |
+|------|-----|--------|---------------|----------|----------------|-------------|--------|
+| QLYS | 19  | $90.99 | ~$100–101     | +10–11%  | ~$92.17        | **Safe**    | Hold   |
+| QRVO | 19  | $89.66 | ~$105–108     | +17–20%  | ~$80.56        | Safe        | Sell pending (thesis broken) |
+| COTY | 784 | $2.50  | $2.18         | **−12.8%** | ~$2.42       | **Likely fired** | Close pending — CRITICAL |
+
+#### Scan findings
+
+**QLYS:**
+- Down ~−2% today (ZS/cybersec contagion). Stop at ~$92.17 is safe; ~$8–9 of buffer.
+- No -7% cut trigger. No tighten-winner trigger (not yet at +15%).
+- **NEW RISK flagged:** Anthropic "Mythos Preview" AI tool (also referred to as Capybara)
+  is reportedly significantly better than existing models at finding cyber vulnerabilities.
+  Source: [Seeking Alpha — QLYS share price pulled down by potential cybersecurity
+  disruptor](https://seekingalpha.com/article/4890008-qualys-share-price-pulled-down-by-potential-cybersecurity-disruptor)
+  This is a structural competitive threat to QLYS's core vulnerability management business.
+  Assessment: **not an immediate thesis-break** (original thesis was earnings/guidance —
+  pre-calibration, already played out). Stop system manages exit. But this development
+  means QLYS upside is capped — do NOT add to position. Reassess at May 29 weekly review.
+- ZS -25.8% today; CRWD -2.5%; PANW -3%. QLYS holding relatively well.
+  Source: [Schaeffer's Research — Zscaler rattles cybersec sector](https://www.schaeffersresearch.com/content/news/2026/05/27/zscaler-stock-rattles-cybersecurity-sector-on-guidance-whiff)
+
+**QRVO:**
+- Est ~$105–108 (conflicting sources). Entry $89.66 = ~+17–20% unrealized.
+- Thesis broken (merger arb revaluation; original earnings catalyst priced in).
+- Every day of delay risks a regulatory headline (FTC/SAMR) or deal collapse gapping lower.
+- **Forced sale on API restoration — no further delay tolerated.**
+
+**COTY:**
+- $2.18 today (range $2.02–$2.18). Entry $2.50 → −12.8%.
+- Trailing stop (~$2.42 from ~$2.675 HWM) should auto-fire when price dipped to ~$2.03 mid-May.
+  At $2.18 today = still below stop. Status uncertain (paper account fill reliability).
+- Thesis definitively broken: LFL rev −7%, op margin −250bps, EPS miss, CEO exit (May 7).
+  Class action deadline passed May 22. No recovery catalyst visible.
+- If stop fired: realized ~−3.2% (stop at $2.42); log and close.
+- If stop NOT fired: SELL 784sh at market the moment API is online. Priority #1.
+
+**Options sleeve:** None open. No DTE/premium checks needed.
+
+**MRVL/CRM/SNOW AMC tonight:** Results not yet available. Key watch:
+- MRVL: AI custom silicon revenue vs. $2.40B consensus. VRT entry thesis contingent on beat + raised guide.
+- CRM: Agentforce/AI ACV. Sector health check.
+- SNOW: Data warehouse demand. DDOG read-through.
+
+#### Thesis integrity check (remaining positions)
+
+| Position | Original thesis | Still valid? | Action |
+|----------|----------------|--------------|--------|
+| QLYS (pre-cal) | Earnings + guidance beat (May 5) | Catalyst played out; stop managing exit. Anthropic Mythos is a longer-term structural risk, not immediate thesis break. | Hold, let stop work |
+| QRVO (pre-cal) | Earnings + FY27 EPS guide beat | **Broken** — now merger arb territory; original fundamental catalyst fully priced; deal risk asymmetric | Close when API online |
+| COTY (pre-cal) | Earnings + FY26 EPS guide beat | **Broken May 7** — LFL miss, CEO exit, margin deterioration | Close when API online |
+
+#### Decision
+**HOLD (forced — API offline). No new entries. No broker actions possible.**
+
+**Updated priority action stack for Thursday May 28:**
+1. **Restore env vars** (Day 21 — CRITICAL).
+2. **COTY first**: check if stop fired. If open → SELL 784sh market immediately.
+3. **QRVO**: SELL 19sh market. Log CLOSE block with calibration N/A.
+4. **QLYS**: confirm actual price and HWM. Re-check Anthropic Mythos competitive risk.
+5. **Check MRVL/CRM/SNOW results tonight** (before end of May 27 session).
+6. **VRT entry decision Thursday**: MRVL beat + raises guide + VRT ≤ $335 + PCE not a shock.
+7. **CRWD/DDOG/ZS**: no entry. Patience enforced.
