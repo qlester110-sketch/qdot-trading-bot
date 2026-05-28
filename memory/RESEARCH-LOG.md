@@ -3667,3 +3667,13 @@ No open option positions. No DTE or earnings-window checks needed.
 6. **MDB/OKTA**: No entry today. Re-evaluate pre-market 2026-05-29 after AMC prints.
 6. **VRT entry decision Thursday**: MRVL beat + raises guide + VRT ≤ $335 + PCE not a shock.
 7. **CRWD/DDOG/ZS**: no entry. Patience enforced.
+
+### Midday Addendum (2026-05-28 ~midday ET)
+**GUARDRAIL: ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, SLACK_WEBHOOK_URL all MISSING — Day 23 midday repeat.** No broker calls executed. No position status updates possible.
+
+- All priority actions from pre-market Decision block remain pending.
+- Cannot confirm COTY/QLYS stop fills or QRVO open status.
+- Cannot execute VRT or CRM entry even if price conditions met.
+- MDB and OKTA reporting AMC tonight — no entry window regardless.
+- Slack alert attempted via MCP (SLACK_WEBHOOK_URL unset; MCP attempt below).
+- Environment variable restoration remains the critical blocker for all execution.
