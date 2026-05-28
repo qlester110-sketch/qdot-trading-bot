@@ -3562,5 +3562,108 @@ Source: [Kraken/stockanalysis COTY](https://stockanalysis.com/stocks/coty/) (202
 3. **QRVO**: SELL 19sh market. Log CLOSE block with calibration N/A.
 4. **QLYS**: confirm actual price and HWM. Re-check Anthropic Mythos competitive risk.
 5. **Check MRVL/CRM/SNOW results tonight** (before end of May 27 session).
+
+---
+
+## 2026-05-28 — Pre-market Research (Day 29)
+
+### API Status
+**GUARDRAIL: ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT all MISSING — Day 22 repeat. No broker calls executed. Slack alert attempted via MCP but no accessible channels found. Proceeding with WebSearch-only research. All position statuses estimated from web prices.**
+
+Slack alert attempt: ALPACA_API_KEY + ALPACA_SECRET_KEY + ALPACA_ENDPOINT not set in environment (Day 22).
+
+### Account (Estimated — no API)
+- Equity: unknown (API offline)
+- Cash: unknown
+- Buying power: unknown
+- Daytrade count: unknown
+
+**Position status (web data):**
+
+| Sym  | Sh  | Entry  | Est Price (May 28) | vs Entry | Stop est     | Status         | Action needed  |
+|------|-----|--------|--------------------|----------|--------------|----------------|----------------|
+| QLYS | 19  | $90.99 | ~$92.14 (+4.47%)   | +1.3%    | ~$92.08 (10% below HWM ~$102.31 May 26 close) | **CRITICAL — stop likely triggered May 27.** If QLYS fell to ~$88 close on May 27 (implied by +4.47% = prior close ~$88.21), stop fired at ~$92.08 market | Verify + log CLOSE |
+| QRVO | 19  | $89.66 | ~$95.85 (-2.96%)   | +6.9%    | ~$80.56      | Open — thesis broken | SELL at market on API restoration |
+| COTY | 784 | $2.50  | ~$2.18             | -12.8%   | ~$2.42       | Stop likely fired (price $2.02–$2.18 in prior days, well below $2.42 stop) | Verify + log CLOSE |
+
+**Options sleeve:** None open. No checks needed.
+
+### Market Context
+- **WTI / Brent oil:** WTI ~$88.39 / Brent $96.30 (+2.13%). Elevated due to US-Iran Strait of Hormuz military exchanges. US carried out new strikes on Iranian military site May 27; commercial shipping and drone intercepts ongoing. Source: [RFERL 2026-05-28](https://www.rferl.org/a/iran-war-us-hormuz-oil-blockade-gulf-israel/33640284.html); [TradingEconomics](https://tradingeconomics.com/commodity/brent-crude-oil)
+- **S&P 500 futures:** ~7,538.50 (range 7,532–7,551 premarket). Flat to slightly positive despite Iran headlines. Source: [Investing.com](https://www.investing.com/indices/us-spx-500-futures)
+- **VIX:** 16.86 (-0.88%). Calm despite geopolitical overhang — market shrugging off Iran escalation. Source: [Yahoo Finance](https://finance.yahoo.com/quote/%5EVIX/)
+- **Today's catalysts (pre-open):** MRVL beat + raised (Q1 EPS $0.80 vs $0.75 est; Q2 rev guide $2.70B vs $2.60B est). CRM beat (rev $11.1B +13% YoY, non-GAAP EPS $3.88 +50% YoY). SNOW beat + raised (product rev $1.33B +34%, FY guide raised to $5.84B). AI infra capex cycle showing no signs of deceleration. Source: [GuruFocus MRVL](https://www.gurufocus.com/news/8886241/marvell-technology-mrvl-surpasses-earnings-expectations-with-strong-q1-results); [GuruFocus CRM](https://www.gurufocus.com/news/8886367/salesforce-crm-reports-strong-q1-earnings-beats-expectations); [Seeking Alpha SNOW](https://seekingalpha.com/article/4909377-snowflake-inc-2027-q1-results-earnings-call-presentation)
+- **Earnings before open today (May 28):** ADSK, BBY, BURL, COST, DELL, DLTR, HRL, NTAP. None are UNIVERSE tickers.
+- **Earnings AMC tonight:** **MDB** (UNIVERSE — est rev $663M, EPS $0.89), **OKTA** (UNIVERSE — reiterated FY27 rev guide +9%). Source: [Yahoo Finance Earnings](https://finance.yahoo.com/calendar/earnings); [StockInvest MDB](https://stockinvest.us/earnings-report/MDB); [TipRanks OKTA](https://www.tipranks.com/stocks/okta/earnings)
+- **Economic calendar today (8:30 AM ET):** GDP Q1 second estimate (advance was 2.0%); PCE April (headline/core — March was 3.5%/3.2% YoY); Personal Income/Spending; Initial Claims; Durable Goods. GDP Q2 GDPNow: 4.3% as of May 21. Source: [BEA](https://www.bea.gov/news/schedule); [Atlanta Fed GDPNow](https://www.atlantafed.org/research-and-data/data/gdpnow)
+- **Sector momentum:**
+  - AI semis (NVDA, AMD, AVGO, MRVL): +35% YTD, leading all sectors. Nasdaq at record 26,656. Source: [BNNBloomberg](https://www.bnnbloomberg.ca/investing/market-outlook/2026/05/26/market-outlook-ai-infrastructure-boom-fuels-semiconductor-stock-surge/)
+  - Data / observability (SNOW, DDOG, MDB): SNOW strong post-earnings. DDOG no prints yet.
+  - Cybersecurity (CRWD, PANW, ZS, OKTA, S): Sector damaged by ZS -25.8% May 27. QLYS down ~14% May 27 (est). OKTA earnings tonight.
+  - CRM/business apps (CRM, NOW, HUBS, TEAM): CRM beat strong; Agentforce ACV expanding.
+  - Datacenter physical (ANET, VRT): VRT premarket $339.95 (-3.81% from AH high; still ~+2.5% vs May 26 close ~$323.91 adjusted). AI capex tailwind intact. Source: [MarketBeat VRT](https://www.marketbeat.com/stocks/NYSE/VRT/chart/)
+
+### UNIVERSE News Summary
+- **MRVL** (AI silicon): Q1 beat + raised. EPS $0.80 vs $0.75 est; rev $2.42B +28% YoY; Q2 guide $2.70B vs $2.60B est. AI custom silicon and networking driving growth. Premarket $219.60 (~+5.4% from May 27 close $208.26; down from AH high ~$230). Source: [GuruFocus](https://www.gurufocus.com/news/8886241/marvell-technology-mrvl-surpasses-earnings-expectations-with-strong-q1-results); [StockTwits](https://stocktwits.com/news-articles/markets/equity/marvell-stock-rises-q1-earnings-beat-ai-data-center-demand-outlook-2026/cZggn8JRerH)
+- **CRM** (SaaS): Q1 FY2027 beat. Rev $11.1B (+13% YoY), non-GAAP EPS $3.88 (+50% YoY), current RPO $33.6B (+14% YoY). Agentforce AI ACV expanding. Strong FCF. Source: [SEC 8-K 2026-05-27](https://www.sec.gov/Archives/edgar/data/0001108524/000110852426000125/crm-q1fy27xexhibit991.htm)
+- **SNOW** (data/observability): Q1 FY2027 beat + raised. Product rev $1.33B (+34% YoY, accelerating from 30%). NRR 126%. FY guide raised to $5.84B (31% growth). Source: [Seeking Alpha](https://seekingalpha.com/article/4909377-snowflake-inc-2027-q1-results-earnings-call-presentation)
+- **VRT** (datacenter physical): Premarket $339.95 (-$12.49 from AH high, ~+5% vs prior close). Beneficiary of MRVL beat; AI power/cooling demand durable. Source: [StockAnalysis VRT](https://stockanalysis.com/stocks/vrt/)
+- **MDB** (data): Reports tonight AMC. Est rev $663M (+20%+ YoY), est EPS $0.89. Q4 prior beat was large ($1.65 actual vs $0.92 est). No entry per 7-day earnings rule.
+- **OKTA** (cybersecurity): Reports tonight AMC. FY27 rev guide +9%, non-GAAP op margin 25–26%. Cybersec sector headwinds from ZS. No entry per 7-day earnings rule.
+- **QLYS** (cybersecurity — held): Est $92.14 today. Stop ~$92.08 (10% below ~$102.31 HWM). If May 27 close was ~$88, stop fired. See Position Status above.
+
+### UNIVERSE Movers (web screener, filtered)
+- **MRVL**: ~+5.4% premarket (beat + raised)
+- **VRT**: ~+5% vs prior close (~$339.95 premarket)
+- **SNOW**: Expected up on earnings beat
+- **CRM**: Expected up on earnings beat
+- **QLYS**: ~$92.14 (+4.47% from prior day — cybersec bounce after ZS selloff yesterday)
+
+### Options Sleeve
+No open option positions. No DTE or earnings-window checks needed.
+
+### Trade Ideas
+
+**1. VRT (Vertiv) — Long**
+- Ticker: VRT (UNIVERSE — Datacenter physical)
+- Catalyst: MRVL Q1 FY2027 beat + raised Q2 revenue guide ($2.70B vs $2.60B est; +12.5% above estimates). MRVL is the leading AI custom silicon/networking provider to hyperscalers. Beat + raised guide confirms ongoing hyperscaler AI capex cycle; VRT's datacenter power/cooling demand is directly downstream and non-discretionary. Source: [GuruFocus MRVL 2026-05-28](https://www.gurufocus.com/news/8886241/marvell-technology-mrvl-surpasses-earnings-expectations-with-strong-q1-results); [FX Leaders 2026-05-28](https://www.fxleaders.com/news/2026/05/28/mrvl-soars-145-ytd-as-ai-networking-boom-drives-record-revenue-and-explosive-demand/)
+- Catalyst type: sector_rotation (AI infra capex confirmation)
+- Direction: bullish
+- Materiality: 0.70 — strong upstream read-through from MRVL beat, but VRT is already near ATH; entry requires price discipline
+- Horizon: 10 trading days
+- Entry: limit ≤ $335.00 (condition from prior session). Stop: 10% trailing GTC (initial ~$301.50 at $335 entry). Target: ~$402 (+20%). R:R: 2:1
+- Falsification: VRT fails to trade at or below $335 intraday (no chase); MRVL Q2 guide subsequently cut; hyperscaler pauses AI capex (public announcement); PCE comes in hot → Fed tightening fear → growth multiple compression
+- **Status: PENDING — premarket $339.95, above $335 threshold. Monitor for intraday dip. Do NOT chase above $335.**
+
+**2. CRM (Salesforce) — Long**
+- Ticker: CRM (UNIVERSE — CRM/business apps)
+- Catalyst: Q1 FY2027 beat — revenue $11.1B (+13% YoY), non-GAAP EPS $3.88 (+50% YoY), current RPO $33.6B (+14% YoY showing durable forward bookings), Agentforce AI ACV expanding. Beat driven by organic growth + Informatica ($444M contribution). Source: [SEC 8-K 2026-05-27](https://www.sec.gov/Archives/edgar/data/0001108524/000110852426000125/crm-q1fy27xexhibit991.htm); [GuruFocus 2026-05-28](https://www.gurufocus.com/news/8886367/salesforce-crm-reports-strong-q1-earnings-beats-expectations)
+- Catalyst type: earnings
+- Direction: bullish
+- Materiality: 0.75 — clean beat on revenue and EPS with strong RPO visibility; Agentforce AI agent demand provides longer-horizon runway beyond this quarter
+- Horizon: 10 trading days
+- Entry: limit at or below prior-day close + 5% premium (no chasing a gap-up of >8%). Stop: 10% trailing GTC. Target: +20%. R:R: 2:1
+- Falsification: CRM opens with gap up >8% (chases entry; skip); or management commentary on call reveals Informatica integration drag; or enterprise IT spending freeze driven by Iran macro shock
+- **Status: PENDING — need API + deployment room confirmation. Cannot enter today (API offline). If QLYS/QRVO clear, room available for 1–2 new $1k positions.**
+
+**3. MDB, OKTA — DO NOT ENTER**
+- Both report AMC tonight. Within 7 calendar days of earnings. Excluded per Options Sleeve rule 7 and buy-side discipline (IV crush risk on options; gap risk on stock). Re-evaluate post-earnings tomorrow.
+
+### Risk Factors
+- **API offline (Day 22):** Cannot execute trades, verify position statuses, or confirm stop fills. All position data is estimated. CRITICAL — env vars must be restored before any market action.
+- **US-Iran Strait of Hormuz:** Ongoing military exchanges near Strait of Hormuz. Oil elevated ($96 Brent). Geopolitical shock could spike VIX and reprice growth multiples. Affects all UNIVERSE names.
+- **PCE / GDP data (8:30 AM ET today):** If April PCE comes in hot (above 3.5% YoY or core above 3.2%), Fed rate-cut expectations compress and growth multiples reprice lower. Risk for any new long entry today.
+- **QLYS stop status:** If stop was not filled correctly by Alpaca paper system on May 27 downdraft (paper fill reliability noted in TRADING-STRATEGY.md), position could be open with an unrealized loss larger than expected.
+- **Cybersecurity sector (ZS contagion):** ZS -25.8% May 27 on guidance miss. CRWD, PANW, OKTA, QLYS all weaker. Sector downward momentum may persist. Avoid new cybersec longs until sector stabilizes.
+- **MDB/OKTA earnings tonight:** Results could move related universe names (SNOW, DDOG) significantly. Do not enter adjacent names before tonight's prints.
+
+### Decision
+**HOLD** — API offline prevents execution (Day 22). Priority actions on API restoration:
+1. **COTY**: Verify if stop fired; if open → SELL 784sh market immediately.
+2. **QRVO**: SELL 19sh market. Log CLOSE block (calibration: N/A pre-cal).
+3. **QLYS**: Verify actual stop-fill status. If still open, check HWM and current stop level.
+4. **VRT entry**: Execute if price ≤ $335 AND PCE not a shock AND QLYS/QRVO/COTY cleared enough deployment room. Log full entry checklist before any fill.
+5. **CRM entry**: Execute if deployment room allows after closes AND gap-up at open is ≤ 8%.
+6. **MDB/OKTA**: No entry today. Re-evaluate pre-market 2026-05-29 after AMC prints.
 6. **VRT entry decision Thursday**: MRVL beat + raises guide + VRT ≤ $335 + PCE not a shock.
 7. **CRWD/DDOG/ZS**: no entry. Patience enforced.
