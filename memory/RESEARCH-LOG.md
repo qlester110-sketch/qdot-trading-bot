@@ -3896,3 +3896,30 @@ export SLACK_WEBHOOK_URL=<your-webhook>
    - Set entry zone based on Monday pre-market price data once API confirmed
 6. **NOW** — only eligible if QLYS stop fires and deployment room opens. Patient.
 7. **CRWD/DDOG/SNOW/ZS** — No entry. Patience enforced.
+
+---
+
+### Market-Open Abort — 2026-05-29 (Day 24 of API outage)
+
+**GUARDRAIL: All 5 env vars MISSING — ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL.** ALPACA_ENDPOINT does not contain "paper-api" — paper-API guardrail triggered. STOP. No broker calls executed.
+
+Slack alert attempted → fallback appended to DAILY-SUMMARY.md (webhook unset).
+
+**Actions that WOULD have been taken if API live:**
+
+| Action | Priority | Status |
+|--------|----------|--------|
+| SELL QRVO 19sh market | #1 — thesis broken (merger arb), Day 24, +20.2% | Blocked |
+| Confirm COTY — if open SELL 784sh market | #2 — thesis broken, class action passed | Blocked |
+| HOLD QLYS 19sh | #3 — +10.1%, stop $92.17 safe, thesis intact | Blocked |
+| BUY VRT ~3sh market ≤ $335, then 10% trailing stop GTC | #4 — primary candidate; gate: QRVO/COTY exits first | Blocked |
+
+**Critical reminder for next session:**
+```bash
+export ALPACA_API_KEY=<your-key>
+export ALPACA_SECRET_KEY=<your-secret>
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=<your-webhook>
+```
+After exporting: run `/market-open` immediately — QRVO exit is 24 days overdue.
