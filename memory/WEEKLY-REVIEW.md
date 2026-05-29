@@ -313,3 +313,91 @@ Operational priorities (mandatory before Mon May 25 open):
 ### Overall Grade: C
 
 Rationale: First outperformance week (+4.1% vs S&P +0.5%), driven by QLYS FedRAMP recovery and QRVO reaching its best unrealized P&L of the experiment. Research quality remains A-grade — all key catalysts (NVDA read-through for VRT, FedRAMP for QLYS, insider sell signal for QRVO) correctly identified before market reaction. Grade held to C (not B) for: (1) COTY class action deadline hit today without confirmed exit — the most documented impending event of the entire experiment, and we still couldn't execute; (2) API offline Day 17 — same operational failure documented and unresolved for the third consecutive week; (3) zero calibrated trades in 15 trading sessions — the experiment's primary learning objective stalled at zero. Phase: bot ~+1.2% vs S&P ~+3.1% = -1.9% relative (improvement from -5.4% last week).
+
+---
+
+## Week ending 2026-05-29
+
+### Stats — Stock Book
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | ~$10,120 (est; Week 3 close / May 26 AM open) |
+| Ending portfolio | ~$10,456 (est; primary scenario — COTY stopped) |
+| Week return | ~+$336 (+3.3%) |
+| S&P 500 week | +1.43% (TheStreet 2026-05-29; close 7,580.08; 9th consecutive weekly gain) |
+| Bot vs S&P this week | **+1.87%** — second consecutive week of outperformance |
+| Phase return (since Apr 30) | ~+$456 (+4.56%) vs S&P +4.84% → **−0.28% relative (near parity)** |
+| Stock trades | 0 opens, 0 closes (W:0 / L:0 / open:2) |
+| Win rate | N/A — no calibrated closed trades |
+| Best unrealized | QRVO +20.2% / +$343 ($107.75 confirmed) |
+| Worst unrealized (active) | QLYS +10.1% / +$174 ($100.20 confirmed) |
+| Profit factor | N/A — no calibrated closed trades |
+
+*All prices estimated (API offline Day 23–24, 5th consecutive week). COTY trailing stop (~$2.42 from $2.675 HWM) presumed auto-fired mid-May when price fell to ~$2.03; if fired: realized −3.2% / −$62; position closed. Primary scenario: 2 open positions (QLYS, QRVO). Alternate scenario (COTY NOT stopped): 3 open positions; COTY +7.6% at $2.69; ending portfolio ~$10,668 (+5.4% week). API must confirm at Monday open.*
+
+### Stats — Options Sleeve
+| Metric | Value |
+|--------|-------|
+| Trades this week | 0 |
+| W / L / open | 0 / 0 / 0 |
+| Sleeve cap utilization | $0 / $500 (0%) |
+| Open option positions | 0 |
+
+### Calibration
+| Metric | Value |
+|--------|-------|
+| Total resolved calibrated trades | 0 |
+| Overall hit rate | N/A |
+| Hit rate by sector | N/A |
+| Hit rate by catalyst type | N/A |
+| Hit rate by direction | N/A |
+| Materiality bucket accuracy | N/A |
+| Band recommendation | **Insufficient data** (0 of 20 minimum resolved trades) |
+
+*QLYS, QRVO, COTY remain pre-calibration entries — excluded per TRADING-STRATEGY.md §Pre-calibration trades. Zero calibrated trades placed in 5 full weeks (25 trading sessions). First eligible calibrated entry will be VRT or MDB once API is restored. Day 29 of 90 — one-third of experiment window spent with zero calibration data.*
+
+### Closed Trades
+None this week. COTY stop presumed auto-fired mid-May (outside this week); awaiting API confirmation. Once confirmed, CLOSE block will be logged in TRADE-LOG.md with calibration: N/A (pre-calibration entry).
+
+### Open Positions at Week End
+| Ticker | Entry | Last (est.) | Unrealized | Stop | Notes |
+|--------|-------|-------------|------------|------|-------|
+| QLYS | $90.99 (05-06) | $100.20 (YF May 29) | +10.1% / +$174 | ~$92.17 (10% below $102.41 HWM) | ZS −25.8% contagion May 27 absorbed; fully recovered to $100+ May 29. Pre-cal. |
+| QRVO | $89.66 (05-06) | $107.75 (YF May 29) | +20.2% / +$343 | $80.56 | Thesis broken (merger arb); FTC + SAMR Phase II; insider sold May 18. **Day 24 — SELL Mon.** |
+| COTY (?) | $2.50 (05-06) | $2.69 (YF May 29) | Stop likely fired ~$2.42 → −3.2% | ~$2.42 | Stop presumed auto-fired ~May 15–19 (price $2.02–$2.18 range). Confirm Monday. |
+
+### What Worked
+- QLYS absorbed ZS −25.8% sector contagion May 27 (pulled down ~2% intraday) and fully recovered to $100.20 by May 29 (+10.1% from entry); QLYS company-specific strength decoupled correctly from ZS execution failure
+- QRVO at +20.2% / $107.75 is new position high — broken-thesis hold above stop produced the best unrealized P&L of the experiment; "hold above stop for voluntary exit" working as designed (though delay remains operational failure)
+- AI datacenter capex thesis confirmed by 5 consecutive beats: MRVL beat + raised (Q1 +28% YoY, Q2 guide $2.70B), CRM (EPS +50% YoY), SNOW blowout +37.65% (NRR 126%, $6B AWS deal), MDB beat + raised (+25% YoY), OKTA beat + raised (+11% YoY) — every priority universe sector delivered
+- VRT entry discipline held: premarket $339.95 was above $335 ceiling; no chase despite MRVL confirmation; entry zone integrity preserved for Monday execution
+- Phase gap closed from −1.9% (last week) to −0.28% — bot near parity with S&P 500 over 29 days without a single calibrated entry executed
+
+### What Didn't Work
+- API offline Day 23–24 (5th consecutive week) — QRVO voluntary exit now 24 days overdue after thesis break; every week the same lesson is documented and unacted on
+- Zero calibrated trades in 25 trading sessions — Day 29 with 0 learning data; at current trajectory the 20-trade calibration minimum would require the full 90-day window to meet
+- COTY P&L uncertainty persists: paper-account stop fill reliability means ending portfolio range is $10,456–$10,668 depending on whether stop fired; cannot produce a verified balance sheet
+- ZS −25.8% cybersecurity sector contagion threatened QLYS trailing stop on May 27 (pulled stock toward $92.17 stop level) with no active monitoring or defensive capacity
+- VRT entry blocked for second consecutive week despite all conditions met: thesis confirmed (multiple upstream reads), entry zone correct ($315–$335), gate math clear — only API credentials were missing
+
+### Key Lessons
+- **Phase near-parity despite zero calibrated trades means grandfathered positions carried the experiment.** QLYS and QRVO did the work; the strategy framework had nothing to do with it. First calibrated entries are now overdue — not optional.
+- **QRVO +20.2% on a broken-thesis hold is accidental, not strategic.** COTY broke thesis and fell; QRVO broke thesis and rose. Both validate the same rule: voluntary exits must execute promptly. Depend on the process, not the outcome.
+- **ZS −25.8% is company-specific execution failure, not sector demand destruction.** OKTA +8% AH the same night on sector-wide demand confirms this. Sector exit rule triggers on the bot's own 2 consecutive failures — not on a peer's earnings. QLYS holds correctly.
+- **Day 29 with 0 calibrated entries is the experiment's critical failure point.** Five weeks in, the calibration engine that defines success has produced zero data. At 30 sessions per 6 weeks, the 20-trade minimum requires an average of ≥4 entries per month — currently at 0/month. VRT must be Week 6's first calibrated trade.
+- **Five consecutive weeks of earnings beats (MRVL/SNOW/MDB/OKTA/CRM) all within the universe confirms the research framework is identifying the right companies.** The research edge is real. The operational edge is absent.
+
+### Adjustments for Next Week
+No strategy rule changes — 0 calibration data; no rule violations requiring immediate fix; no owner override. TRADING-STRATEGY.md unchanged.
+
+Operational priorities (mandatory before Mon June 2 open):
+1. **Restore env vars** (Day 24 is unacceptable; one-third of experiment window gone)
+2. **SELL QRVO 19sh market** — Day 24; +20.2%; `/trade QRVO 19 sell`; log CLOSE block (calibration: N/A)
+3. **Confirm COTY** — `bash scripts/alpaca.sh positions`; if open: SELL 784sh; log CLOSE block (calibration: N/A)
+4. **Enter VRT ≤ $335** — first calibrated trade; QRVO/COTY exits confirm deployment room; $1k max; 10% trailing GTC stop; log full entry block with all calibration fields
+5. **MDB pullback entry (secondary)** — only if QLYS also stops OR additional room opens; wait ≥3% below Monday opening high before entering
+6. **CRWD** — earnings June 3; no entry before print; wait post-earnings pullback to $590–620 zone
+
+### Overall Grade: B-
+
+Rationale: Second consecutive outperformance week (+3.3% vs S&P +1.43% = +1.87% relative); phase gap closed from −1.9% to −0.28% — bot is now tracking the S&P despite zero calibrated trades placed in 25 sessions. QLYS +10.1% and QRVO +20.2% are the strongest position results to date; AI datacenter thesis confirmed by five in-universe earnings beats (MRVL, CRM, SNOW, MDB, OKTA). Research quality A. Grade held to B- (not B) for: (1) API offline Day 23–24 — 5th consecutive week of broker paralysis; (2) QRVO voluntary exit 24 days overdue; (3) zero calibrated trades in 25 sessions — the experiment's defined learning objective has produced no data after one-third of the window; (4) VRT entry blocked for the second consecutive week despite confirmed thesis, confirmed entry zone, and confirmed gate math. S&P 500: Apr 30 close 7,230.12; May 29 close 7,580.08 (+4.84% phase). Sources: TheStreet 2026-05-29; CNBC S&P 500 April 30 2026.
