@@ -3923,3 +3923,281 @@ export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
 export SLACK_WEBHOOK_URL=<your-webhook>
 ```
 After exporting: run `/market-open` immediately — QRVO exit is 24 days overdue.
+
+---
+
+## 2026-06-01 — Pre-market Research (Day 33 — API outage Day 24 — week of June 1)
+
+### ⚠ OPERATIONAL ALERT — DAY 24 (API STILL DOWN)
+All 5 env vars MISSING: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+`ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`. Zero broker calls possible. Twenty-fourth
+consecutive session without live data. Slack webhook unset — no alert sent.
+
+**New development this session:** QLYS trailing stop (~$92.17) has almost certainly
+auto-fired — current estimated price $88.49 is well below the stop level. QLYS position
+is likely closed with realized P&L ~+1.3% (fill ~$92.17 vs $90.99 entry).
+
+### Account (estimated — API offline, Day 24)
+- Equity: ~$100k (Alpaca paper) | Working cap $10k frame
+- Weekly trade slots: **3/3 available** (new week Mon Jun 1; 0 trades placed last week)
+- Daytrade count: unknown
+
+| Sym  | Sh  | Entry  | Est June 1          | Est P&L      | Stop (est)                  | Status |
+|------|-----|--------|---------------------|--------------|---------------------------|--------|
+| QLYS | 19  | $90.99 | ~$88.49             | **−2.7%**    | ~$92.17 (10% below $102.41 HWM) | ⛔ **TRAILING STOP FIRED** — $88.49 < $92.17 stop; position likely auto-closed |
+| QRVO | 19  | $89.66 | ~$103.56 (May 31)   | **+15.5%**   | ~$80.56                   | Thesis broken (merger arb); SELL — Day 24 |
+| COTY | 784 | $2.50  | ~$2.13–$2.18        | ~−14.8%      | ~$2.42 (from $2.675 HWM)  | Stop likely auto-fired mid-May at ~$2.42 (P&L ~−3.2%); confirm status |
+
+**QLYS note:** Last confirmed $100.20 (May 29). Current est $88.49 = −11.7% from that close. Trailing stop
+at $92.17 (10% below $102.41 HWM) should have fired during this decline. If stop filled at ~$92.17:
+realized P&L = ($92.17 − $90.99) × 19sh = **+$22.42 (+1.3%)**. Pre-calibration entry — close block will
+carry `Calibration: N/A (pre-calibration entry)`. After stop fires: deployed drops to QRVO only (~$1,968).
+After QRVO sale too: deployed ~$0 → room for 3 × $1k positions under $3k cap.
+
+### Market Context
+- **WTI crude:** $89.69/bbl (+2.67% today). Recovering on Iran deal uncertainty; framework
+  largely agreed but not yet signed. Source: [OilPriceAPI](https://www.oilpriceapi.com/oil-prices-today) (2026-06-01)
+- **Brent crude:** ~$93.37/bbl. Intraday recovery on remaining Hormuz geopolitical premium;
+  down significantly from $111+ peak in mid-May. Source: [TradingEconomics Brent](https://tradingeconomics.com/commodity/brent-crude-oil) (2026-06-01)
+- **S&P 500 futures:** +0.3–0.5% premarket. Nasdaq futures +0.5%. Technology stocks leading
+  on AI announcements from NVDA and Dell; market building on May's record-close momentum.
+  Polymarket: ~coin-flip on direction at open per Lines.com (2026-06-01).
+  Source: [Stocktwits premarket June 1](https://stocktwits.com/news-articles/markets/equity/nasdaq-sp500-futures-rise-ai-trade-nvda-dell-spce-hpe-rvmd-stocks-to-watch/cZ0gZXjReHb)
+- **VIX:** ~15.32 (May 29 close). Low-fear backdrop, declining trend from April peak (35.30).
+  Source: [Yahoo Finance VIX](https://finance.yahoo.com/quote/%5EVIX/)
+- **Iran / Strait of Hormuz — FRAMEWORK LARGELY AGREED:**
+  A tentative deal would: extend ceasefire 60 days, reopen Hormuz to "unrestricted" shipping,
+  allow Iran to sell oil freely under sanctions waivers, require Iran to remove mines from
+  strait within 30 days. Nuclear program (highly enriched uranium disposal) addressed
+  separately in follow-on talks. Awaiting Trump sign-off; Iran has not agreed on HEU
+  stockpile yet. Oil recovering modestly (WTI +2.67%) on deal uncertainty — market
+  pricing high probability but not certainty of signing.
+  Source: [The Hill 5 takeaways](https://thehill.com/policy/international/5900355-us-iran-ceasefire-extension-deal/),
+  [WashPost May 24](https://www.washingtonpost.com/world/2026/05/24/us-iran-near-deal-extend-ceasefire-reopen-hormuz/),
+  [Wikipedia 2026 Hormuz Crisis](https://en.wikipedia.org/wiki/2026_Strait_of_Hormuz_crisis) (2026-06-01)
+- **ISM Manufacturing PMI (May 2026, released 10 AM ET today):**
+  - ISM version: **52.7** (consensus 53.0 — slight miss but still expansionary; April was 52.7, unchanged)
+  - S&P Global version: **55.3** (vs 54.5 April; strongest since May 2022; fastest output growth in 4+ years)
+  - Read: Manufacturing sector solidly expansionary. Non-recessionary backdrop for growth stocks.
+  Source: [ISM PMI April report](https://www.prnewswire.com/news-releases/manufacturing-pmi-at-52-7-april-2026-ism-manufacturing-pmi-report-302759226.html),
+  [TradingEconomics US Manufacturing](https://tradingeconomics.com/united-states/manufacturing-pmi) (2026-06-01)
+- **Earnings before open today (June 1):** ~49 reports; Dollar General (DG) identified before open.
+  No universe names report today. Source: [EarningsWhispers June 1](https://www.earningswhispers.com/calendar)
+- **⭐ CRWD earnings AMC June 3 (Tuesday — 2 trading days):**
+  Rev est $1.36B (+23.5% YoY); non-GAAP EPS $1.06–1.07 (+46.6% YoY). Falcon Flex ARR $1.69B
+  (+120% YoY last quarter). Market pricing ±8.84% move. Jefferies raised PT to $775 (May 29).
+  **Stock at $731 (ATH May 29). DO NOT ENTER CRWD before June 3 print.**
+  Source: [TradingView CRWD earnings](https://www.tradingview.com/news/zacks:61cb6c2f1094b:0-crowdstrike-set-to-report-q1-earnings-how-to-play-the-stock/),
+  [TradingKey CRWD May 29](https://www.tradingkey.com/news/market-movers/261936713-market-movers-crwd-20260529)
+- **Economic calendar rest of week:** No CPI, FOMC, or jobs data today or Tuesday.
+  June 5 (Friday): Nonfarm Payrolls (May) + Unemployment Rate — high-impact.
+  Source: [NY Fed calendar](https://www.newyorkfed.org/research/calendars/nationalecon_cal)
+- **Sector momentum:**
+  - AI semis (NVDA, AMD, MRVL): Leading — MRVL +145% YTD, AI custom silicon demand
+    confirmed by Q1 beats. NVDA Q2 guide $91B confirmed AI supercycle intact.
+  - Data/observability (SNOW, MDB): SNOW +37.65% post-earnings, MDB +20% AH — sub-sector
+    confirmed in multi-year AI demand upcycle. Strongest near-term momentum in the universe.
+  - CRM/business apps (CRM, NOW): CRM Q1 beat + Agentforce ACV expanding; NOW surging on
+    AI Control Tower narrative and BofA reinstatement (+14% recent sessions).
+  - Cybersecurity (CRWD, PANW, ZS, QLYS): Split. CRWD +8.3% and at ATH on sector AI rally;
+    ZS −25.8% (guidance miss, FCF cut, leadership shakeup). QLYS −13% on Anthropic Mythos
+    AI disruption narrative (agentic AI tools threatening traditional vulnerability management).
+  - Datacenter physical (VRT, ANET): VRT at $315.71 (May 29); AI power/cooling thesis intact.
+  - XLK 12-month return: +60%. MACD turned negative May 19 — potential short-term caution.
+  Source: [BNNBloomberg AI semis May 26](https://www.bnnbloomberg.ca/investing/market-outlook/2026/05/26/market-outlook-ai-infrastructure-boom-fuels-semiconductor-stock-surge/),
+  [XLK StockAnalysis](https://stockanalysis.com/etf/xlk/)
+
+### Held-Ticker News Summary
+
+**QLYS (Qualys) — ⛔ TRAILING STOP LIKELY FIRED — Position Likely Closed**
+- Estimated current price: **$88.49** — below trailing stop of ~$92.17 (10% below $102.41 HWM).
+- Drop from $100.20 (May 29 confirmed) to $88.49 = −11.7%. Trailing stop at $92.17 should
+  have auto-executed during this decline.
+- If stop fired at ~$92.17: realized P&L **+$22.42 (+1.3%)** on the 19-share position.
+- Price driver: Anthropic Mythos (Claude cybersecurity AI) + ZS −25.8% sector contagion.
+  Anthropic's model reportedly outperforms existing tools at finding vulnerabilities — directly
+  targets QLYS's core VM business. This is a structural competitive threat, not cyclical.
+  Stock now down ~30% over 1 year; analyst 1-year target $79.16 (below current).
+- **Action on API restore: confirm stop fill. If still open (paper-account uncertainty):
+  evaluate whether to sell. Price at $88.49 > hard cut ($84.62); no mandatory rule fires,
+  but original thesis (Q1 earnings guide beat) is fully priced in and Anthropic Mythos
+  is a new structural risk. Pre-calibration entry: CLOSE and log.**
+- Source: [Seeking Alpha QLYS disruption](https://seekingalpha.com/article/4890008-qualys-share-price-pulled-down-by-potential-cybersecurity-disruptor),
+  [GurFocus QLYS downward spiral](https://www.gurufocus.com/news/8785839/qualys-qlys-leads-cybersecurity-stocks-in-downward-spiral-amid-ai-concerns) (2026-06-01)
+
+**QRVO (Qorvo) — Thesis Broken — SELL — Day 24**
+- ~$103.56 (May 31 estimate; range $103.05–$109.00). From $89.66 entry: **+15.5% P&L**.
+- Merger arb: $32.50 cash + 0.96 SWKS share per QRVO. FTC Second Request + China SAMR
+  Phase II → early 2027 close. No organic business catalyst. SVP Chesley sold 14,640sh
+  May 18. Analyst avg target $92.27 — 10% below current price.
+- **Action: SELL all 19sh at market open on API restore. Day 24. +15.5% on a broken-thesis
+  position is exceptional. Exit before regulatory headline gaps it lower.**
+
+**COTY (Coty) — ⛔ TRAILING STOP LIKELY FIRED**
+- Est ~$2.13 (May 29 close: $2.13, −4.48% that day). Stop at ~$2.42 (10% below $2.675 HWM)
+  should have fired when price fell to ~$2.03 in mid-May.
+- If stop fired at ~$2.42: realized P&L ≈ **−$62.72 (−3.2%)** on the 784-share position.
+- If stop did NOT fire (paper-account uncertainty): position at −14.8% from $2.50 entry.
+  Thesis broken since May 7. Class action deadline passed May 22. Exit is mandatory.
+- **Action: First API call = confirm COTY position status.**
+
+### Options Sleeve Health Check
+- No open option positions. Sleeve cap $500 / $250 per-trade — fully unused.
+- **CRWD:** Options entry window **CLOSED since May 27** (7 days before June 3 earnings).
+  Stock entry OK through June 3, but CRWD at $731 is far above $590–620 entry zone. No entry.
+- **MDB:** Next earnings ~late August 2026 (>80 days). Options window open. No option thesis
+  vs. preferred stock entry.
+- **VRT:** Next earnings ~late July 2026 (>55 days). Window open. Stock entry preferred.
+- **NOW:** Next earnings ~late July 2026 (>55 days). Window open. No option thesis.
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price (recent) | Move (recent)          | Status                     | Key News |
+|--------|--------------------|------------------------|----------------------------|----------|
+| CRWD   | $731 (ATH May 29)  | +8.3% May 29           | ⛔ EARNINGS JUNE 3 — no entry | PT $775 (Jefferies), $700 (Benchmark); Falcon Flex ARR $1.69B; Q1 est $1.36B rev, ±8.84% move |
+| MDB    | ~$333 (May 31)     | **+20% AH May 28**     | ✓ Watchlist — pullback zone | Q1 FY27 beat: $687.6M (+25% YoY), EPS $1.32, Atlas +29%, FY guide raised $2.92–2.96B; Citi $450 |
+| SNOW   | $239.20 (May 29)   | +37.65%                | ⛔ Too extended             | Q1 blowout: $1.33B (+34%), $6B AWS deal, NRR 126%, FY guide $5.84B |
+| VRT    | $315.71 (May 29)   | In entry zone          | ✓ **PRIMARY CANDIDATE**    | Q1 blowout; NVDA $91B; MRVL beat; ThermoKey + BMarko acquisitions; TD Cowen $387 |
+| NOW    | $124.37 today      | **+14% recently**      | ⛔ Above entry zone ($100–112) | BofA $130 Buy; Experian AI partnership; AI Control Tower; missed — no chase |
+| CRM    | $179.02 (May 29)   | Post-earnings settle   | ✓ Watchlist                | Q1 beat: $11.1B (+13%), EPS $3.88 (+50%), RPO $33.6B (+14%), Agentforce ACV expanding |
+| DDOG   | ~$222+             | Above entry zone       | Above zone ($183–195)      | FY26 guide $4.30–4.34B raised; no fresh catalyst |
+| MRVL   | $204.83 (May 28)   | Beat + raised          | ✓ Bullish signal (VRT read-through) | Q1 $2.42B (+28%), Q2 guide $2.70B, FY2027 ~$11.5B (+40%); confirms AI capex durable |
+| NVDA   | ~$219–227          | Post-earnings digest   | Avoid new entry            | Q2 guide $91B; AI supercycle intact |
+| QLYS   | ~$88.49            | −11.7% since May 29    | ⛔ Stop fired (likely)     | Anthropic Mythos cybersec AI threat; −30% 1yr; analyst target $79.16 |
+| QRVO   | ~$103.56 (May 31)  | +15.5% from entry      | Sell pending Day 24        | Merger arb; FTC + SAMR Phase II; insider sold May 18 |
+| COTY   | ~$2.13 (May 29)    | Stop fired (likely ~$2.42) | ⛔ Confirm + close     | Thesis broken May 7; class action passed May 22 |
+| ZS     | $130.47 (May 29)   | −29.3% (May 27–28)     | ⛔ AVOID post-crash         | FCF cut; Q4 guide miss; 2 sales leaders out |
+| OKTA   | +8% AH May 28      | Beat + raised          | Watchlist (new)             | Q1 rev $765M (+11%), EPS $0.91, FY guide $3.20B raised; OKTA-specific beat vs. ZS sector |
+| BABA   | —                  | —                      | AVOID                      | Q4 FY26 miss May 13 |
+| HUBS   | —                  | —                      | AVOID                      | −35%+ since May 7; no recovery |
+
+**Alpaca movers screener (API offline; from search):**
+- CRWD: $731 (+8.3% May 29) — near ATH; earnings June 3. No entry.
+- MDB: ~$333 (post-earnings surge). In watchlist pullback zone.
+- NOW: $124 — above $100–112 entry zone. Missed due to API outage.
+- SNOW: $239 — too extended. Do not chase.
+
+### Trade Ideas
+
+**Deployment math (estimated):**
+- If QLYS stop fired (~$92.17) AND COTY stop fired (~$2.42):
+  → Deployed = QRVO only (~$1,968 at $103.56)
+  → After QRVO sale: deployed = $0 → room for up to $3k new positions
+  → VRT ($1k) + MDB ($1k on pullback) = $2k ✓ under $3k cap
+
+**No new entries today.** API offline prevents execution (Day 24).
+
+---
+
+1. **VRT (Vertiv Holdings) — ⭐ PRIMARY CANDIDATE — IN ENTRY ZONE**
+   - Ticker in universe: ✓ (Datacenter physical)
+   - Catalyst: (a) Q1 2026 blowout — rev $2.65B (+30% YoY), adj EPS $1.17 (+83% YoY);
+     FY2026 guide raised (adj EPS $6.35–6.40 +51% YoY, rev $13.5–14.0B +34% YoY).
+     (b) NVDA Q2 guide $91B (May 20) — AI capex supercycle confirmed.
+     (c) MRVL Q1 beat ($2.42B +28%, Q2 guide $2.70B) — upstream AI silicon demand durable.
+     (d) ThermoKey S.p.A. + BMarko Structures acquisitions — liquid cooling + structural moat.
+     (e) TD Cowen PT $387. Order backlog >$15B.
+     Source: [Seeking Alpha VRT momentum](https://seekingalpha.com/article/4910216-vertiv-holdings-the-ai-data-center-cooling-leader-still-has-momentum),
+     [VRT Form 8-K Q1 2026](https://www.sec.gov/Archives/edgar/data/1674101/000162828026024824/exhibit991vrt-q120264132026.htm) (2026-04-30)
+   - Catalyst type: earnings + guidance + acquisition
+   - Direction: bullish
+   - Materiality: **0.85** — multi-metric Q1 blowout + raised FY guide + NVDA $91B +
+     MRVL beat + acquisitions expanding moat. Iran deal optimism = improved macro backdrop.
+     Oil declining = reduced inflation headwind on growth multiples.
+   - Horizon: 10 trading days (locked at entry)
+   - Entry: **$315–$335** (May 29 close $315.71; market up today → confirm at open; do NOT
+     chase above $335 even on a gap-up)
+   - Stop: 10% trailing GTC (~$284–$302 at entry)
+   - Target: $387 (TD Cowen PT); R:R ~2.4:1 at $325 entry
+   - Position size: $1,000 max (~3 shares at $325)
+   - Sector: Datacenter physical
+   - Falsification: hyperscaler (MSFT/AMZN/GOOGL) announces AI capex reduction publicly;
+     VRT closes below $300 within 3 trading days of entry; CRWD/MRVL Q1 guides disappoint
+     AI-silicon demand (fires June 3 CRWD print)
+   - Gate: QLYS/COTY confirmed (stopped) + QRVO sold → deployed ~$0 → VRT $1k → $1k total ✓
+   - Next earnings: ~late July 2026 (>55 days). Safe entry window.
+   - out_of_universe: false
+
+2. **MDB (MongoDB) — Watchlist — Pullback Entry Only**
+   - Ticker in universe: ✓ (Data / observability)
+   - Catalyst: Q1 FY2027 beat + raised — rev $687.6M (+25% YoY), EPS $1.32, Atlas +29% YoY,
+     FY2027 guide raised to $2.92–2.96B. Citi PT $450, Cantor $416, Canaccord $400.
+     Source: [StockTitan MDB Q1](https://www.stocktitan.net/news/MDB/mongo-db-inc-announces-first-quarter-fiscal-2027-financial-pn6ou0elo2cm.html),
+     [Yahoo Finance BofA MDB](https://finance.yahoo.com/markets/stocks/articles/bofa-resets-mongodb-stock-price-161700902.html) (2026-05-28)
+   - Catalyst type: earnings
+   - Direction: bullish
+   - Materiality: **0.80** — multi-metric beat + guide raise + Atlas AI workload acceleration;
+     slight discount for 25% growth rate (strong but not hyper) and high post-earnings multiple
+   - Horizon: 10 trading days (locked at entry)
+   - Entry: **$298–$315** (5–10% below $333 est; do NOT enter at open gap; wait for
+     intraday consolidation 3%+ below the session high)
+   - Stop: 10% trailing GTC post-fill
+   - Target: +20% from entry (~$358–378); R:R 2:1
+   - Position size: $1,000 max (~3 shares at $315)
+   - Sector: Data / observability
+   - Falsification: Q2 actuals miss $729M guide midpoint; Atlas revenue decelerates below 25%
+     at next print; DDOG misses at its next print (sector-wide demand signal)
+   - Gate: VRT entered first (priority) + total deployed ≤ $3k (VRT $1k + MDB $1k = $2k ✓)
+   - Next earnings: ~late August 2026 (~80+ days). Safe window.
+   - out_of_universe: false
+   - **Note: At ~$333 today (gap up from ~$278 pre-earnings), the stock is still extended.
+     Do NOT chase at open. Entry valid only on pullback to $298–315.**
+
+### Risk Factors
+- **API outage Day 24** — QRVO exit (+15.5%) pending 24 days. QLYS and COTY stop fills
+  unconfirmed. All executions blocked. Restoring env vars is the non-negotiable #1 action.
+- **⛔ QLYS stop fired** — Current price $88.49 < stop $92.17. Position likely auto-closed.
+  Confirm on API restore. If still open: close immediately (Anthropic Mythos structural risk
+  + original pre-calibration thesis fully played out).
+- **NOW MISSED** — At $124, above $100–112 entry zone. A 14% move was missed entirely due
+  to API outage. This is a real cost of the operational failure.
+- **CRWD earnings June 3 AMC** — Single biggest market event this week. Estimate ±8.84% move.
+  Stock at $731 ATH. Binary risk: beat = AI/cybersec sector rally; miss = broad selloff across
+  CRWD, PANW, and potentially VRT, DDOG, MDB (read-through). Do NOT enter any cybersec names
+  before June 3 print.
+- **NFP May (June 5, Friday)** — End-of-week high-impact release. Strong employment data could
+  push Fed rate expectations hawkish; weak data could raise recession concern. Watch before
+  entering new positions on Thursday.
+- **CRWD/DDOG/SNOW/NOW all extended** — Multiple universe names above prior entry zones.
+  FOMO is the enemy. Patience is the strategy.
+- **VRT gap-up risk** — Futures +0.3–0.5% + Iran deal optimism may push VRT above $335
+  at Monday open. If it gaps above $335: do NOT chase. Wait for pullback to zone.
+- **Oil recovery (+2.67% WTI)** — Partial reversal of prior week's decline on Iran deal
+  uncertainty. Full signing would push oil lower (bullish for growth); collapse = oil spike
+  + risk-off. Binary risk reduced vs. May, not zero.
+- **ISM PMI 52.7** — Slight miss vs 53.0 consensus. Expansionary but decelerating slightly.
+  Not a recession signal; not a catalyst. Marginal.
+- **QRVO at +15.5%** — Every session of delay on this merger-arb position risks a regulatory
+  headline (FTC/SAMR) or deal-collapse event gapping it down 5–10% overnight.
+- **MDB entry patience** — Stock +20% post-earnings. Entering at the gap would violate the
+  strategy. Entry only on 5–10% pullback to $298–315.
+
+### Decision
+**HOLD (forced — API offline). No new entries. Three broker actions still pending.**
+
+Priority action stack (all blocked by API outage):
+```bash
+export ALPACA_API_KEY=<your-key>
+export ALPACA_SECRET_KEY=<your-secret>
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=<your-webhook>
+```
+1. **Confirm all position statuses** — `bash scripts/alpaca.sh positions`
+   - QLYS: if stop fired at ~$92.17 → log CLOSE (pre-cal, N/A calibration, +1.3%)
+     If still open at $88.49 → SELL immediately (stop should have fired; Anthropic Mythos)
+   - COTY: if stop fired at ~$2.42 → log CLOSE (pre-cal, N/A calibration, −3.2%)
+     If still open → SELL 784sh at market immediately
+   - QRVO: still open → proceed to step 2
+2. **SELL QRVO 19sh** — `/trade QRVO 19 sell` — +15.5%; thesis broken (merger arb); Day 24
+3. **Enter VRT** — only after all grandfathered positions confirmed closed/stopped:
+   `bash scripts/alpaca.sh buy VRT 3` (approx 3 shares at ~$325 = ~$975; adjust shares
+   to hit ~$1,000). Confirm VRT ≤ $335 at execution. Immediately place 10% trailing GTC stop.
+   Log full TRADE-LOG entry with all calibration fields (direction, materiality, horizon, type).
+4. **MDB (later this week or next)** — only if VRT entered + pullback to $298–315 available.
+   Do NOT chase at $333+.
+5. **CRWD (post-June 3 earnings)** — watch the June 3 print; revise entry zone accordingly.
+   If beats: new entry zone ~$750–780. If misses: reassess.
+6. **NFP June 5** — no new entries Thursday if approaching Friday NFP; wait for data.
+7. **NOW** — at $124, missed the move. If it pulls back to ~$115 or below, re-evaluate;
+   otherwise move on.
