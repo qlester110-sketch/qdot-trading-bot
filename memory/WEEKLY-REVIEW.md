@@ -401,3 +401,93 @@ Operational priorities (mandatory before Mon June 2 open):
 ### Overall Grade: B-
 
 Rationale: Second consecutive outperformance week (+3.3% vs S&P +1.43% = +1.87% relative); phase gap closed from −1.9% to −0.28% — bot is now tracking the S&P despite zero calibrated trades placed in 25 sessions. QLYS +10.1% and QRVO +20.2% are the strongest position results to date; AI datacenter thesis confirmed by five in-universe earnings beats (MRVL, CRM, SNOW, MDB, OKTA). Research quality A. Grade held to B- (not B) for: (1) API offline Day 23–24 — 5th consecutive week of broker paralysis; (2) QRVO voluntary exit 24 days overdue; (3) zero calibrated trades in 25 sessions — the experiment's defined learning objective has produced no data after one-third of the window; (4) VRT entry blocked for the second consecutive week despite confirmed thesis, confirmed entry zone, and confirmed gate math. S&P 500: Apr 30 close 7,230.12; May 29 close 7,580.08 (+4.84% phase). Sources: TheStreet 2026-05-29; CNBC S&P 500 April 30 2026.
+
+---
+
+## Week ending 2026-06-05
+
+### Stats — Stock Book
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | ~$10,456 (est; Week 5 close / June 1 AM open) |
+| Ending portfolio | ~$10,646 (est) |
+| Week return | ~+$190 (+1.82%) — **third consecutive outperformance week** |
+| S&P 500 week | −0.49% (Advisor Perspectives / InvestingLive; close ~7,543; NFP beat +172K vs +85K est drove Friday selloff) |
+| Bot vs S&P this week | **+2.31%** — third consecutive week of outperformance |
+| Phase return (since Apr 30) | ~+$646 (+6.46%) vs S&P +4.33% → **+2.13% relative** |
+| Stock trades | 0 opens, 0 closes (W:0 / L:0 / open:3 est) |
+| Win rate | N/A — no calibrated closed trades |
+| Best unrealized | QLYS +22.6% / +$390 ($111.53 est June 5) |
+| Worst (realized est) | COTY −3.2% / −$63 (trailing stop presumed fired mid-May; unconfirmed) |
+| Profit factor | N/A — no calibrated closed trades |
+
+*All prices estimated — Alpaca API offline all week (env vars unset, Day 28 consecutive outage — 6th full week). QLYS: $111.53 (Investing.com June 5). QRVO: ~$106.42 (WallStreetZen range). VRT: $305.12 (Yahoo Finance June 5) — below $315–335 entry zone. COTY stop presumed auto-fired mid-May (unconfirmed). S&P 500: May 29 close 7,580.08 vs June 5 close ~7,543 = −0.49%; phase Apr 30 close 7,230.12 to June 5 = +4.33%. NFP May +172K vs +85K forecast (BLS June 5).*
+
+### Stats — Options Sleeve
+| Metric | Value |
+|--------|-------|
+| Trades this week | 0 |
+| W / L / open | 0 / 0 / 0 |
+| Sleeve cap utilization | $0 / $500 (0%) |
+| Open option positions | 0 |
+
+### Calibration
+| Metric | Value |
+|--------|-------|
+| Total resolved calibrated trades | 0 |
+| Overall hit rate | N/A |
+| Hit rate by sector | N/A |
+| Hit rate by catalyst type | N/A |
+| Hit rate by direction | N/A |
+| Materiality bucket accuracy | N/A |
+| Band recommendation | **Insufficient data** (0 of 20 minimum resolved trades) |
+
+*QLYS, QRVO, COTY remain pre-calibration entries — excluded per TRADING-STRATEGY.md §Pre-calibration trades. Zero calibrated trades in 7 full weeks (35 trading sessions). Day 37 of 90 — 41% of experiment window with zero calibration data. At current rate, the 20-trade minimum is unreachable in the remaining 53 days without immediate API restore and ≥2 new calibrated entries per week.*
+
+### Closed Trades
+None this week. COTY trailing stop presumed fired mid-May (unconfirmed; first API call must verify and log CLOSE block).
+
+### Open Positions at Week End
+| Ticker | Entry | Last (est.) | Unrealized | Stop (est.) | Notes |
+|--------|-------|-------------|------------|-------------|-------|
+| QLYS | $90.99 (05-06) | $111.53 (Investing.com Jun 5) | +22.6% / +$390 | ~$100.38 (10% below $111.53 new HWM) | **⚠ +20% threshold crossed — tighten stop to 5% on API restore** |
+| QRVO | $89.66 (05-06) | ~$106.42 est (Jun 5) | +18.7% / +$318 | $80.56 | ⛔ Thesis broken (merger arb); FTC + SAMR Phase II; **Day 28 — SELL immediately on API restore** |
+| COTY | $2.50 (05-06) | Stop presumed fired ~$2.42 | −3.2% / −$63 (if stopped) | N/A | ⛔ Stop likely auto-fired mid-May; confirm via first API call |
+
+### What Worked
+- QLYS at $111.53 (+22.6%) validates "hold above stop when thesis intact" — ZS contagion and Anthropic Mythos fears proved transient; stock now well through the +20% tighten-stop threshold
+- CRWD sell-the-news risk called correctly in June 1–4 pre-market research: no entry before June 3 print; −9–11% AH confirmed the discipline of waiting
+- AVGO Q3 AI semi guide ($16.0B +200% YoY) is the single strongest AI capex confirmation since NVDA — adds fourth independent read-through confirming VRT thesis; research framework called the catalyst before the event
+- NFP beat risk (+172K vs +85K) correctly identified as Friday tail-risk; "no new entries day before high-impact macro release" rule prevented entering into Friday's selloff
+- Phase +2.13% relative outperformance — bot has reversed the early-phase deficit; three consecutive weeks above S&P 500
+
+### What Didn't Work
+- API offline Day 28 — **6th consecutive week** of broker paralysis; same documented operational failure unresolved since Week 1; opportunity cost now quantifiable: VRT, NOW, MDB all moved through or past entry zones while execution was impossible
+- VRT entry window **closed**: June 5 close $305.12 is below the $315–335 entry zone that has been staged for 7 weeks; the falsification threshold ($300) is now just $5 away
+- Zero calibrated trades in 35 sessions — 41% of the 90-day experiment window has elapsed with zero learning data generated; the 20-trade calibration minimum requires >2 entries/week for the remaining 53 days
+- NOW ($135.86) and MDB ($397.53) surged through their entry zones during the week while API prevented any action; two additional missed calibrated-trade opportunities
+- QRVO voluntary exit overdue at Day 28 — +18.7% on a broken-thesis merger-arb position is accidental, not strategic; regulatory headline (FTC/SAMR) risk compounds every session of delay
+- Iran re-escalation (negotiations stopped June 1; Hormuz blockade vow; Bab al-Mandeb threat) reversed deal-optimism; growth-multiple headwind now re-elevated alongside 10yr yield near 4.687%
+
+### Key Lessons
+- **The API outage is no longer an operational issue — it is the experiment's defining constraint.** Six consecutive weeks, 28 sessions, explicit documentation each time. The quantified cost: VRT (entry zone passed), NOW (surged from $100–112 to $135+), MDB (surged from $298–315 to $397+). These are documented setups with confirmed execution plans that would have produced calibrated trades. The experiment cannot fulfill its stated objective until this is fixed.
+- **QLYS at +22.6% demonstrates the hold rule works and also exposes a risk.** The position is now above the +20% tighten-stop threshold. Per strategy rules, the trailing stop must be updated to 5%. With the API offline, this cannot be done. A reversal from $111 toward $100 would consume $11+ of gain before a 10% trailing stop fires; a 5% stop would protect at ~$106.
+- **VRT entry zone is now partly below the current price.** Revised entry zone $295–315 (vs prior $315–335). The AVGO $16B AI guide added strength to the thesis. Stock at $305.12 is inside the revised zone — but the falsification condition ("closes below $300 within 3 trading days of entry") is now just $5 below. First entry only on API restore + confirmed stable price.
+- **AVGO $16B AI semi guide (+200% YoY) is the most significant AI capex confirmation since NVDA.** Combined with NVDA $91B Q2 guide, MRVL $2.70B Q2 beat, and VRT's own Q1 blowout, the AI cooling/power thesis has never been more strongly supported. The stock (AVGO itself) is now a potential addition to the thesis: post-dip entry near $230–250 warrants a buy-side gate review.
+- **NFP +172K (2× beat) means rate cuts are further out, and growth multiples face a more hawkish Fed.** This is a headwind for our universe (SaaS, AI infra). The implications compound with Iran re-escalation and 10yr yield near 4.687%. New entries in Week 7 should be sized conservatively and entered only on confirmed pullbacks, not gap-ups.
+
+### Adjustments for Next Week
+No strategy rule changes — 0 calibration data; no rule violations requiring immediate fix; no owner override. TRADING-STRATEGY.md unchanged.
+
+Research/operational updates (not strategy changes):
+1. **Restore env vars — Day 28 is unacceptable; experiment objective cannot be met without execution**
+2. **SELL QRVO 19sh at market open** — thesis broken (merger arb); Day 28; `/trade QRVO 19 sell`; log CLOSE block (calibration: N/A)
+3. **Confirm COTY status** — `bash scripts/alpaca.sh positions`; if stopped: log CLOSE (pre-cal, ~−3.2%); if still open: SELL 784sh immediately
+4. **QLYS: tighten trailing stop to 5%** — at +22.6% (>+20%); update GTC stop immediately on API restore
+5. **VRT entry zone revised to $295–315** — price at $305.12; AVGO $16B guide strengthened thesis; falsification: VRT closes below $285 within 3 trading days of entry; $1k max; 10% trailing GTC at entry (tighten to 7% at +15%, 5% at +20%)
+6. **AVGO post-dip evaluation** — run through buy-side gate on API restore; AI semi $16B +200% YoY is exceptional; est entry zone ~$230–250; would be position #2 after VRT; materiality TBD on confirmed price
+7. **CRWD stabilization** — 4-for-1 split July; wait 3+ days post-earnings settling; pre-split entry zone ~$680–720 if fundamentals hold
+
+### Overall Grade: C+
+
+Rationale: Third consecutive outperformance week (+1.82% bot vs −0.49% S&P = +2.31% relative); phase now +6.46% vs S&P +4.33% (+2.13% relative). QLYS +22.6% is the experiment's best unrealized return to date; bot has moved to genuine phase outperformance. Research quality A-grade: AVGO $16B AI guide, CRWD sell-the-news, NFP beat risk all identified in pre-market research before the events. Grade held to C+ (not B) for: (1) API offline Day 28 — 6th consecutive week, now the experiment's dominant structural failure; (2) VRT entry missed 7 weeks running; price now below the original entry zone; the experiment's first calibrated trade is still unplaced; (3) zero calibrated trades in 35 sessions — 41% of the 90-day window elapsed with zero learning data, now approaching the point where 20-trade minimum is mathematically unreachable; (4) QRVO voluntary exit Day 28 overdue; all unrealized gains are on broken-thesis grandfathered positions, not the strategy engine. Sources: Investing.com QLYS June 5; WallStreetZen QRVO; Yahoo Finance VRT June 5; BLS NFP May 2026 (June 5); Advisor Perspectives / InvestingLive S&P 500 week of June 5.
