@@ -4929,3 +4929,22 @@ Source: [Investing.com QRVO insider](https://www.investing.com/news/insider-trad
 6. **CRWD entry (conditional):** Earliest day 8 post-earnings settle (~June 11+). Pre-split ~$680–720 zone. Requires API + VRT entered first + deployment room.
 7. **Weekly review (this week):** Reassess VRT/CRWD/MDB entry zones post-Iran/NFP. Consider whether 10yr >4.60% warrants reducing materiality thresholds for high-multiple names.
 
+
+### 2026-06-08 — Midday Scan Addendum (Day 40, Monday ~12:00 ET)
+
+**STATUS: HALTED — API OUTAGE (Day 40+)**
+
+- `ALPACA_ENDPOINT` not set in cloud environment → paper-API guardrail failed → scan halted.
+- `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `SLACK_WEBHOOK_URL` also absent.
+- Slack alert sent via fallback (appended to DAILY-SUMMARY.md).
+- No broker calls executed. No positions changed.
+
+**Pending actions (blocked by API outage):**
+- QRVO: SELL 19sh — Day 33 broken thesis. Est. +9.6% but uncompensated binary risk every day.
+- COTY: Confirm status. Stop at ~$2.42 should have fired. If still open → SELL 784sh immediately.
+- QLYS: Confirm trailing stop HWM. Est. +24.1%. Tighten trail to 5% if confirmed ≥ +20%.
+
+**Market context (midday):**
+- Iran-Israel escalation + NFP shock → dual macro headwinds remain.
+- No new positions entered. VRT $337.92 above $335 entry zone — no chase.
+- AI/semi complex continues to sell. HOLD posture maintained.
