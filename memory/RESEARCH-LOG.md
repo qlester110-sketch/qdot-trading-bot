@@ -4752,3 +4752,180 @@ export SLACK_WEBHOOK_URL=<your-webhook>
 6. **CRWD (next week):** Wait 3+ day settling post-earnings before evaluating entry; pre-split
    price zone ~$680–720; do not rush.
 7. **Weekly review (this week):** NFP Friday → weekly review reassessment over weekend.
+---
+
+## 2026-06-08 — Pre-Market Research (Day 40, Monday)
+
+> **⚠ API OUTAGE — CONTINUES (Day 33+).** All Alpaca and Slack env vars MISSING in cloud
+> execution environment. No broker calls possible. No Slack notification sent. Research
+> proceeds via WebSearch only. This is the primary operational risk. QRVO exit (+~10%)
+> still unexecuted — now Day 33 of a broken-thesis hold.
+
+### Account Snapshot
+
+- **Status:** API unavailable — no live equity/cash/buying power data.
+- **Estimated positions (via web search, June 5 close prices):**
+  - QLYS: ~$111.53 (June 5). Entry ~$89.87. Estimated P&L: **+24.1%**. Stop intact (trailing ~$92–103, exact level unknown without API).
+  - QRVO: ~$98.26 (June 5). Entry ~$89.66. Estimated P&L: **+9.6%**. ⚠ SELL PENDING — thesis broken; merger arb (FTC + SAMR Phase II). Day 33 overdue.
+  - COTY: Estimated ~$2.06 (est). Stop likely fired ~$2.42 weeks ago. **Assume closed** at ~-3.2%.
+- **Deployed (est):** $89.87×19 (QLYS) + $89.66×19 (QRVO) = $1,707 + $1,703 = **~$3,410** at cost (above $3k cap, grandfathered per strategy doc §Grandfathered exception). At current market: ~$2,119 + $1,867 = ~$3,986.
+- **Options sleeve:** No open positions. Fully unused ($0 of $500 cap).
+- **Daytrade count:** Unknown without API. Assumed 0 (no trades executed since May 6).
+
+### Market Context
+
+- **WTI:** $93.63–$93.67 (+3.41–3.46%). **Brent:** $96.05–$97.68 (+3.18–4.93%).
+  Source: [The Manila Times](https://www.manilatimes.net/2026/06/08/business/foreign-business/oil-prices-climb-3-after-iranian-missile-strikes-on-israel/2360318), [CNBC](https://www.cnbc.com/amp/2026/06/08/oil-prices-today-us-iran-missile-middle-east-israel-opec.html) (2026-06-08)
+- **S&P 500 futures:** ~7,419.75 (+0.22% premarket). 55% implied probability of up open. Partial recovery after Friday's -2.64% drop (closed 7,383.74).
+  Source: [Schwab market update](https://www.schwab.com/learn/story/stock-market-update-open), [Lines.com prediction market](https://www.lines.com/prediction-markets/finance/spx-opens-up-or-down-on-june-8-2026) (2026-06-08)
+- **VIX:** ~15.77 (June 2026 reading via FRED). Relatively contained given geopolitical backdrop.
+  Source: [Trading Economics / FRED](https://tradingeconomics.com/united-states/cboe-volatility-index-vix-fed-data.html) (2026-06-08)
+- **10yr Treasury:** 4.54–4.55% (June 5 close). Likely higher today after Iran escalation news compounds NFP-driven yield spike. Up from ~4.69% pre-NFP read.
+  Source: [Trading Economics](https://tradingeconomics.com/united-states/government-bond-yield) (2026-06-05)
+- **Rate hike probability:** 72.7% probability of at least one hike by year-end (up from 50.5% one day prior). CME FedWatch.
+  Source: [Schwab market update](https://www.schwab.com/learn/story/stock-market-update-open) (2026-06-06)
+
+**Key macro event — NFP May 2026 (released June 5):**
+- **+172,000 jobs** vs. 85,000 forecast (doubled). Prior revised up from +115K to +179K.
+- Unemployment: 4.3% (unchanged). Wage growth: 3.4% YoY (slowing from 3.6%).
+- Market reaction: Yields surged, equities sold off. S&P -2.64%, Nasdaq -4.18% (June 5–6).
+- **Implication:** Hot labor market → Fed likely pauses cuts or hikes → multiple-compression for high-P/E growth names. Our universe (SaaS, AI semis, e-com) is direct exposure.
+Source: [BLS Employment Situation](https://www.bls.gov/news.release/empsit.nr0.htm), [Verified Investing](https://verifiedinvesting.com/blogs/us-economic-metrics/us-nonfarm-payrolls-may-2026-jobs-report), [CNBC](https://www.cnbc.com/2026/06/05/jobs-report-may-2026.html) (2026-06-05)
+
+**Key geopolitical event — Iran-Israel missile exchange (June 7-8):**
+- Iran fired 10+ ballistic missiles at Israel's Ramat David Airbase (June 7). Israel retaliated with strikes on military sites in Tehran, Isfahan, Karaj, and Tabriz. First direct Iranian strike since April ceasefire.
+- Oil +4–5% on Hormuz/risk-off fears. Potential for full escalation into 2026 Iran war.
+Source: [NPR](https://www.npr.org/2026/06/08/g-s1-126844/iran-war-updates), [OilPrice.com](https://oilprice.com/Latest-Energy-News/World-News/Oil-Prices-Spike-After-Iran-Launches-Missile-Attack-on-Israel.html), [CNBC](https://www.cnbc.com/amp/2026/06/08/oil-prices-today-us-iran-missile-middle-east-israel-opec.html) (2026-06-08)
+
+- **Economic calendar (June 8):** 2 economic data releases scheduled (FRED). No major CPI/PPI/FOMC releases today. Next high-impact release: TBD.
+- **Earnings (June 8):** 51 reports scheduled. No major UNIVERSE names reporting before open today.
+  Source: [EarningsWhispers](https://www.earningswhispers.com/calendar) (2026-06-08)
+
+**Sector momentum:**
+- **Leading today:** Energy (+3–5% on Iran/oil), defensive names.
+- **Lagging:** Technology, AI semis. Nasdaq -4.18% June 5–6. AI/semi complex: MU -11.5%, NVDA -7%, MRVL -13%, AMD worst day in months.
+- **YTD leaders (per prior research):** Materials, Healthcare, Energy.
+- **YTD lagging:** Consumer discretionary, real estate.
+- The tech/AI complex is under dual pressure: (a) AVGO/CRWD post-earnings digestion + (b) NFP-driven yield spike compressing multiples.
+Source: [CNBC](https://www.cnbc.com/amp/2026/06/08/oil-prices-today-us-iran-missile-middle-east-israel-opec.html), [TipRanks](https://www.tipranks.com/news/mu-nvda-orcl-mrvl-why-are-ai-and-chip-stocks-bleeding-red-today) (2026-06-06–08)
+
+### Held-Ticker News Summary
+
+**QLYS (Qualys) — OPEN — Est. +24.1%**
+- Q1 2026: Revenue $175.6M (+10% YoY), GAAP EPS $1.42, non-GAAP EPS $1.95. FY2026 guide raised to $721–727M.
+- CFO Joo Mi Kim sold 1,031 shares June 2 (pre-arranged 10b5-1 plan, not a red flag).
+- Analyst avg target: $107.39 — **below current ~$111.53**. Consensus is "Hold."
+- 52-week range: $74.51–$155.47. Current $111.53 is mid-range.
+- Trailing stop protecting position. Position thesis (FedRAMP High catalyst) is confirmed by Q1 beat + raised guide. No exit trigger.
+- **Action: HOLD. Let trailing stop manage the exit. Cannot confirm exact stop level without API.**
+Source: [StockTitan QLYS](https://www.stocktitan.net/news/QLYS/), [StockAnalysis QLYS](https://stockanalysis.com/stocks/qlys/) (2026-06-02)
+
+**QRVO (Qorvo) — OPEN — Est. +9.6% — ⚠ SELL OVERDUE (Day 33)**
+- Price ~$98.26 (June 5), range $97.61–$102.82.
+- Thesis broken: FTC Second Request + China SAMR Phase II. Merger close pushed to early 2027. No organic thesis. Analyst avg target $92.27 (below entry zone).
+- CEO Robert Bruggeworth sold $5.82M in QRVO stock (recent insider sale per Investing.com).
+- **Action: SELL 19 shares at market immediately when API is restored. This is Day 33 on a broken-thesis hold. Every day of delay is uncompensated risk.**
+Source: [Investing.com QRVO insider](https://www.investing.com/news/insider-trading-news/qorvo-ceo-robert-a-bruggeworth-sells-582m-in-qrvo-stock-93CH-4722903) (2026-06)
+
+**COTY (Coty) — ASSUMED CLOSED (stop ~$2.42)**
+- Price ~$2.06 estimated. Stop at ~$2.42 should have auto-executed weeks ago (mid-May per prior research). Assume closed at ~-3.2%. Cannot confirm without API.
+- **Action: First API call must confirm COTY status. If still open → SELL 784sh immediately.**
+
+### Options Sleeve Health Check
+
+- No open option positions. Sleeve fully unused.
+- **CRWD:** Post-earnings window now open (earnings June 3 passed). 4-for-1 split July.
+- **AVGO:** Post-earnings window open. Price $416.88 PM (recovered fully from AH selloff). No longer in attractive entry zone.
+- **VRT:** Next earnings ~late July (>50 days). Sleeve window open.
+- **No options entry planned today.** Macro conditions (yield spike + Iran escalation) = elevated IV = expensive premium. VIX ~15.77 not extreme, but entry thesis must be clean first.
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price | Recent Move | Status | Key News |
+|--------|-----------|-------------|--------|----------|
+| VRT    | ~$337.92 | +4.48% today | ⚠ Above entry zone | AI capex thesis intact; AI semi complex selling but VRT resilient |
+| AVGO   | ~$416.88 PM | Recovered from -6–13% AH (June 3) | Above zone; skip | AI semi $10.8B Q2, $16B Q3 guide; software miss overhang |
+| CRWD   | ~$671 (June 5) | -10% post-earnings | Digesting; not ready | Beat Q1, Q2 guide in-line. 4-for-1 split July |
+| NVDA   | Declining | -7% recent | AI complex pressure | No new catalyst; AI capex uncertainty after AVGO software miss |
+| MU     | Declining | -11.5% recent | ⛔ AVOID | AI spending reassessment; rate hike fears |
+| MRVL   | Declining | -13% recent | ⛔ AVOID | AI spending reassessment; S&P 500 addition June 22 |
+| QLYS   | ~$111.53 | +24.1% est P&L | HOLD (pre-cal, stop managing) | Q1 beat + guide raised; CFO 10b5-1 sale (planned) |
+
+**Movers (via web search — no API access):**
+- Energy names surging on Iran-Israel oil spike (+3–5%)
+- AI silicon complex bleeding: MU, NVDA, MRVL, AMD all down significantly
+- VRT: +4.48% at $337.92 — resilient vs peers, but in a weak macro tape
+
+**Out-of-universe movers:** Iran escalation driving broad energy/defense names — not tradeable per strategy rules without owner override.
+
+### Trade Ideas
+
+**0 trade ideas today.** Hard blockers apply:
+
+1. **API unavailable** — cannot place any order.
+2. **Macro headwinds dual-stacked** — NFP hot (yield spike, rate hike fear 72.7%) + Iran-Israel escalation (oil +4–5%, risk-off). Worst macro backdrop for growth-stock entries since early May.
+3. **VRT above entry zone** — Was $315–335; currently $337.92 (+0.9% above top). Cannot enter above zone even if API were available. Disciplined patience > reaching above zone on a bad macro day.
+4. **AI/semi complex selling** — VRT thesis is fundamental (AVGO $16B AI guide), but entering while direct peers (NVDA -7%, MRVL -13%) are selling forces an immediate mark-to-market headwind.
+
+---
+
+**Watchlist — Unchanged from June 4 (conditional on API + macro calm):**
+
+1. **VRT (Vertiv Holdings) — PRIMARY CANDIDATE — WAIT for pullback**
+   - Ticker in universe: ✓ (Datacenter physical)
+   - Catalyst: Q1 2026 blowout (rev $2.65B +30%, adj EPS $1.17 +83%, FY guide raised) + AVGO $16B AI Q3 guide (+200% YoY). Four stacked AI capex confirmations (NVDA $91B, MRVL $2.42B +28%, AVGO $16B, VRT Q1 blowout).
+   - Catalyst type: earnings + guidance
+   - Direction: bullish
+   - Materiality: **0.85** — four independent AI capex datapoints; VRT is pure-play beneficiary. Haircut: AI complex selling + yield spike + Iran risk-off.
+   - Horizon: 10 trading days (locked at entry)
+   - Entry zone: **$315–$335** (currently $337.92 — above zone; do NOT chase)
+   - Revised entry trigger: Pullback to $315–330 range; require 1 day of macro stabilization (Iran ceasefire signal or yield consolidation below 4.50%)
+   - Stop: 10% trailing GTC (~$284–$302 at entry)
+   - Target: $387 (TD Cowen PT); R:R ~2.4:1 at $325
+   - Position size: $1,000 max (~3 shares)
+   - Falsification: hyperscaler announces AI capex cut; VRT closes below $300; AVGO AI semi thesis reverses
+   - Gate: API restored + QRVO sold + QLYS/COTY confirmed + VRT ≤ $335 at execution
+   - out_of_universe: false
+
+2. **CRWD (CrowdStrike) — Watchlist only — Not ready**
+   - Post-earnings day 5. -10% from $747.61 close. Currently ~$671.
+   - Beat Q1, Q2 guide in-line (no acceleration = sell-the-news). Fundamental thesis intact.
+   - Entry zone: ~$680–720 (pre-split). Needs 3+ days more of consolidation.
+   - Materiality: 0.70 | Direction: bullish | Catalyst type: earnings + sector_rotation
+   - Gate: API + VRT entered + macro stabilization + 5+ day post-earnings settle
+   - out_of_universe: false
+
+3. **MDB (MongoDB) — Watchlist only — Need pullback to $360–380**
+   - Last close ~$397.53. Revised entry zone $360–380. Not chasing.
+   - Direction: bullish | Materiality: 0.80 | Catalyst type: earnings | Horizon: 10 days
+   - out_of_universe: false
+
+### Risk Factors
+
+- **⭐⭐⭐ Iran-Israel full military exchange** — First direct missile exchange since April ceasefire. Oil +4–5%. Potential for Hormuz blockade. Wikipedia notes "economic impact of the 2026 Iran war." This is a REGIME-CHANGE event for the macro backdrop — not a passing headline. Risk-off could persist for weeks if escalation continues. Entire growth universe is repriced lower.
+- **⭐⭐ NFP +172K (doubled forecast) → rate hike probability 72.7%** — The Fed narrative shifted Friday from "cuts later this year" to "hike possible." For a universe of high-P/E SaaS, AI, e-com names, this is severe multiple compression. NFP surprise + Iran escalation = dual macro headwinds. Worst backdrop since May 5 for new long entries.
+- **AI/semi complex selling** — MU -11.5%, NVDA -7%, MRVL -13%. Even though AVGO's AI thesis is intact ($10.8B Q2, $16B Q3), the "is AI spending real?" question is back on the table. VRT is downstream of AI capex; if NVDA/AVGO keep selling, VRT will follow.
+- **QRVO exit still pending (Day 33)** — The longest unresolved operational failure in this experiment's history. QRVO has held +9.6% gain. But it's in RF semis with active FTC/SAMR overhang and CEO insider selling. Every day of delay is pure binary risk.
+- **QLYS analyst avg target below current price ($107.39 < $111.53)** — Not an exit trigger (trailing stop handles it), but worth noting. If the cybersecurity sector softens further (CRWD post-earnings overhang), QLYS could drift toward stop level.
+- **API outage** — 33+ days. Cannot confirm positions, stops, or P&L. Cannot execute any trades regardless of setup quality. CRITICAL operational risk.
+
+### Decision
+
+**HOLD — No new entries today.**
+
+**Rationale:**
+- API unavailable — no trades possible regardless of setup
+- VRT $337.92 is above entry zone top ($335) — no chasing allowed
+- Macro backdrop: NFP shock + Iran-Israel escalation + 10yr at 4.54-4.55% + rate hike prob 72.7% = worst growth-stock entry environment in 5+ weeks
+- AI/semi complex (VRT's peer group) selling sharply — enter into strength, not into a sector that just bled 7–13%
+- Patience > activity; the VRT thesis remains valid at $0.85 materiality — it's the TIMING, not the thesis, that's wrong today
+
+**Priority action stack (all gated by API restore):**
+1. `bash scripts/alpaca.sh positions` — Confirm QLYS/QRVO/COTY status and trailing stop levels
+2. `bash scripts/alpaca.sh orders` — Check if COTY stop fired; confirm QLYS stop HWM
+3. **SELL QRVO 19sh** immediately — Day 33 broken thesis; use `/trade QRVO 19 sell`
+4. **SELL COTY 784sh** if still open — use `/trade COTY 784 sell`
+5. **VRT entry (conditional):** Requires API + VRT pullback to $315–330 + 1 day of macro stabilization. Do NOT enter while oil +4%, yields spiking, and AI semis bleeding. Target entry window: June 9–12 if macro calms.
+6. **CRWD entry (conditional):** Earliest day 8 post-earnings settle (~June 11+). Pre-split ~$680–720 zone. Requires API + VRT entered first + deployment room.
+7. **Weekly review (this week):** Reassess VRT/CRWD/MDB entry zones post-Iran/NFP. Consider whether 10yr >4.60% warrants reducing materiality thresholds for high-multiple names.
+
