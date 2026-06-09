@@ -5238,3 +5238,27 @@ export SLACK_WEBHOOK_URL=<your-webhook>
 6. **CRWD** — $731 is above revised $680–720 zone. No entry; wait for pullback post-4-for-1 split clarity.
 7. **Weekly review Friday June 12:** Reassess entry zones for CRWD (post-split pricing), MDB
    (Q1 beat but unclear current price), and whether NOW zone should move up given $30B 2030 target.
+
+### 2026-06-09 Midday Addendum — API Outage Continues (Day 41)
+
+> **⚠ ALL 5 ENV VARS MISSING** — `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+> `ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL` all unset in remote container. Guardrail triggered:
+> ALPACA_ENDPOINT does not contain "paper-api" → STOP. No broker calls executed. No Slack sent.
+
+**Pending actions remain unexecuted (carried from Day 34):**
+- **QRVO SELL** — 19sh, thesis broken (merger arb / FTC + SAMR overhang). Est +10.9% gain at risk of overnight gap-down on regulatory headline. Priority #1 on API restore.
+- **QLYS stop-tighten** — Cancel 10% trailing GTC, replace with 5% trailing GTC. Mandatory (+20% threshold crossed as of est June 5). HWM est ~$111.53; new stop ~$105.95.
+- **COTY confirm** — Trailing stop ~$2.42 should have fired when price was ~$2.03–$2.06. Confirm closed; if still open SELL 784sh (est -18%, well past -7% cut rule).
+
+**Market context (midday, no API):**
+- Iran-Israel ceasefire holding; WTI -1.2%, Brent -0.9% → geopolitical risk premium unwinding.
+- S&P 500 premarket +0.71%; VIX 18.92 declining; semiconductor sub-sector rebounding.
+- No macro data today; backdrop quiet and constructive for QLYS thesis (XLK leading sector).
+- QRVO thesis still broken regardless of price action — regulatory binary risk unchanged.
+
+**Action required on next API restore:**
+1. `bash scripts/alpaca.sh positions` — confirm COTY status
+2. `bash scripts/alpaca.sh close QRVO` (and cancel its stop)
+3. Cancel QLYS 10% trailing stop; place 5% trailing stop GTC
+4. If COTY still open: `bash scripts/alpaca.sh close COTY`
+5. Log CLOSE blocks in TRADE-LOG for any closures
