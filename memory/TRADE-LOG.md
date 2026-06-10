@@ -123,3 +123,9 @@ Script log: /tmp/place-stops-20260506-081911.log
 
 Stop order IDs and confirmation must be reconciled into per-trade entries
 above on next session (review /tmp/stops-results-20260506-103616.json for order IDs).
+
+---
+
+## Jun 10 — EOD Snapshot HALTED (Day 41, Wednesday)
+**REASON:** ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT not set in session environment. Alpaca wrapper exited with "ALPACA_API_KEY not set in environment". No portfolio data pulled. No metrics computed.
+**Action required:** Re-run /daily-summary after setting env vars in session.
