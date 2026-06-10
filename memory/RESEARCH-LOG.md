@@ -5262,3 +5262,129 @@ export SLACK_WEBHOOK_URL=<your-webhook>
 3. Cancel QLYS 10% trailing stop; place 5% trailing stop GTC
 4. If COTY still open: `bash scripts/alpaca.sh close COTY`
 5. Log CLOSE blocks in TRADE-LOG for any closures
+
+---
+
+## 2026-06-10 — Pre-market Research (Day 42)
+
+### Account
+- Equity: **N/A — API offline** (all 5 env vars missing: ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL)
+- Cash: N/A
+- Buying power: N/A
+- Daytrade count: N/A
+- Estimated deployed (from prior research): QLYS ~$1,729 + QRVO ~$TBD + COTY unconfirmed
+
+> ⚠ Day 42 of API outage. All broker calls blocked. Three pending actions remain unexecuted (see Risk Factors). Research-only mode.
+
+### Market Context
+- WTI / Brent oil: WTI $86–$91.54 range; Brent ~$91.96 (prev close $94.25). **Spiking overnight** on US strikes against Iran — energy goods up ~8% MoM driving May CPI.
+  Source: [TradingEconomics Brent](https://tradingeconomics.com/commodity/brent-crude-oil)
+- S&P 500 futures: **-0.47%** premarket. Polymarket 22% probability of open up — strongly bearish tilt.
+  Source: [Benzinga S&P500 June 10](https://www.benzinga.com/markets/prediction-markets/26/06/53108294/sp500-june-10-open-up-or-down-polymarket-cpi-inflation-iran-strikes)
+- VIX: **20.45** (up 8.09% on June 9 close; was 18.92 June 8). Elevated — options premium expensive.
+  Source: [StreetStats volatility](https://streetstats.finance/markets/volatility)
+- Today's catalysts:
+  1. **May CPI at 8:30 AM ET** (dominant catalyst) — forecast headline +4.2% YoY (first >4% since May 2023), +0.5% MoM; core +0.3% MoM / +2.9% YoY. Energy goods +8% MoM. Last major inflation print before June 16-17 FOMC.
+     Source: [Kiplinger CPI preview](https://www.kiplinger.com/investing/economy/cpi-report-may-2026-what-to-expect), [EskiSignal CPI preview](https://eskisignal.com/may-2026-cpi-preview-june-10/)
+  2. **US-Iran re-escalation** — US launched "self-defense strikes" on Iran overnight June 9 after Apache helicopter shot down over Strait of Hormuz. Fragile ceasefire has broken down. Direct VRT thesis falsification condition.
+     Source: [TheStreet June 9](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-09-2026), [Investing.com futures](https://ng.investing.com/news/stock-market-news/us-stock-futures-fall-amid-more-iran-strikes-tech-weakness-cpi-data-awaited-2551090)
+- Earnings before open: SMCI, DKNG, AAL among ~15 reporting today. No UNIVERSE names reporting.
+  Source: [EarningsWhispers June 10](https://www.earningswhispers.com/calendar/20260610/1)
+- Economic calendar: **CPI May 2026 @ 8:30 ET today** (top print). FOMC June 16–17: market 99.1% prob no change at 3.50–3.75%. Goldman Sachs: no rate cuts in 2026, possible removal of easing-bias language.
+  Source: [Polymarket FOMC](https://polymarket.com/event/fed-decision-in-june-825)
+- Sector momentum (recent week):
+  - Technology/AI: recovery attempt from last week's AVGO-induced sell-off has stalled amid Iran re-escalation. Philadelphia Semiconductor Index slumped 10%+ in one day last week.
+  - S&P 500 gains since Feb 2026 war start +7%, but ex-AI stocks: flat. Highly concentrated market.
+  - Energy: bid on Strait of Hormuz risk.
+  Source: [Investing.com Nasdaq/S&P June 9](https://www.investing.com/news/stock-market-news/us-stock-futures-fall-amid-more-iran-strikes-tech-weakness-cpi-data-awaited-2551090), [CNBC May 20 sector](https://www.cnbc.com/2026/05/20/market-correction-equities-stocks-bonds-iran-inflation.html)
+
+### Held-Ticker News
+
+**QLYS (19 shares, est entry ~$91, est current ~$111.53 June 5, unrealized ~+22%):**
+- CEO Sumedh Thakar sold 13,200 shares June 1 at $112–$116 (10b5-1 pre-set plan, Feb 27 adoption)
+- CFO Joo Mi Kim sold 1,031 shares June 2 at $109–$114 (10b5-1)
+- Pre-set plans reduce alarm but signal management considers current valuation full
+- William Blair Growth Stock Conf June 2 — management presented (positive signal = willingness to be public-facing)
+- Q1 2026: revenue $175.6M +10% YoY, raised FY2026 guide to $721–727M — **thesis intact**
+- Stock: 30-day +21%, 1-week +11.1%, trading ~$111.53 June 5
+- Valuation articles flagging "extended after recent rally" — premium multiple risk on market selloff
+- **Cybersecurity thesis holding.** Stop-tighten to 5% from HWM ~$111.53 → stop ~$105.95 STILL PENDING API restore (mandatory per strategy, +20% threshold crossed June 5).
+  Sources: [GuruFocus QLYS CEO sell](https://www.gurufocus.com/news/8897138/insider-sell-sumedh-thakar-sells-13200-shares-of-qualys-inc-qlys), [StockTitan QLYS news](https://www.stocktitan.net/news/QLYS/), [Simply Wall St QLYS](https://simplywall.st/stocks/us/software/nasdaq-qlys/qualys/news/assessing-qualys-qlys-valuation-after-recent-share-price-gai)
+
+**QRVO (19 shares, pending sell — Day 42 of broken thesis):**
+- FTC Second Request received Feb 5, 2026; Hart-Scott-Rodino waiting period extended
+- SAMR Phase II — China "constructive dialogue" but no approval
+- Formal closing guidance: early calendar 2027 (extended; previously end of 2026 hope)
+- Merger arb binary risk undiminished. Every session of delay = uncompensated regulatory risk.
+- **SELL QRVO immediately on API restore.**
+  Source: [StockTitan QRVO 8-K](https://www.stocktitan.net/sec-filings/QRVO/8-k-qorvo-inc-reports-material-event-5547e6e85e2e.html), [TipRanks merger](https://www.tipranks.com/news/company-announcements/qorvo-skyworks-merger-faces-extended-ftc-antitrust-review)
+
+**COTY (unconfirmed):**
+- No new news. Status unknown. Trailing stop ~$2.42 should have fired when price was ~$2.03–$2.06. Confirm closed or SELL on API restore.
+
+### UNIVERSE News Summary
+
+- **VRT (Vertiv):** $300.57 June 8. All-time high was $376.23 May 14, 2026. Now -20% from ATH. AVGO soft AI guidance ($16B Q3 vs $17.2B est) weakens one of the 4 stacked AI capex confirmations in VRT thesis. More critically: **Iran re-escalation today is a direct falsification event** (stated falsification: "Iran re-escalation worsens ME deal-slippage materially"). VRT is AT or BELOW the $300 structural break level. **Entry thesis SUSPENDED.**
+  Source: [MarketBeat VRT chart](https://www.marketbeat.com/stocks/NYSE/VRT/chart/), [TradingView AVGO guidance](https://www.tradingview.com/news/stocktwits:9e4b093a9094b:0-nvda-intc-amd-mu-major-chip-stocks-fall-for-second-day-after-avgo-s-soft-ai-guidance/)
+
+- **AVGO:** Soft Q3 AI revenue guidance ($16B vs $17.2B est) — steepest single-day drop since Jan 2025. Headwind for AI capex thesis across all UNIVERSE semi names (NVDA, AMD, MRVL, VRT, ANET).
+
+- **AMD:** -10.86% June 5 following AVGO guidance. Memory chip crisis + smartphone demand collapse flagged.
+
+- **NOW (ServiceNow):** ~$112.89 June 8 (top of $100-112 prior zone). Entry still blocked by deployment cap. No new material catalysts beyond prior research. Iran/CPI risk reduces urgency of chasing.
+
+- **CRWD:** 4-for-1 split July 2 approaching. Price ~$731 pre-split (~$183 post-split equiv). Above revised $680-720 entry zone. No entry today.
+
+- **NVDA, MRVL, ANET:** Part of broader semi sector weakness from AVGO soft guidance. No individual catalysts found.
+
+### UNIVERSE Movers (Estimated — No API)
+No live movers data available (API offline). Based on web research, semiconductor sector broadly weak (AVGO, AMD, MU cluster). Cybersecurity sub-sector (QLYS, CRWD) more resilient. No UNIVERSE-specific mover catalysts found beyond AVGO guidance read-through.
+
+### Options Sleeve
+No open option positions. Sleeve cap ($500) unused. VIX at 20.45 — elevated IV makes long premium purchases more expensive. **No options trades today** regardless of thesis.
+
+### Trade Ideas
+
+**NONE TODAY.** No actionable setups pass the full buy-side gate.
+
+1. ~~VRT — bullish, AI capex thesis~~ — **SUSPENDED.**
+   - Iran-Israel ceasefire broken down (US struck Iran June 9 PM). Falsification: "Iran re-escalation worsens ME deal-slippage materially" — TRIGGERED.
+   - VRT at ~$300.57, at/below $300 structural break level from original falsification.
+   - AVGO soft guidance partially undermines the 4-stacked-AI-capex-confirmation argument.
+   - Entry gate conditional: "Iran-Israel ceasefire holds through today's session" — NOT MET.
+   - **Do NOT enter VRT until: (1) ceasefire re-establishes and oil stabilizes, (2) VRT rebounds above $305, (3) API is restored.**
+
+2. ~~NOW — bullish, AI platform / earnings beat~~ — **BLOCKED.**
+   - Deployment cap: QLYS ($1,729) = $1,729; adding NOW ($1,000) = $2,729 under $3k cap if QRVO/COTY confirmed closed. Mathematically viable BUT macro environment (Iran + CPI) does not warrant entry.
+   - NOW at $112.89 is above preferred $108-112 entry zone.
+   - Do not chase. Wait for pullback and API restore.
+
+### Risk Factors
+
+- **⚠ API outage Day 42** — Three critical actions unexecuted: QRVO sell, QLYS stop-tighten, COTY confirm. Every session of delay on QRVO is uncompensated merger-arb binary risk. QLYS stop at 10% instead of mandatory 5% — leaves ~$70 of unrealized gains exposed unnecessarily. Operationally critical.
+- **Iran re-escalation** — US launched strikes against Iran overnight. Ceasefire has broken down. Oil spike risk back. Brent $91.96 and moving higher. If Hormuz closes again, energy shock worsens CPI trajectory.
+- **May CPI at 4.2% YoY** — First above 4% since May 2023. Last data point before June 16-17 FOMC. A surprise above 4.2% increases rate-hike rhetoric; any above-consensus print = sell-off in growth stocks (QLYS, NOW, CRWD, DDOG all affected). Fed at 3.50-3.75%; market 99.1% prob hold but Goldman sees no 2026 cuts.
+- **AVGO AI guidance miss** — $16B Q3 vs $17.2B est. Partially invalidates the "AI capex supercycle" narrative that underpins VRT, ANET, MRVL theses. Not an exit signal for QLYS (cybersec, not AI infra), but a yellow flag for future UNIVERSE AI-infra buys.
+- **QLYS insider selling** — CEO ($112-116) and CFO ($109-114) under 10b5-1 plans. Pre-set = mildly bearish (they see current price as full valuation), not a panic sell. Thesis intact.
+- **VIX 20.45** — Elevated. Long premium options more expensive if sleeve were deployed. Correct to have $0 sleeve exposure entering a CPI + Iran shock day.
+- **Deployment cap math** — After QRVO confirmed sold + COTY confirmed: QLYS only (~$1,729) → $1,271 of the $3k cap free. One more $1k position available. VRT and NOW are the two watchlist candidates; VRT blocked by Iran; NOW blocked by entry zone miss. No immediate deployment.
+- **CRWD 4-for-1 split July 2** — Track pre-split price only. Post-split pricing (~$183/share) should NOT be used for entry zone calculations until after July 2.
+
+### Decision
+
+**HOLD.**
+
+No new trades. The macro environment has materially worsened overnight:
+1. Iran ceasefire broke → VRT thesis falsification triggered
+2. CPI print at 8:30 AM ET is a volatility event — never enter on a high-uncertainty macro release day
+3. Semis under pressure from AVGO soft guidance
+4. VIX elevated, futures negative, Polymarket 22% prob up
+
+**Priority action stack on API restore (ordered by urgency — unchanged from June 9):**
+1. `bash scripts/alpaca.sh positions` — confirm COTY status; if open, SELL immediately
+2. `bash scripts/alpaca.sh close QRVO` + cancel QRVO stop — Day 42 thesis break
+3. Cancel QLYS 10% trailing stop; place 5% trailing GTC (mandatory; HWM ~$111.53 → stop ~$105.95)
+4. **VRT: DO NOT ENTER** until ceasefire re-establishes + VRT > $305 + API live
+5. NOW: no entry until VRT/QLYS deployment picture resolves + NOW pulls back to $108-112
+6. Friday June 12 weekly review: reassess CRWD entry zone (pre/post-split), MDB Q1 follow-through, NOW zone revision
+
