@@ -5388,3 +5388,111 @@ No new trades. The macro environment has materially worsened overnight:
 5. NOW: no entry until VRT/QLYS deployment picture resolves + NOW pulls back to $108-112
 6. Friday June 12 weekly review: reassess CRWD entry zone (pre/post-split), MDB Q1 follow-through, NOW zone revision
 
+---
+
+## 2026-06-11 — Pre-market Research
+
+### Account
+- **⚠ API OFFLINE — Day 43.** ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT all missing from session environment. No live account data available.
+- Equity: unknown (last known: ~$97k+ Alpaca total; working-cap deployed ~$1,729 QLYS + QRVO + COTY uncertain)
+- Cash: unknown
+- Buying power: unknown
+- Daytrade count: unknown
+
+### Market Context
+- **WTI:** ~$92/bbl (intraday rising, +2% from prior close). Source: [TradingKey VRT analysis](https://www.tradingkey.com/news/market-movers/261959252-market-movers-vrt-20260610)
+- **Brent:** ~$95/bbl (surging toward $95 on renewed Iran strike fears). Source: [TradingEconomics Brent](https://tradingeconomics.com/commodity/brent-crude-oil)
+- **S&P 500 futures:** +0.78% premarket. Polymarket implied 95% prob higher open; market partially recovering from June 10's -1.9% close. Source: [Benzinga SPX prediction](https://www.benzinga.com/markets/prediction-markets/26/06/53134435/sp500-june-11-open-up-or-down-polymarket-iran-strikes-ppi-inflation)
+- **VIX:** 22.22 (closed June 10 at 22.22, +11.83% on the day). Source: [Yahoo Finance VIX](https://finance.yahoo.com/quote/%5EVIX/history/)
+- **Today's catalysts:**
+  - US completed latest Iran strikes overnight; peace negotiation hopes partially revived (futures bounce). Source: [TheStreet June 11](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026)
+  - **SpaceX (SPCX) IPO pricing tonight** after close — $135/share, $1.75T valuation, $75B raise (largest IPO in history). Analyst estimates $50B in selling pressure as investors liquidate other tech positions to fund SPCX buys. Nasdaq-100 rules amended for faster inclusion (could be added as soon as 15 days post-IPO). **Direct liquidity headwind for all UNIVERSE tech names today.** Sources: [Fortune SpaceX IPO](https://fortune.com/2026/06/07/spacex-ipo-selling-price-dislocations-spcx-stock-passive-index-flows-retail-investors/), [HeyGoTrade SpaceX](https://www.heygotrade.com/en/news/spacex-ipo-177-trillion-valuation-2026-ipo-wave/)
+  - Oracle (ORCL, not in UNIVERSE) -7% AH after announcing $40B equity offering to fund AI infra. Amplifies market concern about AI capex overhang; read-across to cloud infra valuations. Source: [GF Oracle](https://www.gurufocus.com/news/8903717/oracle-orcl-set-to-raise-capital-expenditure-guidance-amid-ai-investment-surge)
+- **Earnings before open:** No UNIVERSE names reporting. Lennar (LEN) reports today (not UNIVERSE). Source: [EarningsWhispers June 11](https://www.earningswhispers.com/calendar/20260611/1)
+- **Earnings after close today:** Adobe (ADBE, not in UNIVERSE) Q2 FY2026 — consensus $5.81 EPS / $6.45B revenue. ADBE down ~30% YTD on AI-eats-software fears. Reaction tonight will read across to SaaS/cloud names in UNIVERSE (NOW, HUBS, CRM, TEAM). Source: [TechTimes Adobe](https://www.techtimes.com/articles/318155/20260610/adobe-q2-earnings-june-11-stock-down-30market-test-whether-ai-eats-feeds-creative-software.htm)
+- **Economic calendar:**
+  - **PPI May 2026 @ 8:30 AM ET today** — April PPI was +6.0% YoY (largest since Dec 2022); expectations +0.7% MoM for May (vs +1.4% April). A hotter-than-expected print = fresh sell-off risk for growth stocks. Source: [BLS PPI schedule](https://www.bls.gov/schedule/news_release/ppi.htm), [Polymarket PPI](https://polymarket.com/event/producer-price-index-ppi-yoy-may-2026)
+  - **ECB rate decision today.** Source: [TheStreet June 11](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-11-2026)
+  - FOMC June 16–17 (next week) — 99.1% market prob of no change at 3.50–3.75%. Goldman Sachs: no 2026 cuts. Source: [Polymarket FOMC](https://polymarket.com/event/fed-decision-in-june-825)
+  - CPI May 2026 = 4.2% YoY (released June 10) — first above 4% since May 2023. Prior entry.
+- **Sector momentum:**
+  - Technology: partial recovery attempt (+0.78% futures) after June 10's -1.9% but SpaceX IPO selling pressure will suppress any rally
+  - Semiconductors: broad weakness persists (AVBO guidance miss, AMD -10.86% June 5); MRVL joining S&P 500 June 22 is idiosyncratic positive
+  - Cybersecurity: most resilient sub-sector (QLYS +21% 30-day, CRWD fundamentals strong)
+  - Energy: bid from Iran/Hormuz risk; not relevant to UNIVERSE
+  - Source: [Schwab sector outlook](https://www.schwab.com/learn/story/stock-sector-outlook), [CNBC MRVL S&P 500](https://www.cnbc.com/2026/06/05/marvell-technology-flex-sp-500-campbells-pool.html)
+
+### Held-Ticker News
+
+**QLYS (19 shares, est entry ~$91, last known price ~$111.53 June 5, unrealized ~+22%):**
+- No new fundamental news since June 10 research. CEO/CFO 10b5-1 sells documented. Thesis intact.
+- **CRITICAL (still pending API restore):** Mandatory stop-tighten to 5% GTC from 10% — HWM ~$111.53 → stop ~$105.95. Per strategy rule: tighten trail to 5% at +20%.
+- Cybersec sector resilient; SpaceX IPO selling pressure could clip QLYS today.
+
+**QRVO (19 shares — pending sell, Day 43 of broken thesis):**
+- FTC Second Request status unchanged. SAMR China review ongoing. Close guidance: early calendar 2027.
+- SELL IMMEDIATELY on API restore. Every day of delay = uncompensated merger-arb binary risk.
+- Source: [StockTitan QRVO 8-K](https://www.stocktitan.net/sec-filings/QRVO/8-k-qorvo-inc-reports-material-event-5547e6e85e2e.html)
+
+**COTY (status unconfirmed — trailing stop should have fired ~$2.03–$2.06):**
+- Stock down ~21% over past month as of June 9. Marc Jacobs Beauty relaunch June 1 drove +5.95% on June 5 but multi-month trend negative.
+- Source: [TimothySykes COTY June 5](https://www.timothysykes.com/news/cotyinc-coty-news-2026_06_05-2/)
+- If still open, SELL on API restore. If stopped out, confirm closure and log calibration block.
+
+### UNIVERSE News Summary
+
+- **CRWD (CrowdStrike):** Q1 FY2026 beat — revenue $1.39B (+26% YoY), ARR $5.51B (+24%). 4-for-1 split record date June 25, first split-adjusted trade July 2. Pre-split price ~$731 (post-split equiv ~$183). Above prior $680-720 entry zone. Source: [ProactiveInvestors CRWD](https://www.proactiveinvestors.com/companies/news/1093411/crowdstrike-tops-q1-estimates-authorizes-4-for-1-stock-split-1093411.html)
+- **VRT (Vertiv):** -3.12% June 10. Q1 revenue +30% YoY ($2.65B) — fundamentals still strong but macro override in force. Iran re-escalation = stated falsification trigger still active. Entry thesis SUSPENDED. Source: [TradingKey VRT](https://www.tradingkey.com/news/market-movers/261959252-market-movers-vrt-20260610)
+- **MRVL (Marvell):** Joining S&P 500 June 22 — passive index-fund buying catalyst. Idiosyncratic positive amid broad semi weakness. Source: [CNBC MRVL S&P 500](https://www.cnbc.com/2026/06/05/marvell-technology-flex-sp-500-campbells-pool.html)
+- **NOW (ServiceNow):** ~$112.89 June 8. Still above preferred $108-112 entry zone. Deployment cap not resolvable until QRVO/COTY confirmed. 5-for-1 split (announced Oct 2025) likely already reflected in price.
+- **NVDA / AMD / AVGO / ANET / VRT:** Semi/infra cluster under continued pressure from AVBO guidance miss; SpaceX IPO selling pressure is additional headwind today.
+- **No UNIVERSE names reporting earnings today.**
+
+### UNIVERSE Movers
+No live movers data (API offline). Based on web research:
+- Broadly tech under SpaceX IPO liquidation pressure and PPI uncertainty
+- Cybersec (QLYS, CRWD) most resilient sector
+- No individual UNIVERSE breakout catalysts found beyond CRWD/MRVL noted above
+
+### Options Sleeve
+- No open option positions. Sleeve cap ($500) unused.
+- VIX 22.22 — elevated. Long premium expensive.
+- No options trades today. Maintain $0 sleeve exposure through SpaceX IPO pricing + PPI day.
+
+### Trade Ideas
+
+**NONE TODAY.** No actionable setups pass the full buy-side gate.
+
+1. ~~CRWD — bullish~~ **BLOCKED.** Fundamental thesis strong (Q1 beat + split catalyst), but: (a) pre-split price ~$731 is above the $680-720 entry zone; (b) SpaceX IPO creates broad tech selling pressure today; (c) QRVO/COTY positions unresolved. Wait for post-split pricing and a re-test of the split-adjusted zone (~$170-180 equiv).
+
+2. ~~MRVL — bullish, S&P 500 inclusion~~ **BLOCKED.** S&P 500 inclusion June 22 is a real passive-fund buying catalyst. Materiality: 0.6 (single idiosyncratic event). BUT: (a) API offline — cannot confirm current price or deployment headroom; (b) broad semi sector weakness is a contra-wind; (c) SpaceX IPO selling today. Revisit Friday June 12 after API restored and SpaceX IPO priced.
+
+3. ~~VRT — bullish, AI capex thesis~~ **SUSPENDED** (Iran re-escalation falsification active; VRT at/near $300 break level).
+
+### Risk Factors
+- **⚠ API offline Day 43** — Three critical actions blocked: QRVO sell (Day 43 thesis break), QLYS stop-tighten to 5% (mandatory, +20% threshold crossed June 5), COTY status confirm. Highest priority.
+- **SpaceX IPO tonight** — ~$50B estimated tech-stock liquidation pressure. Broad UNIVERSE tech headwind for today's session. Do not enter any new positions on IPO pricing day.
+- **PPI May @ 8:30 ET** — April was +6.0% YoY. Hot print = growth stock sell-off. S&P futures +0.78% could evaporate on upside surprise.
+- **Oracle $40B equity raise** — AI capex overhang signal. Cloud/SaaS multiple compression risk.
+- **Adobe earnings tonight** — Down 30% YTD. "AI eats software" thesis test. A miss or soft guidance could clip SaaS names in UNIVERSE (NOW, CRM, HUBS, TEAM) in tomorrow's premarket.
+- **Iran re-escalation ongoing** — VRT falsification still in force. Oil at $92–$95 = inflation pressure. VIX 22.22 elevated.
+- **QLYS stop at 10% vs mandatory 5%** — ~$70 extra unrealized gain exposed until API restores and stop is tightened.
+- **Deployment cap math** — After QRVO + COTY confirmed closed: QLYS only (~$1,729) → $1,271 free under $3k cap. One position slot available but no eligible entries today.
+
+### Decision
+
+**HOLD.**
+
+No new trades. Four concurrent blocking factors:
+1. SpaceX IPO pricing tonight — single biggest tech liquidity event of the year; never enter into $50B of expected selling pressure
+2. PPI print at 8:30 AM ET — high-uncertainty macro event
+3. API offline — cannot confirm current position state or place protective orders
+4. CRWD/MRVL best candidates but both blocked (price/deployment/API reasons above)
+
+**Priority action stack on API restore (Day 43 — CRITICAL):**
+1. `bash scripts/alpaca.sh positions` — confirm COTY; if open, SELL immediately
+2. `bash scripts/alpaca.sh close QRVO` + cancel QRVO stop — Day 43 thesis break, every day is risk
+3. Cancel QLYS 10% trailing stop → place 5% trailing GTC at HWM ~$111.53 (stop ~$105.95)
+4. **No new entries today** (SpaceX IPO + PPI volatility)
+5. Friday June 12 weekly review: post-SpaceX IPO sector assessment; CRWD split-adjusted zone ($170-180 equiv); MRVL S&P inclusion setup; Adobe AH reaction read-across to SaaS; NOW zone re-eval
+
