@@ -129,3 +129,9 @@ above on next session (review /tmp/stops-results-20260506-103616.json for order 
 ## Jun 10 — EOD Snapshot HALTED (Day 41, Wednesday)
 **REASON:** ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT not set in session environment. Alpaca wrapper exited with "ALPACA_API_KEY not set in environment". No portfolio data pulled. No metrics computed.
 **Action required:** Re-run /daily-summary after setting env vars in session.
+
+---
+
+## Jun 11 — EOD Snapshot HALTED (Day 42, Thursday)
+**REASON:** ALPACA_API_KEY not set in session environment (same as Day 41). Alpaca wrapper exited with "ALPACA_API_KEY not set in environment". No portfolio data pulled. No metrics computed.
+**Action required:** Configure ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT as environment variables in the cloud session (or via .env file locally). Then re-run /daily-summary.
