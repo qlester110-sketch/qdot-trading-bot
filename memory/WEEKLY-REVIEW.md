@@ -404,6 +404,103 @@ Rationale: Second consecutive outperformance week (+3.3% vs S&P +1.43% = +1.87% 
 
 ---
 
+## Week ending 2026-06-12
+
+### Stats — Stock Book
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | ~$10,491 (corrected; Week 6 used ~$10,646 — QRVO June 5 actual $98.26 vs estimated $106.42; −$155 correction) |
+| Ending portfolio | ~$10,450 (est) |
+| Week return | ~−$41 (−0.39%) — first underperformance week since Week 3 |
+| S&P 500 week | +0.88% (June 5 close 7,383.74 → June 12 close ~7,449; note: Week 6 used incorrect ~7,543; corrected per June 8 research log) |
+| Bot vs S&P this week | **−1.27%** — first underperformance since Week 3 |
+| Phase return (since Apr 30) | ~+$450 (+4.50%) vs S&P +3.03% (Apr 30: 7,230.12 → Jun 12: ~7,449) → **+1.47% relative** |
+| Stock trades | 0 opens, 0 closes (W:0 / L:0 / open:2 est) |
+| Win rate | N/A — no calibrated closed trades |
+| Best unrealized | QLYS +21.0% / +$361 (entry $90.99; est $110.00 Jun 12) |
+| Worst unrealized | QRVO +8.9% / +$152 (entry $89.66; est $97.66 Jun 12 — broken thesis, sell pending Day 44) |
+| Profit factor | N/A — no calibrated closed trades |
+
+*All prices estimated — Alpaca API offline all week (Day 40–44, 7th consecutive week). QLYS: day range $107.35–$111.80 Jun 12 (prev close $110.20); using $110.00. QRVO: $97.66 (web search June 12; coincodex/stockopedia). COTY: trailing stop ~$2.42 assumed fired mid-May (stock now ~$1.86–$2.09 Jun 12, well below stop). S&P 500: Jun 5 close 7,383.74 per June 8 research log (correct) vs ~7,543 estimated in Week 6 review (incorrect); Jun 12 close ~7,449 per web search. Phase Apr 30 baseline: 7,230.12 (CNBC Apr 30 2026).*
+
+### Stats — Options Sleeve
+| Metric | Value |
+|--------|-------|
+| Trades this week | 0 |
+| W / L / open | 0 / 0 / 0 |
+| Sleeve cap utilization | $0 / $500 (0%) |
+| Open option positions | 0 |
+
+### Calibration
+| Metric | Value |
+|--------|-------|
+| Total resolved calibrated trades | 0 |
+| Overall hit rate | N/A |
+| Hit rate by sector | N/A |
+| Hit rate by catalyst type | N/A |
+| Hit rate by direction | N/A |
+| Materiality bucket accuracy | N/A |
+| Band recommendation | **Insufficient data** (0 of 20 minimum resolved trades) |
+
+*QLYS, QRVO, COTY remain pre-calibration entries — excluded per TRADING-STRATEGY.md §Pre-calibration trades. Zero calibrated trades in 7 full weeks (30 trading sessions). Day 44 of 90 (calendar) — 49% of experiment window with zero calibration data. At current trajectory (0 calibrated entries in 44 days), reaching the 20-trade minimum in remaining 46 days requires ≥1 new calibrated entry every 2–3 sessions — mathematically urgent.*
+
+### Closed Trades
+None this week. COTY trailing stop presumed fired mid-May (unconfirmed; API still offline).
+
+### Open Positions at Week End
+| Ticker | Entry | Last (est.) | Unrealized | Stop (est.) | Notes |
+|--------|-------|-------------|------------|-------------|-------|
+| QLYS | $90.99 (05-06) | ~$110.00 est (Jun 12) | +21.0% / +$361 | ~$99.00 (10% trailing — MUST tighten to 5% = ~$106.21 on API restore) | ⚠ Stop-tighten mandatory since +20% crossed ~June 5; thesis intact (FedRAMP High, Q1 beat) |
+| QRVO | $89.66 (05-06) | ~$97.66 (Jun 12) | +8.9% / +$152 | $80.56 | ⛔ Thesis broken (merger arb; FTC Second Request + SAMR Phase II; CEO $5.82M insider sale). **Day 44 — SELL immediately on API restore** |
+| COTY | $2.50 (05-06) | Stop assumed fired ~$2.42; stock ~$1.86–$2.09 Jun 12 | ~−3.2% / ~−$63 | N/A | ⛔ Trailing stop should have auto-fired mid-May. Class action deadline passed May 22. Confirm via first API call |
+
+### What Worked
+- Iran-US peace deal materializing (June 11–12 MOU tentatively reached; Trump canceled further strikes June 11): VRT's stated falsification condition ("Iran re-escalation worsens ME deal-slippage materially") is reversing — Brent oil −20% from $111 peak to $89; VRT entry zone $295–$315 reactivation expected Monday if MOU signed
+- Research framework identified MRVL (Marvell Technology) S&P 500 inclusion (effective June 22) as new mechanical catalyst: materiality 0.65, direction bullish, 10-day horizon; passive fund forced-buy premium (4–8% documented empirically); Dan Durn (ex-Adobe CFO) joining as CFO June 15 adds management depth
+- NOW entry zone $100–$112 confirmed at $103.08 (June 12) — thesis and price alignment ready for execution the moment API restores; gate math valid ($1,729 QLYS + $1,000 NOW = $2,729 under $3k cap after QRVO/COTY exits)
+- QLYS held above 5% trailing stop equivalent ($106.21) throughout the week despite AI-semi complex selloff (MU −11.5%, NVDA −7%, MRVL −13% on AVBO guidance miss); cybersecurity proved most resilient sub-sector
+- SpaceX IPO (SPCX $135, $1.78T valuation, $75B raise) absorbed cleanly without feared $50B tech-stock liquidation; market confirmed deep enough liquidity for growth multiples to survive the largest IPO in history
+
+### What Didn't Work
+- API offline for all 5 sessions this week (Day 40–44) — 7th consecutive week of complete broker paralysis; QRVO voluntary exit now 44 days overdue since thesis broke (May 5); QLYS stop still at 10% instead of mandatory 5% (every day = ~$5.59/share of unnecessary downside exposure); NOW entry zone active for 5 sessions with zero execution capacity
+- QRVO declined from $98.26 (June 5 actual) to $97.66 (June 12); position was +20.2% at May 29 peak — now +8.9%; $11.56/share of unrealized gain eroded since peak; quantified cost of 44-day voluntary-exit delay
+- May CPI +4.2% YoY (June 10, first above 4% since May 2023) + PPI +6.5% YoY (June 11, hottest since Nov 2022) + NFP +172K (June 5) = stagflation backdrop; FOMC June 16–17 with Warsh likely to strip easing-bias language; worst macro backdrop for growth multiples in experiment duration
+- First underperformance week since Week 3: S&P +0.88% (Iran deal + tech rebound) vs bot −0.39% (AI-semi positioning via QRVO gave back ground); phase lead narrowed from +2.13% to +1.47% relative
+- Week 6 QRVO price estimate ($106.42) was ~$8/share too high (actual was $98.26 per June 8 research); caused ~$155 portfolio overstatement in Week 6 review; data-quality error from unreliable price source (WallStreetZen range estimate)
+
+### Key Lessons
+- **QRVO is the experiment's clearest voluntary-exit cost quantification.** Position went from +20.2% (May 29 peak) to +8.9% (June 12) while sitting on a broken thesis for 44 days. The $11.56/share erosion directly measures the cost of delay. This is not API-caused — the thesis broke on Day 1 (May 5). The lesson: broken-thesis exits must be the first order of business when the API restores, not the third.
+- **Iran deal as falsification-reversal is a clean decision point.** VRT's falsification was explicit: "Iran re-escalation worsens ME deal-slippage materially." The condition has demonstrably reversed (MOU June 11–12, Brent −20% from peak). If MOU is signed this weekend, the entry gate re-opens. This is how falsification conditions are supposed to work — they trigger both exits AND re-entries.
+- **MRVL S&P 500 inclusion is a rare mechanical catalyst.** Index inclusion forces passive funds to buy regardless of valuation or sentiment. The 10-day window June 5→22 is finite; most of the premium front-running has likely occurred already (+11% since announcement). This illustrates a time-sensitive entry discipline: identified too late, partially missed. Remaining upside requires API restore before June 22.
+- **Stagflation backdrop (CPI +4.2%, PPI +6.5%, NFP +172K) compounds with FOMC risk.** Kevin Warsh's first FOMC meeting June 16–17 is a legitimate tail risk. He may remove dot-plot projections entirely ("data dependency" without forward guidance) or signal explicit rate-hike bias. New entries (NOW, MRVL) should be sized at $1k max regardless of conviction level until post-FOMC clarity.
+- **Adobe Q2 AH (June 11) is a positive SaaS read.** Despite −5.5% stock reaction (CFO departure), underlying results were strong: $6.62B revenue (+11% YoY), AI ARR tripled and exceeded $500M, raised full-year guide. AI monetization in SaaS is real and accelerating. This directly supports NOW's thesis (AI Control Tower, 30%+ ACV from AI by 2030).
+
+### Adjustments for Next Week
+No strategy rule changes — 0 calibration data; no rule violations requiring strategy-doc change; no owner override. TRADING-STRATEGY.md unchanged. UNIVERSE.md unchanged.
+
+Research-level updates (not strategy changes):
+1. **NOW materiality revised: 0.70 → 0.65** — API security vulnerability (April 2026 CVE; unauthorized customer data access on Australian/older instances; disclosed June 5); reduces "trusted enterprise AI platform" narrative. Still above 0.60 minimum. Entry zone $100–$112 confirmed at $103.08.
+2. **MRVL new candidate staged:** S&P 500 inclusion effective June 22 (mechanical catalyst); materiality 0.65; direction bullish; entry zone $275–$290 (est $280.71 Jun 12; do not chase above $290); horizon 10 trading days; catalyst type: regulatory (index inclusion). Dan Durn (ex-Adobe CFO) joining as CFO June 15. Priority: NOW first; MRVL only if deployment cap allows.
+3. **VRT falsification clearing:** Iran MOU imminent; stated falsification reversing. If MOU signed this weekend: entry zone $295–$315 reactivated Monday; materiality reset to 0.70 (suspended since June 10). If NOT signed by Monday: remains suspended.
+4. **CRWD split pricing update:** 4-for-1 split record date June 25; first split-adjusted trade July 2. Entry zone: $680–$740 (pre-split) / $170–$185 (post-split equiv). Price ~$694.78 Jun 12 is in zone pre-split but deployment cap is full. No entry until QLYS closes.
+5. **MDB entry zone: $380–$400** (revised from $360–$380; Q1 FY27 beat; stock at $400+; wait for pullback).
+
+Operational priorities (mandatory before Mon June 15 open):
+1. **Restore env vars — Day 44; 7th consecutive week is experiment-critical**
+2. **Confirm COTY** — `bash scripts/alpaca.sh positions`; if stopped: log CLOSE block (pre-cal, N/A calibration, ~−3.2%); if still open: SELL 784sh immediately
+3. **SELL QRVO 19sh** — `/trade QRVO 19 sell`; Day 44; +8.9%; thesis broken; log CLOSE block (pre-cal, N/A calibration)
+4. **Tighten QLYS stop** — cancel 10% trailing GTC; place 5% trailing GTC; HWM ~$111.80 → stop ~$106.21; mandatory per strategy rule (+20% threshold crossed June 5)
+5. **Enter NOW** — after QRVO/COTY exits confirmed; $100–$112 zone ($103.08 Jun 12); $1k max; 10% trailing GTC; log full calibration fields: direction bullish, materiality 0.65, horizon 10 days, catalyst earnings+guidance+contract; first calibrated trade
+6. **FOMC June 16–17** — Hold new entries through FOMC if possible; do NOT add to positions on FOMC day; size stays $1k max
+7. **Monitor MRVL** — S&P 500 inclusion June 22; if NOW entered AND deployment cap allows (QLYS must stop out to free room); entry zone $275–$290
+8. **Iran MOU weekend** — if signed: VRT entry zone $295–$315 reactivated; evaluate Monday open; materiality 0.70; horizon 10 days
+
+### Overall Grade: C−
+
+Rationale: First underperformance week since Week 3 (bot −0.39% vs S&P +0.88% = −1.27% relative); phase lead narrowed to +1.47% (from +2.13% peak). QRVO position has eroded from +20.2% (May 29) to +8.9% (June 12) — $11.56/share lost while waiting 44 days on a broken thesis. Research quality remains A-grade: MRVL S&P 500 inclusion identified as new calibrated-trade candidate with documented materiality and entry zone; NOW confirmed in zone; VRT falsification clearly reversing on Iran MOU; SpaceX IPO absorbed cleanly. Grade lowered to C− (from C in Week 5–6) for: (1) API offline Day 44 — 7th consecutive week; now the dominant, quantified failure of this experiment; (2) QRVO voluntary exit 44 days overdue — $11.56/share of unrealized gain given back since peak; (3) QLYS stop wrong (10% vs mandatory 5%) for 7+ consecutive sessions — rule violation in execution only, but ongoing; (4) NOW entry zone confirmed for 5 consecutive sessions with zero execution; first calibrated trade continues to elude; (5) zero calibrated trades in 30 trading sessions — 49% of window elapsed, 20-trade minimum now mathematically urgent. Sources: TradingEconomics Brent/WTI June 12; Benzinga Polymarket June 12 (S&P 7,449 close, +0.74% Jun 12); NPR/PBS Iran MOU June 11–12; S&P 500 June 5 close 7,383.74 per June 8 research log; Apr 30 close 7,230.12 (CNBC Apr 30 2026).
+
+---
+
 ## Week ending 2026-06-05
 
 ### Stats — Stock Book
