@@ -148,3 +148,23 @@ above on next session (review /tmp/stops-results-20260506-103616.json for order 
 4. BUY NOW — ServiceNow at $103.08, IN ENTRY ZONE ($100–$112). Materiality 0.65. 10 shares ~$1,030. Gate: requires QRVO/COTY confirmed closed first (deployment math: $1,729 QLYS + $1,000 NOW = $2,729 under $3k cap).
 
 **Action required:** Set ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL as environment variables on the cloud session (Settings → Environment Variables). Then re-run /market-open.
+
+---
+
+## Jun 12 — EOD Snapshot HALTED (Day 44, Friday)
+**REASON:** All 5 required env vars MISSING (ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL). 5th consecutive halted session (Day 41–44 + today's EOD). No broker calls possible; no portfolio data pulled; no metrics computed. Slack fallback written to DAILY-SUMMARY.md.
+
+**Last known portfolio state (Day 0 baseline — no confirmed fills ever logged):**
+- Equity: $10,000 (baseline; actual unknown)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (all entered ~2026-05-06; no fill prices confirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (5th day blocked — CRITICAL):**
+1. SELL QRVO 19sh — thesis broken. Priority #1.
+2. TIGHTEN QLYS stop 10% → 5% GTC. HWM est $111.80 → stop ~$106.21. Mandatory since +20% crossed ~Jun 5.
+3. CONFIRM COTY — stop should have auto-hit at ~$2.42 when stock fell to ~$2.03–$2.06. Verify closed or sell 784sh.
+4. BUY NOW (ServiceNow) — entry zone $100–$112 — gate: QRVO/COTY must close first.
+
+**Action required (URGENT):** Configure env vars in cloud session → Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open immediately (even if post-market — needed to confirm stops and pending sells). Tomorrow pre-market: verify QRVO exit and QLYS stop tighten before open.
