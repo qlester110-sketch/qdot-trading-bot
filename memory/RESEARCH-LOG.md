@@ -5496,3 +5496,374 @@ No new trades. Four concurrent blocking factors:
 4. **No new entries today** (SpaceX IPO + PPI volatility)
 5. Friday June 12 weekly review: post-SpaceX IPO sector assessment; CRWD split-adjusted zone ($170-180 equiv); MRVL S&P inclusion setup; Adobe AH reaction read-across to SaaS; NOW zone re-eval
 
+---
+
+## 2026-06-12 — Pre-market Research (Day 44 — Weekly Review Friday)
+
+### ⚠ OPERATIONAL ALERT — API OUTAGE DAY 44
+All 5 env vars MISSING: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+`ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`. Zero broker calls possible. Slack notification
+not sent. Three critical actions remain unexecuted since Day 1:
+1. **SELL QRVO 19sh** — thesis broken (merger arb); Day 44. Est +10–11%.
+2. **TIGHTEN QLYS stop** — cancel 10% trailing GTC, replace with 5% GTC (mandatory; +20% threshold crossed June 5).
+3. **CONFIRM COTY** — trailing stop ~$2.42 should have auto-executed; confirm closed or sell immediately.
+
+### Account (estimated — API offline, Day 44)
+- Equity: ~$100k (Alpaca paper) | Working cap $10k frame
+- Cash: ~$94,610 estimated (unchanged since May 7 — no confirmed new fills)
+- Buying power: unknown
+- Daytrade count: unknown
+- Weekly trade slots: **3/3 available** (week of June 8; 0 trades placed)
+
+| Sym  | Sh  | Entry  | Est Jun 12 | Est P&L  | Stop (est)              | Status |
+|------|-----|--------|------------|----------|-------------------------|--------|
+| QLYS | 19  | $90.99 | ~$110.20 (Jun 12 prev close) | **+21.1%** | ~$105.95 (5% — once tightened; currently still 10% at ~$99.18) | ✓ Thesis intact — stop tighten CRITICAL |
+| QRVO | 19  | $89.66 | ~$100–103 est | **+12–15%** | ~$80.56 | ⛔ SELL Day 44 — merger arb, thesis broken |
+| COTY | 784 | $2.50  | ~$2.06 est | ~-17.6% | ~$2.42 (from $2.675 HWM) | ⛔ Assumed stopped ~$2.42; confirm |
+
+Deployed (est): QLYS ~$1,729 + QRVO ~$1,703 = ~$3,432 at cost (grandfathered, over $3k new cap).
+After QRVO + COTY exits: ~$1,729 (QLYS only) → $1,271 free under $3k cap for one new position.
+
+### Market Context
+- **WTI crude:** ~$86/bbl (below $86; -3%+ day). Hitting lowest level in ~2 months.
+  Source: [TradingEconomics WTI](https://tradingeconomics.com/commodity/crude-oil) (2026-06-12)
+- **Brent crude:** $89.25/bbl, -1.25% from prior close. Falling on Trump's announcement of
+  imminent Iran peace deal; Iran mines from Strait of Hormuz to be removed within 30 days
+  under tentative MOU. Brent now ~$20 below its $111 peak from late May.
+  Source: [TradingEconomics Brent](https://tradingeconomics.com/commodity/brent-crude-oil) (2026-06-12)
+- **S&P 500 futures:** +0.18% premarket. Little changed. Markets digesting SpaceX IPO first
+  day (SPCX opens at $135 IPO price, no dislocation) and Iran deal optimism.
+  Source: [Benzinga Polymarket June 12](https://www.benzinga.com/markets/prediction-markets/26/06/53160378/sp500-june-12-open-up-or-down-polymarket-spacex-ipo-iran-deal) (2026-06-12)
+- **VIX:** 19.44 (prev close Jun 11 was ~19.87, -2.2%). Declining from Jun 10 high of 22.22.
+  Fear gauge easing materially as Iran deal progress reduces geopolitical risk premium.
+  Source: [StreetStats](https://streetstats.finance/markets/volatility) (2026-06-12)
+- **Today's key catalysts:**
+  1. **SpaceX (SPCX) IPO — First day trading.** Priced $135/share, $1.78T valuation, $75B raise
+     (largest IPO in history). Trading at IPO price at open; no violent dislocation.
+     Retail allocation 30% (vs. typical 5–10%). ~$50B estimated tech-stock liquidation concern
+     did not materialize in AH June 11. Nasdaq-100 inclusion expected as soon as 15 days post-IPO.
+     Source: [CNBC SPCX IPO June 9](https://www.cnbc.com/2026/06/09/spacex-ipo-explained-stock-price-date.html),
+     [Benzinga Polymarket June 12](https://www.benzinga.com/markets/prediction-markets/26/06/53160378/sp500-june-12-open-up-or-down-polymarket-spacex-ipo-iran-deal)
+  2. **Iran-US peace deal imminent (June 11–12):** Trump canceled further strikes June 11,
+     said deal is "largely negotiated." Tentative MOU: 60-day ceasefire extension + Hormuz
+     reopening + mines removed within 30 days + framework for nuclear talks. Iranian state
+     media says not yet finalized on Iran's end, but deal is expected this weekend. Oil -8%
+     from Brent $97 to $89 in 48h. **Most material geopolitical development since war start.**
+     Source: [NPR Trump cancels strikes June 11](https://www.npr.org/2026/06/11/nx-s1-5854970/trump-iran-peace-deal-cancel-strikes),
+     [The Hill tentative deal](https://thehill.com/policy/international/5900355-us-iran-ceasefire-extension-deal/),
+     [PBS ceasefire extension](https://www.pbs.org/newshour/world/u-s-and-iranian-negotiators-reach-tentative-deal-to-extend-ceasefire-and-start-new-nuclear-talks)
+  3. **Adobe Q2 FY2026 AH results (June 11):** Record $6.62B revenue (+11% YoY), non-GAAP EPS
+     $5.96 (+18%), AI-first ARR tripled YoY and exceeded $500M; raised full-year guidance.
+     **BUT stock -5.5% AH** due to CFO Dan Durn departure June 15 (second executive vacancy
+     in days). Mixed read for SaaS: results are strong but C-suite instability is a headwind.
+     Source: [TechTimes Adobe Q2](https://www.techtimes.com/articles/318264/20260612/adobe-q2-2026-earnings-record-662b-revenue-ai-arr-triples-cfo-exits-days.htm),
+     [Gurufocus ADBE](https://www.gurufocus.com/news/8913210/adobe-adbe-reports-strong-q2-fy-2026-results-with-662-billion-revenue)
+- **Earnings before open today (June 12):** No universe names reporting today.
+- **Economic calendar:**
+  - **UMich Consumer Sentiment Prelim June (10 AM ET):** May final was 44.8 (near record low,
+    down from preliminary 48.2). Year-ahead inflation expectations 4.8%; 5-yr 3.9%.
+    June prelim expected today — likely remains depressed given energy/inflation backdrop,
+    but Iran deal oil-price drop may lift slightly. Key watch: 1yr inflation expectations.
+    Source: [Advisor Perspectives May final](https://www.advisorperspectives.com/dshort/updates/2026/05/22/consumer-sentiment-sinks-to-record-low-as-cost-of-living-concerns-intensify),
+    [Kiplinger June 8-12 calendar](https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar)
+  - **FOMC June 16–17 (next week — Kevin Warsh's first meeting as chair):** Rate hold 3.50–3.75%
+    widely expected (99%+ probability). But Warsh may remove dot plot / strip easing-bias language.
+    Fed funds futures now price rate hike as more likely year-end move than cut.
+    CPI May +4.2% + **PPI May +6.5% YoY** (hottest since Nov 2022; gasoline wholesale +23.4%) +
+    NFP +172K = stagflationary backdrop. PPI released June 11; more evidence rate hikes plausible.
+    Source: [IndexBox FOMC preview June 16-17](https://www.indexbox.io/blog/fed-meeting-preview-june-1617-fomc-decision-and-potential-bias-shift/),
+    [Kalshi FOMC odds](https://kalshi.com/markets/kxfeddecision/fed-meeting/kxfeddecision-26jun)
+  - CPI May 4.2% YoY released June 10 (per prior entry). PPI hot in April. No new inflation data today.
+- **Sector momentum (week of June 8–12):**
+  - Technology (XLK): Recovery attempt in progress. AI silicon sub-sector leading rebound (NVDA
+    +recovery, AVGO +3–4%, CRWD +5.68% June 11). XLK YTD +32–33%.
+  - Energy (XLE): Breaking down sharply on Iran deal — oil -20% from peak $111 Brent. Energy
+    sector outperformance is unwinding. YTD still elevated but losing momentum.
+  - Cybersecurity: Resilient within XLK. CRWD near ATH range, QLYS strong.
+  - Materials, Industrials: Mid-table.
+  - Consumer discretionary, real estate: Lagging.
+  Source: [ETFAction market daily](https://www.etfaction.com/market-daily-sp-500-advances-as-growth-equities-lead-and-energy-lags/),
+  [Anna Coulling sector ETF review](https://www.annacoulling.com/stock-trader-tips/sector-etf-review-june-1-2026-beaten-down-opportunities-strong-performers-and-what-may-lie-ahead/)
+
+### Held-Ticker News Summary
+
+**QLYS (Qualys) — ✓ THESIS INTACT — +21.1% — Stop-Tighten MANDATORY**
+- Jun 12 day range $107.35–$111.80, prev close $110.20. Entry $90.99. Est P&L: **+21.1%**.
+- **Strategy rule mandatory (still pending API restore):** Position crossed +20% threshold on
+  ~June 5. Current 10% trailing stop must be replaced with 5% trailing GTC.
+  Estimated HWM ~$111.80 (today's high). New 5% stop → ~$106.21. If 10% stop still in place,
+  current stop level is ~$100.62 — meaning ~$5.59/share of unnecessary downside exposure.
+- No new fundamental catalysts since FedRAMP High TotalCloud authorization (May 14).
+  CEO/CFO 10b5-1 sales (June 1–2) documented in prior research; pre-set plans, not panic selling.
+- Cybersecurity sector remaining resilient amid broader tech volatility. CRWD recovery positive
+  read-through. Analyst avg target ~$143; stock at $110 = meaningful room to target.
+- **Action: HOLD. When API restored: cancel 10% trailing GTC → place 5% trailing GTC.**
+  Source: [Yahoo Finance QLYS](https://finance.yahoo.com/quote/QLYS/),
+  [StockTitan QLYS](https://www.stocktitan.net/news/QLYS/) (2026-06-12)
+
+**QRVO (Qorvo) — ⛔ THESIS BROKEN — SELL — Day 44**
+- Est ~$100–103. Entry $89.66. P&L: **+12–15%**. Stop $80.56.
+- Skyworks consent deadline passed June 11 (sufficient consents received to amend Qorvo Notes
+  covenants). Exchange Offers expire Sept 1, 2026. Close timeline: still early calendar 2027
+  per formal guidance (FTC Second Request + SAMR Phase II ongoing).
+- No organic business thesis. Pure merger arb with FTC/SAMR binary.
+- CEO insider sale $5.82M documented. Analyst avg target $92.27 (well below current price —
+  Street is not chasing this higher).
+- **Action: SELL all 19sh the moment API restored. Day 44. Priority #1.**
+  Source: [QuiverQuant Skyworks QRVO](https://www.quiverquant.com/news/Skyworks+Solutions+Announces+Exchange+Offers+for+Qorvo+Notes+Ahead+of+Upcoming+Mergers),
+  [StockTitan QRVO 8-K](https://www.stocktitan.net/sec-filings/QRVO/) (2026-06-11)
+
+**COTY (Coty) — ⛔ Assumed stopped out; confirm via API**
+- Trailing stop ~$2.42 (10% below $2.675 HWM) should have auto-fired when stock fell to
+  ~$2.03–$2.06 range (mid-May). Assumed realized P&L ~-3.2%. Class action deadline May 22 passed.
+- Marc Jacobs Beauty relaunch drove +5.95% on June 5 — idiosyncratic bounce, does not change
+  broken-thesis narrative (LFL revenue -7%, margin compression, EPS miss).
+- **Action: First Alpaca call on API restore → `bash scripts/alpaca.sh positions`. If still open: SELL 784sh.**
+  Source: [Timothy Sykes COTY June 5](https://www.timothysykes.com/news/cotyinc-coty-news-2026_06_05-2/) (2026-06-12)
+
+### Options Sleeve Health Check
+- No open option positions. Sleeve cap $500 / $250 per-trade — fully unused.
+- **VIX 19.44:** Declining but still elevated. Long premium cost moderately expensive.
+- **QLYS:** Options window open (no earnings imminent). No option thesis needed — stock doing the work.
+- **VRT:** Earnings August 5, 2026 (>54 days). Options window open. Stock entry preferred.
+- **NOW:** Earnings July 29, 2026. Options window open. Stock entry preferred.
+- **CRWD:** Split record date June 25; first split-adjusted trade July 2. Post-earnings window open.
+  No option thesis today.
+- **MRVL:** Earnings ~late August 2026 (>70 days). Options window open. S&P 500 inclusion catalyst
+  (June 22) better played via stock, not options.
+- Decision: **No options trades today.** Maintain $0 sleeve through FOMC week + API outage.
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price (Jun 12) | Recent Move        | Status                     | Key News |
+|--------|-------------------|--------------------|----------------------------|----------|
+| QLYS   | ~$110.20          | +21.1% from entry  | ✓ HOLD — stop tighten pending | Q1 beat + FedRAMP High; thesis intact |
+| QRVO   | ~$100–103         | +12–15% from entry | ⛔ SELL Day 44              | Skyworks consent deadline passed; FTC+SAMR; merger arb |
+| COTY   | ~$2.06 est        | Stop likely fired  | ⛔ Confirm + close          | Assumed stopped at ~$2.42; confirm |
+| VRT    | $281.68–$301.90   | -10%+ from recent  | ⚠ Thesis resuming? Iran deal | Q1 blowout; AVGO $16B AI guide; falsification (Iran) reversing on deal |
+| NOW    | $101.33–$105.12   | ~$103.08           | ✓ In entry zone            | $141.86 avg PT; IBM AI modernization deal; Q2 earnings Jul 29 |
+| CRWD   | $641–$696.43      | +5.68% June 11     | Above entry zone (pre-split) | 4-for-1 split record Jun 25, trade Jul 2; $186 post-split equiv |
+| MRVL   | ~$263 (Jun 5)     | +5% on S&P 500 ann | ✓ NEW CATALYST — include    | S&P 500 inclusion Jun 22; passive fund buying; +210% YTD |
+| NVDA   | $199.54–$206.43   | Recovering         | Post-earnings digestion     | Q1 $81.6B +85%, Q2 $91B guide; semi sector recovery |
+| AVGO   | ~$385.42          | +3–4% recovering   | Post-earnings recovery     | AI semi $10.8B Q2, $16B Q3 guide; software weakness |
+| MDB    | ~$400–404         | +20% on Q1 beat    | Above prior entry zone      | Q1 FY27 $687.6M +beat; Atlas +29%; guide raised; zone was $360–380 |
+| AMD    | ~+155% YTD        | Recovering         | Watchlist only              | Q1 $10.3B +38%; Data Center +57%; recovering from June selloff |
+| BABA   | —                 | —                  | AVOID                       | Q4 FY26 miss; China headwinds |
+| HUBS   | —                 | —                  | AVOID                       | -35%+ since May 7; no recovery signal |
+
+**Movers (WebSearch; Alpaca offline):**
+- **CRWD:** $694.78 today, pre-split. Post-split equivalent ~$173.70. Approaching revised entry zone
+  ($170–180 post-split equiv). 5.68% gain June 11 on cybersec momentum.
+- **VRT:** $281.68–$301.90 today. Iran deal oil collapse is reversing the key falsification condition.
+  Monitoring for re-entry window as peace deal materializes.
+- **NVDA:** $205.45 recovering from the June 5–6 AI selloff. AI supercycle intact ($91B Q2 guide).
+- **Adobe read-through (AH -5.5%):** CFO departure is company-specific, not an AI-eats-software signal.
+  Revenue beat + AI ARR tripling = SaaS (NOW, CRM) read is POSITIVE on fundamentals.
+
+### Trade Ideas
+
+No new entries today (API offline). Three watchlist candidates with updated analysis:
+
+---
+
+1. **NOW (ServiceNow) — ✓ IN ENTRY ZONE — CONDITIONAL BUY**
+   - Ticker in universe: ✓ (CRM / business apps)
+   - Catalyst: (a) Q1 2026 rev +22% YoY, beat + FY guide raised (Apr 22). (b) BofA reinstated
+     Buy/$141.86 PT. (c) IBM AI modernization partnership (agentic AI; legacy system migration at scale).
+     (d) AI Control Tower — $30B subscription revenue target by 2030; AI driving 30%+ of new ACV.
+     (e) Adobe Q2 AH — AI ARR tripling + revenue beat = AI monetization thesis validated for SaaS.
+     Source: [Yahoo Finance NOW June 12](https://finance.yahoo.com/quote/NOW/),
+     [MarketBeat NOW](https://www.marketbeat.com/stocks/NYSE/NOW/) (2026-06-12)
+   - Catalyst type: earnings + guidance + contract
+   - Direction: bullish
+   - Materiality: **0.65** (revised down from 0.70) — Q1 beat + raised guide + IBM partnership +
+     BofA reinstatement + Adobe AI read-through. BUT: critical API security vulnerability (June 5)
+     was disclosed; customers' data accessed via unauthorized API calls on older instances. This
+     reduces the "trusted enterprise AI platform" narrative slightly. Iran deal removes ME deal-slippage
+     risk. Net: still above 0.60 minimum threshold but now borderline.
+   - Horizon: 10 trading days (locked at entry)
+   - Entry: **$100–$112** (stock at $103.08 Jun 12 — IN ZONE; prefer entry on any pullback to
+     $100–105 range post-SpaceX IPO noise settles)
+   - Stop: 10% trailing GTC (~$90–$101 at entry; ~$92.77 at $103 entry)
+   - Target: $141.86 (BofA avg PT); R:R ~2.4:1 at $103 entry
+   - Position size: $1,000 max (~9–10 shares at $103)
+   - Sector: CRM / business apps
+   - Falsification: Q2 guide disappoints at Jul 29 print; closes below $92 within 5 trading days;
+     FOMC June 17 Warsh signals explicit rate hike bias → NOW multiple collapses
+   - Gate condition: QRVO confirmed sold + COTY confirmed → QLYS ($1,729) + NOW ($1,000) = $2,729
+     (under $3k cap ✓). Deployment math works if QRVO/COTY closed.
+   - Next earnings: July 29, 2026 (>7 days → entry window open ✓)
+   - **Status: Cannot enter today — API offline.** First eligible trade when API restored.
+   - out_of_universe: false
+
+---
+
+2. **MRVL (Marvell Technology) — NEW CANDIDATE — S&P 500 INCLUSION**
+   - Ticker in universe: ✓ (AI / Semis / Infra)
+   - Catalyst: S&P 500 inclusion effective June 22, 2026. Marvell will replace Pool Corp.
+     S&P 500 passive fund AUM requires forced buying of MRVL shares before June 22 effective date.
+     Stock already surged +5% AH on June 5 announcement. Custom AI ASIC thesis intact;
+     data center revenue $1.519B (73% of total); FY2027 outlook ~$11B.
+     Source: [CNBC MRVL S&P 500 June 5](https://www.cnbc.com/2026/06/05/marvell-technology-flex-sp-500-campbells-pool.html),
+     [TechTimes MRVL S&P 500](https://www.techtimes.com/articles/318123/20260610/marvell-joins-sp-500-june-22-2026what-every-index-fund-investor-now-automatically-owns.htm),
+     [S&P Global announcement](https://press.spglobal.com/2026-06-05-Marvell-Technology-and-Flex-Set-to-Join-S-P-500-Others-to-Join-S-P-MidCap-400-and-S-P-SmallCap-600)
+   - Catalyst type: regulatory (index inclusion = forced passive buying)
+   - Direction: bullish
+   - Materiality: **0.65** — Index inclusion is a mechanical catalyst with documented empirical
+     "addition premium" of 4–8% in the 10 trading days before effective date. This is an
+     idiosyncratic, non-fundamental catalyst. Combined with strong AI ASIC thesis (data center 73%
+     of revenue, FY2027 $11B guide) raises from 0.60 to 0.65. Cannot reach 0.70 because:
+     (a) semi sector still recovering from AVBO guidance miss June 5; (b) stock already +5% on
+     announcement — some premium pre-loaded; (c) broad semi weakness is a contra-wind.
+   - Horizon: 10 trading days (through S&P 500 inclusion effective date June 22)
+   - Entry: ~$275–$290 (June 12 price ~$280.71 — up +11% since June 5 announcement at $263.47;
+     stock has continued to run on S&P inclusion passive-buying front-run; confirm before committing)
+   - Stop: 10% trailing GTC (~$230–$248 at entry)
+   - Target: +20% from entry; R:R 2:1
+   - Position size: $1,000 max (~3–4 shares at $280)
+   - Sector: AI silicon (AI / Semis / Infra)
+   - Note: Dan Durn (departing Adobe CFO) joins MRVL as CFO effective June 15 — experienced
+     operator; not a bearish signal, adds credibility to MRVL management bench.
+   - Falsification: S&P 500 addition reversed or deferred; broad semiconductor sector selloff
+     accelerates (AMD/NVDA/AVGO decline resumes); FOMC June 17 explicitly signals rate hike
+     and AI-multiple compression follows
+   - Gate condition: SAME as NOW — QRVO/COTY exits required; after QRVO/COTY closed, deployed
+     ~$1,729 (QLYS) → adding MRVL $1,000 = $2,729 (under $3k ✓). OR after NOW + QLYS = $2,729,
+     MRVL would push to $3,729 > cap. Priority order: NOW first (materiality edge), MRVL second
+     only if deployment cap allows or QLYS stop fires.
+   - Next earnings: ~late August 2026 (>70 days). Safe entry window ✓
+   - **Status: Cannot enter today — API offline + need confirmed price. Research phase only.**
+   - out_of_universe: false
+
+---
+
+3. **VRT (Vertiv) — THESIS RESUMING — WATCH ONLY TODAY**
+   - Ticker in universe: ✓ (Datacenter physical)
+   - Status change: Iran peace deal now imminent (June 11 Trump cancels strikes; MOU expected
+     this weekend). The stated falsification condition ("Iran re-escalation worsens materially")
+     is REVERSING. Brent oil -20% from $111 peak to $89 = major deflation of the risk premium
+     that was compressing VRT.
+   - VRT at $281.68–$301.90 today (prior range was $300–$315 entry zone). Stock is near/below
+     the $300 structural break level in our falsification statement.
+   - AI capex thesis remains: NVDA $91B Q2 guide, AVGO $16B AI Q3 guide (despite miss vs $17.2B
+     est), ANET Q1 +35% YoY. Earnings August 5 (>54 days).
+   - Materiality: **0.70** (reduced from 0.80; $300 structural break still an unresolved flag;
+     wait for full Iran deal signing confirmation + VRT price stabilization above $305 before
+     upgrading back to 0.80. If peace deal signed this weekend, reassess Monday.)
+   - Entry condition: Iran MOU confirmed signed → VRT rebounds above $305 → API restored →
+     entry on stability signal. Entry zone: $295–$315. NOT entering today.
+   - Stop: 10% trailing GTC (~$265–$284 at entry)
+   - Target: $377 (analyst avg PT); R:R ~2.5:1 at $302 entry
+   - **Status: WATCH ONLY. Do not enter until (1) Iran MOU signed, (2) VRT > $305, (3) API live.**
+   - out_of_universe: false
+
+---
+
+### Weekly Review (Framework: No Freeze Currently Active)
+
+1. **CRWD entry zone — post-split pricing:**
+   - Split record date: June 25. First split-adjusted trade: July 2.
+   - Current pre-split price: ~$694.78 (Jun 12). Post-split equivalent: ~$173.70.
+   - Revised entry zone: **$170–$185 (post-split) / $680–$740 (pre-split)**. Stock is IN zone
+     pre-split at $694.78. However, entry is blocked today by: (1) API offline, (2) deployment
+     cap (no room after QLYS + position #2). CRWD becomes viable only after QLYS closes AND
+     one of NOW/MRVL is already entered. Patience.
+   - Direction: bullish | Materiality: 0.70 | Catalyst type: earnings + sector_rotation
+   - Next earnings: ~late August 2026 (post-split). Safe window ✓
+
+2. **MDB entry zone — revised again:**
+   - Q1 FY27 beat (May 28): $687.6M revenue vs $663.8M est; Atlas +29%; raised guide.
+     Analyst PTs $380–$450. Stock at ~$400+. Prior entry zone $360–380 invalidated (again).
+   - New entry zone: **$380–$400** (any pullback to this range = watch for setup).
+   - Materiality: 0.80 | Direction: bullish | Catalyst type: earnings | Horizon: 10 days
+   - No entry today (API offline + deployment full).
+
+3. **NOW entry zone confirmed:** $100–$112. At $103 today = IN ZONE. Materiality confirmed 0.70.
+   Priority entry as soon as API restored and QRVO/COTY exits confirmed.
+
+4. **VRT falsification clearing:** Iran deal = VRT falsification reversing. Monitor over weekend.
+   Re-evaluate Monday with Iran MOU status.
+
+5. **Calibration check (still pre-calibration):**
+   - Open calibrated positions: 0 (QLYS, QRVO, COTY are all pre-calibration entries)
+   - All closed trades to date: 0 confirmed (waiting on API to confirm COTY stop)
+   - First eligible calibrated entry: next new position per strategy doc
+
+6. **Universe review:** No additions or removals warranted this week. 35 names remain locked.
+   Framework is healthy — SaaS/AI/cybersec names are generating signals. Energy not in universe
+   (appropriate — oil volatility from Hormuz would have been unplayable).
+
+### Risk Factors
+- **⚠ API outage Day 44** — QRVO exit unexecuted for 44 consecutive days (est +12–15%). Every
+  session of delay = uncompensated regulatory binary risk (FTC/SAMR headline could gap -15%
+  overnight). QLYS stop at 10% instead of mandatory 5% — exposes ~$5.59/share of extra
+  downside. Restoring env vars is the single highest-priority operational action.
+- **Iran deal not yet finalized** — Both sides acknowledge MOU not yet signed. Ceasefire
+  violations continue even during negotiations. Oil at $89 Brent already pricing ~85% deal
+  probability. Any reversal = oil spike + risk-off. Do not chase new longs until deal is signed.
+- **FOMC June 16–17 (next week)** — Kevin Warsh's first meeting. May strip easing bias and drop
+  dot plot. Fed funds futures price rate hike as more likely year-end move than cut. CPI 4.2%,
+  PPI hot, NFP +172K = no room for cuts. This is the dominant risk for growth multiples in our
+  universe all next week.
+- **SpaceX IPO (SPCX) day 1** — Trading at $135 IPO price; orderly open. The feared $50B
+  tech liquidation did not materialize AH June 11. Nasdaq-100 inclusion expected ~15 days
+  post-IPO (around June 27). Index rebalance flows could affect universe names (NVDA weight
+  reduced to accommodate SPCX). Monitor index mechanics.
+- **Adobe CFO departure read-across** — Dan Durn leaving June 15. ADBE -5.5% AH. This is
+  company-specific (second executive vacancy). Does NOT change NOW, CRM, or HUBS fundamental
+  thesis. Stock-price headwind for ADBE peers is sentimental, not fundamental.
+- **VIX 19.44** — Still above 18 = mildly elevated. Options premium not cheap. No sleeve trades.
+- **QLYS trailing stop at 10% vs required 5%** — Each additional day without API restore exposes
+  more of the +21% unrealized gain unnecessarily. If QLYS rips to $120 and reverses, current 10%
+  stop means exit at ~$108 vs 5% stop exit at ~$114.
+- **Deployment cap discipline** — After QRVO + COTY exits: $1,729 (QLYS) + $1,000 (NOW or MRVL)
+  = $2,729 under $3k cap. Do NOT add both NOW AND MRVL simultaneously — that would = $3,729, violating
+  the $3k cap. Priority: NOW first; MRVL only if deployment permits.
+- **UMich sentiment prelim (10 AM today)** — May final 44.8 near record low. A further drop in
+  June preliminary = consumer stress signal; rate-hike fears + energy costs. If 1yr inflation
+  expectations rise above 5%, market reaction could be negative for growth stocks.
+- **CRWD split arithmetic** — Trades at pre-split price until July 2. Any research entry must use
+  pre-split price. After July 2 all references should shift to post-split (~$173 area). Do NOT
+  confuse pre/post-split pricing in order entry.
+- **NOW security incident** — Critical API vulnerability (June 5, disclosed April 2026; mitigated
+  early June) allowed unauthorized customer data access on Australian/older instances. Stock -3.28%
+  to -6.3% on the news. This is a cybersecurity issue for a cybersecurity-adjacent SaaS company —
+  moderately bearish signal. Does not change earnings/guidance catalyst; does reduce materiality
+  slightly. NOW materiality revised: **0.65** (from 0.70). Remains above 0.60 minimum threshold.
+  Source: [FX Leaders NOW security](https://www.fxleaders.com/news/2026/06/10/servicenow-falls-6-3-as-security-incident-and-software-selloff-pressure-shares-ai-growth-story-remains-intact/)
+- **MRVL at $280.71** — Up +11% from June 5 announcement at $263; S&P 500 inclusion passive-buy
+  premium front-running continues. With 10 calendar days to effective date, most of the easy
+  money may already be in. Entry zone revised to $275–$290; do not chase above $290.
+
+### Decision
+**HOLD (forced — API offline + FOMC week ahead + Iran MOU not yet signed).**
+
+Three pending critical actions remain blocked by API outage. Research-only session.
+
+**Weekend / Monday action stack (ordered by priority — all require API restore):**
+```bash
+export ALPACA_API_KEY=<your-key>
+export ALPACA_SECRET_KEY=<your-secret>
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=<your-webhook>
+```
+1. **Confirm COTY status** — `bash scripts/alpaca.sh positions`
+   - If closed (stop ~$2.42): log CLOSE block in TRADE-LOG (pre-cal, N/A calibration, ~-3.2%).
+   - If still open: SELL 784sh at market immediately.
+2. **SELL QRVO 19sh** — `/trade QRVO 19 sell` — Day 44; merger arb; +12–15%; clean profitable exit.
+3. **Tighten QLYS stop** — Cancel 10% trailing GTC; place 5% trailing GTC from HWM ~$111.80 (stop ~$106.21).
+4. **Enter NOW** — After QRVO/COTY confirmed closed → deployed ~$1,729 → enter NOW:
+   - Entry: $100–$112 (confirmed in zone at ~$103 today)
+   - Place 10% trailing GTC post-fill
+   - Log full TRADE-LOG entry: direction bullish, materiality 0.70, horizon 10 days, catalyst type earnings+guidance+contract
+5. **Monitor Iran MOU weekend** — If signed: VRT falsification clears → evaluate VRT entry Monday
+   at $295–$315. If NOT signed by Monday: VRT remains suspended.
+6. **MRVL (conditional)** — After NOW entered AND deployment cap allows: evaluate MRVL at
+   $275–$290 (current ~$280.71 Jun 12; do not chase above $290). S&P 500 inclusion June 22;
+   10 trading days; materiality 0.65. Only viable if QLYS trailing stop fires ($106.21) to
+   free room, OR if VRT bypassed.
+7. **FOMC June 16–17** — Hold all new entries through FOMC decision Wednesday. Enter NOW
+   before or after FOMC depending on API restore timing; if before, position size stays $1k max.
+8. **Weekly review completed (above):** CRWD zone $170–185 post-split, MDB zone $380–400,
+   NOW confirmed $100–112, VRT conditional on Iran peace.
