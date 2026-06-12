@@ -135,3 +135,16 @@ above on next session (review /tmp/stops-results-20260506-103616.json for order 
 ## Jun 11 — EOD Snapshot HALTED (Day 42, Thursday)
 **REASON:** ALPACA_API_KEY not set in session environment (same as Day 41). Alpaca wrapper exited with "ALPACA_API_KEY not set in environment". No portfolio data pulled. No metrics computed.
 **Action required:** Configure ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT as environment variables in the cloud session (or via .env file locally). Then re-run /daily-summary.
+
+---
+
+## Jun 12 — Market-Open HALTED (Day 44, Friday)
+**REASON:** All 5 required env vars MISSING: ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL. No broker calls possible. Slack notification not sent. Zero orders placed.
+
+**Pending actions blocked (Day 44 — 4th consecutive session lost):**
+1. SELL QRVO 19sh — thesis broken (merger arb; FTC+SAMR binary; CEO insider sale; no organic thesis). Est P&L +12–15%. Priority #1.
+2. TIGHTEN QLYS stop — cancel current 10% trailing GTC, replace with 5% GTC. Mandatory: +20% threshold crossed ~June 5. Est HWM $111.80 → 5% stop = ~$106.21. Every day of delay = ~$5.59/share of avoidable downside.
+3. CONFIRM COTY — trailing stop at ~$2.42 should have auto-executed when stock dropped to ~$2.03–$2.06. Confirm closed; if still open, sell 784sh.
+4. BUY NOW — ServiceNow at $103.08, IN ENTRY ZONE ($100–$112). Materiality 0.65. 10 shares ~$1,030. Gate: requires QRVO/COTY confirmed closed first (deployment math: $1,729 QLYS + $1,000 NOW = $2,729 under $3k cap).
+
+**Action required:** Set ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL as environment variables on the cloud session (Settings → Environment Variables). Then re-run /market-open.
