@@ -168,3 +168,18 @@ above on next session (review /tmp/stops-results-20260506-103616.json for order 
 **Action required (URGENT):** Configure env vars in cloud session → Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open immediately (even if post-market — needed to confirm stops and pending sells). Tomorrow pre-market: verify QRVO exit and QLYS stop tighten before open.
+
+---
+
+## Jun 15 — Market-Open HALTED (Day 45, Monday)
+**REASON:** All Alpaca env vars MISSING for the 6th consecutive session. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Zero broker calls possible. Zero orders placed. Slack fallback written to DAILY-SUMMARY.md.
+
+**Pending actions (CRITICAL — growing risk every day):**
+1. SELL QRVO 19sh — thesis broken since at least Jun 10. Every session of delay risks giving back gains. Priority #1.
+2. TIGHTEN QLYS stop 10% → 5% GTC. Mandatory since +20% crossed ~Jun 5. Est ~$5.59/share of unprotected downside per day above 5% stop.
+3. CONFIRM COTY closed — trailing stop should have auto-hit when stock fell to ~$2.03–$2.06. Verify or sell 784sh manually.
+4. BUY NOW (ServiceNow) — gated on QRVO/COTY resolved. Entry zone $100–$112 may not hold indefinitely.
+
+**Action required:** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open.
