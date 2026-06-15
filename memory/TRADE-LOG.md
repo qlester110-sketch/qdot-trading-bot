@@ -183,3 +183,17 @@ Then re-run /market-open immediately (even if post-market — needed to confirm 
 **Action required:** Set 5 env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open.
+
+---
+
+## Jun 15 — Midday Scan HALTED (Day 45, Monday)
+**REASON:** All 5 env vars MISSING: ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL. Guardrail fired: ALPACA_ENDPOINT not set → does not contain "paper-api". Zero broker calls possible. 7th consecutive halted session (Day 41–45).
+
+**Pending actions (CRITICAL — FOMC tomorrow June 16–17 adds urgency):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock dropped to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). ~$106.43 last known. Day 47+ delay unacceptable.
+3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est $111.80 → 5% stop = ~$106.21. Each day = ~$5.59/sh unprotected.
+4. POST-FOMC (Wed June 18): Enter VRT $295–315 (Iran deal; materiality 0.75); Enter NOW $100–112 (materiality 0.65); MRVL $275–290 conditional (cap permitting).
+
+**Action required (CRITICAL — 7th session blocked):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
