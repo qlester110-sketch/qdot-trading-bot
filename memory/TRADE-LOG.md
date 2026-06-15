@@ -197,3 +197,23 @@ Then re-run /market-open.
 
 **Action required (CRITICAL — 7th session blocked):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+
+---
+
+## Jun 15 — EOD Snapshot HALTED (Day 45, Monday)
+**REASON:** All 5 env vars MISSING for the 8th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No portfolio data pulled. No metrics computed. Slack fallback written to DAILY-SUMMARY.md.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: $10,000 (baseline; actual unknown — no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — 8th blocked session, FOMC tomorrow Jun 16–17):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock fell to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). Priority #1.
+3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est $111.80 → 5% stop = ~$106.21. Each session of delay = ~$5.59/sh of unprotected downside.
+4. POST-FOMC (Wed Jun 18+): Enter VRT $295–315 (materiality 0.75); Enter NOW $100–112 (materiality 0.65); MRVL $275–290 conditional (deployment cap permitting).
+
+**Action required (CRITICAL — 8th halted session):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open immediately to execute pending sells/stops before FOMC tomorrow.
