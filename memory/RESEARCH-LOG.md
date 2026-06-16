@@ -5997,3 +5997,264 @@ VRT thesis is now LIVE (Iran deal signed). Three trade ideas are queue-ready pos
 5. **Enter NOW** — After QRVO/COTY cleared. $100–112 zone. 10sh ≈ $1,030. Materiality 0.65, horizon 10 days, earnings catalyst. Only if deployment cap allows after VRT.
 6. **MRVL conditional** — Only after VRT and NOW entered, if cap permits. Entry $275–290. June 22 inclusion. Materiality 0.65, horizon 7 days.
 7. **FOMC reaction read** — If Warsh signals unexpected hawkishness (rate hike language added): pause all new entries; re-evaluate at next week's /pre-market.
+
+---
+
+## 2026-06-16 — Pre-market Research (Day 48 — API outage Day 48)
+
+### ⚠ OPERATIONAL ALERT — API OUTAGE DAY 48
+All 5 env vars MISSING: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+`ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`. Zero broker calls possible. Research-only
+session. Three critical actions unexecuted for the 8th consecutive halted session.
+
+### Account (estimated — Alpaca offline)
+- Equity: unknown (last live pull: $100,126.76 Alpaca / $10k working frame on 2026-05-07)
+- Cash: unknown
+- Buying power: unknown
+- Daytrade count: unknown
+- Weekly trade slots: 3/3 available (new week Mon Jun 16; 0 trades placed last week)
+
+| Sym  | Sh  | Entry  | Est Jun 16         | Est P&L    | Stop (est)                    | Status |
+|------|-----|--------|-------------------|------------|-------------------------------|--------|
+| QLYS | 19  | $90.99 | ~$111–115 (est risk-on) | **+21–26%** | ~$99.18 (10%); should be ~$106.21 (5%) | ✓ HOLD — stop tighten MANDATORY; pending API |
+| QRVO | 19  | $89.66 | ~$106.43 (est)    | **+18.7%** | ~$80.56                       | ⛔ SELL — merger arb; thesis broken Day 48 |
+| COTY | 784 | $2.50  | unknown           | ~−3.2% est (if stop fired ~$2.42) | ~$2.42 (from $2.675 HWM) | ⛔ Assumed stopped; confirm via API |
+
+Deployed est (QLYS + QRVO, if COTY stopped): ~$1,729 + ~$1,753 = ~$3,482 (over $3k cap; grandfathered)
+After QRVO sale: ~$1,729 (QLYS only) → $1,271 free under $3k cap → room for one new position
+
+### Market Context
+- **WTI crude:** ~$77.31/bbl (range $77–80 in past 24h). Iran peace deal = Hormuz reopening
+  priced in; supply surge fears depressing crude. Down >$30 from $111 Brent peak in late May.
+  Source: [TradingEconomics WTI](https://tradingeconomics.com/commodity/crude-oil) (2026-06-16)
+- **Brent crude:** ~$83.14/bbl (range $82.56–$83.87). Down 5% from June 15 after peace deal
+  confirmed. Sub-$85 Brent = lowest energy inflation environment since war began.
+  Source: [InvestorIdeas Brent drop](https://www.investorideas.com/news/2026/energy/06151-brent-82-iran-deal-stocks-rally-tsx.asp) (2026-06-16)
+- **S&P 500 futures:** ESM26 +1.22% premarket. Monday Jun 15 session: S&P +1.65%, Nasdaq
+  +3.07% (to 26,683.94). Risk-on environment continues into today's open.
+  Source: [itiGer/Al Jazeera](https://www.aljazeera.com/economy/2026/6/16/us-stock-market-climbs-as-us-iran-deal-stirs-hopes-for-end-to-energy-chaos) (2026-06-16)
+- **VIX:** ~16.20 (Jun 16 close est). Was 19.44 Jun 11; declining trend on Iran resolution.
+  Options premium now cheaper — long calls/puts more affordable than 2 weeks ago.
+  Source: [TradingEconomics VIX](https://tradingeconomics.com/united-states/cboe-volatility-index-vix-fed-data.html) (2026-06-16)
+- **Today's catalysts:**
+  1. **⭐⭐ FOMC 2-day meeting begins today (June 16–17).** Kevin Warsh's first meeting as Fed Chair.
+     Rate HOLD at 3.50–3.75% expected (0.6% probability of hike today per CME FedWatch). The
+     DECISION + dot plot + press conference land **Wednesday June 17 at 2:00 PM ET**. Markets
+     watching for: (a) easing-bias language stripped from statement, (b) dot plot shift toward
+     fewer cuts or hike in 2026, (c) Warsh communication style on hawkish lean. CPI 4.2% + PPI
+     hot + NFP +172K = no room for cuts; 70% probability of at least one hike by year-end per CME.
+     Source: [FXStreet Warsh June 16](https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326),
+     [Chase FOMC preview](https://www.chase.com/personal/investments/learning-and-insights/article/kevin-warsh-first-federal-reserve-meeting-as-chair-june-2026)
+  2. **US-Iran Peace Deal (confirmed June 15)** — 60-day ceasefire + Hormuz reopening + framework
+     for nuclear talks. Oil -5% June 15; Brent hit $80.14 (lowest since March 2026). Confirmed
+     catalyst for VRT thesis (energy cost normalization + hyperscaler AI capex continues).
+     Source: [Bloomberg Iran deal](https://www.bloomberg.com/news/newsletters/2026-06-15/us-iran-reach-deal-to-halt-war-stocks-rally-oil-slumps),
+     [Al Jazeera market reaction](https://www.aljazeera.com/economy/2026/6/16/us-stock-market-climbs-as-us-iran-deal-stirs-hopes-for-end-to-energy-chaos)
+  3. **SpaceX (SPCX) IPO week** — Trading debut June 13; +19.6% in first session. Nasdaq-100
+     inclusion expected ~June 27; NVDA index weight will be trimmed to accommodate.
+     Source: [BBNTimes Nasdaq surge](https://www.bbntimes.com/technology/nasdaq-composite-surges-3-07-to-26-683-94-as-iran-deal-and-spacex-momentum-supercharge-tech-rally)
+  4. **NVDA:** +3% premarket June 15 on Kazakhstan GPU deal (100,000 advanced GPUs). AI demand
+     confirmed at sovereign-government level.
+     Source: Stocktwits (2026-06-15)
+- **Earnings before open:** 8 companies reporting today. No universe names identified on the
+  earnings calendar for June 16, 2026. Source: [EarningsWhispers June 16](https://www.earningswhispers.com/calendar/20260616/1)
+- **Economic calendar:**
+  - **FOMC 2-day meeting (Jun 16–17)** — Rate decision + dot plot + presser Wed Jun 17 2pm ET.
+    Dominant event of the week; overrides all other signals for new-entry timing.
+  - No CPI, PPI, NFP, or major jobs data today.
+  Source: [FinanceCalendar FOMC](https://www.financecalendar.com/event/fomc-rate-decision-june-2026/),
+  [Warsh NNNG preview](https://nnng.com/blog/wire-fomc-june-2026-preview/)
+- **Sector momentum:**
+  - Technology (XLK): Cybersecurity leading YTD; CIBR ETF +22% YTD vs S&P +8%. AI silicon
+    (NVDA, MRVL) and datacenter infra (VRT, ANET) are strongest sub-sectors.
+  - Energy (XLE): Breaking down hard on Iran deal — oil -30% from $111 peak. Energy sector
+    leadership of H1 is rapidly reversing. Positive macro read-through for tech/growth universe.
+  - Rest of universe: Broad risk-on today; growth multiples benefit from oil deflation reducing
+    future inflation expectations and lowering rate-hike probability in 2026.
+  Source: [247WallSt CIBR June 8](https://247wallst.com/investing/2026/06/08/cybersecurity-goes-vertical-cibr-just-crushed-the-sp-500-by-three-to-one/),
+  [BBNTimes Nasdaq Iran surge](https://www.bbntimes.com/technology/nasdaq-composite-surges-3-07-to-26-683-94-as-iran-deal-and-spacex-momentum-supercharge-tech-rally)
+
+### Held-Ticker News Summary
+
+**QLYS (Qualys) — ✓ THESIS INTACT — Stop Tighten STILL PENDING**
+- Last confirmed close: $111.24 (Jun 12); Jun 11 was $110.89. Risk-on day likely pushed
+  QLYS higher June 15; estimate ~$112–115 today. P&L: **+21–26%** from $90.99 entry.
+- **Strategy rule violated for 11 days:** +20% threshold crossed ~June 5. Mandatory 5%
+  trailing GTC still not in place (API blocked). Current 10% trailing stop at ~$99.18 (10%
+  below ~$110.20 recent price) leaves ~$5.59–7/share of gains unprotected vs. correct 5% stop
+  at ~$106.21 from HWM ~$111.80. Every day of delay = compounding exposure.
+- Analyst sentiment remains cautious (avg target ~$107-136; mixed signals). No new fundamental
+  catalyst since FedRAMP High TotalCloud (May 14). Cybersec sector (CIBR +22% YTD) is a
+  structural tailwind.
+- **Action: HOLD. Mandatory action on API restore: cancel 10% trailing GTC → place 5% GTC.**
+- Source: [MarketBeat QLYS](https://www.marketbeat.com/stocks/NASDAQ/QLYS/forecast/) (2026-06-16)
+
+**QRVO (Qorvo) — ⛔ THESIS BROKEN — SELL — Day 48**
+- Est ~$106.43 (Jun 12 close; near 52-wk high). Entry $89.66. P&L: **+18.7%** — exceptional
+  gain on a broken-thesis position. Every additional session holds uncompensated FTC/SAMR binary
+  risk (either approval → neutral; rejection → -15%+ gap-down).
+- Merger arb: $32.50 cash + 0.96 SWKS per QRVO share. FTC Second Request + China SAMR Phase II
+  → early 2027 close. Shareholders approved merger. No organic business thesis. SVP sold 14,640sh.
+  Source: [GuruFocus QRVO merger](https://www.gurufocus.com/news/8610748/qorvo-qrvo-shareholders-approve-merger-with-skyworks-swks),
+  [Investing.com QRVO SWOT](https://www.investing.com/news/swot-analysis/qorvos-swot-analysis-stock-faces-transition-as-skyworks-merger-nears-93CH-4708169)
+- **Action: SELL all 19sh at market the moment API is restored. Priority #1 after COTY confirm.**
+
+**COTY (Coty) — ⛔ ASSUMED CLOSED — Confirm on API Restore**
+- Trailing stop at ~$2.42 (10% below $2.675 HWM) should have auto-fired when price fell to
+  ~$2.03–$2.06 in mid-May. Assumed realized P&L ~−3.2% (fill ~$2.42). Class action deadline
+  passed May 22. No new fundamental developments relevant to thesis (still broken per May 7 call
+  data: LFL revenue −7%, op margin −250bps, EPS miss, CEO exit).
+- **Action: First broker call on API restore → `bash scripts/alpaca.sh positions`. If still open: SELL 784sh immediately.**
+
+### Options Sleeve Health Check
+- No open option positions. Sleeve cap $500 / $250 per-trade — fully unused.
+- VIX ~16.20 — lowest in 5+ weeks; options premium cheaper. Post-FOMC Wednesday would be
+  the earliest viable window to evaluate sleeve deployment.
+- **FOMC tomorrow (Jun 17 2pm ET):** IV typically spikes around FOMC announcements. Do not
+  enter long premium positions before the decision.
+- VRT next earnings: August 5, 2026 (>50 days). Options window open. Stock entry still preferred.
+- NOW next earnings: July 29, 2026 (>43 days). Options window open. Stock entry preferred.
+- MRVL next earnings: ~late August 2026 (>70 days). Window open.
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price (Jun 15–16) | Status               | Key News |
+|--------|----------------------|----------------------|----------|
+| QLYS   | ~$111–115 (est)      | ✓ HOLD — stop tighten pending | Cybersec strong; +21%+ from entry; thesis intact |
+| QRVO   | ~$106.43 est         | ⛔ SELL Day 48         | Merger arb; FTC + SAMR; $18.7% P&L at risk |
+| COTY   | unknown              | ⛔ Assumed stopped ~$2.42 | Confirm on API restore |
+| VRT    | $311.93 (Jun 15); ~$314 pm | ✓ **IN ENTRY ZONE — Wait for FOMC** | Iran deal = falsification cleared; ThermoKey acq closed; entry zone $295–315; do NOT enter before Wednesday |
+| NOW    | $104.27 (Jun 15)     | ✓ In entry zone $100–112 — Wait FOMC | Materiality 0.65; Q1 beat + IBM AI + BofA $141 PT; FOMC risk holds entry |
+| MRVL   | ~$293–296 pm (Jun 15) | ⚠ ABOVE entry zone ($275–290) | S&P 500 inclusion June 22 (6 days); +57% in a month; entry zone invalidated; sell-the-news risk |
+| CRWD   | $692.91 (Jun 15)     | Above entry zone (pre-split ~$170–185 equiv) | 4-for-1 split record Jun 25; first split trade Jul 2; strong Q1 beat; no entry today |
+| NVDA   | ~$205+ (risk-on)     | Post-earnings digest  | Kazakhstan 100K GPU deal; SPCX inclusion will reduce NVDA index weight ~Jun 27 |
+| BABA   | —                    | AVOID                | Q4 FY26 miss; China headwinds |
+| HUBS   | —                    | AVOID                | −35%+ since May 7; no recovery |
+| ZS     | ~$130 est            | AVOID (recovery mode) | FCF cut; Q4 guide miss; 2 sales leaders out; one more quarter needed |
+
+**Key UNIVERSE movers (estimated, Alpaca offline):**
+- VRT +1–2% premarket (Iran deal = direct AI capex tailwind)
+- MRVL +3% premarket (Iran deal risk-on + S&P 500 inclusion front-running; ABOVE entry zone)
+- NVDA +3% June 15 (Kazakhstan GPU deal + Iran deal risk-on)
+- CRWD stable/up (cybersec sector leadership intact; pre-split momentum)
+- Now in entry zone per prior research
+
+### Trade Ideas
+
+**No entries today. FOMC decision is tomorrow (June 17, 2pm ET). Hold all new positions
+through the dot plot and Warsh's first press conference.**
+
+---
+
+1. **VRT (Vertiv Holdings) — ✓ IN ENTRY ZONE — Wait for FOMC Wednesday**
+   - Ticker in universe: ✓ (Datacenter physical)
+   - Catalyst: (a) Iran-US peace deal confirmed June 15 — Hormuz reopening, oil declining → energy cost
+     normalization for hyperscaler AI customers; prior falsification condition now REVERSED.
+     (b) Q1 2026 blowout (rev $2.65B +30% YoY, adj EPS $1.17 +83% YoY; FY2026 guide raised).
+     (c) ThermoKey S.p.A. acquisition closed June 12 — liquid-cooling capacity expanded.
+     (d) NVDA Q2 guide $91B; MRVL Q1 beat — AI capex demand confirmed at record scale.
+     Source: [Bloomberg Iran deal](https://www.bloomberg.com/news/newsletters/2026-06-15/us-iran-reach-deal-to-halt-war-stocks-rally-oil-slumps),
+     [VRT 8-K ThermoKey](https://www.sec.gov/Archives/edgar/data/0001674101/000162828026042641/vrt-20260612.htm)
+   - Catalyst type: macro
+   - Direction: bullish
+   - Materiality: 0.75 — Iran deal cleared prior falsification; AI capex supercycle intact;
+     ThermoKey bolt-on supports moat. Interim deal (60-day window) = partial haircut on permanence.
+   - Horizon: 10 trading days
+   - Entry: **$295–315** (est $314 premarket Jun 16 — top of zone; do NOT chase above $315;
+     prefer entry at $300–310 after FOMC settles)
+   - Stop: 10% trailing GTC (~$266–284 at entry)
+   - Target: $377 (analyst avg PT); R:R ~2.4:1 at $308 entry
+   - Position size: $1,000 max (~3 shares at $310)
+   - Sector: Datacenter physical
+   - Falsification: Iran interim deal collapses before Hormuz physically reopens; hyperscaler
+     (MSFT/AMZN/GOOGL) announces AI capex reduction; VRT closes below $295 post-FOMC
+   - Gate: QRVO confirmed sold + COTY confirmed → deployed ~$1,729 (QLYS) → VRT $1k = $2,729 ✓
+   - Next earnings: August 5, 2026 (>50 days). Safe window ✓
+   - **Timing: Enter post-FOMC Wednesday June 18 open, IF dot plot not hawkishly surprises AND VRT ≤ $315.**
+   - out_of_universe: false
+
+2. **NOW (ServiceNow) — ✓ IN ENTRY ZONE — Wait for FOMC Wednesday**
+   - Ticker in universe: ✓ (CRM / business apps)
+   - Catalyst: (a) Q1 2026 rev +22% YoY, beat + FY guide raised (Apr 22). (b) BofA reinstated
+     Buy/$141.86 PT. (c) IBM agentic AI modernization partnership. (d) AI Control Tower platform;
+     $30B subscription revenue target by 2030. (e) Iran deal removes ME deal-slippage headwind.
+     Source: Prior research log, [MarketBeat NOW](https://www.marketbeat.com/stocks/NYSE/NOW/forecast/)
+   - Catalyst type: earnings
+   - Direction: bullish
+   - Materiality: 0.65 (security incident June 5 remains a modest mark against the "trusted
+     enterprise AI" thesis, though contained. Still above 0.60 minimum.)
+   - Horizon: 10 trading days
+   - Entry: **$100–112** (confirmed at ~$104 Jun 15; in zone)
+   - Stop: 10% trailing GTC (~$92–101 at entry)
+   - Target: $141.86 (BofA PT); R:R ~2.4:1 at $104 entry
+   - Position size: $1,000 max (~9–10 shares at $104)
+   - Sector: CRM / business apps
+   - Falsification: Q2 guide disappoints at Jul 29 print; closes below $93 within 5 days;
+     FOMC June 17 Warsh explicitly signals rate hike path → NOW multiple collapses
+   - Gate: QRVO/COTY cleared → $1,729 deployed (QLYS) → NOW $1k = $2,729 ✓ (under $3k cap)
+   - Next earnings: July 29, 2026 (>43 days). Safe window ✓
+   - **Timing: Enter post-FOMC Wednesday June 18. Only if Warsh not explicitly hawkish.**
+   - out_of_universe: false
+
+### Risk Factors
+- **⚠ API outage Day 48** — QRVO exit (+18.7%) pending 48 days. QLYS stop at 10% vs mandatory
+  5% (11 days out of compliance). COTY status unconfirmed. Highest operational priority.
+- **FOMC June 16–17 (decision TOMORROW 2pm ET)** — Warsh's first dot plot. 70% odds of year-end
+  hike. A hawkish dot plot shift (median moving toward a hike) = growth multiple compression for
+  entire universe. Hold all new entries until Wednesday decision digested. This is the single
+  most important market event this week.
+  Source: [FXStreet Warsh June 16](https://www.fxstreet.com/analysis/kevin-warsh-opens-first-fed-meeting-june-16-with-rate-hold-expected-202606151326)
+- **VRT at top of entry zone** — $314 premarket is at the upper bound ($315) of the $295–315
+  entry zone. A broad risk-on gap-up today (Nasdaq +3% June 15 momentum) could push VRT above
+  $315. If VRT gaps above $315 today or Tuesday: wait for pullback before entering.
+- **MRVL entry zone MISSED** — At ~$293–296, MRVL is above the $275–290 entry zone and has
+  ripped 57% in one month. Sell-the-news risk on June 22 S&P 500 inclusion is real. Do not chase.
+  Source: [247WallSt MRVL sell-the-news](https://247wallst.com/investing/2026/06/11/marvell-just-ripped-57-in-a-month-will-the-june-22-sp-500-listing-be-a-sell-the-news-event/)
+- **Iran deal is INTERIM (60-day window)** — Nuclear talks during 60-day window. If talks collapse,
+  Hormuz could close again and oil spikes. This is the primary remaining falsification risk for VRT.
+- **QRVO regulatory binary (Day 48)** — FTC Second Request + SAMR Phase II. Every day of holding
+  a merger-arb position past thesis break = unnecessary binary exposure. At +18.7% gain.
+- **QLYS stop at 10% vs required 5%** — ~$5.59–7/share of protected gains exposed unnecessarily.
+  If QLYS reverses from current levels before API restored, the 10% stop means giving back more.
+- **CRWD split mechanics** — Record date June 25; first split-adjusted trade July 2. Any CRWD
+  order must use pre-split pricing ($692 area) until July 2. Do not confuse pre/post-split.
+- **SPCX (SpaceX) S&P 500 inclusion ~June 27** — NVDA and other large caps will see index-weight
+  reductions to accommodate the new entrant. Minor passive-selling headwind for NVDA.
+- **VIX 16.20** — Benign, but FOMC decision day (tomorrow) typically elevates VIX in the afternoon.
+  No new option positions until FOMC clears.
+- **Deployment cap** — After QRVO/COTY exits: $1,729 (QLYS) + $1,000 (VRT or NOW) = $2,729 under
+  $3k cap ✓. Cannot add both VRT AND NOW simultaneously without exceeding $3k. Priority: VRT
+  (higher materiality 0.75 vs 0.65), then NOW once QLYS stop fires or another position exits.
+
+### Decision
+**HOLD (forced — API offline + FOMC decision tomorrow June 17 2pm ET).**
+
+No new entries today. FOMC dot plot + Warsh press conference is the week's dominant event;
+entering growth-stock longs the day before is poor risk management. Best window: Wednesday
+June 18 open, after FOMC digested overnight.
+
+**Post-FOMC Wednesday action stack (Day 48 → Day 50 — ordered by priority, all require API):**
+```bash
+export ALPACA_API_KEY=<your-key>
+export ALPACA_SECRET_KEY=<your-secret>
+export ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+export ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+export SLACK_WEBHOOK_URL=<your-webhook>
+```
+1. **Confirm COTY status** — `bash scripts/alpaca.sh positions`
+   - If closed (stop ~$2.42): log CLOSE block in TRADE-LOG (pre-cal, N/A calibration, ~−3.2%).
+   - If still open: SELL 784sh at market immediately.
+2. **SELL QRVO 19sh** — `/trade QRVO 19 sell` — Day 48+; merger arb; +18.7%; best P&L of its life.
+3. **Tighten QLYS stop** — Cancel 10% trailing GTC; place 5% trailing GTC from HWM ~$111.80 (stop ~$106.21).
+4. **Enter VRT (Wednesday post-FOMC)** — only if dot plot is NOT explicitly hawkish-surprised:
+   - Entry zone $295–315; do NOT chase above $315 even on risk-on gap.
+   - Place 10% trailing GTC stop post-fill.
+   - Log full TRADE-LOG entry: direction bullish, materiality 0.75, horizon 10 days, catalyst macro.
+5. **Enter NOW (Wednesday, after VRT + if deployment allows):**
+   - Entry zone $100–112 (at ~$104 Jun 15).
+   - Only if FOMC does not signal imminent hike — NOW is most rate-sensitive name on watchlist.
+   - Place 10% trailing GTC; log full entry with all calibration fields.
+6. **MRVL — DO NOT CHASE.** At ~$293–296, above $275–290 entry zone. Wait for pullback or pass.
+7. **FOMC hawkish surprise scenario:** If Warsh adds explicit hike language or dot plot shifts
+   median to 1 hike in 2026 → pause VRT + NOW entries; re-evaluate at next week's /pre-market.
+   The FOMC is the gate; VRT and NOW are the candidates awaiting it.
