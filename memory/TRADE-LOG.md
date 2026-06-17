@@ -261,3 +261,25 @@ Then re-run /market-open BEFORE market open tomorrow (Jun 17) — FOMC decision 
 **Action required (CRITICAL — 10th halted session, FOMC today):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open immediately — FOMC rate decision is TODAY ~2pm ET.
+
+---
+
+## Jun 17 — Midday Scan HALTED (Day 47, Wednesday — FOMC Decision Day)
+**REASON:** All 5 env vars MISSING for the 11th consecutive halted session. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No positions checked, no stops managed, no exits executed.
+
+**Context:** FOMC rate decision TODAY ~2pm ET. Open positions QLYS/QRVO/COTY exposed through a major market-moving event with zero management capability for 11 straight sessions (Day 41–47 market-open + midday).
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: $10,000 (baseline; actual unknown — no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — 11th blocked session):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock fell to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). Priority #1.
+3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est $111.80 → 5% stop = ~$106.21. Each session of delay = ~$5.59/sh of unprotected downside.
+4. POST-FOMC: Enter VRT $295–315 (materiality 0.75); Enter NOW $100–112 (materiality 0.65); MRVL $275–290 conditional (deployment cap permitting).
+
+**Action required (CRITICAL — 11th halted session, FOMC rate decision TODAY ~2pm ET):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open or /midday BEFORE 2pm ET — FOMC decision will move the market.
