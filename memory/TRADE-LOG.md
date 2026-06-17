@@ -283,3 +283,25 @@ Then re-run /market-open immediately — FOMC rate decision is TODAY ~2pm ET.
 **Action required (CRITICAL — 11th halted session, FOMC rate decision TODAY ~2pm ET):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open or /midday BEFORE 2pm ET — FOMC decision will move the market.
+
+---
+
+## Jun 17 — EOD Snapshot HALTED (Day 47, Wednesday — FOMC Decision Day)
+**REASON:** All 5 env vars MISSING for the 12th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No portfolio data pulled. No metrics computed. Slack alert not sendable (SLACK_WEBHOOK_URL also missing).
+
+**Context:** FOMC rate decision was announced today Jun 17. Open positions QLYS/QRVO/COTY have been unmanaged through the highest-volatility market event of the month. 12 consecutive sessions (Day 41–47 full day) with zero broker access or position management.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: $10,000 (baseline; actual unknown — no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — 12th blocked session, post-FOMC urgency):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock fell to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). Priority #1.
+3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est $111.80 → 5% stop = ~$106.21. Each session of delay = ~$5.59/sh of unprotected downside.
+4. POST-FOMC: Enter VRT $295–315 (materiality 0.75); Enter NOW $100–112 (materiality 0.65); MRVL $275–290 conditional (deployment cap permitting).
+
+**Action required (CRITICAL — 12th halted session):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open to execute pending sells/stops. Post-FOMC entry opportunities (VRT, NOW) may have tight windows.
