@@ -305,3 +305,26 @@ Then re-run /market-open or /midday BEFORE 2pm ET — FOMC decision will move th
 **Action required (CRITICAL — 12th halted session):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open to execute pending sells/stops. Post-FOMC entry opportunities (VRT, NOW) may have tight windows.
+
+---
+
+## Jun 18 — Midday Scan HALTED (Day 48, Thursday — post-FOMC)
+**REASON:** All 5 env vars MISSING for the 14th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No positions checked, no stops managed, no exits executed.
+
+**Context:** Post-FOMC Day 1. FOMC delivered hawkish surprise (Jun 17). Market digesting rate shock. QRVO likely near or through its trailing stop (~$95.79 est). QLYS at +25% with only a 10% trailing stop still in place (should be 5% since +20% crossed ~Jun 5 — 13+ sessions overdue). COTY status unknown. VRT/NOW entries paused per pre-defined FOMC hawkish pause rule (re-evaluate Jun 23 /pre-market). Today's pre-market research confirmed: MRVL -2.91%, NOW $95.47 (below $100 entry zone), VRT ~$330 (above $315 entry zone). 14 consecutive sessions (Day 41–48) with zero broker access.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: $10,000 (baseline; actual unknown — no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — 14th blocked session):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock fell to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). QRVO near stop ~$95.79; post-FOMC tech pressure may have already triggered it. Priority #1.
+3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est ~$117.91 → 5% stop = ~$112.01. Each session of delay = ~$5.59/sh of unprotected downside.
+4. VRT/NOW/MRVL entries → PAUSED until Jun 23 /pre-market per FOMC hawkish pause rule.
+5. NVDA — review next week; $195–205 pullback zone.
+
+**Action required (CRITICAL — 14th halted session):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open immediately to execute QRVO sell + QLYS stop tighten before more gains erode.
