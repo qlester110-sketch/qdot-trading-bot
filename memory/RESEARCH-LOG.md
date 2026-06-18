@@ -6258,3 +6258,180 @@ export SLACK_WEBHOOK_URL=<your-webhook>
 7. **FOMC hawkish surprise scenario:** If Warsh adds explicit hike language or dot plot shifts
    median to 1 hike in 2026 → pause VRT + NOW entries; re-evaluate at next week's /pre-market.
    The FOMC is the gate; VRT and NOW are the candidates awaiting it.
+
+---
+
+## 2026-06-18 — Pre-market Research (Day 48, Thursday — Post-FOMC)
+
+**API note:** All 5 env vars MISSING for the 13th consecutive halted broker session (Day 41–48).
+No .env file present. No broker calls possible. All position data estimated from WebSearch.
+FOMC hawkish surprise scenario from Jun 16 entry is now ACTIVE.
+
+### Account (broker offline — 13th consecutive halted session)
+- Equity: unknown (no broker data since Day 0)
+- Daytrade count: unknown
+- Weekly trade slots: 3/3 available (week of Jun 15 — zero trades placed)
+
+| Sym  | Sh  | Avg    | Est Price (Jun 17) | Est Mkt Val | Est P&L | Stop status                       |
+|------|-----|--------|--------------------|-------------|---------|-----------------------------------|
+| QLYS | 19  | $90.99 | $113.67            | ~$2,160     | +25.0%  | ⚠ 10% trail (MUST be 5% — 13 days overdue) |
+| QRVO | 19  | $89.66 | $96.66             | ~$1,837     | +7.8%   | ⚠ HWM ~$106.43 → 10% stop ~$95.79; only $0.87 cushion |
+| COTY | 784 | $2.50  | $2.07 (Jun 15 est) | ~$1,623     | -17.2%  | Stop should have auto-triggered at $2.42; status unconfirmed |
+
+Stock book deployed (if COTY still held): ~$5,620 / $10k = 56% (grandfathered).
+Stock book deployed (if COTY auto-stopped): ~$3,997 / $10k = 40% (over 30% cap — no new entries until QRVO exits).
+
+### Market Context
+- **WTI crude:** $74.56/bbl, -2.91% (TradingEconomics Jun 18). Down from ~$95/bbl in May as
+  Iran/Hormuz geopolitical premium fades on interim nuclear deal.
+- **Brent crude:** $79.45/bbl (Jun 17). Source: TradingEconomics.
+- **S&P 500 futures:** 7,498 (opened 7,591.75 Jun 18). Post-FOMC bounce attempt after Jun 17
+  selloff. RSI 59.8; S&P 500 at 7,554 as of Jun 15 close. Source: Investing.com Jun 18.
+- **VIX:** 18.28 (Investing.com Jun 18). Elevated vs May 16–17 range, reflecting FOMC-driven
+  uncertainty. Expensive premium for options sleeve.
+- **FOMC Jun 17 — HAWKISH SURPRISE (PRE-DEFINED PAUSE TRIGGERED):**
+  - Fed held at 3.5–3.75% (unanimous 12–0, first decision under Chair Kevin Warsh).
+  - **DOT PLOT SHIFTED:** 9/18 members project rate hike by year-end; median rate forecast
+    raised 3.4% → 3.8%. October hike now priced by markets.
+  - Market reaction: S&P 500 and Nasdaq both -1%+ on Jun 17. Dow -~500 pts.
+  - Source: CNBC Jun 17; Federal Reserve press release Jun 17.
+  - **⚠ PRE-DEFINED SCENARIO FROM JUN 16 ENTRY NOW ACTIVE:** "If dot plot shifts median to
+    1 hike in 2026 → pause VRT + NOW entries; re-evaluate at next week's /pre-market."
+    This condition is met. VRT and NOW entries are PAUSED until next week's /pre-market.
+- **Earnings before open Jun 18:**
+  - ACN (Accenture Q3 FY2026): solid — rev +3-4% LC, adj EPS guide $13.78–13.90 (+7-8% YoY),
+    FCF $10.8–11.5B. Not in universe. Source: SEC EDGAR Jun 18.
+  - KR (Kroger): identical sales +1%, adj EPS $1.58, maintained FY guidance. Not in universe.
+    Source: SEC EDGAR Jun 18.
+- **Economic calendar Jun 18:** Initial jobless claims (weekly). No major macro release.
+- **Sector momentum:**
+  - Leading: Consumer Staples (XLP), Industrials (XLI), Materials (XLB), Energy (XLE).
+  - Lagging: Technology (XLK), Comms (XLC), Consumer Disc (XLY), Financials (XLF).
+  - Hawkish FOMC reinforces growth-stock multiple compression. Entire universe skews tech/growth.
+  - Source: Schwab sector outlook Jun 2026; Seeking Alpha S&P 500 Jun 15 close.
+
+### Held-Ticker Update (WebSearch estimates; broker offline)
+
+**QLYS — ⚠ STOP TIGHTEN CRITICALLY OVERDUE**
+- Est $113.67 (Jun 17 range $112.74–$117.91). Entry $90.99. P&L: +$432 / +25.0%.
+- +20% threshold crossed ~Jun 5. 5% stop is MANDATORY per strategy rules. Not placed (broker offline 13 sessions).
+- 10% trail from HWM ~$117.91 → stop ~$106.12. Required 5% trail → stop ~$112.01.
+- Gap from current price ($113.67) to required 5% stop ($112.01) = $1.66 (1.5%). If post-FOMC tech selloff continues, QLYS can breach this with one bad session.
+- Post-FOMC headwind: cybersecurity SaaS multiples compress on higher-for-longer rate signal.
+- Action: Tighten stop to 5% trail from current HWM immediately upon API restore.
+- Thesis: INTACT (raised FY26 EPS/sales guides confirmed). Holding.
+
+**QRVO — ⚠ NEAR STOP TRIGGER / SELL OVERDUE**
+- Est $96.66 (Jun 17 range $96.21–$101.11). Entry $89.66. P&L: +$133 / +7.8%.
+- HWM estimated ~$106.43 (Jun 15 prior data). 10% trailing stop → ~$95.79.
+- Gap from current price ($96.66) to stop ($95.79) = **$0.87 (0.9%)**. One bad session fires the stop.
+- Thesis: BROKEN (merger arb only; original organic EPS-beat thesis no longer driving price action; SAMR Phase II extends deal to early 2027).
+- Per strategy rules: "If thesis has broken, close even if not yet at -7%." Sell overdue since Jun 10.
+- Action: SELL QRVO 19sh at market immediately upon API restore. Do NOT let stop auto-fire if we can sell intentionally for strategy-discipline purposes.
+
+**COTY — ⚠ STATUS UNCONFIRMED**
+- Est ~$2.07 (Jun 15). Entry $2.50. Est P&L: -$338 / -17.2% if still open.
+- Trailing stop at ~$2.42 should have auto-triggered when stock fell to $2.03–2.06 in May.
+- Recent news: Marc Jacobs Beauty relaunch driving sentiment lift (Jun 5, 12). S&P SmallCap 600
+  inclusion effective Jun 22 = passive inflows. Stock may have partially recovered from lows.
+- Thesis: BROKEN (falsification fired May 7 — LFL -7%, op margin -250bps, EPS miss).
+- Action: Confirm status via `bash scripts/alpaca.sh positions`. If still open, SELL 784sh.
+
+### Options Sleeve Health Check
+No open option positions. Sleeve cap $500 unused. VIX at 18.28 — premium more expensive post-FOMC.
+No new option entries: broker offline + hawkish FOMC + entire universe in lagging sector.
+
+### UNIVERSE News Summary (WebSearch)
+
+**AI Silicon / Semis:**
+- **NVDA** — $204.65 (Jun 17); opens ~$208.53 today. $20B bond issuance to fund AI chip
+  production (massive capital commitment confirming AI infra supercycle). FY2026 revenue
+  $215.94B (+65% YoY). Strong Buy consensus (38 analysts), avg PT $298.87. Source: public.com Jun 18.
+- **MRVL** — S&P 500 inclusion Jun 22 (passive buy inflows expected). Q2 FY2027 guidance
+  reaffirmed. Teralynx T100 (102.4 Tbps, -25% power vs prior gen). New CFO Dan Durn (Jun 15).
+  B. Riley PT raised $240 → $345. +258% YTD. BUT -2.91% today on AI chip demand concerns.
+  Entry zone $275–290 was set when MRVL was at $270–280 — now at $285–295+, zone requires update.
+  Source: timothysykes.com Jun 16-17.
+- **CRWD** — Q1 beat: rev $1.39B (+26%), adj EPS $1.10 vs $1.07 est, ARR $5.51B (+24% YoY).
+  4-for-1 stock split approved: record date Jun 25, trading split-adjusted Jul 2. Stock -8% on
+  split announcement (profit-taking after 60% run-up). Post-split price ~$172/sh.
+  Source: Proactive Investors / SEC Form 8-K Jun 3.
+
+**Datacenter Physical:**
+- **VRT** — Jun 15 close $314; +5.2% today → ~$330 est. ThermoKey acquisition completed.
+  +84% YTD. Analyst avg PT $378, Strong Buy (27 analysts). Source: quiverquant / TIKR Jun 2026.
+  **Entry zone $295–315 PASSED (stock now ~$330). Hawkish FOMC pause rule also active. HOLD OFF.**
+
+**CRM / Business Apps:**
+- **NOW** — $95.47 (Jun 18 est), previous close $101.33. 52-wk range $81.24–$211.48.
+  Benchmark raised PT $125 → $130 (Jun 15). Strong Buy (43 analysts). IBM/Cognizant/Wipro
+  AI governance partnerships. Source: investing.com Jun 18.
+  **Entry zone $100–112 BROKEN BELOW ($95.47 < $100). Hawkish FOMC is NOW's worst macro scenario.
+  DO NOT ENTER until zone recovers AND rate path clarifies.**
+
+### UNIVERSE Movers (WebSearch estimates — Alpaca offline)
+| Ticker | Est Price   | Move (Jun 18) | In Universe | Catalyst                               |
+|--------|------------|---------------|-------------|----------------------------------------|
+| VRT    | ~$330      | +5.2%         | ✓           | AI cooling; ThermoKey; above entry zone |
+| NVDA   | ~$208      | ~+2%          | ✓           | $20B bond; FY2026 +65% rev             |
+| CRWD   | ~$690 (pre-split) | -8% (Jun 3) | ✓    | Q1 beat; 4-for-1 split Jul 2          |
+| MRVL   | ~$285-295  | -2.91%        | ✓           | S&P 500 inclusion Jun 22; demand concern|
+| NOW    | ~$95.47    | -5.8%         | ✓           | Post-FOMC rate-sensitive selloff       |
+
+### Trade Ideas
+**No new entries.**
+
+Reasons:
+1. **Pre-defined FOMC pause active** — Jun 16 entry explicitly stated: dot plot shift to median
+   hike → pause VRT + NOW; re-evaluate next week. That scenario fired. Rule followed.
+2. **VRT above entry zone** — $330 vs $295–315 zone. Even absent the FOMC pause, entry zone passed.
+3. **NOW below entry zone** — $95.47 vs $100–112. Hawkish FOMC is worst-case for rate-sensitive growth.
+4. **QRVO near stop** — must exit QRVO before adding any new position (deployment cap math).
+5. **Broker offline** — no execution possible regardless.
+
+**Watchlist for next week (Jun 23 /pre-market — after FOMC digest):**
+1. **NVDA** — AI infra supercycle intact ($20B bond signals commitment). Pullback to $195–205
+   range = entry opportunity. Direction: bullish. Catalyst type: macro (AI capex). Materiality: 0.80.
+   Falsification: hyperscaler cuts capex; AI demand signals soften in Jun-quarter data points.
+2. **CRWD** — Post-split trading Jul 2 at ~$172/sh. Q1 beat confirmed. Entry on post-split
+   dip to $160–175. Direction: bullish. Catalyst type: earnings. Materiality: 0.75.
+3. **MRVL** — S&P 500 inclusion Jun 22 could create sell-the-news pullback. If MRVL pulls back
+   to $265–280 post-inclusion, re-evaluate entry. Direction: bullish. Catalyst: macro + earnings.
+   Materiality: 0.70 (pending post-inclusion price action).
+4. **VRT** — If FOMC jitters pull VRT back to $295–315, re-evaluate. AI thesis unchanged.
+5. **NOW** — Only if recovers above $100 AND rate path stabilizes. Currently impaired by FOMC.
+
+### Risk Factors
+1. **QRVO stop imminent** — $96.66 vs estimated stop $95.79. Post-FOMC tech pressure today
+   could trigger stop and auto-close the position. Gains (+7.8%) likely preserved by stop.
+2. **QLYS 5% stop unimplemented** — 13+ sessions of rules violation. QLYS at +25% with only
+   1.5% margin above where 5% stop should be. One bad session can cost $5–7/share in excess loss.
+3. **FOMC hawkish shock** — Oct hike priced. Growth/SaaS multiple compression is primary
+   headwind for QLYS (cybersec SaaS) and all other universe names in the tech bucket.
+4. **Broker offline — 13th consecutive session** — No position management possible.
+   Estimated trapped gains at risk: QLYS +$432, QRVO +$133 (QRVO near stop).
+5. **COTY status unknown** — May be closed (small -3% loss at stop) or still open (-17%).
+6. **VRT + NOW entries paused** — Per pre-defined rule. This is correct per the strategy.
+   Both positions should NOT be entered today even if broker were available.
+7. **CRWD split pricing** — Any CRWD entry before Jul 2 must use pre-split price (~$690 area).
+   Post-split entry price ~$172/sh. Do not confuse the two.
+8. **MRVL sell-the-news risk** — S&P 500 inclusion Jun 22 may trigger passive-buy run-up then
+   reversal. Do not chase MRVL into inclusion.
+
+### Decision
+**HOLD.** Dual override: broker offline (no execution) + FOMC hawkish surprise (pre-defined pause).
+
+Priority action stack (unchanged — all require API restore):
+1. Confirm COTY → if still open, SELL 784sh
+2. SELL QRVO 19sh — thesis broken; near stop; exit deliberately before auto-trigger
+3. Tighten QLYS stop → 5% trailing GTC from current HWM (~$117.91; 5% stop = ~$112.01)
+4. VRT/NOW entries → PAUSED until Jun 23 /pre-market (per FOMC hawkish scenario rule)
+5. NVDA/CRWD/MRVL → research next week for fresh entry zones
+
+**Action required (CRITICAL — 13th halted session):** Set env vars in cloud session
+Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2,
+  ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open immediately to execute QRVO sell + QLYS stop tighten.
+
+---
