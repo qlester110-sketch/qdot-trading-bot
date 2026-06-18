@@ -328,3 +328,26 @@ Then re-run /market-open to execute pending sells/stops. Post-FOMC entry opportu
 **Action required (CRITICAL — 14th halted session):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open immediately to execute QRVO sell + QLYS stop tighten before more gains erode.
+
+---
+
+## Jun 18 — EOD Snapshot HALTED (Day 48, Thursday — post-FOMC)
+**REASON:** All 5 env vars MISSING for the 15th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No portfolio data pulled. No metrics computed. Slack webhook not sendable (SLACK_WEBHOOK_URL missing); Slack MCP server returned no accessible channels.
+
+**Context:** Post-FOMC Day 2. FOMC delivered hawkish surprise Jun 17. Markets digesting. QRVO trailing stop (~$95.79 est) may have triggered autonomously in post-FOMC tech selloff — status unknown for 15 sessions. QLYS 5%-stop tighten now 13+ sessions overdue (~$5.59/sh/session of unprotected downside compounding). 15 consecutive sessions (Day 41–48 full day) with zero broker access or position management.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: $10,000 (baseline; actual unknown — no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — 15th blocked session):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock fell to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
+2. SELL QRVO 19sh — thesis broken; near or through trailing stop ~$95.79. Post-FOMC pressure may have auto-triggered. Priority #1.
+3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est ~$117.91 → 5% stop = ~$112.01.
+4. VRT/NOW/MRVL entries → PAUSED until Jun 23 /pre-market per FOMC hawkish pause rule.
+5. NVDA — review next week; $195–205 pullback zone.
+
+**Action required (CRITICAL — 15th halted session):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP (Friday Jun 20 pre-market) to execute QRVO sell + COTY confirm + QLYS stop tighten.
