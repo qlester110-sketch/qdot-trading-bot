@@ -212,7 +212,7 @@ Then re-run /market-open.
 1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit when stock fell to ~$2.03–$2.06 weeks ago. Verify closed; if still open, SELL 784sh immediately.
 2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). Priority #1.
 3. TIGHTEN QLYS stop 10% → 5% GTC — mandatory since +20% crossed ~Jun 5. HWM est $111.80 → 5% stop = ~$106.21. Each session of delay = ~$5.59/sh of unprotected downside.
-4. POST-FOMC (Wed Jun 18+): Enter VRT $295–315 (materiality 0.75); Enter NOW $100–112 (materiality 0.65); MRVL $275–290 conditional (deployment cap permitting).
+4. POST-FOMC (Jun 17+): Enter VRT $295–315 (materiality 0.75); Enter NOW $100–112 (materiality 0.65); MRVL $275–290 conditional (deployment cap permitting).
 
 **Action required (CRITICAL — 8th halted session):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
@@ -351,3 +351,25 @@ Then re-run /market-open immediately to execute QRVO sell + QLYS stop tighten be
 **Action required (CRITICAL — 15th halted session):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open ASAP (Friday Jun 20 pre-market) to execute QRVO sell + COTY confirm + QLYS stop tighten.
+
+---
+
+## Jun 19 — Market-Open HALTED (Day 49, Friday — Juneteenth Holiday)
+**REASON:** (1) Markets CLOSED — Juneteenth National Independence Day. NYSE + NASDAQ shut. No trading today. Next session: Monday June 22, 2026. (2) All 5 env vars MISSING for the 16th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Zero broker calls possible.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: $10,000 (baseline; actual unknown — no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute Monday June 22 at market open):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit in May. Verify via `alpaca.sh positions`; if still open, SELL 784sh immediately. Priority #1A.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; FTC+SAMR risk; no organic catalyst). Est ~$95.85; stop at ~$95.79 = $0.06 gap. Effectively at stop. Capture +6.9%. Priority #1.
+3. TIGHTEN QLYS stop 10% → 5% GTC — CRITICAL: Jun 18 close $112.26 vs required 5% stop $112.01 = **$0.25 gap**. One bad open triggers the gap. Cancel current 10% trailing, place 5% GTC from HWM $117.91 → $112.01. Priority #2.
+4. MRVL S&P 500 inclusion effective Jun 22 pre-market. Sell-the-news dip to $265–280 reopens entry. Do NOT chase above $300.
+5. VRT/NOW entries remain PAUSED (FOMC hawkish pause + out of entry zones). Re-evaluate Jun 23 /pre-market post-PCE context.
+6. NVDA — monitor; $195–205 pullback zone. May re-enter if Jun 22 data cooperates.
+
+**Action required (CRITICAL — 16th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open at Monday June 22 open to execute QRVO sell + COTY confirm + QLYS stop tighten. QLYS 5%-stop gap is $0.25 — ONE bad session closes it without a stop.
