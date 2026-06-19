@@ -588,3 +588,92 @@ Research/operational updates (not strategy changes):
 ### Overall Grade: C+
 
 Rationale: Third consecutive outperformance week (+1.82% bot vs −0.49% S&P = +2.31% relative); phase now +6.46% vs S&P +4.33% (+2.13% relative). QLYS +22.6% is the experiment's best unrealized return to date; bot has moved to genuine phase outperformance. Research quality A-grade: AVGO $16B AI guide, CRWD sell-the-news, NFP beat risk all identified in pre-market research before the events. Grade held to C+ (not B) for: (1) API offline Day 28 — 6th consecutive week, now the experiment's dominant structural failure; (2) VRT entry missed 7 weeks running; price now below the original entry zone; the experiment's first calibrated trade is still unplaced; (3) zero calibrated trades in 35 sessions — 41% of the 90-day window elapsed with zero learning data, now approaching the point where 20-trade minimum is mathematically unreachable; (4) QRVO voluntary exit Day 28 overdue; all unrealized gains are on broken-thesis grandfathered positions, not the strategy engine. Sources: Investing.com QLYS June 5; WallStreetZen QRVO; Yahoo Finance VRT June 5; BLS NFP May 2026 (June 5); Advisor Perspectives / InvestingLive S&P 500 week of June 5.
+
+---
+
+## Week ending 2026-06-19
+
+*Holiday-shortened week: 4 trading days (Mon Jun 15 – Thu Jun 18). Markets closed Fri Jun 19 (Juneteenth National Independence Day). All prices estimated — Alpaca API offline all week (Day 41–49, 8th consecutive week, 16th consecutive halted session). QRVO trailing stop (~$95.79) likely auto-fired Jun 17 FOMC shock — unconfirmed without API. COTY trailing stop assumed fired mid-May (same as prior weeks). S&P 500: Jun 12 close ~7,449 → Jun 18 close 7,500.58 (+0.69%, 4-day week). Sources: TheStreet 2026-06-18; RESEARCH-LOG 2026-06-19.*
+
+### Stats — Stock Book
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | ~$10,450 (est; Week 7 / Jun 12 close) |
+| Ending portfolio | ~$10,458 (est; Jun 18 close, primary scenario) |
+| Week return | ~+$8 (+0.08%) — holiday-shortened 4-day week |
+| S&P 500 week | +0.69% (Jun 12 ~7,449 → Jun 18 7,500.58; TheStreet 2026-06-18) |
+| Bot vs S&P this week | **−0.61%** — first underperformance since Week 7 |
+| Phase return (since Apr 30) | ~+$458 (+4.58%) vs S&P +3.74% (Apr 30: 7,230.12 → Jun 18: 7,500.58) → **+0.84% relative** |
+| Stock trades | 0 opens; QRVO trailing stop likely auto-fired Jun 17 (unconfirmed); 0 deliberate closes |
+| Win rate | N/A — no calibrated closed trades |
+| Best unrealized | QLYS +23.4% / +$408 (Jun 18 close $112.26) |
+| Worst | COTY est −3.2% / −$63 (if stopped mid-May); if still open: −17.2% / −$338 |
+| Profit factor | N/A — no calibrated closed trades |
+
+### Stats — Options Sleeve
+| Metric | Value |
+|--------|-------|
+| Trades this week | 0 |
+| W / L / open | 0 / 0 / 0 |
+| Sleeve cap utilization | $0 / $500 (0%) |
+| Open option positions | 0 |
+
+### Calibration
+| Metric | Value |
+|--------|-------|
+| Total resolved calibrated trades | 0 |
+| Overall hit rate | N/A |
+| Hit rate by sector | N/A |
+| Hit rate by catalyst type | N/A |
+| Hit rate by direction | N/A |
+| Materiality bucket accuracy | N/A |
+| Band recommendation | **Insufficient data** (0 of 20 minimum resolved trades) |
+
+*QLYS, QRVO, COTY remain pre-calibration entries — excluded per TRADING-STRATEGY.md §Pre-calibration trades. Zero calibrated trades in 8 full weeks (40 trading sessions). Day 49 of 90 — 54% of experiment window with zero calibration data. The 20-trade minimum now requires ≥1 new calibrated entry every 2 trading days in the remaining 41 days — statistically unreachable at current trajectory.*
+
+### Closed Trades
+None confirmed this week. QRVO trailing stop (~$95.79) likely auto-fired Jun 17 during FOMC shock (unconfirmed without API). Once API is restored, `alpaca.sh positions` will confirm; CLOSE block to be logged immediately.
+
+### Open Positions at Week End
+| Ticker | Entry | Last (est.) | Unrealized | Stop (est.) | Notes |
+|--------|-------|-------------|------------|-------------|-------|
+| QLYS | $90.99 (05-06) | $112.26 (Jun 18 confirmed) | +23.4% / +$408 | ~$106.12 (10% trailing; MUST tighten to 5% = **$112.01** immediately) | ⚠⚠ CRITICAL: close $112.26 vs required stop $112.01 = **$0.25 gap**. One Mon gap-down triggers. 14 sessions of rule violation. |
+| QRVO | $89.66 (05-06) | Auto-stop ~$95.79 est (Jun 17 FOMC shock) | +6.9% / +$118 (if stopped) | Stop likely triggered | ⛔ Trailing stop likely auto-fired Jun 17. Thesis broken (merger arb; FTC+SAMR; CEO insider sale). Confirm via API Mon. |
+| COTY | $2.50 (05-06) | ~$2.07 (Jun 12 est; Jun 22 SmallCap 600 inclusion imminent) | Stop assumed fired at ~$2.42 → −3.2% / −$63 | N/A | ⛔ Trailing stop assumed fired mid-May. Jun 22 inclusion noise — thesis still broken; confirm and log CLOSE block. |
+
+### What Worked
+- Iran-US peace deal (Jun 15 — MOU signed; Strait of Hormuz reopening) drove broad tech risk-on rally; QLYS and portfolio benefited; VRT falsification condition confirmed fully reversed
+- Pre-defined FOMC hawkish scenario rule correctly invoked Jun 17: VRT and NOW entries remained paused per documented criteria; no capital committed into the hawkish shock
+- QRVO trailing stop mechanism likely preserved +6.9% gain automatically on Jun 17 FOMC selloff — stop functioning as designed even without active management
+- Research precisely flagged QLYS $0.25 stop-gap and QRVO $0.06 stop-gap in Jun 18–19 pre-market before they materialized; risk levels documented with exact dollar figures
+- MRVL S&P 500 inclusion (Jun 22) and COTY SmallCap 600 inclusion (Jun 22) both identified in advance; Mon action plan staged before market open
+
+### What Didn't Work
+- API offline Day 41–49 (8th consecutive week; 16 consecutive halted sessions) — QLYS 5% stop tighten 14 sessions overdue; QRVO voluntary exit 49 days past thesis break; zero ability to respond to FOMC shock or Iran deal surge
+- QLYS 5% stop-tighten rule violated 14 sessions running: Jun 18 close $112.26 vs mandatory stop $112.01 = $0.25 — tightest the gap has been; one Monday open gap-down through $112 captures avoidable loss per strategy rules
+- QRVO exit was accidental (auto-stop at $95.79 if fired) rather than deliberate — best exit window was May 29 at +20.2% ($107.75); 49-day delay from thesis break surrendered ~$11.56/share of unrealized gains vs peak
+- Zero calibrated trades in 40 trading sessions — 54% of 90-day window elapsed; 20-trade minimum now requires ≥1 entry every 2 trading days for remaining 41 days; calibration objective is statistically failed
+- Week underperformed S&P 500 by −0.61%: Iran deal rally was a macro tide; limited portfolio diversity (1 active thesis-intact position) meant bot moved with the S&P but captured less upside than the broader Nasdaq +3% surge
+
+### Key Lessons
+- **Iran peace deal (Jun 15) as falsification-reversal worked exactly as documented.** VRT's stated falsification ("Iran re-escalation worsens ME deal-slippage materially") fully reversed. The framework produced the correct entry signal for the 8th consecutive week; only the API blocked execution.
+- **FOMC hawkish Warsh (Jun 17) — pre-defined pause rule was correct.** Kevin Warsh's first meeting: held 3.5–3.75%, dot plot 9/18 members for hike, median rate raised 3.4% → 3.8%. The pre-defined hawkish scenario was written before the event. Trust the rulebook.
+- **QLYS at $0.25 above the mandatory 5% stop ($112.01) is the experiment's highest single-session tail risk.** The stop-tighten rule exists precisely for this scenario. 14 sessions of non-compliance have compounded to a near-trigger. QLYS stop tighten must be the first action at API restore — before any entry decisions.
+- **Day 49 with 0 calibrated entries: the calibration objective is now unachievable.** 20-trade minimum in 41 remaining days = ≥1 new calibrated entry every 2 trading days. At current throughput (0 per 49 days) this is mathematically impossible. The Day 90 review should note: 90 days is too short to accumulate a calibration dataset at $1k sizing and 30% deployment cap with this operational setup.
+- **QRVO auto-stop validates the mechanism; it also quantifies the 49-day delay cost.** Peak unrealized +20.2% (May 29, $107.75) vs likely auto-stop at +6.9% ($95.79) = $11.56/share surrendered. The stop protected capital; the strategy required deliberate exit far sooner. Both are true.
+
+### Adjustments for Next Week
+No strategy rule changes — 0 calibration data; no rule violations requiring immediate strategy-doc fix; no owner override. TRADING-STRATEGY.md unchanged. UNIVERSE.md unchanged.
+
+Operational priorities (mandatory before Mon June 22 open):
+1. **Restore env vars — Day 49; 8th consecutive week is experiment-terminal** — Set before Mon 9:30 ET open
+2. **Confirm COTY** — `bash scripts/alpaca.sh positions`; if stopped: log CLOSE block (pre-cal, calibration: N/A, realized ~−3.2%); if still open: SELL 784sh
+3. **Confirm/execute QRVO** — if auto-stopped at ~$95.79: log CLOSE block (pre-cal, calibration: N/A, realized +6.9%); if still open: SELL 19sh — thesis broken Day 49
+4. **TIGHTEN QLYS stop** — cancel 10% trailing GTC; place 5% GTC from HWM $117.91 → $112.01; **CRITICAL: $0.25 gap — Mon open may trigger without this**
+5. **MRVL** — S&P 500 inclusion fires Mon pre-market; if sell-the-news dip to $265–$280: evaluate full entry checklist; bullish, materiality 0.70, horizon 10 days, catalyst macro; $1k max; only after QRVO/COTY confirmed closed
+6. **VRT/NOW** — FOMC hawkish pause extends through Jun 23 /pre-market; PCE Jun 25 is rate-path arbiter; no entries until post-PCE clarity; VRT $332 above $295–$315 zone
+7. **NVDA** — $210.51 Jun 18; $195–$205 entry zone; if post-PCE dip: evaluate; materiality 0.80, bullish, horizon 10 days
+
+### Overall Grade: D
+
+Rationale: Holiday-shortened week (4 trading days; Juneteenth Jun 19 closed); slight underperformance (bot +0.08% vs S&P +0.69% = −0.61% relative); phase lead stable (+4.58% bot vs +3.74% S&P = +0.84% relative). Iran-US peace deal (Jun 15) and FOMC hawkish surprise (Jun 17) both handled correctly per pre-defined framework rules — research quality A-grade for the 8th consecutive week. Grade D (not F) for marginal phase outperformance and intact stop mechanism; D (not C) for: (1) API offline Day 49 — 8th consecutive week, 16 consecutive halted sessions, experiment's defining structural failure approaching end-of-window; (2) QLYS 5% stop-tighten 14 sessions overdue — now $0.25 from mandatory trigger, highest tail risk in experiment history; (3) QRVO voluntary exit 49 days overdue — auto-stopped (accidental) vs deliberate; (4) zero calibrated trades in 40 trading sessions — 54% of window; 20-trade minimum statistically unreachable; calibration objective failed. Sources: TheStreet 2026-06-15, 2026-06-17, 2026-06-18 (S&P 500 close 7,500.58); CNBC QLYS (Jun 18 $112.26); RESEARCH-LOG 2026-06-19 (QRVO est $95.85, FOMC dot-plot, S&P 7,500.58); Apr 30 baseline 7,230.12 (CNBC Apr 30 2026).
