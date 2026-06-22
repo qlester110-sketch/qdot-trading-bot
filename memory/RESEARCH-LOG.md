@@ -6694,3 +6694,238 @@ export SLACK_WEBHOOK_URL=<webhook>
 Environment Variables before Monday open.
 
 ---
+
+## 2026-06-22 — Pre-market Research (cloud routine, Day 53 — Monday post-Juneteenth)
+
+**⚠ HALTED — 17th consecutive session.** All 5 env vars MISSING: ALPACA_API_KEY,
+ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL. Zero
+broker calls possible. Slack webhook unavailable; Slack alert sent via MCP instead.
+Slack channel search returned no results; DM sent to logged-in user (U09AL2K76QZ).
+Account data below is estimated from prior sessions + WebSearch.
+
+### Account (estimated — Alpaca offline, 17th consecutive halted session)
+- Equity: unknown (no broker data since launch)
+- Cash: unknown
+- Buying power: unknown
+- Daytrade count: unknown
+- Open positions (last confirmed 2026-05-07): QLYS 19sh, QRVO 19sh, COTY 784sh
+- Weekly trade slots: 3 of 3 available (week of 2026-06-22)
+
+| Sym  | Sh  | Avg    | Last Known   | Premarket Jun 22 | P&L est | Stop (10% trail HWM) | Notes                                   |
+|------|-----|--------|--------------|------------------|---------|----------------------|-----------------------------------------|
+| QLYS | 19  | $90.99 | $112.26 (6/18)| **$109.15 (−2.1%)** | +$18.16/sh (+20.0%) | $106.12 (HWM $117.91 × 0.90) | ⚠ BELOW 7% stop ($109.66) AND 5% stop ($112.01) — 14 sessions of non-compliance now consequential |
+| QRVO | 19  | $89.66 | ~$98.59      | ~$98.59          | +$8.93/sh (+10.0%) | ~$95.79 (HWM ~$106.43 × 0.90) | Thesis broken; sell on API restore |
+| COTY | 784 | $2.50  | $2.07 (6/12)  | unknown          | −$338 est (−17.2%) | ~$2.42 (should have auto-triggered in May) | S&P SmallCap 600 inclusion effective today; thesis broken regardless |
+
+---
+
+### Market Context
+- **WTI crude:** $77.54/bbl, +0.27%. Range today $74.92–$78.08. Trump renewed threats of
+  Iran strikes → partial risk-off oil bid. Source: [TradingEconomics](https://tradingeconomics.com/commodity/crude-oil)
+- **Brent crude:** ~$80/bbl (Jun 19 close). Iran peace-talk progress vs. strike threat = two-way oil risk.
+  Source: [Barchart futures](https://www.barchart.com/futures/quotes/ES*0/futures-prices)
+- **S&P 500 futures:** 7,556.25 (range 7,537–7,568). BUT SPY −0.19%, QQQ −0.24% in premarket —
+  cautious open despite elevated futures level. Trump Iran threats weighing.
+  Source: [Schwab market update](https://www.schwab.com/learn/story/stock-market-update-open)
+- **VIX:** 16.78 (VIX1D 15.68, VIX9D 13.93). Low absolute fear; consistent with
+  post-FOMC digestion and no near-term macro catalyst until Thu.
+  Source: [Saxo Market Quick Take Jun 22](https://www.home.saxo/content/articles/macro/market-quick-take---22-june-2026-22062026)
+- **Earnings before open today:** None of note. Kiplinger confirms no noteworthy reports Jun 22.
+  Source: [Kiplinger earnings calendar](https://www.kiplinger.com/investing/stocks/17494/next-week-earnings-calendar-stocks)
+- **Economic calendar this week:**
+  - Monday Jun 22: Nothing.
+  - Tuesday Jun 23: Nothing major.
+  - Wednesday Jun 24: **MU (Micron) earnings after close** — consensus $34.66B revenue, $19.95 EPS, ~81% gross margins. IN UNIVERSE. Binary event.
+  - Thursday Jun 25: **May PCE + core PCE** (Fed's preferred inflation gauge). Wells Fargo
+    expects PCE 4.1% YoY, core PCE 3.4% YoY. If prints hot (>3.5% core) → October hike
+    narrative cements → growth/SaaS multiple compression. This is the week's key risk.
+    Also: **CRWD split record date** (4-for-1; post-split trading July 2).
+  - Friday Jun 26: Nothing major.
+  Source: [Kiplinger economic calendar](https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar)
+- **Sector momentum / geopolitical:** Trump renewed Iran strike threats over weekend → European
+  equities opened mixed to lower, USDCHF rising. Iran-peace/strike binary remains the
+  dominant macro wildcard.
+  Source: [Saxo Jun 22](https://www.home.saxo/content/articles/macro/market-quick-take---22-june-2026-22062026)
+
+---
+
+### Held-Ticker News Summary
+
+**QLYS (Qualys) — ⚠ BELOW REQUIRED TIGHTENED STOP LEVELS**
+- Premarket Jun 22: **$109.15, −$2.38 (−2.13%)** from Jun 18 close $112.26.
+  Source: [Investing.com QLYS](https://www.investing.com/equities/qualys-inc)
+- HWM: $117.91. Required stop levels (per strategy): 7% = $109.66; 5% = $112.01.
+- QLYS has FALLEN THROUGH both the 7% stop threshold ($109.66) and the 5% stop threshold ($112.01).
+  The 10% trailing stop from HWM ($106.12) is still active and protecting a +$15.13/sh gain.
+- **Consequence of 14-session non-compliance:** Had the 5% stop been set on time (~Jun 5),
+  position would have exited near $112.01, locking in +23.1% gain. Current gain if 10% stop
+  triggers at $106.12 = +16.6%. Cost of delay: ~6.5% of unprotected gain (~$1.17/sh × 19sh = ~$22).
+- **No new QLYS fundamental catalyst identified today.**
+- Status: 10% trailing stop at ~$106.12 is the last line of protection. Tighten to 7% is no
+  longer achievable (price already through). When broker restores: immediately sell QLYS OR
+  place the 5% stop and accept that tighten window passed.
+- Action: SELL QLYS intentionally on API restore (thesis still intact but stop window missed;
+  securing remaining gain is prudent given Iran risk-off tape today).
+
+**QRVO (Qorvo) — ⚠ SELL OVERDUE, THESIS BROKEN**
+- Last known: $98.59. Source: [Yahoo Finance QRVO](https://finance.yahoo.com/quote/QRVO/)
+- Stop: ~$95.79 (10% trailing from HWM ~$106.43). Current $98.59 = $2.80 of cushion.
+- FTC + SAMR merger review binary unchanged. Deal: $32.50 cash + 0.96 SWKS/share.
+  Source: [SEC Form 425](https://www.sec.gov/Archives/edgar/data/0001604778/000110465926064582/tm2614811d5_ex99-2.htm)
+- Thesis remains broken. Original catalyst: organic EPS guide beat. Current driver: merger-arb.
+- **Action: SELL QRVO 19sh immediately on API restore. Priority #1.**
+
+**COTY (Coty) — ⚠ S&P SmallCap 600 INCLUSION TODAY — EXIT REGARDLESS**
+- S&P SmallCap 600 inclusion effective June 22. Passive inflows expected.
+  Source: [Kalkine S&P rebalance](https://www.kalkine.com/news/general-news/sp-500-june-2026-quarterly-rebalance-winners-losers-and-capital-allocation-shifts-explained)
+- Last known price: ~$2.07 (Jun 12). Trailing stop at ~$2.42 should have auto-triggered in May.
+- Index inclusion creates artificial one-time demand — does NOT change the broken thesis
+  (LFL −7%, operating margin −29%, EPS miss, CEO exit signal).
+- **Action: Confirm position via `alpaca.sh positions` on API restore. If still open: SELL 784sh.
+  Do not hold for index inflow — thesis is broken per original falsification. Priority #1A.**
+
+---
+
+### Options Sleeve Health Check
+- No open option positions. Sleeve cap $500 unused.
+- VIX 16.78 — moderate. Hot PCE (Thu) could spike VIX if >3.5% core.
+- No new options entries: broker offline + PCE binary risk this week.
+
+---
+
+### UNIVERSE News Summary
+
+**MRVL (Marvell) — S&P 500 inclusion fired today — NOT a sell-the-news dip**
+- MRVL +7.27% to $310.58 on S&P 500 inclusion June 22 (replacing Pool Corp).
+  Source: [Investing.com MRVL analysis](https://www.investing.com/analysis/marvells-sp-500-inclusion-tests-whether-forced-buying-can-hold-the-rally-200682270)
+  Source: [StocksToTrade MRVL](https://stockstotrade.com/news/marvell-technology-inc-mrvl-news-2026_06_18-2/)
+- Watch thesis: sell-the-news dip to $265–280 was the entry zone. Stock instead ripped.
+- **Decision: NO ENTRY. Price $310.58 is far above $265–280 entry zone. Do not chase. If
+  stock reverses and dips below $285 intraday or this week, revisit.**
+- Direction: bullish | Catalyst type: macro | Materiality: 0.70 | Horizon: 10 days
+
+**MU (Micron) — Earnings June 24 after close — UNIVERSE, HIGH MATERIALITY, DO NOT ENTER PRE-EARNINGS**
+- MU reports fiscal Q3 2026 on June 24 at 2:30 PM MT / 4:30 PM ET.
+- Consensus: revenue $34.66B, EPS $19.95, gross margins ~81% (record). HBM capacity fully
+  booked through 2026. AI memory demand structural. Strong Buy consensus (analyst avg bullish).
+  Source: [TradingKey MU preview](https://www.tradingkey.com/analysis/stocks/us-stocks/261975340-mu-q3-earnings-preview-june-2026-tradingkey)
+  Source: [Micron StockTitan](https://www.stocktitan.net/news/MU/micron-technology-to-report-fiscal-third-quarter-results-on-june-24-22gcrbths4gp.html)
+- **Decision: DO NOT ENTER ahead of earnings (binary risk; 2 days to print). Post-earnings entry**
+  on June 25+ IF: (a) revenue beats $34.66B, (b) Q4 guide beats, (c) HBM allocation update positive,
+  (d) PCE same day is not hot enough to crater growth names.
+- Direction: bullish | Catalyst type: earnings | Materiality: 0.85 | Horizon: 10 days (post-print)
+- Falsification: revenue miss or Q4 guide cut; any signal of HBM demand softening; Samsung/SK Hynix
+  supply glut signal.
+- **⚠ NOTE: MU earnings (Jun 24 AMC) and PCE (Jun 25 BMO) land on consecutive days. Double binary.**
+
+**CRWD (CrowdStrike) — Split record date June 25 (this week)**
+- Record date June 25 → each holder receives 3 additional shares. Post-split trading July 2
+  at ~$171 (pre-split ~$686 ÷ 4). Source: [Motley Fool CRWD split](https://www.fool.com/investing/2026/06/17/crowdstrikes-4-for-1-stock-split-is-coming-july-2/)
+- **Mechanics alert:** CRWD structured as stock dividend. If we owned shares on June 25, we
+  receive 3x additional shares. We do NOT own CRWD. Post-split entry zone: $160–175.
+- Do not buy pre-split at ~$686 (position sizing: $1k cap = ~1.4 shares, too concentrated).
+- No fundamental news today.
+
+**NVDA (NVIDIA):**
+- Last ~$209 (Jun 18). Entry zone $195–205. No new catalyst today.
+- Source: [Yahoo Finance NVDA](https://finance.yahoo.com/quote/NVDA/)
+
+**VRT (Vertiv):**
+- ~$332–333 (Jun 18). Entry zone $295–315. Still above zone. FOMC hawkish pause active.
+
+**NOW (ServiceNow):**
+- ~$95 (Jun 18). Below entry zone $100–112. FOMC hawkish pause active.
+
+---
+
+### UNIVERSE Movers (WebSearch — Alpaca offline)
+
+| Ticker | Est Price (Jun 22 PM) | Move       | In Universe | Catalyst                                               |
+|--------|-----------------------|------------|-------------|--------------------------------------------------------|
+| MRVL   | $310.58               | +7.27%     | ✓           | S&P 500 inclusion effective today                      |
+| QLYS   | $109.15 (PM)          | −2.13%     | ✓           | No new catalyst; Iran risk-off broad tape              |
+
+---
+
+### Trade Ideas
+
+**No new entries today.**
+
+Reasons:
+1. **Broker offline** — 17th consecutive halted session. Zero orders executable.
+2. **QLYS in active distress** — stock fell through both the 7% ($109.66) and 5% ($112.01) stop levels
+   from HWM. Priority is defending remaining gains and executing pending sells (QRVO, COTY).
+3. **MU earnings Jun 24** — 2 days away. Cannot enter without accepting binary earnings risk.
+   Post-print entry is the correct approach.
+4. **PCE Thursday Jun 25** — Wells Fargo forecast 4.1% YoY, core 3.4%. If hot → growth/SaaS selloff.
+   No new capital into rate-sensitive UNIVERSE names before this print.
+5. **Iran threat risk-off** — Trump renewed strike threats → oil bid, equity caution.
+6. **Deployment cap blocked** — QRVO + QLYS + COTY (if still open) = ~$5.5k deployed. Must close
+   at least QRVO and COTY before any new additions under the 30% ($3k) rule.
+
+**Post-earnings watchlist (June 25+ only, contingent on MU beat AND cool PCE):**
+1. **MU** — If Jun 24 beat (>$34.66B rev, >$19.95 EPS, positive HBM4 guidance) AND PCE cool:
+   Entry $640–680 range (verify post-split equivalent if applicable). $1,000 position cap.
+   Direction: bullish | Catalyst type: earnings | Materiality: 0.85 | Horizon: 10 days.
+   Falsification: revenue miss or below-consensus Q4 guide; HBM demand softening language.
+
+---
+
+### Risk Factors
+
+1. **QLYS below both tightened-stop thresholds** — Premarket $109.15; 7% stop was $109.66;
+   5% stop was $112.01. The 10% trailing stop at $106.12 is the last protection. If QLYS
+   opens weak today (plausible on Iran risk-off + no positive catalyst), it could approach $106.
+   **On API restore: immediately verify stop is in place and decide whether to sell intentionally
+   or let trailing stop work.** 14 sessions of non-compliance has cost us option value.
+
+2. **Broker offline — 17th consecutive session** — Every pending action (COTY confirm,
+   QRVO sell, QLYS stop/sell) remains blocked. Estimated trapped-gains: QLYS +$345,
+   QRVO +$170. Estimated unrealized losses if COTY open: ~−$338. Net est: +$177.
+
+3. **PCE Thursday June 25** — Wells Fargo core PCE forecast: 3.4% YoY. If prints ≥3.5%:
+   October hike odds rise → VRT/NOW/MU entries blocked or reversed → SaaS multiple pressure.
+   If prints ≤3.1%: rate relief, potential to open VRT/NOW entry consideration.
+
+4. **MU + PCE double binary June 24–25** — MU earnings (June 24 AMC) + PCE (June 25 BMO)
+   on consecutive sessions. Entering MU pre-earnings means facing both events. Do not enter.
+
+5. **CRWD split mechanics — Jun 25 record date** — No position held so no action needed.
+   Reminder: post-split entry zone ~$160–175 (effective July 2).
+
+6. **Trump Iran strike threats** — Renewed this weekend. Oil at $77.54 (+0.27%) on bid.
+   Binary risk: escalation = oil spike + risk-off = broad UNIVERSE selloff.
+   De-escalation = oil relief + risk-on = potential tailwind.
+
+7. **FOMC hawkish overhang** — Oct hike still ~50% probability per market pricing.
+   Rate-sensitive UNIVERSE names (VRT, NOW, SNOW, MDB) facing structural headwind.
+
+---
+
+### Decision
+
+**HOLD. Triple override: (1) broker offline (17th session), (2) PCE Thursday binary, (3) Iran risk-off.**
+
+**Priority action stack (ALL require env vars set in cloud session Settings first):**
+```
+ALPACA_API_KEY=<key>
+ALPACA_SECRET_KEY=<secret>
+ALPACA_ENDPOINT=https://paper-api.alpaca.markets
+ALPACA_DATA_ENDPOINT=https://data.alpaca.markets
+SLACK_WEBHOOK_URL=<webhook>
+```
+1. **SELL QRVO 19sh** — thesis broken; deliberately exit before any further auto-trigger.
+   `/trade QRVO 19 sell`. Priority #1.
+2. **Confirm COTY** — `alpaca.sh positions`. If still open: SELL 784sh. Priority #1A.
+3. **QLYS: sell intentionally or verify 10% stop** — Stock through 7% and 5% stop levels.
+   Tighten window is gone. Decision: sell intentionally at open to lock remaining +20% gain,
+   OR verify the 10% trailing stop at $106.12 is active and let it run. Recommend sell given
+   Iran risk-off tape. Priority #2.
+4. **MU watchlist** — Monitor Jun 24 earnings print. Entry Jun 25 ONLY if beat + cool PCE.
+5. **MRVL** — No dip. No entry. Continue monitoring.
+6. **VRT / NOW** — FOMC pause still active. Re-evaluate post-PCE Jun 25.
+
+**⚠ CRITICAL — 17th consecutive halted session. QLYS has fallen through the tightened stop
+levels due to non-compliance. Set env vars BEFORE today's open to execute pending sells.**
+
+---
