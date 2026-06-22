@@ -373,3 +373,26 @@ Then re-run /market-open ASAP (Friday Jun 20 pre-market) to execute QRVO sell + 
 **Action required (CRITICAL — 16th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open at Monday June 22 open to execute QRVO sell + COTY confirm + QLYS stop tighten. QLYS 5%-stop gap is $0.25 — ONE bad session closes it without a stop.
+
+---
+
+## Jun 22 — Market-Open HALTED (Day 53, Monday — 17th consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 17th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No orders placed. Slack alert sent via MCP DM (U09AL2K76QZ).
+
+**Context:** QLYS premarket −2.13% to $109.15 — now below both the 7% stop threshold ($109.66) and the 5% stop threshold ($112.01) from HWM. Only the 10% trailing stop at $106.12 remains active. MRVL S&P 500 inclusion fired today at +7.27% ($310.58); no entry (above $265–280 entry zone). MU earnings Jun 24 AMC + PCE Jun 25 — double binary this week. Iran strike threat active = risk-off tape.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit in May. Verify via `alpaca.sh positions`; if still open, SELL 784sh immediately. Priority #1A.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; FTC+SAMR risk; no organic catalyst). Stop est ~$95.79; est current ~$98.59. Capture ~+10%. Priority #1.
+3. MANAGE QLYS — stock premarket $109.15, below both 7% ($109.66) and 5% ($112.01) tightened thresholds. 10% trailing stop at $106.12 is last protection. On API restore: SELL intentionally to lock remaining +$18/sh gain OR verify stop is live. Priority #2.
+4. NO new entries — broker offline + MU earnings Jun 24 + PCE Jun 25 double binary. Post-print entry in MU if beat + cool PCE ($640–680 range, $1k cap, bullish, materiality 0.85).
+5. MRVL — ripped to $310.58 on S&P 500 inclusion. Entry zone was $265–280. Do not chase. Monitor for reversal dip below $285.
+
+**Action required (CRITICAL — 17th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP. QLYS is below its required tightened stop levels — every session of delay compounds the risk of the 10% trailing stop triggering at $106.12 instead of locking gains at $112+.
