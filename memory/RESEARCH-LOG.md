@@ -6929,3 +6929,217 @@ SLACK_WEBHOOK_URL=<webhook>
 levels due to non-compliance. Set env vars BEFORE today's open to execute pending sells.**
 
 ---
+
+---
+
+## 2026-06-23 — Pre-Market Research (Day 54, Tuesday)
+
+**STATUS: BROKER OFFLINE — 19th consecutive halted session. All 5 env vars MISSING.
+Zero Alpaca calls possible. Web research conducted. Slack DM sent to Quentin.**
+
+---
+
+### Account Snapshot
+
+- Equity: UNKNOWN (no broker access since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (all unconfirmed; fills never confirmed)
+- Cash / BP: UNKNOWN
+- Day trades used: UNKNOWN
+- Note: QLYS trailing stop (10% from HWM $117.91 = $106.12) may have auto-triggered.
+  Web search shows conflicting QLYS prices: $87.14 (possibly current) vs $113.67 (Jun 16 close).
+  If $87.14 is accurate, stop fired at ~$106 and position is closed. Cannot confirm without broker.
+
+---
+
+### Market Context
+
+**Oil:**
+- WTI: $73.67/bbl (down 0.26%) — [TradingKey](https://www.tradingkey.com/analysis/commodities/oil/261984012-wti-us-brent-oil-tradingkey)
+- Brent: $76.68 (down from $77.52 prev. close) — Iran-US deal progress driving decline
+- Context: Brent peaked ~$115 during Iran conflict; fell to ~$77 on MOU signing; fragile ceasefire now under strain
+
+**S&P 500 Futures (premarket):**
+- DOWN 1.43% — [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/06/60035209/sp500-june-23-open-up-or-down-polymarket-tech-selloff-fed-inflation)
+- Polymarket implies only 2% chance of green open
+- Driver: GOOGL -5 to -7% on AI talent exodus; broad Big Tech weakness (AMZN, META, MSFT also red)
+- Asia context: Nikkei -3.6%, Kospi -1.0%, Hang Seng -2.1% overnight
+
+**VIX:**
+- ~16.41 (Jun 16 reading); likely elevated today given -1.43% futures move and GOOGL catalyst
+- Range past 4 weeks: 15.18–23.34; avg 17.40 — [TradingEconomics/FRED](https://tradingeconomics.com/united-states/cboe-volatility-index-vix-fed-data.html)
+- Interpretation: moderate vol; options premium elevated vs June lows
+
+**Today's Economic Releases (June 23):**
+- 08:30 ET — GDP Q1 2026 (3rd revision)
+- 10:00 ET — Michigan Consumer Sentiment (Final)
+- 10:00 ET — Multivariate Core Trend Inflation (NY Fed)
+- No CPI/PPI/FOMC today
+
+**This Week's Critical Events:**
+- Jun 24 AMC — Micron (MU) fiscal Q3 2026 earnings ⚠
+- Jun 25 BMO — PCE + Core PCE (Fed's preferred inflation gauge) ⚠⚠
+- FOMC (Jun meeting, concluded): rates held; new Chair Kevin Warsh hawkish; Oct hike ~50% probability
+
+**Iran / Geopolitics:**
+- US-Iran MOU signed mid-June: 14-point agreement, Strait of Hormuz reopened, 60-day negotiation window on nuclear program
+- Ceasefire status: fragile — tensions re-flaring <1 week post-signing — [CNBC Daily Open Jun 22](https://www.cnbc.com/amp/2026/06/22/cnbc-daily-open-iran-ceasefire-deal-trump-israel-lebanon.html)
+- Oil risk: if ceasefire collapses → Brent re-bid toward $90; if holds → oil heads lower
+- Market read: reduced oil risk premium pulling down energy; risk-off from geopolitical uncertainty compressing multiples
+
+---
+
+### UNIVERSE News Summary
+
+**GOOGL (Alphabet) — BEARISH, IN UNIVERSE — KEY CATALYST TODAY:**
+- Stock -5 to -7% (worst single day since May 2025), dropped to ~$349.68 settle; intraday low -7.2%
+- Catalyst: Multiple top AI researcher departures:
+  1. John Jumper (VP, Google DeepMind; 2024 Nobel Chemistry laureate) → joined Anthropic
+  2. Noam Shazeer (foundational GenAI researcher) → joined OpenAI
+- Secondary: Alphabet's SpaceX stake declined in value (holds ~5% stake in SpaceX/SPCX)
+- Sources: [CNBC](https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html) | [Kaohoon International](https://www.kaohooninternational.com/markets/585249) | [Yahoo Finance GOOGL](https://finance.yahoo.com/markets/stocks/articles/why-alphabet-googl-shares-getting-230719406.html)
+- Evaluation: Structural competitive-moat concern for AI leadership. Primary sources. Fundamental, citable.
+- **Trade consideration: Long GOOGL put** — see Trade Ideas below.
+
+**MU (Micron) — UNIVERSE, EARNINGS TOMORROW — DO NOT ENTER:**
+- Reports fiscal Q3 2026: June 24 AMC (4:30 PM ET)
+- Consensus: $34.66B revenue / $19.95 EPS / ~81% gross margins
+- Higher estimates: $35.4B revenue / $20.4 EPS
+- HBM capacity sold out through 2026 under binding contracts
+- Key watches: HBM4 allocation guidance, FY2027 CAPEX ($25B+), competition from SK Hynix / Samsung
+- Sources: [TradingKey MU preview](https://www.tradingkey.com/analysis/stocks/us-stocks/261975340-mu-q3-earnings-preview-june-2026-tradingkey) | [TechTimes](https://www.techtimes.com/articles/318228/20260611/micron-earnings-preview-june-24-tests-whether-hbm-supercycle-real-cresting.htm)
+- **Decision: NO ENTRY pre-earnings. Post-print entry on Jun 25 only if: beat + guide up + HBM4 positive + PCE cool.**
+
+**NVDA (Nvidia) — UNIVERSE:**
+- Range today: $207.64–$213.99 intraday; ~$207.78 — [Yahoo Finance NVDA](https://finance.yahoo.com/quote/NVDA/)
+- Prior entry zone $195–205: ABOVE zone. Do not chase.
+- News: Announced Halos for Robotics (full-stack AI safety system for physical AI); 35 new AI supercomputers across Europe
+- No new fundamental trade catalyst. Monitor for pullback to zone.
+
+**MRVL (Marvell) — UNIVERSE:**
+- ATH $324.20 in early June 2026; +247% YTD. S&P 500 inclusion effective Jun 22 is now priced in.
+- Prior entry zone $265–280: FAR above zone. No entry.
+- Source: [Yahoo Finance MRVL](https://finance.yahoo.com/quote/MRVL/)
+
+**VRT (Vertiv) — UNIVERSE:**
+- ~$333 (Jun 18 last known); +84% YTD; ATH $379.94 (May 14)
+- Entry zone $295–315: STILL above zone. FOMC hawkish pause still active.
+- Source: [TradingView VRT](https://www.tradingview.com/symbols/NYSE-VRT/)
+
+**NOW (ServiceNow) — UNIVERSE:**
+- ~$95 (Jun 18 last known); below entry zone $100–112
+- FOMC hawkish pause: rate-sensitive SaaS faces multiple compression. Still paused.
+
+**AMD — UNIVERSE:**
+- Data center revenue +57% YoY in Q1 2026 to record $5.8B (Instinct + EPYC). +139% YTD.
+- No fresh catalyst today. Source: [Yahoo Finance AMD](https://finance.yahoo.com/quote/AMD/)
+
+---
+
+### Held-Ticker News
+
+**QLYS (Qualys) — HELD POSITION (pre-calibration, 19sh):**
+- Price: UNCERTAIN. Sources conflict: $87.14 (possibly today) vs $113.67 (Jun 16 close), $109.15 (Jun 22 premarket)
+- If $87.14 is accurate: 10% trailing stop ($106.12 from HWM $117.91) TRIGGERED. Position auto-closed.
+- If ~$109 range: stop still live, stock below 7% ($109.66) and 5% ($112.01) tightened levels; 10% stop at $106.12 last protection
+- No QLYS-specific news found today (cybersecurity; not in locked UNIVERSE)
+- Action on API restore: `alpaca.sh positions` immediately to confirm status
+
+**QRVO (Qorvo) — HELD POSITION (pre-calibration, 19sh, thesis broken):**
+- ~$103.79 (Jun 22 close). Up ~+16% from est entry ~$89.
+- Trailing stop est ~$95.79. Still above stop; HAS NOT auto-triggered.
+- Thesis broken: merger arb binary, FTC+SAMR risk, no organic catalyst
+- ACTION REQUIRED: SELL 19sh. Priority #1. Gains at risk every session.
+- Source: [Yahoo Finance QRVO](https://finance.yahoo.com/quote/QRVO/)
+
+**COTY — HELD POSITION (pre-calibration, 784sh):**
+- Status unknown for 19 sessions. Trailing stop at ~$2.42 should have auto-hit at $2.03–$2.06
+- ACTION REQUIRED: verify via `alpaca.sh positions`. If open: SELL 784sh.
+
+---
+
+### Options Sleeve
+
+No option positions (broker unconfirmed; none placed under calibration framework).
+GOOGL flagged in Trade Ideas for a potential put thesis — see below.
+
+---
+
+### Trade Ideas
+
+**1. GOOGL — Long Put (bearish) — UNIVERSE — FLAG ONLY, DO NOT EXECUTE TODAY**
+
+- Ticker: GOOGL
+- Catalyst: Senior AI talent exodus — John Jumper (2024 Nobel laureate, VP DeepMind) → Anthropic;
+  Noam Shazeer (foundational GenAI researcher) → OpenAI. Secondary: SpaceX stake decline.
+  Sources: [CNBC](https://www.cnbc.com/2026/06/22/alphabet-goog-stock-ai-departures.html) | [InteractiveCrypto](https://www.interactivecrypto.com/alphabet-s-stock-plunges-6-5-amid-ai-talent-exodus-and-soaring-infrastructure-costs-jun-2026)
+- Catalyst type: guidance (structural competitive moat erosion)
+- Direction: bearish
+- Materiality: 0.65 — strong source (CNBC, named individuals), meaningful stock reaction (-7% intraday)
+  Discounts: 1-day event may be overblown; GOOGL has massive structural moat (compute, data, distribution)
+- Horizon: 10 trading days
+- Entry: Long put, ~60 DTE from today (exp ~late Aug 2026), delta 0.55–0.65
+  Strike: ~2-3% OTM put (stock ~$350 post-drop → strike ~$340); verify earnings date first
+- Stop: -50% of premium paid (sleeve rule)
+- Target: +100% of premium paid (sleeve rule)
+- Premium cap: $250 (sleeve per-trade cap)
+- R:R: 2:1 defined by sleeve rules
+- Sector: Cloud megacap (GOOGL)
+- Falsification: stock recovers above $375 within 5 trading days (market prices in the talent loss as immaterial);
+  OR Google announces countermeasure (key hire, major product win) within 2 weeks
+- **Blockers today — DO NOT ENTER:**
+  1. Broker offline (19th session) — zero execution capability
+  2. Stock just moved -7%; put IV is elevated; suboptimal premium entry
+  3. Need to confirm GOOGL's next earnings date (must be >7 days out per sleeve rule)
+  4. Must clear QRVO/COTY first (deployment math before any new position)
+  5. PCE Thursday — broad macro risk elevating all vol
+- **Re-evaluate: June 24 pre-market once broker restored and QRVO/COTY resolved**
+
+**2. MU — Post-Earnings Long Call — UNIVERSE — WATCHLIST (June 25 entry conditional)**
+
+- Direction: bullish | Catalyst type: earnings | Materiality: 0.85 | Horizon: 10 days
+- Entry gate: ONLY if Jun 24 beat (>$34.66B rev + >$19.95 EPS) + positive HBM4 guide + PCE Jun 25 ≤ 3.3% core
+- Stock entry: $640–680 range (verify post-print). Options sleeve: ~60 DTE call, delta 0.55–0.65, ≤$250 premium
+- Falsification: revenue miss; Q4 guide cut; HBM demand softening language; hot PCE cancels entry
+
+---
+
+### Risk Factors
+
+1. **19th consecutive broker outage** — QRVO thesis-broken +16%, should be sold. QLYS may have auto-stopped
+   (price conflict: $87.14 vs $109 zone). Zero visibility. Each session delays critical position management.
+
+2. **GOOGL -7% intraday** — Broad tech contagion risk. If Alphabet peers (MSFT, AMZN, META) sell off in
+   sympathy, UNIVERSE names (CRWD, DDOG, NET, SNOW, NVDA, MRVL) face compression. Watch for
+   sector-wide repricing of AI capex theses.
+
+3. **MU + PCE double binary June 24–25** — MU earnings (Jun 24 AMC) followed by PCE (Jun 25 BMO).
+   Back-to-back market-moving events. No new capital deployable until both prints clear.
+
+4. **Iran ceasefire fragility** — MOU signed but tensions flaring <1 week in. Binary: re-escalation
+   → oil bid + risk-off; holds → oil continues lower. Oil currently $73.67 (WTI), down sharply from $115 peak.
+
+5. **FOMC hawkish overhang** — Kevin Warsh (new Fed Chair) held rates; Oct hike ~50% probability.
+   PCE Thursday is the next real signal. Hot print (≥3.5% core) → rate-sensitive names pressured.
+
+6. **S&P futures -1.43% premarket** — If open follows through, could cascade into QLYS trailing stop ($106.12)
+   or pressure QRVO further. Cannot manage without broker access.
+
+7. **CRWD post-split mechanics** — Record date June 25. We hold no CRWD position. Post-split entry zone
+   ~$160–175 (effective July 2). No action needed today.
+
+---
+
+### Decision
+
+**HOLD.** Quad override: (1) broker offline 19th session — zero execution, (2) MU earnings tomorrow binary,
+(3) PCE Thursday binary, (4) GOOGL bearish entry suboptimal after -7% same-day move (IV spike).
+
+**Priority action stack (all require env vars in Settings first):**
+1. `alpaca.sh positions` → confirm QLYS auto-stopped or still open. PRIORITY #0.
+2. SELL QRVO 19sh — thesis broken. `alpaca.sh orders limit QRVO 19 sell 103.00`. PRIORITY #1.
+3. SELL/CONFIRM COTY 784sh — verify stop or market sell. PRIORITY #1A.
+4. Monitor MU earnings Jun 24 AMC. Post-print entry Jun 25 contingent on beat + cool PCE.
+5. GOOGL put thesis — evaluate Jun 24 pre-market IF broker restored + QRVO/COTY cleared + GOOGL
+   earnings date confirmed >7 days out + stock in better entry range.
+
+---
