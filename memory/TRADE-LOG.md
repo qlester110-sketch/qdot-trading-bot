@@ -418,3 +418,27 @@ Then re-run /market-open ASAP. QLYS is below its required tightened stop levels 
 **Action required (CRITICAL — 18th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open ASAP. QLYS is below its required tightened thresholds — intraday weakness could trigger the 10% stop at $106.12, costing ~$6/sh vs. a manual sell near current levels.
+
+---
+
+## Jun 23 — Market-Open HALTED (Day 54, Tuesday — 20th consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 20th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No orders placed. Slack DM sent via MCP (U09AL2K76QZ).
+
+**Context:** Today's research log (Jun 23) present and complete. Market context: S&P 500 futures -1.43% premarket (GOOGL -7% on AI talent exodus). MU earnings Jun 24 AMC + PCE Jun 25 — double binary. No new entries warranted regardless. Critical exits (QRVO, COTY) still blocked. GOOGL put thesis flagged for Jun 24 evaluation once broker restored.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. CONFIRM COTY — trailing stop at ~$2.42 should have auto-hit in May. Verify via `alpaca.sh positions`; if still open, SELL 784sh immediately. Priority #1A.
+2. SELL QRVO 19sh — thesis broken (merger arb binary; FTC+SAMR risk; no organic catalyst). Est ~$103.79. Priority #1.
+3. MANAGE QLYS — conflicting prices ($87.14 possibly current vs $109 prior zone). If $87.14 accurate, 10% trailing stop ($106.12) auto-triggered. Confirm via `alpaca.sh positions`. Priority #2.
+4. NO new entries today — MU earnings Jun 24 + PCE Jun 25 double binary + broker offline.
+5. GOOGL put thesis (bearish, materiality 0.65, horizon 10 days) — re-evaluate Jun 24 pre-market IF broker restored + QRVO/COTY cleared + GOOGL earnings >7 days out confirmed.
+6. MU post-earnings long call — entry Jun 25 ONLY if: beat (>$34.66B rev / >$19.95 EPS) + positive HBM4 guide + PCE ≤3.3% core.
+
+**Action required (CRITICAL — 20th halted session):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP (or /pre-market Jun 24 before MU earnings).
