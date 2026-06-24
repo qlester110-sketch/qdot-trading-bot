@@ -442,3 +442,31 @@ Then re-run /market-open ASAP. QLYS is below its required tightened thresholds �
 **Action required (CRITICAL — 20th halted session):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open ASAP (or /pre-market Jun 24 before MU earnings).
+
+---
+
+## Jun 24 — Market-Open HALTED (Day 55, Wednesday — 22nd consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 22nd consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. No .env file present. Paper-API guardrail: ALPACA_ENDPOINT blank → does not contain "paper-api" → STOP. Zero broker calls possible. No orders placed.
+
+**Critical events today:**
+- **MU (Micron) earnings TONIGHT (Jun 24 AMC)** — consensus $34.66B revenue / $19.95 EPS / ~81% gross margins. IN UNIVERSE. BINARY — do NOT enter before print.
+- **CRWD 4-for-1 stock split ex-date TODAY** — post-split adjusted entry zone ~$160–$175.
+- PCE tomorrow Jun 25 BMO — double binary Wed/Thu.
+
+**Last known portfolio state (no broker data since Day 0):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- QLYS likely auto-stopped at ~$106.12 (Jun 23 price confirmed $87.14 — stop at $106.12 would have already fired)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. `alpaca.sh positions` → confirm QLYS auto-stopped. PRIORITY #0.
+2. SELL QRVO 19sh immediately — thesis broken, 22 sessions overdue. Est ~$98.59. PRIORITY #1.
+3. SELL/CONFIRM COTY 784sh — verify stop hit or market sell. PRIORITY #1A.
+4. **MU print tonight** → if beat (>$34.66B rev + >$19.95 EPS) + positive HBM4 guide, enter Jun 25 post-PCE. Long call, delta 0.50–0.70, 30–90 DTE, premium ≤$250, bullish, materiality 0.85.
+5. **PCE Jun 25 BMO** → if cool (≤3.3% core PCE), opens window for MU long call + GOOGL long put.
+6. **GOOGL long put** → enter Jun 25 ONLY if: (1) broker restored + (2) QRVO/COTY cleared + (3) PCE cool + (4) GOOGL earnings confirmed >7 calendar days out. Bearish, materiality 0.65, horizon 10 days.
+
+**Action required (CRITICAL — 22nd halted session):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /pre-market Jun 25 first (to catch MU print + PCE context), then /market-open to execute exits + any qualified entries. QRVO exit is 22 sessions overdue — broker outage is the only blocker.
