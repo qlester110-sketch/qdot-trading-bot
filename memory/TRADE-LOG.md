@@ -470,3 +470,26 @@ Then re-run /market-open ASAP (or /pre-market Jun 24 before MU earnings).
 **Action required (CRITICAL — 22nd halted session):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /pre-market Jun 25 first (to catch MU print + PCE context), then /market-open to execute exits + any qualified entries. QRVO exit is 22 sessions overdue — broker outage is the only blocker.
+
+---
+
+## Jun 25 — Market-Open HALTED (Day 56, Thursday — PCE Day — 23rd consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 23rd consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No orders placed.
+
+**Context:** PCE day (May PCE BMO). Research log for Jun 25 complete:
+- **PCE print (May 2026):** Core PCE 2.5% (benign; below 3.4% threshold). Risk-on confirmed.
+- **MU earnings (Jun 24 AMC):** Massive beat: $9.91B rev vs $8.87B est; EPS $3.84 vs $1.69 est. HBM4 demand confirmed. Materiality 0.95 — strongest catalyst of this research cycle. **Gate FAIL: $1k stock cap cannot buy 1 share at ~$1,194; $250 options cap ~98% short of ATM contract cost.**
+- **GOOGL long put thesis:** Materiality 0.65 (AI talent exodus). **Gate FAIL: options premium cap.**
+- **NVDA watchlist:** No standalone catalyst today. Materiality 0.45 for sector_rotation alone → below 0.60 threshold. No entry.
+- **Decision:** HOLD — no new entries pass the gate. All failures are sizing constraints, not thesis failures.
+
+**Today's action stack (blocked by missing env vars):**
+1. `alpaca.sh positions` → confirm QLYS auto-stopped. If QLYS price was $87.14 on Jun 23 vs. stop at $106.12, stop should have triggered. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). 23 sessions overdue. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh — verify trailing stop hit or market sell 784sh. **PRIORITY #1A.**
+4. CRWD post-split record date TODAY (Jun 25). Split-adj trading Jul 2. Monitor $160–175 zone post-Jul 2 for entry if standalone catalyst emerges.
+5. Weekly review approaching (before Jul 29 kill date): address $250 options cap constraint — blocks entire universe at current price levels.
+
+**Action required (CRITICAL — 23rd halted session, PCE day):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open immediately. PCE was benign — risk-on environment. QRVO exit is 23 sessions overdue. QLYS stop confirmation still pending.
