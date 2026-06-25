@@ -493,3 +493,27 @@ Then re-run /pre-market Jun 25 first (to catch MU print + PCE context), then /ma
 **Action required (CRITICAL — 23rd halted session, PCE day):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open immediately. PCE was benign — risk-on environment. QRVO exit is 23 sessions overdue. QLYS stop confirmation still pending.
+
+---
+
+## Jun 25 — Midday Scan HALTED (Day 56, Thursday — PCE Day — 24th consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 24th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No positions checked, no stops managed, no exits executed.
+
+**Context:** PCE day (May PCE BMO). Prior research log confirmed PCE benign at 2.5% core (risk-on). MU earnings massive beat ($9.91B vs $8.87B est; EPS $3.84 vs $1.69 est). Both catalysts were bullish but no entries passed sizing gate. QLYS stop confirmation still pending — if $87.14 confirmed on Jun 23, 10% trailing stop at $106.12 has long since fired. 24 consecutive halted sessions (Day 41–56).
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- QLYS: Jun 23 price ~$87.14; 10% trailing stop at $106.12 should have auto-triggered. Confirmation pending.
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. `alpaca.sh positions` → confirm QLYS auto-stopped. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). 24 sessions overdue. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh — verify trailing stop hit or market sell 784sh. **PRIORITY #1A.**
+4. CRWD split-adj trading begins Jul 2 — monitor $160–175 zone for entry if catalyst emerges.
+5. Weekly review approaching (before Jul 29 kill date): address $250 options cap constraint.
+
+**Action required (CRITICAL — 24th halted session, PCE day):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open immediately. PCE was benign — risk-on tape. QRVO exit is 24 sessions overdue.
