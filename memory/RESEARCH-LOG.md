@@ -7373,3 +7373,210 @@ GOOGL put thesis under active evaluation — see Trade Ideas below.
 6. GOOGL put: enter Jun 25 only if (1) broker back + (2) QRVO/COTY cleared + (3) PCE cool + (4) GOOGL earnings >7 days confirmed.
 
 ---
+
+## 2026-06-25 — Pre-market Research (Day 56 — 23rd consecutive halted session)
+
+### ⚠ OPERATIONAL ALERT — DAY 23 (CRITICAL)
+All 5 env vars MISSING: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+`ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`. Zero broker calls possible. 23rd consecutive
+halted session (Day 41–56). No live account data, fills, or stop orders confirmable.
+Slack not sendable via wrapper; alert sent via PushNotification tool.
+
+### Account (estimated — API offline)
+- Equity: unknown (no broker data confirmed since Day 0)
+- Working cap frame: $10,000
+- Daytrade count: unknown
+- Open positions (last known):
+  - QLYS 19sh — **PROBABLE AUTO-STOP** at ~$106.12 (10% trail from HWM $117.91); current
+    price $87.14 (Jun 23) is $18.98 below stop level. Likely closed ~$106 (entry $90.99 →
+    +16.6% est). Confirm via `alpaca.sh positions` on API restore.
+  - QRVO 19sh — above stop ($95.79 est), thesis BROKEN, SELL REQUIRED. 23 sessions overdue.
+  - COTY 784sh — trailing stop ~$2.42 should have auto-triggered months ago; status unknown.
+- Deployed: unknown. After QLYS stops + QRVO/COTY resolve → likely near $0 deployed.
+- Weekly trade slots: unknown (count resets Monday; new week started Jun 22)
+
+### Market Context
+- **WTI crude:** ~$70/bbl (Robinhood prediction: $69.35; trading range $69–$71). Down from
+  $97–98 peak in May; Iran deal progress + Hormuz reopening driving supply return.
+  Source: [TradingEconomics WTI](https://tradingeconomics.com/commodity/crude-oil) | [Robinhood prediction market](https://robinhood.com/us/en/prediction-markets/financial/events/oil-price-wti-on-jun-25-2026-jun-25-2026/)
+- **Brent crude:** ~$72.64–$73.72/bbl (range); ~$73 mid. Multi-month lows on Iran deal optimism.
+  Source: [TradingEconomics Brent](https://tradingeconomics.com/commodity/brent-crude-oil)
+- **S&P 500 futures:** +0.79% premarket. Micron's blockbuster Q3 beat reviving AI trade
+  enthusiasm; Polymarket 97% probability market opens higher. Source: [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/06/60090918/sp500-june-25-open-up-or-down-polymarket-micron-earnings-pce-inflation-ai-stocks)
+- **VIX:** 18.24, −6.41% (down from 19.49 on Jun 24). Fear declining; favorable for risk assets.
+  Source: [Yahoo Finance VIX](https://finance.yahoo.com/quote/%5EVIX/)
+- **PCE May 2026 (released 8:30 AM ET today):** Fed's preferred inflation measure. Forecast
+  (Wells Fargo): +0.3% m/m core, +3.4% YoY core (April was +3.3% YoY core). Actual data
+  not confirmed at research time, but: (1) VIX down 6.4%, (2) S&P futures +0.79%, (3) oil at
+  $70 (vs $97 in May — highly deflationary) strongly suggests PCE did not print hot.
+  Prior entry gate for MU call required ≤3.3% core; May estimate 3.4% is marginal but oil
+  decline is a large deflationary force. Treat as BENIGN until contradicted by market open action.
+  Source: [Wells Fargo PCE preview via Morningstar](https://www.morningstar.com/economy/may-pce-expected-show-rising-inflation) | [BEA release schedule](https://www.bea.gov/data/personal-consumption-expenditures-price-index)
+- **Earnings before open:** 33 companies; none are UNIVERSE names. (MU reported AMC Jun 24.)
+  Source: [EarningsWhispers](https://www.earningswhispers.com/calendar)
+- **Economic calendar:** PCE data (8:30 AM ET) only major release.
+- **Sector momentum June YTD:** IT sector dominant at +19.76% (only double-digit sector gain).
+  Health Care +2.38%, Consumer Disc +2.13%. Lagging: Energy −5.63%, Utilities −5.19%,
+  Consumer Staples −1.66%, Financials −1.06%, Materials −0.62%, Real Estate −0.92%.
+  Source: [IBKR Weekly Recap Jun 22](https://www.interactivebrokers.com/campus/traders-insight/securities/macro/weekly-market-recap-week-of-june-22-2026/)
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price        | Direction  | Key News                                                                  |
+|--------|-----------------|------------|---------------------------------------------------------------------------|
+| MU     | ~$1,194 AH (+13.96%) | Bullish ↑↑↑ | Q3 FY26 blowout — see detail below. **Gate fail on size.**         |
+| CRWD   | ~$680 pre-split  | Neutral    | 4-for-1 split record date TODAY (Jun 25). Split-adj trading Jul 2.        |
+| DDOG   | ~$219.99         | Bullish    | Truist upgraded Buy, PT $300. Above $183–195 entry zone. No entry.        |
+| NOW    | ~$93.46          | Neutral ⚠  | Below $100 entry zone. Down 49.59% YTD. AI disruption fears + M&A.       |
+| VRT    | ~$333.05         | Bullish    | Above $295–315 entry zone (FOMC pause rule). AI datacenter thesis intact. |
+| NVDA   | ~$200.04         | Bullish    | In $195–205 zone. No fresh catalyst today. MU beat = sector tailwind.     |
+| GOOGL  | ~$342.93         | Bearish ↓  | AI talent exodus (Shazeer → OpenAI; Jumper → Anthropic). FCF collapse.   |
+| QLYS   | likely auto-stopped | —       | 10% stop at $106.12; confirmed price $87.14 on Jun 23.                    |
+| QRVO   | ~$98.59          | Neutral ⚠  | Merger arb; above stop; SELL required.                                     |
+| COTY   | unknown          | —          | Trailing stop ~$2.42 should have triggered; status unverified.            |
+
+**MU Catalyst Detail — Q3 FY2026 Blowout:**
+- Revenue: $41.46B vs $35.84B consensus (+16% beat); vs prior year $9.30B = +4.5x YoY
+- EPS: Non-GAAP $25.11 vs $20.20 est (+24% beat); GAAP $24.67/sh
+- Gross margin: 84.9% (prior Q 74.9%; prior year 39%) — record margin expansion
+- Data center revenue: $11.5B (+7x YoY) driven by HBM4 adoption; all 4 business units beat
+- Q4 guidance: $50B ±$1B revenue (consensus $42.9B, +16% guide beat); one of the largest
+  guidance raises in semiconductor history
+- Stock: up 13.96% AH to ~$1,194 (from ~$1,048 prior close)
+- Pre-earnings options implied ±$132 move (±11%); actual AH move +$146 (+14%). Beat vol.
+- Source: [SEC 8-K FY2026](https://www.sec.gov/Archives/edgar/data/0000723125/000072312526000013/a2026q3ex991-pressrelease.htm) | [CNBC MU Q3](https://www.cnbc.com/2026/06/24/micron-mu-earnings-report-q3-2026.html) | [TheStreet Q3 recap](https://www.thestreet.com/latest-news/micron-mu-q3-2026-earnings-call-updates)
+
+**CRWD Split:**
+- 4-for-1 split record date: TODAY (Jun 25, 2026 COB). Payable / split-adj trading: July 2, 2026.
+- Pre-split price ~$680–$747; theoretical post-split ~$170–$187/sh.
+- Our prior entry zone was $495–$510 pre-split → $124–$128 post-split. Still above post-split zone.
+- No trade today. Monitor Jul 2+ for entry near $160–$175 if fundamental catalyst emerges.
+- Source: [Fast Company CRWD split](https://www.fastcompany.com/91553755/crowdstrike-stock-split-date-timeline-meaning-crwd-investors) | [SEC 8-K CrowdStrike](https://www.sec.gov/Archives/edgar/data/0001535527/000153552726000022/crwd-20260603xex991.htm)
+
+**NVDA — sector tailwind from MU:**
+- At ~$200, in the $195–205 entry zone noted in prior research.
+- MU's blowout validates AI memory demand; NVDA direct beneficiary (hyperscaler capex intact).
+- No new standalone NVDA catalyst today. Watching for a fresh catalyst to upgrade from watchlist.
+- Source: [Yahoo Finance NVDA](https://finance.yahoo.com/quote/NVDA/)
+
+**NOW (ServiceNow) — decline context:**
+- Down 49.59% in 12 months from ~$185 to $93.46. Key drivers:
+  (1) Anthropic's Claude Cowork raised AI agent disruption fears for per-seat SaaS licensing
+  (2) Growth deceleration: subscription rev guidance 19.5–20% for FY26 (prior consensus 25%+)
+  (3) Margin pressure: gross margin 79% → 75% amid pivot to AI products
+  (4) M&A integration: Moveworks (Dec 2025) + Armis ($7.75B, Apr 2026) closed rapidly
+  (5) Forward P/E compressed ~60x → ~20x in seven months
+- Company still beating and raising; consensus 12-month PT $141. But no clear catalyst reversal.
+- Source: [TIKR NOW analysis](https://www.tikr.com/blog/servicenow-keeps-beating-estimates-and-raising-guidance-the-stock-is-down-40-anyway) | [Trefis](https://www.trefis.com/stock/now/articles2/597016/servicenow-stock-dropped-50-heres-why/2026-04-21) | [Indmoney](https://www.indmoney.com/blog/us-stocks/servicenow-down-now-stock-ai-saaspocalypse-selloff-analysis)
+
+### Held-Ticker News
+
+**QLYS — PROBABLE AUTO-STOP:**
+- Jun 23 price confirmed $87.14. Trailing stop was 10% from HWM $117.91 = $106.12.
+  Current price $19 below stop → stop must have executed. Est gain +$285.71 (+16.6%, 19sh × ~$15).
+- If somehow still open: SELL immediately.
+- Source: [Jun 24 RESEARCH-LOG analysis]
+
+**QRVO — ⛔ SELL IMMEDIATELY (23rd session overdue):**
+- Price: ~$98.59 (Jun 24 estimate). Merger consideration ~$99.28 (thin upside vs binary risk).
+- Jun 11: Qorvo entered supplemental indentures amending note covenants — pre-closing admin step.
+  Merger is closer but the outcome is still FTC/SAMR binary.
+- Trailing stop est ~$95.79; above stop = still open. Original EPS-beat thesis fully abandoned.
+- Every session of delay risks stop at $95.79 triggering vs. a managed sell at $98.59+.
+- Source: [StockTitan QRVO SEC 8-K Jun 11](https://www.stocktitan.net/sec-filings/QRVO/8-k-qorvo-inc-reports-material-event-06ffbfaf9c50.html) | [Seeking Alpha merger approval](https://seekingalpha.com/news/4551059-qorvo-shareholders-overwhelmingly-approve-skyworks-merger-company-says)
+
+**COTY — STATUS UNKNOWN:**
+- Trailing stop ~$2.42 should have auto-triggered when stock fell to ~$2.03–$2.06 in May.
+- Action: `alpaca.sh positions` on API restore; if still open, SELL 784sh at market.
+
+### Options Sleeve Health Check
+No open option positions. Sleeve cap $500 / per-trade $250 fully unused.
+
+**⚠ STRUCTURAL SIZING NOTE FOR WEEKLY REVIEW:**
+The $250 per-trade options cap is effectively non-deployable on all current universe names.
+At 30–90 DTE and delta 0.50–0.70, a single ATM contract on any $80+ stock costs well above
+$250 (e.g., NVDA $200 → ~$1,600/contract; GOOGL $342 → ~$2,500+/contract; MU $1,194 →
+~$15,000+/contract). The sleeve was designed for the strategy doc but the dollar cap was
+never calibrated to actual option pricing for high-price tech names. Recommend Quentin review
+and increase per-trade cap to $1,500–$2,000 (or add $30–$50 universe names suitable for
+options) at the next weekly review. Until then, the sleeve remains idle by design constraint.
+
+### Trade Ideas
+
+**1. MU — Post-Earnings Long Call — GATE FAIL (sizing)**
+- Direction: bullish
+- Catalyst type: earnings + guidance
+- Materiality: 0.95 — one of the largest quarterly beats in semiconductor history. Q4 guide
+  blew consensus by 16%. HBM4 data center demand (+7x YoY) confirmed. No ambiguity.
+- Horizon: 10 trading days
+- **Stock entry gate:** FAIL. $1,000 per-position cap cannot buy 1 share at ~$1,194.
+- **Options entry gate:** FAIL. Delta 0.50–0.70 call, 30–90 DTE on a $1,194 stock costs
+  ~$10,000–$15,000 per contract. $250 premium cap is ~98% short of required capital.
+- **Note to Quentin:** MU is the strongest fundamental catalyst of this research cycle.
+  Our working cap sizing rules ($1k/position, $250/contract) physically prevent entry on
+  any stock in this price range. This is a teachable constraint — the rules were right to
+  set conservative caps, but some universe names have appreciated beyond their reach.
+  Consider addressing at weekly review before Jul 29 kill date.
+- Falsification (tracking only): revenue miss in Q4, HBM demand softening in earnings call,
+  or PCE >3.4% core reversing risk-on trade.
+
+**2. GOOGL — Long Put — GATE FAIL (options premium cap)**
+- Direction: bearish
+- Catalyst type: regulatory / competitive (structural AI moat erosion)
+- Materiality: 0.65 — Noam Shazeer (VP Eng, Gemini co-lead) → OpenAI; John Jumper
+  (Nobel laureate VP DeepMind) → Anthropic. FCF −47% YoY to $10.1B Q1; FY26 consensus
+  $20.5B (down 72% from $73.3B in 2025). Stock $342 (down 16% from $408 ATH).
+  Source: [Congress.net](https://congress.net/alphabet-googl-loses-269-billion-in-market-value-as-ai-talent-exodus-rattles-investors/) | [Blockonomi](https://blockonomi.com/alphabet-googl-stock-plunges-6-as-ai-talent-exodus-continues-to-openai-and-anthropic/)
+- Horizon: 10 trading days
+- **Options gate:** FAIL. ATM long put, $342 stock, 60 DTE, delta ~0.55 → ~$2,500+/contract.
+  $250 cap = gate fail (same structural issue as MU call above).
+- out_of_universe: false (GOOGL is in UNIVERSE — cloud megacap bucket)
+- Next GOOGL earnings: ~late July 2026. Well outside 7-day sleeve window. ✓
+- Falsification: GOOGL recovers above $375; Google announces countermeasure that markets
+  price as neutralizing the talent exodus.
+
+**3. NVDA — Long Stock — WATCHLIST (no entry today; no fresh catalyst)**
+- Price: ~$200.04. In $195–205 entry zone from prior research.
+- MU's blowout is a sector tailwind for NVDA (confirms hyperscaler AI capex intact).
+- However: MU beat ≠ NVDA catalyst. Requires a standalone NVDA-specific citable catalyst.
+- Direction: bullish | Catalyst type: (none today — sector_rotation only, not sufficient alone)
+- Materiality: 0.45 for sector_rotation alone → below 0.60 threshold. NO ENTRY.
+- Watch for: Q2 FY27 NVDA earnings preview / any hyperscaler capex news calling out NVDA directly.
+
+### Risk Factors
+1. **PCE actual unknown** — if actual core PCE >3.4% (above Wells Fargo forecast), risk-on
+   reverses, futures drop, MU's AH gains could fade at market open.
+2. **23rd consecutive broker outage** — QRVO above stop, still unconfirmed sold. QLYS stop
+   execution unconfirmed. COTY status unconfirmed. Every session = compounding operational risk.
+3. **QLYS if somehow still open** — price $87.14 is $19 below stop level $106.12. If stop
+   failed silently (rare), position is in severe loss territory. Priority confirmation on API restore.
+4. **Options sleeve structural constraint** — $250/contract cap blocks entire universe at
+   current price levels. Sleeve has been idle since launch due to this constraint. Without
+   a rule change or cheaper names, options sleeve generates zero value.
+5. **Iran ceasefire binary** — WTI $70 reflects optimism. Breakdown = oil re-spike + broad risk-off.
+6. **IT sector concentration** — 10 stocks driving 78% of S&P YTD return. AI trade narrowness
+   means a single AI disappointment (e.g., hyperscaler capex cut) hits our entire universe.
+7. **CRWD split** — record date today; split-adjusted trading July 2. Post-split price ~$170–187.
+   Monitor for entry opportunity near $160–175 range post-Jul 2, if catalyst emerges.
+8. **QRVO merger close approaching** — Note covenant amendment Jun 11 = pre-closing step.
+   Merger close = position auto-closes at $32.50 cash + 0.960 SWKS. Exit NOW while we
+   control timing rather than waiting for forced-close at potentially worse SWKS price.
+
+### Decision
+**HOLD.** No new entries pass the buy-side gate.
+
+MU (materiality 0.95, strongest catalyst) → gate fail on stock size ($1k cap / $1,194 price) and
+options premium ($250 cap vs ~$10k+ contract cost). All other universe names: above entry zones,
+below materiality threshold, or no fresh catalyst today.
+
+**Priority action stack (unchanged; all require env vars set first):**
+1. `alpaca.sh positions` → confirm QLYS auto-stopped at ~$106.12. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken, 23 sessions overdue. Est sell ~$98.59. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh — verify stop triggered or market sell. **PRIORITY #1A.**
+4. Post-PCE context: if PCE benign (≤3.4% core), risk-on confirmed. MU sector tailwind intact.
+5. NVDA watch: MU confirms AI capex; monitor NVDA for standalone catalyst near $195–205.
+6. CRWD post-split (Jul 2+): monitor entry near $160–175 post-split with fresh catalyst.
+7. GOOGL put: thesis intact but options cap fails. Revisit at weekly review if cap rule changes.
+8. Weekly review (approaching before Jul 29 kill date): address options sleeve $250 cap constraint.
+
+---
