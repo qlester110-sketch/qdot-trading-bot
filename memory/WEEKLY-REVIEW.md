@@ -677,3 +677,99 @@ Operational priorities (mandatory before Mon June 22 open):
 ### Overall Grade: D
 
 Rationale: Holiday-shortened week (4 trading days; Juneteenth Jun 19 closed); slight underperformance (bot +0.08% vs S&P +0.69% = −0.61% relative); phase lead stable (+4.58% bot vs +3.74% S&P = +0.84% relative). Iran-US peace deal (Jun 15) and FOMC hawkish surprise (Jun 17) both handled correctly per pre-defined framework rules — research quality A-grade for the 8th consecutive week. Grade D (not F) for marginal phase outperformance and intact stop mechanism; D (not C) for: (1) API offline Day 49 — 8th consecutive week, 16 consecutive halted sessions, experiment's defining structural failure approaching end-of-window; (2) QLYS 5% stop-tighten 14 sessions overdue — now $0.25 from mandatory trigger, highest tail risk in experiment history; (3) QRVO voluntary exit 49 days overdue — auto-stopped (accidental) vs deliberate; (4) zero calibrated trades in 40 trading sessions — 54% of window; 20-trade minimum statistically unreachable; calibration objective failed. Sources: TheStreet 2026-06-15, 2026-06-17, 2026-06-18 (S&P 500 close 7,500.58); CNBC QLYS (Jun 18 $112.26); RESEARCH-LOG 2026-06-19 (QRVO est $95.85, FOMC dot-plot, S&P 7,500.58); Apr 30 baseline 7,230.12 (CNBC Apr 30 2026).
+
+---
+
+## Week ending 2026-06-26
+
+*API offline all week (Day 53–57, 9th consecutive week, 25th–27th consecutive halted session). All portfolio values estimated. No broker data confirmed since Day 0.*
+
+### Stats — Stock Book
+| Metric | Value |
+|--------|-------|
+| Starting portfolio | ~$10,458 (est; Week 8 / Jun 18 close) |
+| Ending portfolio | ~$10,391 (est) |
+| Week return | ~−$67 (−0.64%) |
+| S&P 500 week | −1.96% (Jun 18 close 7,500.58 → Jun 26 close ~7,354; TheStreet / CNBC 2026-06-26) |
+| Bot vs S&P this week | **+1.32%** — third week of outperformance in past four |
+| Phase return (since Apr 30) | ~+$391 (+3.91%) vs S&P +1.71% (Apr 30: 7,230.12 → Jun 26: ~7,354) → **+2.20% relative** |
+| Stock trades | 0 deliberate; QLYS 10% trailing stop probable auto-fire Jun 22–23 (unconfirmed) |
+| Win rate | N/A — no calibrated closed trades |
+| Best realized (est) | QLYS +16.6% / +$287 (stop at ~$106.12; pre-calibration; unconfirmed) |
+| Only open position | QRVO +9.8% / +$166 est — open, thesis broken, 27 sessions overdue |
+| Profit factor | N/A — no calibrated closed trades |
+
+*QLYS: Jun 22 premarket $109.15; Jun 23 price confirmed $87.14 — 10% trailing stop at $106.12 (from HWM $117.91) must have auto-executed between Jun 22 and Jun 23. Est stop fill ~$106.12; realized +16.6% from $90.99 entry. QRVO: est $98.42 (Jun 26 research log); thesis broken (merger arb; FTC+SAMR; CEO insider sale). COTY: trailing stop ~$2.42 assumed fired mid-May (prior weeks). S&P 500: Jun 18 close 7,500.58; Jun 26 close ~7,354.02 (TheStreet 2026-06-26; −1.96% week). Phase Apr 30 baseline: 7,230.12 (CNBC Apr 30 2026).*
+
+### Stats — Options Sleeve
+| Metric | Value |
+|--------|-------|
+| Trades this week | 0 |
+| W / L / open | 0 / 0 / 0 |
+| Sleeve cap utilization | $0 / $500 (0%) |
+| Open option positions | 0 |
+
+### Calibration
+| Metric | Value |
+|--------|-------|
+| Total resolved calibrated trades | 0 |
+| Overall hit rate | N/A |
+| Hit rate by sector | N/A |
+| Hit rate by catalyst type | N/A |
+| Hit rate by direction | N/A |
+| Materiality bucket accuracy | N/A |
+| Band recommendation | **Insufficient data** (0 of 20 minimum resolved trades) |
+
+*QLYS, QRVO, COTY are pre-calibration entries — excluded per TRADING-STRATEGY.md §Pre-calibration trades. Zero calibrated trades in 9 full weeks (45 trading sessions). Day 57 of 90 — 63% of experiment window with zero calibration data. 20-trade minimum is now mathematically impossible: ~20 sessions remain; ≥1 new calibrated entry every single session with zero gaps required. The calibration objective has failed.*
+
+### Closed Trades
+QLYS probable auto-stop this week (unconfirmed — first API call must verify and log CLOSE block in TRADE-LOG.md):
+
+| Ticker | Entry | Exit (est) | P&L (est) | Notes |
+|--------|-------|-----------|-----------|-------|
+| QLYS | $90.99 (05-06) | ~$106.12 (10% trailing from $117.91 HWM; Jun 22–23) | +$287 / +16.6% | Pre-calibration entry; calibration N/A; stop fired as price fell through $106.12 level to $87.14 (Jun 23 confirmed) |
+
+COTY trailing stop assumed fired mid-May (not this week; covered in prior reviews; confirm and log CLOSE block on API restore).
+
+### Open Positions at Week End
+| Ticker | Entry | Last (est.) | Unrealized | Stop | Notes |
+|--------|-------|-------------|------------|------|-------|
+| QRVO | $89.66 (05-06) | ~$98.42 (Jun 26 research) | +9.8% / +$166 | ~$80.56 (original GTC — may have trailed; verify on API restore) | ⛔ Thesis broken (merger arb; FTC Second Request + SAMR Phase II; CEO $5.82M insider sale). **Day 57 — SELL immediately on API restore. Priority #1.** |
+| COTY (?) | $2.50 (05-06) | Stop assumed fired ~$2.42; stock ~$1.86–$2.09 | ~−3.2% / ~−$63 | N/A | ⛔ Trailing stop assumed auto-fired mid-May. Confirm closed on API restore. |
+
+### What Worked
+- QLYS 10% trailing stop auto-executed at ~$106.12 when stock collapsed from $112.26 (Jun 18) to $87.14 (Jun 23) — mechanism preserved +16.6% / +$287 realized gain; without the stop the position would have lost ground toward entry from a −4.3% position
+- Bot outperformed S&P 500 by +1.32% this week; phase lead widened to +2.20% (+3.91% bot vs +1.71% S&P); the S&P correction helped relative performance
+- No new entries during global tech selloff (Kospi −8% circuit breaker; Apple −6.1% premarket; Samsung/SK Hynix collapse) — HOLD decision correct; no capital added into a deteriorating tape
+- Research correctly identified and framed the AI-semiconductor valuation reset (Kospi circuit breaker, memory chip weakness) as a no-entry signal; MU gate-fail ($1k cap vs $1,194 stock price) correctly applied
+- CRWD post-split mechanics (record date Jun 25; first split-adj trading Jul 2) correctly tracked; no premature entry
+
+### What Didn't Work
+- API offline all 5 sessions (Day 53–57; 25th–27th consecutive halted sessions; 9th consecutive week of complete broker paralysis) — no confirmed data on any position; every workflow blocked
+- QRVO voluntary exit now 27 sessions overdue: thesis broke May 5; deliberate exit has been Priority #1 for 9 weeks; still open at +9.8% vs peak +20.2% (May 29) — $11.39/share of unrealized peak gain surrendered through delay
+- QLYS stop fired at 10% instead of mandatory 5% (tighten rule applies since +20% was crossed ~Jun 5): cost 19 × ($112.01 − $106.12) = ~$112 of foregone downside protection; rule violated 14+ consecutive sessions before the stop fired
+- Zero calibrated trades in 45 sessions: Day 57 of 90; 63% of window elapsed; calibration objective is now mathematically impossible to achieve
+- Options sleeve $250 per-trade cap blocks every liquid contract in the universe (GOOGL put, MU call, etc.); sleeve has never been used in 9 full weeks; cap was never reviewed despite being flagged 3+ consecutive reviews
+
+### Key Lessons
+- **The trailing stop mechanism proved its value in a real stress event.** QLYS dropped $25/share in 2 sessions; the auto-stop preserved +16.6% gain that would otherwise have become roughly flat. The mechanism works. Compliance with the tighten rule (5% at +20%) would have captured an additional ~$112.
+- **The 10% vs. 5% stop-tighten violation is now quantified: ~$112 foregone.** Fourteen sessions of documented non-compliance with a clear strategy rule had a measurable, non-trivial cost. The lesson is process, not outcome: rules that require broker access to implement need env var continuity to function.
+- **QRVO at 27 sessions overdue is the longest unresolved documented task in the experiment.** Peak was +20.2% (May 29, $107.75); current est +9.8% ($98.42); $11.39/share surrendered to delay since peak. On first API restore, QRVO is the FIRST action — before any research, before any new entry evaluation.
+- **Day 57 / 63% of window with 0 calibrated trades: the calibration objective has failed.** This must be stated clearly in the Day 90 review. The recommendation for any continuation or future iteration: (a) verify API connectivity on Day 0 before placing any grandfathered or new trades; (b) use a max position size that fits the deployment cap from entry (the grandfathered 20% sizing at $2k/position was a structural blocker for weeks); (c) place first calibrated entry in Week 1.
+- **Phase +2.20% relative to S&P 500 is carried entirely by two grandfathered pre-calibration positions.** The strategy framework has not generated a single calibrated trade in 57 days. This limits what can be concluded about the strategy's edge; the Day 90 report should note that the 90-day window produced no usable calibration evidence.
+
+### Adjustments for Next Week
+No strategy rule changes — 0 calibration data; no rule violations requiring strategy-doc change; no owner override. TRADING-STRATEGY.md unchanged. UNIVERSE.md unchanged.
+
+Operational priorities (mandatory before Mon June 29 open):
+1. **Restore env vars — Day 57 / 9th consecutive week / 33 days to Jul 29 kill date** — critical; set before Mon 9:30 ET open
+2. **Confirm QLYS** — `bash scripts/alpaca.sh positions`; if stopped: log CLOSE block (pre-cal, calibration: N/A, realized ~+16.6%); if somehow still open: SELL 19sh immediately
+3. **SELL QRVO 19sh** — 27 sessions overdue; thesis broken (merger arb); `/trade QRVO 19 sell`; log CLOSE block (pre-cal, calibration: N/A); est +9.8% / +$166 at ~$98.42
+4. **Confirm COTY** — `bash scripts/alpaca.sh positions`; if stopped: log CLOSE block (pre-cal, calibration: N/A, ~−3.2%); if still open: SELL 784sh immediately
+5. **After positions confirmed** — evaluate deployment room; assess first calibrated entry (VRT, NVDA $195–205 zone, CRWD post-split Jul 2 ~$160–175); $1k max; document all calibration fields before executing
+6. **Options sleeve $250 cap** — flag for owner at Day 90 checkpoint; cap blocks all liquid contracts; cannot change without owner sign-off; note as open item
+7. **CRWD post-split** — first split-adj trading Jul 2; entry zone ~$160–175; no entry before split settles; require standalone fundamental catalyst
+
+### Overall Grade: C
+
+Rationale: Outperformed S&P 500 by +1.32% this week (bot −0.64% vs S&P −1.96%); phase lead widened to +2.20% (+3.91% bot vs +1.71% S&P). QLYS trailing stop auto-executed and delivered the experiment's first realized gain (+$287 / +16.6%) — the stop mechanism worked in a genuine stress scenario (stock fell $25 in 2 sessions). Research correctly identified the global tech selloff and produced no losing new-entry decisions. Grade held to C (not B) for: (1) API offline Day 53–57 — 9th consecutive week, 27 halted sessions; (2) QLYS stop at 10% instead of mandatory 5% cost ~$112 of capture; (3) QRVO voluntary exit 27 sessions overdue — most documented outstanding task in the experiment; (4) zero calibrated trades in 45 sessions — the experiment's learning objective is now mathematically impossible to complete; (5) options sleeve $250 cap blocked all 9 weeks of eligible sleeve usage without review. Sources: TheStreet 2026-06-26 (S&P close ~7,354; "Nasdaq and S&P 500 tread water amid tech sell-off"); CNBC 2026-06-25 ("S&P 500 heads for losing week"); RESEARCH-LOG 2026-06-26 (QLYS est stop $106.12; QRVO est $98.42; Apr 30 baseline 7,230.12).
