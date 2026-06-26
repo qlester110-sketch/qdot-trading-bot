@@ -517,3 +517,27 @@ Then re-run /market-open immediately. PCE was benign — risk-on environment. QR
 **Action required (CRITICAL — 24th halted session, PCE day):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open immediately. PCE was benign — risk-on tape. QRVO exit is 24 sessions overdue.
+
+---
+
+## Jun 26 — Market-Open HALTED (Day 57, Friday — 25th consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 25th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No orders placed.
+
+**Context:** Tech sell-off continuing. S&P 500 futures -0.37% premarket. Kospi (Korea) -8%, circuit breaker triggered; Samsung/SK Hynix leading decline; global AI-infrastructure valuation reset underway. QRVO est ~$98.42 (+3.98% today per CNN). 33 days remain until Jul 29 kill date. This is the last Friday before the final month of the 90-day window — /weekly-review also blocked.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh, QRVO 19sh, COTY 784sh (entered ~2026-05-06; fill prices unconfirmed)
+- QLYS: Jun 23 price ~$87.14; 10% trailing stop at $106.12 should have auto-triggered long ago. Confirmation pending.
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. `alpaca.sh positions` → confirm QLYS auto-stopped. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken (merger arb binary; no organic catalyst). **25 sessions overdue. PRIORITY #1.** Est ~$98.42.
+3. SELL/CONFIRM COTY 784sh — verify trailing stop hit or market sell 784sh. **PRIORITY #1A.**
+4. Run /weekly-review — last Friday before final month of 90-day window. Bot vs. S&P 500; address $250 options cap constraint.
+5. NO new entries today — tech global selloff + week-end + no qualifying catalyst.
+
+**Action required (CRITICAL — 25th halted session, 33 days to kill date):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP. QRVO exit is 25 sessions overdue. 33 days remain before Jul 29 review.

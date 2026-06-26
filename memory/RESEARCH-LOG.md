@@ -7721,3 +7721,62 @@ If broker restored before market close, priority order:
 Then run /market-open to execute QRVO sell + COTY confirm + QLYS stop verification.
 
 ---
+
+## 2026-06-26 — Pre-market Research (Day 57, Friday — 25th consecutive halted session)
+
+### ⚠ OPERATIONAL ALERT — API OUTAGE (25th consecutive session)
+All 5 env vars MISSING: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+`ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`. Zero broker calls possible. Paper-API guardrail
+fired. Research conducted via WebSearch only; all position statuses estimated from prior research.
+
+### Account (estimated — API offline, Day 57)
+- Equity: unknown (API offline)
+- Cash: unknown; Buying power: unknown; Daytrade count: unknown
+- Weekly trade slots: **3/3 available** (week of Jun 22; 0 trades placed)
+- Open positions (estimated): QLYS auto-stopped ~$106.12, QRVO 19sh ~$98.42, COTY status unknown
+
+### Market Context
+- **S&P 500 futures:** -0.37% premarket. Global tech sell-off extending from Jun 25.
+  Source: TheStreet / Benzinga Polymarket (2026-06-26)
+- **Kospi (Korea):** -8%, circuit breaker triggered. Samsung, SK Hynix leading decline;
+  AI-infra valuation reset accelerating. Source: Bloomberg Asia markets (2026-06-25/26)
+- **VIX:** ~18.89 (prior close estimate; trending up from 16.41 June average).
+- **Sector:** IT/Tech continuing to underperform. ON Semiconductor -15% premarket.
+  Apple -6.1%, NVDA -1.6%, MSFT -3.5% (prior day context). AI semiconductor narrative reset.
+- **No major economic events today.** Next key: Jul 29 FOMC (post-kill-date).
+- **Iran / Hormuz:** 60-day peace roadmap holds; WTI ~$69 on supply return expectations.
+  Cargo vessel struck off Oman Jun 25 — oil volatility not fully resolved.
+
+### Held-Ticker Status (estimated)
+
+| Sym  | Sh  | Entry  | Est Jun 26   | vs Entry | Stop (est)   | Status |
+|------|-----|--------|-------------|----------|--------------|--------|
+| QLYS | 19  | $90.99 | likely N/A  | —        | ~$106.12 (10%) | Probable auto-stop fired (Jun 23 price $87.14 < $106.12 stop) |
+| QRVO | 19  | $89.66 | ~$98.42     | +9.8%    | ~$80.56      | ⛔ SELL — thesis broken, 25 sessions overdue |
+| COTY | 784 | $2.50  | unknown     | unknown  | ~$2.42       | ⛔ Trailing stop should have fired in May. Confirm closed. |
+
+### Options Sleeve
+No open option positions. Sleeve cap $500 / per-trade $250 fully unused.
+
+### Trade Ideas
+**No entries today. All gate failures:**
+1. **Tech sell-off** — global AI-infrastructure valuation reset. No buy signal in universe.
+2. **NVDA, AMD, AVGO** — semis under pressure from Kospi circuit breaker / Samsung-Hynix selloff.
+3. **CRWD** — split record date Jun 25 complete; first split-adj trading Jul 2. No entry today.
+4. **GOOGL long put** — materiality 0.65 but $250 options premium cap blocks execution.
+5. **Broker offline** — even a passing trade cannot execute.
+
+### Decision
+**HOLD (forced — API offline + tech sell-off). No new entries.**
+
+**Priority action stack (all blocked by missing env vars):**
+1. `alpaca.sh positions` → confirm QLYS auto-stop. **PRIORITY #0.**
+2. SELL QRVO 19sh — 25 sessions overdue. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh. **PRIORITY #1A.**
+4. Run /weekly-review — last Friday before final month of 90-day window.
+5. 33 days remain until Jul 29 kill date. Options sleeve $250 cap needs weekly-review resolution.
+
+**Action required (CRITICAL):** Set env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+
+---
