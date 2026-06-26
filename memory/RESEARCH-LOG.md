@@ -7580,3 +7580,144 @@ below materiality threshold, or no fresh catalyst today.
 8. Weekly review (approaching before Jul 29 kill date): address options sleeve $250 cap constraint.
 
 ---
+
+## 2026-06-26 — Pre-market Research HALTED (Day 57, Friday — 25th consecutive halted session)
+
+**REASON:** All 5 env vars MISSING for the 25th consecutive halted workflow. ALPACA_API_KEY,
+ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from
+process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain
+"paper-api"). Zero broker calls possible. No portfolio data pulled. Slack wrapper not sendable;
+alert sent via Slack MCP and PushNotification. Market research conducted via native WebSearch.
+
+### Account (estimated — API offline)
+- Equity: unknown (no broker data confirmed since Day 0)
+- Working cap frame: $10,000
+- Daytrade count: unknown
+- Open positions (last known — high uncertainty):
+  - QLYS 19sh — **PROBABLE AUTO-STOP** at ~$106.12 (10% trail from HWM $117.91); Jun 23
+    confirmed price $87.14 is $18.98 below stop → stop should have executed. Est gain ~+16.6%.
+  - QRVO 19sh — above stop est ~$95.79; thesis BROKEN (merger arb binary), SELL REQUIRED.
+    **25 sessions overdue.**
+  - COTY 784sh — trailing stop ~$2.42 should have auto-triggered in May; status unverified.
+- Weekly trade slots: unknown. New week started Mon Jun 22 (0/3 consumed this week if no fills).
+
+### Market Context
+- **WTI crude:** ~$69.42/bbl (-3.47% today). Iran peace framework (US-Iran 60-day roadmap)
+  driving supply expectations; cargo ship struck off Oman coast Jun 25 adds Hormuz uncertainty.
+  Source: [Barchart](https://www.barchart.com/futures/quotes/CLM26) | [Trading Economics](https://tradingeconomics.com/commodity/crude-oil)
+- **Brent crude:** ~$74.43/bbl (-1.11% today). Elevated above WTI on shipping risk premium;
+  prior session rose ~2% on Hormuz concerns after vessel strike off Oman.
+  Source: [Barchart](https://www.barchart.com/futures/quotes/CBM26) | [Trading Economics](https://tradingeconomics.com/commodity/brent-crude-oil)
+- **S&P 500 futures:** -0.37% premarket (as of ~4am ET). Memory chip sector selloff
+  (Samsung/SK Hynix weakness dragging US chipmakers); South Korean Kospi -8% circuit breaker.
+  Apple -6.1% after price increases on Macs/iPads/home devices adding consumer discretionary
+  weight. Profit-taking after strong post-MU-earnings AI trade rally.
+  Source: [Benzinga](https://www.benzinga.com/markets/prediction-markets/26/06/60120031/sp500-june-26-open-up-or-down-polymarket-tech-selloff-micron-ai-stocks) | [TheStreet](https://www.thestreet.com/stock-market-today/stock-market-today-dow-jones-sp-500-nasdaq-updates-june-26-2026)
+- **VIX:** 18.89 (up +1.40% from 18.63 on Jun 25). Slightly elevated; June 2026 avg: 16.41.
+  Source: [Yahoo Finance VIX](https://finance.yahoo.com/quote/%5EVIX/history/)
+- **Earnings before open:** No major BMO US earnings today (Jun 26).
+- **Economic calendar:**
+  - University of Michigan Consumer Sentiment — Final June (today)
+  - Dallas Fed Manufacturing Survey (today)
+  - No CPI/PPI/PCE/FOMC events. Next major macro: CPI July 14, 2026.
+  Source: [Kiplinger economic calendar](https://www.kiplinger.com/investing/economy/this-weeks-economic-calendar)
+- **Sector momentum (YTD as of Jun 25):** IT sector dominant (+~20% YTD); only double-digit
+  gainer. All other sectors flat to negative. Energy -5%+, Utilities -5%+.
+  Memory chip weakness today adds downside pressure to IT momentum leader.
+  Source: [IBKR Weekly Recap Jun 22](https://www.interactivebrokers.com/campus/traders-insight/securities/macro/weekly-market-recap-week-of-june-22-2026/)
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price     | Direction  | Key News / Status                                                   |
+|--------|--------------|------------|---------------------------------------------------------------------|
+| MU     | ~$1,194+     | Bullish ↑  | Post-earnings glow; memory sector weakening TODAY (Samsung/Hynix). |
+| CRWD   | ~$680+       | Neutral    | Split record date COMPLETE (Jun 25). Distribution Jul 1; trading Jul 2. |
+| NVDA   | ~$200        | Bearish ↓  | Memory chip tech selloff drags semis. No standalone catalyst today. |
+| GOOGL  | ~$342        | Bearish ↓  | AI talent exodus thesis intact; no new catalyst today.              |
+| AMZN   | in zone       | Neutral    | Hedge funds accumulating. No fresh catalyst. Monitor.               |
+| MSFT   | ~$450+        | Neutral    | Qualcomm AI data center partnership noted. No strong catalyst.      |
+| QRVO   | ~$98.59 est  | Neutral ⚠  | Merger arb; above stop; SELL REQUIRED (25th session overdue).       |
+| QLYS   | likely closed | —         | Probable auto-stop at ~$106.12. Confirm on API restore.             |
+| COTY   | unknown       | —         | Trailing stop should have auto-hit. Confirm on API restore.         |
+
+**Memory Chip Sector Weakness (Jun 26):**
+- South Korean Kospi fell 8%, triggering circuit breaker; Samsung and SK Hynix leading declines.
+- MU gapped +14% on Jun 24 earnings beat; today faces headwinds from regional tech selloff.
+- MU fundamentals remain strong (HBM4 demand, $50B Q4 guide) but near-term price action volatile.
+- Does NOT change prior gate fail (cannot enter at ~$1,194/share on $1k stock cap).
+- Source: [Bloomberg Asia markets](https://www.bloomberg.com/news/articles/2026-06-25/asia-stocks-set-for-choppy-open-on-tech-volatility-markets-wrap)
+
+**CRWD Split Mechanics (confirmed):**
+- Record date: Jun 25, 2026 (completed). Distribution date: July 1, 2026 (after close).
+- First split-adjusted trading day: July 2, 2026.
+- Pre-split est. ~$680–$747 → post-split est. ~$170–$187/sh.
+- Prior entry zone (pre-split $495–$510) → post-split ~$124–$128. Still above post-split zone.
+- Monitor July 2+ for entry if fresh fundamental catalyst emerges at/near $160–$175.
+- Source: [Yahoo Finance CRWD split](https://finance.yahoo.com/markets/stocks/articles/crowdstrikes-4-1-stock-split-113100110.html) | [Motley Fool](https://www.fool.com/investing/2026/06/03/crowdstrike-4-for-1-stock-split-stock-a-buy/)
+
+**Iran / Geopolitical (oil impact):**
+- US-Iran 60-day peace roadmap agreed. US authorized Iranian crude sales through August.
+- WTI fell to $69.42 on supply return expectations (from ~$97 peak in May).
+- Cargo ship struck off Oman coast Jun 25 → Hormuz shipping risk premium persists.
+- Trump renewed military threat → deal durability uncertain.
+- Source: [CNBC Iran oil](https://www.cnbc.com/2026/06/22/oil-prices-wti-brent-crude-trump-iran-threat-strait-hormuz-closure.html)
+
+### Held-Ticker News
+
+**QLYS — probable auto-stop (unconfirmed):**
+- No new news today. Probability of auto-stop at ~$106.12 very high given Jun 23 price $87.14.
+- Action: `alpaca.sh positions` on API restore. If somehow still open, SELL immediately.
+
+**QRVO — ⛔ SELL IMMEDIATELY (25th session overdue):**
+- No new news today. Merger arb binary (FTC/SAMR) unchanged.
+- Action: SELL 19sh at market on API restore. No waiting.
+
+**COTY — status unverified:**
+- No new news today. Trailing stop at ~$2.42 should have fired in May.
+- Action: `alpaca.sh positions` on API restore. Confirm closed or SELL 784sh.
+
+### Options Sleeve Health Check
+No open option positions. Sleeve cap $500 / per-trade $250 fully unused.
+
+### Trade Ideas
+
+**No actionable trade ideas today.**
+1. **Memory chip sector selloff** — Samsung/Hynix weakness drags US semis. No entry on AI silicon.
+2. **NVDA** — in entry zone $195–205 but no standalone catalyst; sector selling today (materiality
+   0.45 for sector_rotation alone → below 0.60 threshold). No entry.
+3. **CRWD** — split-adj trading begins July 2; no entry today.
+4. **GOOGL long put** — thesis intact (materiality 0.65) but $250 options premium cap fails gate.
+5. **All other universe names** — above entry zones, no fresh catalyst, or below 0.60 materiality.
+6. **Broker offline** — even if a trade passed the gate, execution is impossible without env vars.
+
+### Risk Factors
+1. **25th consecutive broker outage** — QRVO sell overdue 25 sessions, QLYS stop unconfirmed,
+   COTY status unknown. Operational risk dominates all other risks.
+2. **Memory chip sector selloff** — Kospi -8% circuit breaker; Samsung/Hynix dragging US semis.
+   MU's post-earnings gains may be partially reversed at today's open.
+3. **AAPL -6.1% premarket** — consumer electronics price hikes signal margin/demand risk.
+   Not in universe but adds broad market sentiment headwind.
+4. **Hormuz shipping risk** — cargo vessel struck Jun 25 off Oman. Oil volatility not resolved.
+5. **IT sector concentration unwind** — if tech/AI selloff broadens, entire universe (mostly IT)
+   faces headwinds. VIX 18.89, trending up from 16.41 June average.
+6. **Options sleeve $250 cap** — blocking entire universe. Weekly review needed before Jul 29.
+7. **CRWD post-split** — monitor July 2; do NOT enter purely on split mechanics.
+
+### Decision
+**HOLD.** No entries pass the buy-side gate. Memory chip sector selling disqualifies AI silicon;
+broker offline prevents any action. 33 days remain until Jul 29 kill date.
+
+**⚠ ENV VAR EMERGENCY — 25th halted session (Day 57, Friday):**
+Today is the last Friday before the 90-day kill date (Jul 29). Weekly review should run today.
+If broker restored before market close, priority order:
+1. `alpaca.sh positions` — confirm QLYS auto-stop. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken, 25 sessions overdue. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh. **PRIORITY #1A.**
+4. Run /weekly-review — bot vs. S&P 500 performance; address options sleeve $250 cap rule.
+5. NO new entries today — tech selloff + week-end = unfavorable risk/reward.
+
+**Action required (CRITICAL — 25th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then run /market-open to execute QRVO sell + COTY confirm + QLYS stop verification.
+
+---
