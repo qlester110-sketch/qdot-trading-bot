@@ -593,3 +593,28 @@ Then re-run /market-open ASAP. QRVO exit is 26 sessions overdue. 33 days remain 
 **Action required (CRITICAL — 27th halted session, 33 days to kill date):** Set env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /market-open Monday morning ASAP. QRVO exit is critically overdue. 33 days remain before Jul 29 review.
+---
+
+## Jun 29 — Market-Open HALTED (Day 58, Monday — 29th consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 29th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No orders placed.
+
+**Context:** Day 58 of 90-day window. **30 days remain until Jul 29 kill date.** /weekly-review has not run since before Jun 10. Bot vs. S&P 500 performance completely unknown. Last RESEARCH-LOG entry (Jun 26) identified NOW and DDOG as live trade candidates with materiality ≥ 0.65. Jobs report Thu Jul 2 — no new entries after Wed close if API restores. Holiday-shortened week (Jul 4).
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh (est ~$123.27, +35.5% unrealized), QRVO 19sh (est ~$98.42, thesis broken), COTY 784sh (stop should have auto-hit months ago; unconfirmed)
+- QLYS: 10% trailing stop at $106.12 — mandatory 5% tighten 24+ sessions overdue (HWM est ~$123.27 → 5% stop ≈ $117.11; ~$6.16/sh × 19sh = ~$117 of unprotected gains)
+- Day P&L: unknown | Phase P&L: unknown
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. `alpaca.sh positions` → confirm QLYS still open at ~$123. If yes, CANCEL 10% GTC, place 5% GTC (mandatory — +20% threshold crossed ~Jun 5, 24+ sessions overdue). **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken (merger arb binary; FTC+SAMR risk; no organic catalyst). **29 sessions overdue. PRIORITY #1.** Est ~$98.42.
+3. SELL/CONFIRM COTY 784sh — verify trailing stop hit or market sell 784sh. **PRIORITY #1A.**
+4. IF QRVO + COTY cleared AND deployment ≤ $3k: **BUY NOW 10sh at $93–103** (IBM multiyear + HCLTech/Google Cloud contract; materiality 0.65; horizon 10 days; bullish; stop 10% GTC). **PRIORITY #2.**
+5. IF room remains: **DDOG 4sh at $225–240** on pullback (Truist upgrade; agentic AI demand; materiality 0.70; horizon 10 days; bullish; stop 10% GTC). **PRIORITY #3.**
+6. **NO new entries after Wed Jun 2 close** — jobs report Thu Jul 2 binary event.
+7. Run /weekly-review — last full week before final stretch of 90-day window.
+
+**Action required (CRITICAL — 29th halted session, 30 days to kill date):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP. QLYS 5%-stop tighten is 24+ sessions overdue. NOW and DDOG are actionable if deployment math clears. No new entries Thu Jul 2+ (jobs print).
