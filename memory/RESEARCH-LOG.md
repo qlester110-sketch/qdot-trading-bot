@@ -7780,3 +7780,166 @@ No open option positions. Sleeve cap $500 / per-trade $250 fully unused.
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 
 ---
+
+## 2026-06-29 — Pre-market Research (Day 58, Monday — 28th consecutive halted session)
+
+### ⚠ OPERATIONAL ALERT — API OUTAGE (28th consecutive session)
+All 5 env vars MISSING: `ALPACA_API_KEY`, `ALPACA_SECRET_KEY`, `ALPACA_ENDPOINT`,
+`ALPACA_DATA_ENDPOINT`, `SLACK_WEBHOOK_URL`. Zero broker calls possible. Paper-API guardrail
+fired. Research via WebSearch only. Slack alert sent via MCP DM (U09AL2K76QZ).
+30 days remain until Jul 29 kill date.
+
+### Account (estimated — API offline, Day 58)
+- Equity: unknown (API offline)
+- Cash: unknown; Buying power: unknown; Daytrade count: unknown
+- Weekly trade slots: **3/3 available** (week of Jun 29; 0 trades placed)
+- Open positions (estimated):
+  - QLYS 19sh: entry ~$90.99; Jun 26 close **$123.27** (+35.5%) — position appears LIVE, NOT stopped out. 10% trailing stop at ~$106.12 was NOT triggered. 5% tighten MANDATORY (overdue since +20% crossed). Unrealized est: +$32.28/sh × 19 = **+$613**.
+  - QRVO 19sh: entry ~$89.66; Jun 27 est ~$93.88 (+4.7%) — SELL thesis broken.
+  - COTY 784sh: entry ~$2.50; trailing stop ~$2.42 should have fired in May — status unknown.
+
+### Market Context
+- **S&P 500 futures:** +0.53% (Nasdaq 100 +0.49%, Dow +0.27%). Risk-on driven by US-Iran
+  de-escalation ("stand down" announced). Betting market 86% probability of up open.
+  Source: Benzinga / Charles Schwab (2026-06-29)
+- **WTI:** ~$67–71 range; **Brent:** $72.01 (+0.03%) — lowest since Feb 27 as Strait of Hormuz
+  shipping accelerates on Iran peace progress. Source: Trading Economics / LiteFinance (2026-06-29)
+- **VIX:** ~16.41–18.41 (Jun 26 close 18.41; declining from recent tech selloff highs).
+  Source: FRED / Trading Economics (2026-06-29)
+- **Earnings before open:** None. No universe names reporting today.
+- **Economic calendar this week:**
+  - **Thursday Jul 2 (EARLY — July 4 holiday):** Employment Situation (Jobs Report).
+    Consensus: 172,000 new jobs. Fed rate-cut implications key.
+  - Final U of Michigan Consumer Sentiment early week.
+  - Market closed **Friday Jul 4** (Independence Day) — holiday-shortened week.
+  Source: BLS / Kiplinger / Trading Economics (2026-06-29)
+- **Sector momentum (past week / YTD):**
+  - Leading: Consumer Staples (XLP), Healthcare (XLV), Real Estate, Energy
+  - Lagging: Communication Services (XLC), Technology (XLK) — Magnificent Seven drag
+  - Russell 2000 + Dow on track for weekly gains; S&P 500 + Nasdaq heading for weekly losses
+  Source: Sahm Capital / Benzinga (2026-06-26)
+
+### Held-Ticker Status (WebSearch estimates — Jun 26–27 data)
+
+| Sym  | Sh  | Entry  | Est Jun 26–27 | vs Entry | Stop (est) | Status |
+|------|-----|--------|---------------|----------|------------|--------|
+| QLYS | 19  | $90.99 | **$123.27** (Jun 26) | **+35.5%** | ~$106.12 (10% trail) | ✅ LIVE — stop NOT triggered. 5% tighten MANDATORY. |
+| QRVO | 19  | $89.66 | ~$93.88 (Jun 27) | +4.7% | ~$80.56 | ⛔ SELL — thesis broken, 28 sessions overdue |
+| COTY | 784 | $2.50 | unknown | unknown | ~$2.42 | ⛔ Confirm closed or sell 784sh |
+
+**QLYS note:** Jun 23 research suggested $87.14 (conflicting), but Jun 26 WebSearch confirms $123.27
+with Q1 FY2026 revenue +10% YoY, Non-GAAP EPS $1.95, FY2026 guidance raised to $721–727M. Stock
+appears to be trading on improved fundamentals. Insider Director Berquist sold 939sh (~$104K) Jun 12
+— minor, not alarming. The $87.14 data from Jun 23 now appears to have been erroneous or stale.
+
+### Options Sleeve Health Check
+No open option positions. Sleeve cap $500 / per-trade $250 — fully unused. VIX ~16–18 is neutral
+for options entry. No sleeve trades this session (API offline + $250 cap blocks universe).
+
+### UNIVERSE News Summary
+
+| Ticker | Est Price (Jun 26–27) | Key News | In Universe |
+|--------|----------------------|----------|-------------|
+| QLYS | $123.27 | Q1 beat; FY2026 guide raised $721–727M; Benchmark coverage positive | ✓ |
+| QRVO | $93.88 | Skyworks exchange offer on QRVO Notes (2029/2031); merger close target early 2027 | ✓ |
+| DDOG | $239.77 (+8.52% Jun 26) | Truist upgraded to Buy, target $300 (AI demand, agentic AI); Citi $270; BMO $260 | ✓ |
+| NOW | $96.81 (+8.06% Jun 26) | IBM multiyear expansion; HCLTech/Google Cloud collab; Benchmark raised to $130 | ✓ |
+| MRVL | ~$310.58 | ATH $316.43 Jun 4; +314.7% YTD; dividend ex-date Jul 10; 28 analysts Buy | ✓ |
+| MU | ~$1,132.33 | Q3 rev $41.46B; Q4 outlook $50B; $1T market cap May 26; AI/HBM demand confirmed | ✓ |
+| NVDA | ~$192.71 | FY2026 rev $215.94B (+65.5% YoY); AI narrative intact; trading $191–195 | ✓ |
+| GOOGL | — | "Burnishing AI supremacy weapon" (Jun 27 coverage); no specific negative catalyst | ✓ |
+| VRT | — | Note: WebSearch returned VRTS (Virtus Investment Partners) data — NOT Vertiv Holdings. No Vertiv-specific news confirmed today. Prior entry zone $295–315 (FOMC hawkish pause). | ✓ |
+| CRWD | — | Split-adjusted trading begins **Jul 2**. Monitor $160–175 zone for standalone catalyst. | ✓ |
+
+### UNIVERSE Movers (WebSearch — Jun 26 data)
+| Ticker | Move | Catalyst |
+|--------|------|----------|
+| DDOG | +8.52% | Truist Buy upgrade, $300 target; agentic AI demand cited |
+| NOW | +8.06% | IBM multiyear partnership + HCLTech/Google Cloud collaboration |
+| MU | Near ATH | Q3 beat + $50B Q4 outlook; AI HBM demand sustained |
+
+### Trade Ideas
+
+**1. NOW (ServiceNow) — IN ENTRY ZONE**
+- Ticker: NOW (in UNIVERSE — CRM/business apps sector)
+- Catalyst: IBM multiyear expansion + HCLTech/Google Cloud AI agent integration announced Jun 26.
+  Benchmark raised target to $130 (from $125), Buy. Wall Street mean target $140.63.
+  Source: StocksToTrade / Yahoo Finance (2026-06-26)
+- Catalyst type: contract
+- Direction: bullish
+- Materiality: **0.65** — IBM multiyear is meaningful; not yet revenue-confirmed. Single corroborated
+  catalyst from named sources. Meets minimum 0.6 threshold.
+- Horizon: 10 trading days
+- Entry: $93–103 (current $96.81 in range; confirm at market open)
+- Stop: 10% trailing GTC post-fill (~$84–93)
+- Target: +20% from entry (~$112–124); R:R 2:1
+- Position size: $1,000 max = ~10 shares at $97
+- Sector: CRM / business apps
+- Falsification: stock fails to hold $90 within 5 trading days; IBM deal is rebranding of existing
+  contract vs. net-new spend; broader SaaS multiple compression on jobs miss Thu Jul 2
+- **Gate check:** Requires QRVO confirmed closed + COTY confirmed closed first (deployment math:
+  est QLYS $1,000 + NOW $1,000 = $2,000 → under $3,000 cap). GATED until API restored.
+
+**2. DDOG (Datadog) — WATCH; NOT YET IN ENTRY ZONE**
+- Catalyst: Truist upgraded Buy, raised target to $300 (from $190). Citing "stronger AI demand,
+  agentic AI adoption, improved visibility with frontier AI labs." Citi $270, BMO $260.
+  Source: StocksToTrade / Yahoo Finance (2026-06-26)
+- Catalyst type: sector_rotation + guidance_signal (analyst upgrade citing demand visibility)
+- Direction: bullish
+- Materiality: **0.70** — strong analyst upgrade from reputable firm with specific AI demand rationale
+- Horizon: 10 trading days
+- Entry: $225–240 (current $239.77; pullback entry preferred — original zone was $183–195, now
+  fully expired. Accept entry at current level on < 3% pullback from Monday open only)
+- Stop: 10% trailing GTC (~$203–216)
+- Target: +20% (~$270–288); R:R 2:1
+- Position size: $1,000 max = ~4 shares at $239
+- Sector: Data / observability
+- Falsification: cloud spend data shows slowdown; AI lab customers churning; next earnings (Aug)
+  guidance disappoints vs. the elevated analyst expectations
+- **Gate check:** Requires deployment capacity (QRVO/COTY closed) + API restored.
+
+**3.** No third idea with materiality ≥ 0.6 today. CRWD pre-split has no standalone catalyst;
+VRT Vertiv news unavailable; MU at $1,132 blocks all sizing gates.
+
+### Risk Factors
+1. **Jobs report Thu Jul 2** — binary event. Weak print → recession fear. Strong print → Fed
+   hawkish. Vol likely to compress Mon–Wed, spike Wed close/Thu. No new entries after Wed close.
+2. **QLYS stop management** — 5% tighten from +20% threshold still unexecuted. At $123.27, the
+   10% stop at ~$106.12 leaves ~$17.15/sh (×19 = $326) of gains unprotected vs. a proper 5% stop
+   at ~$117.11. Each session of delay = continued exposure.
+3. **US-Iran ceasefire fragility** — "stand down" is positive today, but any reversal spikes oil
+   and triggers risk-off. Watch Hormuz shipping news.
+4. **Holiday-shortened week** — light volume; exaggerated moves possible in either direction.
+5. **QRVO exit 28 sessions overdue** — thesis broken; every session of delay risks Skyworks deal
+   re-pricing or unexpected negative news eroding the +4.7% unrealized gain.
+6. **$250 options cap** — blocks entire universe at current price levels (even CRWD at $160
+   post-split; 1 ATM call contract would exceed $250). Needs owner resolution at weekly review.
+7. **30 days to Jul 29 kill date** — limited runway. Bot vs. S&P 500 performance unknown due to
+   no broker data since Day 0.
+
+### Decision
+**HOLD (forced — API offline).**
+
+NOW and DDOG are valid trade ideas that pass the buy-side gate, but require:
+- API env vars set in cloud session
+- QRVO confirmed sold + COTY confirmed closed (deployment gate)
+- Confirmation at actual open prices before entry
+
+**Priority action stack (all blocked by missing env vars):**
+1. `alpaca.sh positions` → confirm QLYS still open at ~$123. If yes, tighten stop to 5% GTC. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken, 28 sessions overdue. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh — verify stop or market sell. **PRIORITY #1A.**
+4. IF QRVO + COTY cleared AND deployment cap under $3k: enter NOW 10sh ~$93–103. **PRIORITY #2.**
+5. DDOG entry at $225–240 on pullback — gated on same conditions. **PRIORITY #3.**
+6. NO entries after Wed close — jobs report Thu Jul 2 binary event.
+
+**⚠ ENV VAR EMERGENCY — 28th halted session (Day 58, Monday):**
+30 days remain until Jul 29 kill date. /weekly-review has not run since before Jun 10.
+Bot vs. S&P 500 performance completely unknown. QLYS appears to be a winning position at +35.5%
+but gains are at risk without the mandatory 5% stop tighten.
+
+**Action required (CRITICAL — 28th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP to: (1) confirm QLYS at $123 + tighten stop, (2) sell QRVO, (3) confirm COTY. Jobs report Thu Jul 2 — no new entries after Wed close.
+
+---
