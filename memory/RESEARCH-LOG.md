@@ -7943,3 +7943,132 @@ but gains are at risk without the mandatory 5% stop tighten.
 Then re-run /market-open ASAP to: (1) confirm QLYS at $123 + tighten stop, (2) sell QRVO, (3) confirm COTY. Jobs report Thu Jul 2 — no new entries after Wed close.
 
 ---
+
+## 2026-06-30 — Pre-market Research (Day 61, Tuesday — Q2 Final Day)
+
+**⚠ API OFFLINE — 30th consecutive halted session.** All 5 env vars missing.
+Broker data unavailable. Research derived from WebSearch only.
+
+### Account (estimated — Alpaca offline)
+- Equity: unknown (no broker data confirmed since Day 0)
+- Cash: unknown
+- Buying power: unknown
+- Daytrade count: unknown
+- Open positions (last known): QLYS 19sh (est ~$123 Jun 29), QRVO 19sh (thesis broken), COTY 784sh (stop should have auto-hit months ago)
+- Weekly slots used: 0/3 this week (week of Jun 30)
+- Options sleeve: $0 deployed / $500 cap
+
+### Market Context
+- **WTI crude:** $70.32/bbl (−0.6% today; −24% for Q2). Iran-US peace talks in Doha continue to weigh. Source: Investing.com (2026-06-30)
+- **Brent crude:** $74.01/bbl (+0.14%). Same Iran driver. Source: Trading Economics (2026-06-30)
+- **S&P 500:** Closed Jun 29 at 7,440.43 (+1.18%). Futures ticking slightly higher pre-open. Q2 closes today. Source: CNBC (2026-06-30)
+- **VIX:** ~16.41 (down from 18.41 prior close). Subdued fear gauge; risk-on bias. Source: FRED (2026-06-30)
+- **Earnings before open:** None confirmed for BMO on Jun 30. Nike (NKE), Constellation Brands (STZ), Progress Software (PRGS) report after close. Source: Earnings Whispers (2026-06-30)
+- **Economic calendar:** Chicago PMI, Consumer Confidence Index, FHFA Housing Price Index, S&P Case-Shiller Home Price Index. No CPI / PCE / FOMC / jobs today. **Next major binary: Nonfarm Payrolls Thursday July 2 BMO.** Source: Trading Economics (2026-06-30)
+- **Sector momentum (June YTD):**
+  - Leading: Communication Services +3.49%, Consumer Cyclical +2.35%, Industrials +1.61%, Technology +1.50%
+  - Lagging: Basic Materials −1.71%, Real Estate −0.95%, Utilities −0.73%, Consumer Defensive −0.80%
+  - Source: Yahoo Finance Sectors (2026-06-30)
+- **Macro flag:** KOSPI (Korea) −10% on Jun 26 circuit breaker (Samsung/SK Hynix leading); global AI-infra valuation reset narrative continues. Contagion risk for AMD, MU, NVDA, MRVL, TSM, ASML.
+
+### Held-Ticker News
+| Ticker | Last Known Price | Notes |
+|--------|-----------------|-------|
+| QLYS | ~$123.27 (est Jun 29) | No new news. 10% trailing stop at ~$106.12; mandatory 5% tighten 25+ sessions overdue. |
+| QRVO | ~$98.42 (est Jun 29) | Thesis broken (merger arb binary; no organic catalyst). 30 sessions overdue for exit. |
+| COTY | Unknown | Trailing stop at ~$2.42 should have auto-hit months ago when stock fell to ~$2.03–2.06. |
+
+### UNIVERSE News (WebSearch — Jun 30)
+| Ticker | Price / Move | In Universe | Catalyst |
+|--------|-------------|-------------|----------|
+| AMZN | +4% Jun 29 | ✓ | Record Prime Day $26.4B spend beat estimates; AWS raised AI GPU block pricing. Source: CNBC (Jun 29) |
+| CRWD | ~$701 (pre-split) | ✓ | Q1 FY2027 beat: +26% rev YoY on AI security strength. Post-4:1 split trading begins **Jul 2**. Source: Yahoo Finance (Jun 28) |
+| GOOGL | +4.1% Jun 29 | ✓ | Added to Dow Jones Industrial Average Jun 29. But tracking worst month since Feb; AI talent exodus news lingering. Source: Bloomberg (Jun 29) |
+| NVDA | ~$192.71 | ✓ | BioNeMo Agent Toolkit + Halos for Robotics announced. AI chip sales to China stalling. Source: Yahoo Finance (Jun 24) |
+| AMD | — | ✓ | Benefiting from NVDA China weakness narrative; "crushing NVDA in 2026." Source: TheStreet |
+| MRVL | ~$310.58 (Jun 22 ATH area) | ✓ | ⚠ CFO Willem Meintjes liquidating 48% of holdings (~$60.1M). Cantor raised PT to $300. S&P 500 inclusion Jun 22. Source: SEC filings / Bloomberg (Jun 30) |
+| DDOG | ~$239.77 (est Jun 26) | ✓ | No new Jun 30 news. Prior catalyst: Truist Buy upgrade $300 PT (Jun 26). |
+| NOW | ~$96.81 (est Jun 26) | ✓ | No new Jun 30 news. Prior catalyst: IBM multiyear + HCLTech/Google Cloud collab (Jun 26). |
+| QLYS, QRVO, COTY, SHOP, MU, VRT, NET, ANET | — | ✓ | No material Jun 30 news found. |
+
+### Options Sleeve Health Check
+No open option positions. Sleeve $500 cap / $250 per-trade — unused. Skip.
+
+### Trade Ideas
+
+**1. AMZN — Prime Day Beat (BMO entry candidate)**
+- Ticker: AMZN (in UNIVERSE — E-commerce Western sector)
+- Catalyst: Record Prime Day $26.4B spend (beat estimates); AWS raised AI GPU block prices confirming hyperscaler demand. Source: CNBC (2026-06-29)
+- Catalyst type: earnings (revenue event)
+- Direction: bullish
+- Materiality: **0.70** — Prime Day beat is a measurable revenue event cited by named outlet; AWS pricing action corroborates demand thesis. Meets threshold.
+- Horizon: 10 trading days
+- Entry: pullback to $215–225 range (stock was up ~4% Jun 29; do not chase; wait for 3–5% consolidation at open)
+- Stop: 10% trailing GTC post-fill
+- Target: +20% from entry (~$258–270); R:R 2:1
+- Position size: $1,000 max (~4–5 shares)
+- Sector: E-commerce Western (Cloud megacap overlap)
+- Falsification: stock reverses and gives back more than 50% of Jun 29 gap by end of week; Prime Day spend figure restated or context changes (promotional margin destruction); AWS GPU pricing walks back
+- **Gate check:** GATED until (1) API env vars set, (2) QRVO + COTY confirmed closed, (3) deployment ≤ $3k cap. If QLYS still open at ~$123 = ~$2,337 deployed; adding AMZN $1,000 = $3,337 — OVER CAP. Must close QRVO first to reduce deployment.
+
+**2. CRWD — Q1 FY2027 Beat; Post-Split Entry Jul 2**
+- Ticker: CRWD (in UNIVERSE — Cybersecurity sector)
+- Catalyst: Q1 FY2027 beat: +26% revenue YoY on AI security strength; beat consensus on EPS. 4:1 split ex-date Jun 24; split-adjusted trading begins **Jul 2**. Post-split price ~$175 (based on ~$701 pre-split). Source: Yahoo Finance (2026-06-28)
+- Catalyst type: earnings
+- Direction: bullish
+- Materiality: **0.75** — clean earnings beat with strong AI security narrative and sector tailwind. Post-split liquidity improvement.
+- Horizon: 10 trading days (starting Jul 2)
+- Entry: $160–175 post-split range at Jul 2 open (do NOT enter today — split-adjusted trading not yet live)
+- Stop: 10% trailing GTC post-fill (~$144–158)
+- Target: +20% from entry (~$192–210); R:R 2:1
+- Position size: $1,000 max (~6 shares at $170)
+- Sector: Cybersecurity
+- Falsification: post-split sell-the-news opens below $155; AI security demand narrative reverses (FedRAMP delays, government budget cuts); broad cybersec sector selloff on PANW/ZS guidance miss
+- **Gate check:** Jul 2 entry only. Same deployment gate as AMZN. NFP on Jul 2 BMO adds binary risk — evaluate pre-market Jul 2 before entering. If NFP weak → hold.
+- out_of_universe: false
+
+**3.** No third idea with materiality ≥ 0.6 today.
+- MRVL: EXCLUDED — CFO insider selling $60.1M (48% of holdings) is a strong contra signal. Remove from near-term buy watchlist until insider selling resolves.
+- GOOGL: Mixed — DJIA inclusion positive but worst month since Feb + AI talent exodus lingering. No standalone materiality ≥ 0.6 catalyst today. Pass.
+- NVDA: AI chip China stall is a negative headwind. No net-positive catalyst sufficient for entry today.
+
+### Risk Factors
+1. **NFP Thursday Jul 2 BMO** — binary event; binary vol likely compresses Mon–Wed, then spikes. No new entries after Wednesday Jul 1 close. TODAY (Jun 30) and TOMORROW (Jul 1) are the only entry-window days this week.
+2. **MRVL insider selling** — CFO unloading 48% of holdings ($60.1M) after S&P 500 inclusion run. Strong negative signal; do not add MRVL regardless of price level until this resolves.
+3. **KOSPI semiconductor contagion** — Korea -10% circuit breaker (Jun 26) may extend to US semis at open (AMD, MU, NVDA, MRVL, TSM, ASML). Monitor open; avoid adding AI-silicon names until contagion settles.
+4. **AMZN entry discipline** — stock already +4% Jun 29; chasing at open risks a weak fill. Pullback entry only.
+5. **QLYS 5% stop tighten overdue** — 30th consecutive session without executing mandatory stop tighten. If QLYS has pulled back from ~$123 est., the 10% stop at ~$106 may be the only protection. Confirm at API restore.
+6. **QRVO exit 30 sessions overdue** — thesis broken; every session of delay risks further deterioration before stop at ~$95.
+7. **29 days to Jul 29 kill date** — 3 full trading weeks remain. Bot vs. S&P 500 completely untracked since Day 0. /weekly-review has not run since before Jun 10.
+8. **$250 options cap** — blocks all universe names at current prices. Needs owner decision at next weekly review.
+9. **Q2 end (today)** — quarter-end rebalancing flows can produce unusual intraday moves; intraday volatility elevated.
+10. **Iran peace talks** — oil pressure (WTI -24% Q2) is a tailwind for Consumer Cyclical and E-com; any breakdown reverses this.
+
+### Decision
+**HOLD (forced — API offline, 30th consecutive halted session).**
+
+AMZN (0.70) and CRWD post-split Jul 2 (0.75) are the two valid ideas this week. Both pass the buy-side gate on catalyst/materiality/direction/falsification but are blocked by:
+- Missing env vars (broker inaccessible)
+- Deployment gate not clearable without confirming QRVO/COTY exits
+- NFP Jul 2 limits entry window to Jun 30–Jul 1 only
+
+**Priority action stack (all blocked by missing env vars):**
+1. `alpaca.sh positions` → confirm QLYS position + current price. If at ~$123, CANCEL 10% GTC, place 5% GTC. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken, **30 sessions overdue.** Est ~$98–103. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh — verify stop hit or market sell. **PRIORITY #1A.**
+4. IF QRVO + COTY cleared AND QLYS ~$1k deployed → AMZN pullback entry today or tomorrow. **PRIORITY #2.**
+5. CRWD post-split entry Jul 2 at $160–175 — evaluate Jul 2 pre-market after NFP. **PRIORITY #3.**
+6. **NO new entries after Wed Jul 1 close** — NFP Thu Jul 2 binary.
+7. Run /weekly-review — 29 days to kill date; bot vs. S&P 500 unknown.
+
+**⚠ ENV VAR EMERGENCY — 30th halted session (Day 61, Q2 final day):**
+29 days remain until Jul 29 kill date. Every session of delay means:
+- QRVO exit gain risk (~$98–103 vs. thesis broken)
+- QLYS gains unprotected (10% stop at ~$106 vs. mandatory 5% at ~$117)
+- No new entries possible (AMZN, CRWD) despite valid catalysts
+
+**Action required (CRITICAL):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open ASAP (before market close today if possible).
+
+---
