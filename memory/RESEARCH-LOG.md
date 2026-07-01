@@ -8072,3 +8072,132 @@ AMZN (0.70) and CRWD post-split Jul 2 (0.75) are the two valid ideas this week. 
 Then re-run /market-open ASAP (before market close today if possible).
 
 ---
+
+## 2026-07-01 — Pre-market Research (Day 62, Wednesday — Last AMZN Entry Day / NFP Eve)
+
+**⚠ API OFFLINE — 32nd consecutive halted session.** All 5 env vars missing.
+Broker data unavailable. Research derived from WebSearch only.
+
+### Account (estimated — Alpaca offline)
+- Equity: unknown (no broker data confirmed since Day 0)
+- Cash: unknown
+- Buying power: unknown
+- Daytrade count: unknown
+- Open positions (last known): QLYS 19sh (est ~$123.27 Jun 29), QRVO 19sh (thesis broken), COTY 784sh (stop should have auto-hit months ago)
+- Weekly slots used: 0/3 this week (week of Jun 30)
+- Options sleeve: $0 deployed / $500 cap
+- **28 days remain until Jul 29 kill date.**
+
+### Market Context
+- **WTI crude:** ~$70.24/bbl (consolidating; range $67.93–$71.84). Iran rejected face-to-face talks with US, reviving Middle East supply concerns. Downside bias from Iran-US ceasefire uncertainty. Source: FX Daily Report (2026-07-01)
+- **Brent crude:** ~$72.25–$73.2/bbl (+0.3%). Iran rebuffed direct US talks → mild supply premium. Source: HDFC Sky (2026-07-01)
+- **S&P 500 futures:** −0.38% premarket. Weakness attributed to upcoming ADP print, ISM Manufacturing PMI, and Fed Chair Kevin Warsh remarks. Polymarket implied 27% probability of higher open. Source: Benzinga (2026-07-01)
+- **VIX:** ~17.9 (June range 15.18–23.34 avg 17.91). Moderate; not elevated. Source: Trading Economics (2026-07-01)
+- **Earnings BMO today:** None in UNIVERSE. General Mills (GIS) reports — not in universe. Source: MarketBeat (2026-07-01)
+- **Economic calendar today:** ADP June employment change; June construction spending; June ISM Manufacturing PMI; May JOLTS (~7.3M job openings est). **No CPI / PCE / FOMC today. NFP Thursday Jul 2 BMO = next major binary.** Source: BLS/Trading Economics (2026-07-01)
+- **Market closed Friday Jul 3** (Independence Day holiday observed). Effective 3-day trading week remaining (Wed Jul 1, Thu Jul 2, Mon Jul 7).
+- **Sector momentum (WTD through Jun 26):**
+  - Leading: Health Care +7.8%, Real Estate +4.2%, Utilities +3.8%
+  - Lagging: Communications −6.1%, Consumer Discretionary −5.3%, Technology −2.2%
+  - **Tech headwind is relevant** — UNIVERSE is heavily tech-weighted.
+- **YTD 2026:** S&P 500 +8.1% through Q2; Q2 was best quarter since 2020. Source: State Street / MacroTrends (2026-07-01)
+- **Macro flag:** Iran rejected direct US talks → oil supply risk revived; mild risk-off headwind for equities. US-Iran ceasefire fragile.
+
+### Held-Ticker News
+| Ticker | Last Known Price | Notes |
+|--------|-----------------|-------|
+| QLYS | ~$123.27 (est Jun 29) | No new Jul 1 news found. 10% trailing stop at ~$106.12; mandatory 5% tighten 31+ sessions overdue (HWM ~$123.27 → 5% stop ~$117.11). |
+| QRVO | ~$98–103 (est Jun 30) | Thesis broken (merger arb binary; FTC+SAMR risk). 31 sessions overdue for exit. |
+| COTY | Unknown | Trailing stop at ~$2.42 should have auto-hit months ago when stock fell to ~$2.03–2.06. |
+
+### UNIVERSE News (WebSearch — Jul 1)
+| Ticker | Price / Move | In Universe | Catalyst |
+|--------|-------------|-------------|----------|
+| NVDA | ~$199.52 (Jun 30 close) | ✓ | No new Jul 1 catalyst. Trading in $195–200 range. Source: Yahoo Finance |
+| MRVL | ~$310 area | ✓ | Cash dividend $0.06 (ex-date Jul 10). Analysts flag overvalued at 103.1x P/E. Still exclude: CFO sold $60.1M (48% of holdings) Jun 30. Source: Yahoo Finance |
+| AMZN | ~$215–225 (est) | ✓ | Prior catalyst still live: Prime Day $26.4B beat; AWS GPU pricing raised. No new Jul 1 catalyst found — catalyst from Jun 29, still within 10-day horizon. |
+| CRWD | Post-split Day 0 (trading begins TODAY Jul 1 at ~$175 adj) | ✓ | 4:1 split ex-date Jun 24; split-adjusted trading live today. Q1 FY2027 beat (+26% YoY) remains live catalyst. First split-adjusted trading day. |
+| DDOG, NOW, VRT, NET, SHOP | No material Jul 1 news found | ✓ | Carry-forward from prior research |
+
+### Options Sleeve Health Check
+No open option positions. Sleeve $500 / $250 per-trade — unused. Skip.
+
+### Trade Ideas
+
+**1. AMZN — Prime Day Beat (LAST ENTRY DAY — Jul 1 close is NFP blackout start)**
+- Ticker: AMZN (UNIVERSE — E-commerce Western)
+- Catalyst: Record Prime Day $26.4B spend beat + AWS raised AI GPU block pricing. Source: CNBC (2026-06-29). Catalyst is 2 days old; still within 10-day horizon.
+- Catalyst type: earnings (revenue event)
+- Direction: bullish
+- Materiality: **0.70** — unchanged from Jun 30 assessment. Named outlet, measurable revenue event, corroborated by AWS pricing action.
+- Horizon: 10 trading days from entry (entry Jul 1 → horizon expires ~Jul 15)
+- Entry: pullback to $215–225 (do not chase; verify at open)
+- Stop: 10% trailing GTC post-fill
+- Target: +20% (~$258–270); R:R 2:1
+- Position size: $1,000 max (~4–5 shares)
+- Sector: E-commerce Western
+- Falsification: stock reverses more than 50% of Jun 29 gap by week-end; Prime Day figure restated; AWS pricing walks back; NFP weak Jul 2 → macro risk-off overwhelms thesis
+- **Gate check:** BLOCKED by (1) missing env vars, (2) QRVO + COTY confirmation required, (3) deployment math: QLYS ~$1k deployed; if QRVO/COTY still open = over $3k cap. MUST clear QRVO/COTY first.
+- **⚠ TODAY IS THE LAST ENTRY DAY** — no new entries after Jul 1 close (NFP Jul 2 BMO binary).
+
+**2. CRWD — Q1 FY2027 Beat; Post-Split Day 1 (evaluate Jul 2 pre-market after NFP)**
+- Ticker: CRWD (UNIVERSE — Cybersecurity)
+- Catalyst: Q1 FY2027 beat +26% revenue YoY; 4:1 split effective today. Split-adjusted price ~$175. Source: Yahoo Finance (2026-06-28)
+- Catalyst type: earnings
+- Direction: bullish
+- Materiality: **0.75** — clean beat, strong AI security narrative, split improves retail liquidity.
+- Horizon: 10 trading days from entry
+- Entry: $160–175 post-split (Day 1 is today; but NFP tomorrow = binary → evaluate **Jul 2 pre-market after NFP print**)
+- Stop: 10% trailing GTC post-fill (~$144–158)
+- Target: +20% (~$192–210); R:R 2:1
+- Position size: $1,000 max (~6 shares at $170)
+- Sector: Cybersecurity
+- Falsification: post-split sell-the-news → close below $155; AI security demand reverses (FedRAMP delays, gov budget cuts); broad cybersec sector selloff on PANW/ZS guidance miss
+- **Gate check:** Entry Jul 2 ONLY if (1) API env vars set + (2) NFP benign + (3) QRVO/COTY cleared + (4) deployment ≤ $3k.
+- out_of_universe: false
+
+**3.** No third idea with materiality ≥ 0.6 today.
+- MRVL: EXCLUDED — CFO insider selling $60.1M still unresolved + 103.1x P/E flagged as overvalued.
+- NVDA: No net-positive catalyst today. Monitoring $195–200 range.
+- DDOG/NOW: Carry-forward thesis (Truist upgrade DDOG $300 PT; IBM multiyear NOW) — still valid but entry gated on API restore + deployment clearance.
+
+### Risk Factors
+1. **NFP Thursday Jul 2 BMO** — binary. Weak print = recession fear + vol spike. Strong print = Fed hawkish. No new entries after today's close (Jul 1). CRWD entry gated on NFP benign.
+2. **ADP + ISM Manufacturing today** — pre-NFP labor/manufacturing signals. Weak ADP = further premarket pressure; could deter AMZN entry if market opens ugly.
+3. **Market closed Friday Jul 3** — effectively 2 remaining entry days this week (today + Jul 2 if NFP benign). Then 3-day weekend.
+4. **S&P 500 futures −0.38% premarket** — mild weakness. Combined with tech sector headwinds (−2.2% WTD), universe names may open lower. Wait for open confirmation before entering AMZN.
+5. **QLYS 5% stop tighten overdue** — 31st consecutive session without mandatory tighten. HWM ~$123.27 → 5% stop ~$117.11; 10% stop at ~$106.12 leaves ~$11/sh of unprotected gains.
+6. **QRVO exit 31 sessions overdue** — thesis broken; every session of delay risks thesis deterioration before stop triggers.
+7. **Iran oil risk** — rejection of face-to-face talks revived supply concern. WTI range $67–72; any escalation spikes oil and hits consumer discretionary + tech.
+8. **Tech sector in WTD downtrend** — Communications −6.1%, Tech −2.2%. UNIVERSE is overwhelmingly tech. Headwind to all buy-side ideas.
+9. **28 days to Jul 29 kill date** — bot vs. S&P 500 performance unknown. /weekly-review has not run since before Jun 10.
+10. **$250 options cap** — blocks entire universe at current premiums. Needs owner resolution.
+
+### Decision
+**HOLD (forced — API offline, 32nd consecutive halted session).**
+
+AMZN (0.70) is the only entry candidate with today's window — but it is blocked by:
+- Missing env vars (broker inaccessible)
+- Deployment gate: QRVO + COTY must be confirmed closed first
+- Premarket weakness (−0.38%) + ADP/ISM releases → wait for open confirmation
+
+CRWD (0.75) is valid but entry should wait for Jul 2 pre-market after NFP print.
+
+**Priority action stack (all blocked by missing env vars):**
+1. `alpaca.sh positions` → confirm QLYS still open at ~$123. If yes, CANCEL 10% GTC, place 5% GTC (mandatory). **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken, **31 sessions overdue.** Est ~$98–103. **PRIORITY #1.**
+3. SELL/CONFIRM COTY 784sh — verify stop hit or market sell 784sh. **PRIORITY #1A.**
+4. IF QRVO + COTY cleared AND QLYS ~$1k deployed AND AMZN opens at/below $225 AND ADP not disastrous → **BUY AMZN ~4–5sh.** Last entry window before NFP. **PRIORITY #2.**
+5. CRWD post-split: wait for Jul 2 pre-market after NFP. Enter $160–175 ONLY if NFP benign. **PRIORITY #3.**
+6. **NO new entries after today's close (Jul 1)** — NFP Thu Jul 2 BMO binary event.
+7. Run /weekly-review — 28 days to kill date; bot vs. S&P 500 still unknown.
+
+**⚠ ENV VAR EMERGENCY — 32nd halted session (Day 62, Wednesday):**
+28 days remain until Jul 29 kill date. AMZN entry window expires AT TODAY'S CLOSE.
+CRWD split-adjusted trading is live today — evaluate Jul 2 after NFP.
+
+**Action required (CRITICAL — 32nd halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open IMMEDIATELY. AMZN entry window closes today. QRVO exit is 31 sessions overdue.
+
+---
