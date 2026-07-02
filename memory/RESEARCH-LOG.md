@@ -8201,3 +8201,112 @@ CRWD split-adjusted trading is live today — evaluate Jul 2 after NFP.
 Then re-run /market-open IMMEDIATELY. AMZN entry window closes today. QRVO exit is 31 sessions overdue.
 
 ---
+
+## 2026-07-02 — Pre-market Research (NFP Day — Day 63 of 90 — 34th halted session)
+
+### Account
+- Equity: UNKNOWN — API offline (34th consecutive halted session; all 5 env vars missing)
+- Cash: UNKNOWN
+- Buying power: UNKNOWN
+- Daytrade count: UNKNOWN
+- Stock deployed: UNKNOWN / $3,000 cap
+- Options sleeve: $0 / $500 cap (confirmed: no open option positions)
+- Open positions (unconfirmed): QLYS 19sh, QRVO 19sh (thesis broken, 34 sessions overdue exit), COTY 784sh (unconfirmed stop status)
+
+### Market Context
+- WTI: $67.74/bbl (-1.23%) — multi-month low; US-Iran Strait of Hormuz talks progressing. Source: tradingeconomics.com
+- Brent: ~$74.28/bbl (Jun 30 close). Source: tradingeconomics.com
+- S&P 500 futures: ES 7,554.50 (+11.00, +0.15%); day range 7,522.75–7,558.00. Source: barchart.com
+- VIX: 16.59 (Jul 1 close) — low vol regime; options premium moderate. Source: FRED / tradingeconomics.com
+- Today's catalysts:
+  - **NFP June 2026 at 8:30 AM ET** — most important release of the day (actual not yet confirmed at research time). Consensus ~115K jobs; ADP June came in 98K (below consensus). Prior May print was 172K. Unemployment expected 4.3%; wage growth 3.4%.
+  - **Fed Chair Warsh at ECB Sintra symposium** (Portugal) — AI bubble risk, sovereign debt, inflation; additional macro vol risk.
+  - **US-Iran indirect talks (Qatar)** on Strait of Hormuz passage → WTI at multi-month low → tailwind for growth/tech.
+  - **Market closed Friday Jul 3** (Independence Day observed) — thin liquidity post-NFP today; effectively 1 entry day left this week.
+- Earnings before open: LNN (Lindsay Corp), PKE (Park Aerospace), ~7 small caps. NO UNIVERSE names reporting today. Major earnings season begins July 14–15 (banks). AMZN Q2 → July 30. Source: earningswhispers.com
+- Economic calendar: NFP 8:30 AM ET; Factory Orders 10:00 AM ET
+- Sector momentum YTD (via S&P SPDJI):
+  - Energy: +21.9% YTD (not in universe)
+  - Industrials: +18.3% YTD (not in universe)
+  - Technology: +15.8% YTD (universe-dominant; but short-term pullback WTD -2.2% as of Jul 1)
+
+### UNIVERSE News Summary (Alpaca offline — web research only)
+- **CRWD**: 4:1 split effective today. Pre-split close Jun 29 $742.91 (+5.96%). Split-adj price ~$193.15 today. Q1 FY27 beat still in play: +26% rev YoY, ARR $4.6B, AIDR +250% seq. Wells Fargo PT raised to $900 pre-split = ~$225 split-adj. **Price ~$193 is 10–20% above our $160–175 entry ceiling — DO NOT CHASE.** Source: Yahoo Finance, EBC Financial, TIKR.
+- **AMZN**: $241.70 (Jul 1 close). Entry window CLOSED (NFP blackout activated at Jul 1 close). Price above $215–225 range. Prime Day $26.4B catalyst intact but priced in. ACCC lawsuit (minor, immaterial). Q2 earnings Jul 30 — options blocked after Jul 23 (7-day rule). Source: Yahoo Finance, CNBC.
+- **NVDA**: ~$197.58. No new fundamental catalyst. Michael Burry disclosed short (contrarian noise, noted for sentiment). Palantir sovereign AI collaboration (minor positive). Avg analyst PT $301.62. Source: CNBC.
+- All other UNIVERSE names: no specific Jul 2 catalysts surfaced in web research.
+
+### Held-Ticker News Summary (Alpaca offline — no direct news pull)
+- **QLYS**: No new web news today. Last estimate: +35.5% unrealized (~$123.27). 5% stop tighten 34 sessions overdue (HWM ~$123.27 → 5% stop ~$117.11; 10% GTC at $106.12).
+- **QRVO**: Thesis broken. Exit 34 sessions overdue. No new catalyst.
+- **COTY**: Status unconfirmed since Day 0.
+
+### Options Sleeve Flags
+- No open option positions. $0 / $500 cap deployed. No DTE or earnings IV checks needed.
+- Note: AMZN Q2 earnings Jul 30 → options entry blocked after Jul 23 (7-day rule).
+
+### Trade Ideas
+
+**No eligible trades today.**
+
+**1. CRWD — Q1 FY27 beat + 4:1 split (carry-forward)**
+- Ticker: CRWD (UNIVERSE — Cybersecurity)
+- Catalyst: Q1 FY2027 beat +26% revenue YoY; ARR $4.6B; AIDR product +250%+ seq; 4:1 split effective today. Source: EBC Financial / Yahoo Finance.
+- Catalyst type: earnings
+- Direction: bullish
+- Materiality: 0.75
+- Horizon: 10 trading days from entry
+- Entry range: $160–175 split-adjusted
+- Stop: 10% trailing GTC (~$144–158)
+- Target: ~$210 split-adjusted (+20%); R:R 2:1
+- Sector: Cybersecurity
+- Falsification: close below $155 split-adjusted; post-split sell-the-news sustained reversal; AI security spend stalls; PANW/ZS guidance miss drags sector
+- **Gate status: BLOCKED — current price ~$193 split-adj is 10–20% above entry ceiling. No chase per strategy rules.**
+- Re-entry condition: pullback to ≤$175 with sector momentum intact and no thesis break.
+- out_of_universe: false
+
+**2. AMZN — Prime Day + AWS expansion (window CLOSED)**
+- Entry: INELIGIBLE — NFP blackout activated Jul 1 close; price $241.70 > $225 ceiling.
+- Next setup: post-Q2 earnings (after Jul 30, outside options 7-day window).
+- out_of_universe: false
+
+**3.** No third idea with materiality ≥ 0.6 today. NVDA carry-forward noted but no catalyst.
+
+### Risk Factors
+1. **NFP not yet released at research time** — ADP 98K miss sets bar low but doesn't guarantee a benign print. <70K = recession fear + vol spike.
+2. **Market closed Jul 3** — only 1 entry day left this week after today (Monday Jul 7 is next).
+3. **Warsh/ECB Sintra** — potential hawkish Fed commentary adds vol.
+4. **Tech sector WTD pullback (-2.2%)** — universe is tech-heavy. Buy-side ideas face headwind.
+5. **QLYS 5% stop tighten 34 sessions overdue** — each session at 10% vs. 5% = ~$5.89/sh unprotected.
+6. **QRVO exit 34 sessions overdue** — thesis broken; thesis-break deterioration risk every session.
+7. **Michael Burry NVDA short** — contrarian noise; noted for sentiment tracking only.
+8. **27 days to Jul 29 kill date** — bot vs. S&P 500 performance still unknown. /weekly-review has not run since before Jun 10.
+9. **AMZN Q2 earnings Jul 30** — options entry on AMZN blocked after Jul 23 (7-day rule).
+10. **$250 options cap** — blocks entire universe at current premium levels. Needs owner resolution.
+
+### Decision
+**HOLD (forced — API offline, 34th consecutive halted session).**
+
+No eligible entries: CRWD ~$193 split-adj is above $175 ceiling (no chase). AMZN window closed. NVDA no catalyst. NFP not yet released — await 8:30 AM print.
+
+If NFP prints benign (≥100K, unemployment stable): CRWD re-evaluable IF it pulls back to ≤$175. No other immediate candidates.
+
+**Priority stack (all blocked by missing env vars — 34th consecutive halted session):**
+1. **RESTORE API** — set 5 env vars in cloud session Settings → Environment Variables. CRITICAL.
+2. `alpaca.sh positions` → confirm QLYS open; if yes, CANCEL 10% GTC, place 5% GTC. PRIORITY #0.
+3. SELL QRVO 19sh — thesis broken, 34 sessions overdue. PRIORITY #1.
+4. SELL/CONFIRM COTY 784sh — verify stop hit or market sell 784sh. PRIORITY #1A.
+5. Await NFP print 8:30 AM. If benign + CRWD pulls back to ≤$175 → re-evaluate entry via /market-open.
+6. **AMZN entry window is permanently closed for this thesis cycle.** Next AMZN opportunity: post-Q2 earnings setup after Jul 30.
+7. Run /weekly-review — 27 days to kill date; bot vs. S&P 500 performance unknown.
+
+**⚠ ENV VAR EMERGENCY — 34th halted session (Day 63, Thursday — NFP Day):**
+27 days remain until Jul 29 kill date. CRWD entry opportunity is live but price is above range. QRVO exit is 34 sessions overdue. Every session of API absence compounds the risk.
+
+**Action required (CRITICAL — 34th halted session):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open after 9:30 AM ET (after NFP at 8:30 AM). QRVO exit is 34 sessions overdue. 27 days remain before Jul 29 review.
+
+Sources: tradingeconomics.com (WTI/Brent/VIX), barchart.com (ES futures), bls.gov (NFP schedule), adpemploymentreport.com (ADP), earningswhispers.com (earnings calendar), schwab.com / invezz.com (catalysts), spglobal.com SPDJI (sector YTD), Yahoo Finance / EBC Financial / TIKR (CRWD), Yahoo Finance / CNBC (AMZN/NVDA).
+
+---
