@@ -734,3 +734,37 @@ Then re-run /market-open IMMEDIATELY. AMZN entry window expires at today's close
 **Action required (CRITICAL — 33rd halted session, AMZN window closed, 28 days to kill date):** Set 5 env vars in cloud session Settings → Environment Variables:
 - ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
 Then re-run /pre-market Jul 2 before NFP print. CRWD entry opportunity opens post-NFP. QRVO exit is 33 sessions overdue. 28 days remain before Jul 29 review.
+
+---
+
+## Jul 2 — Market-Open HALTED (Day 63, Thursday — NFP Day — 34th consecutive halted session)
+**REASON:** All 5 env vars MISSING for the 34th consecutive halted workflow. ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL all absent from process environment. Paper-API guardrail fired (ALPACA_ENDPOINT blank → does not contain "paper-api"). Zero broker calls possible. No orders placed.
+
+**Context:** NFP Day (June 2026 jobs report at 8:30 AM ET). Research log for Jul 2 present and complete. Market closed tomorrow Jul 3 (Independence Day observed) — effectively 1 trading day left this week. 27 days remain until Jul 29 kill date.
+
+**Research decision (Jul 2):** HOLD — no eligible entries.
+- CRWD split-adj ~$193: 10–20% above $160–175 entry ceiling. DO NOT CHASE.
+- AMZN entry window permanently closed (NFP blackout activated Jul 1 close; price ~$241.70 > $225 ceiling).
+- NVDA: no standalone fundamental catalyst (materiality ~0.45).
+- NFP consensus ~115K (ADP 98K miss set bar low); awaiting 8:30 AM print.
+
+**Last known portfolio state (Day 0 baseline — no broker data since launch):**
+- Equity: unknown (no broker data confirmed since Day 0)
+- Open positions: QLYS 19sh (est +35.5% unrealized, ~$123.27), QRVO 19sh (thesis broken), COTY 784sh (trailing stop should have auto-hit months ago; unconfirmed)
+- QLYS: 10% trailing stop at ~$106.12; mandatory 5% tighten 34+ sessions overdue (HWM ~$123.27 → 5% stop ~$117.11; ~$5.89/sh × 19sh = ~$112 of unprotected gains vs. 5% stop)
+- Day P&L: unknown | Phase P&L: unknown
+- Stock book deployed: unknown / $3,000 cap
+- Options sleeve: $0 / $500 cap
+- Trades today: none (halted) | Trades this week: none (all halted)
+
+**Pending actions (CRITICAL — execute immediately on API restore):**
+1. `alpaca.sh positions` → confirm QLYS still open. If yes, CANCEL 10% GTC, place 5% GTC. **PRIORITY #0.**
+2. SELL QRVO 19sh — thesis broken (merger arb binary; FTC+SAMR risk; no organic catalyst). **34 sessions overdue. PRIORITY #1.** Est ~$98–103.
+3. SELL/CONFIRM COTY 784sh — verify trailing stop hit or market sell 784sh. **PRIORITY #1A.**
+4. **CRWD post-split (~$193 split-adj)** — monitor for pullback to ≤$175. If NFP benign + price dips to range → re-evaluate via /market-open. DO NOT CHASE at $193.
+5. Run /weekly-review — 27 days to kill date; bot vs. S&P 500 unknown.
+6. Next open trading day: Monday Jul 7 (market closed Jul 3–6 holiday weekend).
+
+**Action required (CRITICAL — 34th halted session, 27 days to kill date):** Set 5 env vars in cloud session Settings → Environment Variables:
+- ALPACA_API_KEY, ALPACA_SECRET_KEY, ALPACA_ENDPOINT=https://paper-api.alpaca.markets/v2, ALPACA_DATA_ENDPOINT, SLACK_WEBHOOK_URL
+Then re-run /market-open after NFP print (8:30 AM ET). QRVO exit is 34 sessions overdue. 27 days remain before Jul 29 review. Next trading day after today: Monday Jul 7.
